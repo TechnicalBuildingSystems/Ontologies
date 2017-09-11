@@ -1,12 +1,248 @@
-@prefix : <https://www.w3id.org/ibp/CTRLont##> .
+# Copyright (c) 2017 Fraunhofer Institute for Building Physics
+# 
+# This copyright applies to the CTRLont vocabulary specification and
+# accompanying documentation in RDF. Regarding underlying technology,
+# CTRLont uses W3C's RDF technology, an open Web standard that can be
+# freely used by anyone.
+#
+# Licensed under the Creative Commons Attribution Share Alike License 
+#(CC BY-SA 4.0); you may not use this file except in compliance with 
+# the license. You may obtain a copy of the license at:
+#
+#          https://creativecommons.org/licenses/by-sa/4.0/
+
+@prefix : <http://w3id.org/ibp/CTRLont#> .
+@prefix cc: <http://creativecommons.org/ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://www.w3id.org/ibp/CTRLont#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@base <http://www.ibp.fraunhofer.de/ns/CTRLont> .
 
-<https://www.w3id.org/ibp/CTRLont#> rdf:type owl:Ontology ;
-                                     rdfs:comment "Place holder ontology for CTRLont"^^xsd:string .
+<http://www.ibp.fraunhofer.de/ns/CTRLont> rdf:type voaf:Vocabulary , owl:Ontology ;
+			   dcterms:title "CTRLont - An ontology to formaly specify the control domain."@en ;
+			   dcterms:description """CTRLont specified concepts and relationships of control actors on a high level. The ontology and its use has been described in:
+
+				G. F. Schneider, P. Pauwels and S. Steiger, "Ontology-based Modelling of Control Logic in Building Automation Systems," in IEEE Transactions on Industrial Informatics, vol. PP, no. 99, pp. 1-1, DOI: 10.1109/TII.2017.2743221.
+				"""@en ;
+			   dcterms:identifier "http://w3id.org/ibp/CTRLont#" ;
+			   dcterms:creator <https://www.researchgate.net/profile/Georg_Schneider3> ;
+			   dcterms:creator """Georg Ferdinand Schneider, georg.schneider@ibp.fraunhofer.de - Fraunhofer Institute for Building Physics, Nuremberg, Germany"""@en ;
+			   rdfs:comment "This ontology is developed by Georg Ferdinand Schneider during his PhD."^^xsd:string ;
+			   dcterms:rights "Copyright (c) 2017, Fraunhofer Institute for Building Physics, Nuremberg, Germany." ;
+			   
+			   dcterms:issued "2016-11-01"^^xsd:date ;
+			   dcterms:modified "2017-08-21"^^xsd:date ;
+			   dcterms:license <http://creativecommons.org/licenses/by-sa/4.0> ;
+			   vann:preferredNamespacePrefix "ctrl" ;
+			   vann:preferredNamespaceUri <https://w3id.org/ibp/CTRLont#> .
+
+#################################################################
+#    Annotation properties
+#################################################################
 
 
+dcterms:license					rdf:type owl:AnnotationProperty .
+dcterms:creator 				rdf:type owl:AnnotationProperty .
+dcterms:identifier 				rdf:type owl:AnnotationProperty .
+dcterms:rights 					rdf:type owl:AnnotationProperty .
+dcterms:title 					rdf:type owl:AnnotationProperty .
+dcterms:created 				rdf:type owl:AnnotationProperty .
+dcterms:modified 				rdf:type owl:AnnotationProperty .
+vann:preferredNamespacePrefix 	rdf:type owl:AnnotationProperty .
+vann:preferredNamespaceUri		rdf:type owl:AnnotationProperty .
+rdfs:comment					rdf:type owl:AnnotationProperty .
+rdfs:label						rdf:type owl:AnnotationProperty .
+rdfs:seeAlso  					rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+:AnnotatedElement rdf:type owl:Class ;
+                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasMedium ;
+                                    owl:allValuesFrom :Medium
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasQuantity ;
+                                    owl:allValuesFrom :Quantity
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasSemanticType ;
+                                    owl:allValuesFrom :SemanticType
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasUnit ;
+                                    owl:allValuesFrom :Unit
+                                  ] ;
+					 rdfs:label "Annotated Element"@en ;
+					 rdfs:comment "An annotated element is a generic superclass for ctrl:Input, ctrl:Output and ctrl:Input"@en .
+
+:ApplicationLogic rdf:type owl:Class ;
+				rdfs:label "Application Logic"@en ;
+				rdfs:comment """Concept to specify the application logic of a Control Actor. Seperate ontologies may be used to further specify this concept."""@en .
+
+:ControlActor rdf:type owl:Class ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasApplicationLogic ;
+                                owl:someValuesFrom :ApplicationLogic
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasInput ;
+                                owl:someValuesFrom :Input
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasOutput ;
+                                owl:someValuesFrom :Output
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasParameter ;
+                                owl:allValuesFrom :Parameter
+                              ] ;
+					 rdfs:label "Control Actor"@en ;
+					 rdfs:comment """Concept to describe the in general accepted Sense-Process-Actuate
+pattern in automation systems, e.g. function blocks from IEC 61499."""@en .
+
+:Input rdf:type owl:Class ;
+       rdfs:subClassOf :AnnotatedElement ;
+					 rdfs:label "Input"@en ;
+					 rdfs:comment """An Input allow flows of information to enter a control actor. Inputs are processed by the respective application logic of the control actor to compute the outputs."""@en .
+
+:Output rdf:type owl:Class ;
+        rdfs:subClassOf :AnnotatedElement ;
+					 rdfs:label "Output"@en ;
+					 rdfs:comment """An Output allows compute results by the application logic of an control actore to be fowarded to outside entities such as actuators or other control actors."""@en .
+
+:Parameter rdf:type owl:Class ;
+           rdfs:subClassOf :AnnotatedElement ;
+					 rdfs:label "Parameter"@en ;
+					 rdfs:comment """Parameter describe time-invariant values and settings of the respective ControlActor. Thus thay can be added dependent on the respective ApplicationLogic."""@en .
+					 
+:Medium rdf:type owl:Class ;
+					 rdfs:label "Medium"@en ;
+					 rdfs:comment """Placeholder concept to stipulate reuse of existing ontologies such as dbpedia or  	http://www.productontology.org/id/"""@en .
+
+:Quantity rdf:type owl:Class ;
+					 rdfs:seeAlso <http://qudt.org/schema/qudt> ;
+					 rdfs:label "Quantity"@en ;
+					 rdfs:comment """Placeholder concept to stipulate reuse of existing ontologies such as Ontology for Units and Measures (OM) or QUDT."""@en .
+
+:SemanticType rdf:type owl:Class ;
+					 rdfs:label "Semantic Type"@en ;
+					 rdfs:comment """It may be required to further annotate an Input, Output or Parameter with a specific Semantic Type. For example in building automation to differ between room air temperature or outdoor air temperature."""@en .
+
+:Unit rdf:type owl:Class ;
+					 rdfs:label "Unit"@en ;
+					 rdfs:comment """Placeholder concept to stipulate reuse of existing ontologies such as Ontology for Units and Measures (OM) or QUDT."""@en .
+
+owl:Thing rdf:type owl:Class .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+
+:hasApplicationLogic rdf:type owl:ObjectProperty ;
+                     rdfs:domain :ControlActor ;
+                     rdfs:range :ApplicationLogic ;
+					 rdfs:label "hasApplicationLogic"@en ;
+					 rdfs:comment """Object property to relate a control actor to its specific application logic"""@en .
+
+:hasOutput rdf:type owl:ObjectProperty ;
+           rdfs:domain :ControlActor ;
+           rdfs:range :Output ;
+					 rdfs:label "hasOutput"@en ;
+					 rdfs:comment """Object property to relate a control actor to its outputs."""@en .
+
+					 
+:hasInput rdf:type owl:ObjectProperty ;
+          rdfs:domain :ControlActor ;
+          rdfs:range :Input ;
+					 rdfs:label "hasInput"@en ;
+					 rdfs:comment """Object property to relate a control actor to its inputs."""@en .
+
+:hasParameter rdf:type owl:ObjectProperty ;
+              rdfs:domain :ControlActor ;
+              rdfs:range :Parameter ;
+					 rdfs:label ""@en ;
+					 rdfs:comment """Object property to relate a control actor to its parameter."""@en .
+					 
+					 
+:hasMedium rdf:type owl:ObjectProperty ;
+           rdfs:domain :AnnotatedElement ;
+           rdfs:range :Medium ;
+					 rdfs:label "hasMedium"@en ;
+					 rdfs:comment """Object property to annotate an input, output or parameter with its medium."""@en .
+
+:hasQuantity rdf:type owl:ObjectProperty ;
+             rdfs:domain :AnnotatedElement ;
+             rdfs:range :Quantity ;
+					 rdfs:label "hasQuantity"@en ;
+					 rdfs:comment """Object property to annotate an input, output or parameter with its quantity."""@en .
+
+:hasSemanticType rdf:type owl:ObjectProperty ;
+                 rdfs:domain :AnnotatedElement ;
+                 rdfs:range :SemanticType ;
+				 rdfs:label "hasSemanticType"@en ;
+				 rdfs:comment """Object property to relate an input, output or parameter with its semantic type."""@en .
+
+:hasUnit rdf:type owl:ObjectProperty ;
+         rdfs:domain :AnnotatedElement ;
+         rdfs:range :Unit ;
+		 rdfs:label "hasUnit"@en ;
+		 rdfs:comment """Object property to relate an input, output or parameter with its unit."""@en .
+
+:isConnectedTo rdf:type owl:ObjectProperty ;
+               rdfs:domain :Output ;
+               rdfs:range :Input ;
+					 rdfs:label "isConnectedTo"@en ;
+					 rdfs:comment """Object property to describe the topological relationship between an input of one control actor and the output of another."""@en .
+
+:isSupervisedBy rdf:type owl:ObjectProperty ;
+                owl:inverseOf :supervises ;
+                rdfs:domain :ControlActor ;
+                rdfs:range :ControlActor ;
+					 rdfs:label "isSupervisedBy"@en ;
+					 rdfs:comment """Object property to describe hierarchical composition of control actors."""@en .
+
+:supervises rdf:type owl:ObjectProperty ;
+            rdfs:domain :ControlActor ;
+            rdfs:range :ControlActor ;
+					 rdfs:label "supervises"@en ;
+					 rdfs:comment """Object property to describe if one control actor supervises another."""@en .
+				 
+:logicInput rdf:type owl:ObjectProperty ;
+            rdfs:domain :ApplicationLogic ;
+            rdfs:range :Input ;
+					 rdfs:label "logicInput"@en ;
+					 rdfs:comment """Object property to express the relationship of some application logic concept to an input."""@en .
+
+:logicOutput rdf:type owl:ObjectProperty ;
+             rdfs:domain :ApplicationLogic ;
+             rdfs:range :Output ;
+					 rdfs:label "logicOutput"@en ;
+					 rdfs:comment """Object property to express the relationship of some application logic concept to an output."""@en .
+
+:logicParameter rdf:type owl:ObjectProperty ;
+                rdfs:domain :ApplicationLogic ;
+                rdfs:range :Parameter ;
+					 rdfs:label "logicParameter"@en ;
+					 rdfs:comment """Object property to express the relationship of some application logic concept to an parameter."""@en .
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Input
+                :Output
+                :Parameter
+              )
+] .
