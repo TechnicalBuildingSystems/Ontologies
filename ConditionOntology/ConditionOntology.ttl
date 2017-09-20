@@ -11,79 +11,64 @@
 #
 #          https://creativecommons.org/licenses/by-sa/4.0/
 
-@prefix : <https://w3id.org/ibp/ConditionOntology#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix cc: <http://creativecommons.org/ns#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix cond: <https://w3id.org/ibp/ConditionOntology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
-@prefix terms: <http://purl.org/dc/terms/> .
 @prefix voaf: <http://purl.org/vocommons/voaf#> .
+
+@prefix : <https://w3id.org/ibp/ConditionOntology#> .
 @base <https://w3id.org/ibp/ConditionOntology> .
 
 <https://w3id.org/ibp/ConditionOntology> rdf:type voaf:Vocabulary , owl:Ontology ;
-    terms:title "ConditionOntology - An ontology to explicitly describe domain independent boolean expressions."@en ;
-	terms:description """ConditionOntology specifies concepts and relationships of logical expressions apparent in control logic. The ontology and its use is described in:
+			dcterms:title "ConditionOntology - An ontology to explicitly describe domain independent boolean expressions."@en ;
+			dcterms:description """The ontology and its use is described in:
 
-	Schneider, G.F., Pauwels, P. and Steiger, S. (2017): "Ontology-based Modelling of Control Logic in Building Automation Systems" in IEEE Transactions on Industrial Informatics, vol. PP, no. 99, pp. 1-11, DOI: 10.1109/TII.2017.2743221."""@en ;
-	dc:identifier "https://w3id.org/ibp/ConditionOntology#" ;
-    dc:creator "Georg Ferdinand Schneider georg.schneider@ibp.fraunhofer.de - Fraunhofer Institute for Building Physics IBP, Nuremberg, Germany" ;
-	terms:license <http://creativecommons.org/licenses/by-sa/4.0> ;
-	terms:created "2016-11-01" ;
-	terms:modified "2017-03-17" ;
-    rdfs:comment "This ontology is developed by Georg Ferdinand Schneider during his PhD."^^xsd:string ;
-    rdfs:seeAlso "https://www.w3.org/community/lbd/"^^xsd:anyURI ;
-	rdfs:seeAlso "http://vocab.deri.ie/csp#"^^xsd:anyURI ;
-	vann:preferredNamespacePrefix "cond" ;
-	vann:preferredNamespaceUri <https://w3id.org/ibp/ConditionOntology#> ;
-    dc:rights "Copyright (c) 2017, Fraunhofer Institute for Building Physics, Nuremberg, Germany."@en ;
-	dc:rights "https://www.ibp.fraunhofer.de"^^xsd:anyURI .
-
+			Schneider, G.F., Pauwels, P. and Steiger, S. (2017): "Ontology-based Modelling of Control Logic in Building Automation Systems" in IEEE Transactions on Industrial Informatics, vol. PP, no. 99, pp. 1-11, DOI: 10.1109/TII.2017.2743221."""@en ;
+			
+			dcterms:creator "Georg Ferdinand Schneider" ;
+			dcterms:creator <https://www.researchgate.net/profile/Georg_Schneider3> ;
+			
+			rdfs:label "ConditionOntology"@en ;
+			rdfs:comment "ConditionOntology specifies concepts and relationships of logical expressions apparent in control logic."@en ;
+			dcterms:identifier "https://w3id.org/ibp/ConditionOntology#" ;
+			
+			dcterms:rights """Copyright (c) 2017, Fraunhofer Institute for Building Physics,
+			Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution 
+			Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"""@en ;
+			dcterms:issued "2016-11-01"^^xsd:date ;
+			dcterms:modified "2017-08-21"^^xsd:date ;
+			dcterms:license <http://creativecommons.org/licenses/by-sa/4.0> ;
+			vann:preferredNamespacePrefix "cond" ;
+			vann:preferredNamespaceUri <https://w3id.org/ibp/ConditionOntology#> ;
+			rdfs:seeAlso "https://www.w3.org/community/lbd/"^^xsd:anyURI ;
+			rdfs:seeAlso "http://vocab.deri.ie/csp#"^^xsd:anyURI ;
+			vann:preferredNamespacePrefix "cond" ;
+			vann:preferredNamespaceUri <https://w3id.org/ibp/ConditionOntology#> .
+    
 	
 #################################################################
 #    Annotation properties
 #################################################################
 
+voaf:Vocabulary					rdf:type owl:Class .
+dcterms:title 					rdf:type owl:AnnotationProperty .
+dcterms:description				rdf:type owl:AnnotationProperty .
+dcterms:issued 					rdf:type owl:AnnotationProperty .
+dcterms:modified 				rdf:type owl:AnnotationProperty .
+dcterms:creator 				rdf:type owl:AnnotationProperty .
+dcterms:contributor				rdf:type owl:AnnotationProperty .
+dcterms:license					rdf:type owl:AnnotationProperty .
+vann:preferredNamespacePrefix 	rdf:type owl:AnnotationProperty .
+vann:preferredNamespaceUri		rdf:type owl:AnnotationProperty .
 
-###  http://purl.org/vocab/vann/preferredNamespacePrefix
-vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/vocab/vann/preferredNamespaceUri
-vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
-
-
-###  http://creativecommons.org/ns#license
-terms:license rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/creator
-dc:creator rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/identifier
-dc:identifier rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/rights
-dc:rights rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/title
-dc:title rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/created
-terms:created rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/modified
-terms:modified rdf:type owl:AnnotationProperty .
-
+dcterms:identifier 				rdf:type owl:AnnotationProperty .
+dcterms:rights 					rdf:type owl:AnnotationProperty .
+rdfs:comment					rdf:type owl:AnnotationProperty .
+rdfs:label						rdf:type owl:AnnotationProperty .
+rdfs:seeAlso  					rdf:type owl:AnnotationProperty .
 
 #################################################################
 #    Object Properties

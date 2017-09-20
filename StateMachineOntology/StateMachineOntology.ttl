@@ -11,53 +11,57 @@
 #
 #          https://creativecommons.org/licenses/by-sa/4.0/
 
-@prefix : <https://w3id.org/ibp/StateMachineOntology#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix ns: <http://creativecommons.org/ns#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
-@prefix terms: <http://purl.org/dc/terms/> .
 @prefix voaf: <http://purl.org/vocommons/voaf#> .
+
+@prefix : <https://w3id.org/ibp/StateMachineOntology#> .
 @base <https://w3id.org/ibp/StateMachineOntology> .
 
 <https://w3id.org/ibp/StateMachineOntology> rdf:type voaf:Vocabulary , owl:Ontology ;
-	dc:title """StateMachineOntology - An ontology to formally specify UML state machines."""@en ;
-	
-	terms:description """StateMachineOntology specifies concepts and relationships to describe state machines as defined in the Unified Modelling Language (UML). The ontology and its use has been described in:
+			dcterms:title "StateMachineOntology - An ontology to formally specify UML state machines."@en ;
+			dcterms:description """The ontology and its use is described in:
 
-	Schneider, G.F., Pauwels, P. and Steiger, S. (2017): "Ontology-based Modelling of Control Logic in Building Automation Systems" in IEEE Transactions on Industrial Informatics, vol. PP, no. 99, pp. 1-11, DOI: 10.1109/TII.2017.2743221."""@en ;
-	dc:identifier "https://w3id.org/ibp/StateMachineOntology#" ;
-    dc:creator <https://www.researchgate.net/profile/Georg_Schneider3> ;
-	dc:contributor "Walter Terkaj"@en ;
-    dc:creator """Georg Ferdinand Schneider, georg.schneider@ibp.fraunhofer.de - Fraunhofer Institute for Building Physics, Nuremberg, Germany"""^^xsd:string ;
-	rdfs:comment """This ontology is developed by Georg Ferdinand Schneider during his PhD."""^^xsd:string ;
-    dc:rights """Copyright (c) 2017, Fraunhofer Institute for Building Physics, Nuremberg, Germany."""@en ;
-    terms:issued "2016-11-01"@xsd:Date ;
-	terms:modified "2017-08-21"@xsd:Date ;
-    terms:created "2016-11-01"@xsd:Date ;
-    terms:license <http://creativecommons.org/licenses/by-sa/4.0> ;
-    vann:preferredNamespacePrefix "sm" ;
-    vann:preferredNamespaceUri <https://w3id.org/ibp/StateMachineOntology#> ;
-	
-	rdfs:seeAlso "http://www.learninglab.de/~dolog/fsm/fsm.owl#" .
+			Schneider, G.F., Pauwels, P. and Steiger, S. (2017): "Ontology-based Modelling of Control Logic in Building Automation Systems" in IEEE Transactions on Industrial Informatics, vol. PP, no. 99, pp. 1-11, DOI: 10.1109/TII.2017.2743221."""@en ;
+			dcterms:creator "Georg Ferdinand Schneider" ;
+			dcterms:creator <https://www.researchgate.net/profile/Georg_Schneider3> ;
+			rdfs:label "State Machine Ontology"@en ;
+			rdfs:comment "StateMachineOntology specifies concepts and relationships to describe state machines as defined in the Unified Modelling Language (UML)."@en ;
+			dcterms:identifier "https://w3id.org/ibp/StateMachineOntology#" ;
+			dcterms:rights """Copyright (c) 2017, Fraunhofer Institute for Building Physics,
+			Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution 
+			Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"""@en ;
+			dcterms:issued "2016-11-01"^^xsd:date ;
+			dcterms:modified "2017-08-21"^^xsd:date ;
+			dcterms:license <http://creativecommons.org/licenses/by-sa/4.0> ;
+			vann:preferredNamespacePrefix "sm" ;
+			vann:preferredNamespaceUri <https://w3id.org/ibp/StateMachineOntology#> ;
+			rdfs:seeAlso "http://www.learninglab.de/~dolog/fsm/fsm.owl#" .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
-ns:license rdf:type owl:AnnotationProperty .
-dc:creator rdf:type owl:AnnotationProperty .
-dc:identifier rdf:type owl:AnnotationProperty .
-dc:rights rdf:type owl:AnnotationProperty .
-dc:title rdf:type owl:AnnotationProperty .
-terms:created rdf:type owl:AnnotationProperty .
-terms:modified rdf:type owl:AnnotationProperty .
-vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
-vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+voaf:Vocabulary					rdf:type owl:Class .
+dcterms:title 					rdf:type owl:AnnotationProperty .
+dcterms:description				rdf:type owl:AnnotationProperty .
+dcterms:issued 					rdf:type owl:AnnotationProperty .
+dcterms:modified 				rdf:type owl:AnnotationProperty .
+dcterms:creator 				rdf:type owl:AnnotationProperty .
+dcterms:contributor				rdf:type owl:AnnotationProperty .
+dcterms:license					rdf:type owl:AnnotationProperty .
+vann:preferredNamespacePrefix 	rdf:type owl:AnnotationProperty .
+vann:preferredNamespaceUri		rdf:type owl:AnnotationProperty .
+
+dcterms:identifier 				rdf:type owl:AnnotationProperty .
+dcterms:rights 					rdf:type owl:AnnotationProperty .
+rdfs:comment					rdf:type owl:AnnotationProperty .
+rdfs:label						rdf:type owl:AnnotationProperty .
+rdfs:seeAlso  					rdf:type owl:AnnotationProperty .
 
 #################################################################
 #    Object Properties

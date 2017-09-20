@@ -12,36 +12,61 @@
 #          https://creativecommons.org/licenses/by-sa/4.0/
 
 
-@prefix : <https://w3id.org/ibp/ScheduleOntology#> .
-@prefix cc: <http://creativecommons.org/ns#> .
-@prefix vann: <http://purl.org/vocab/vann/> .
-@prefix dcterms:  <http://purl.org/dc/terms/> .
-@prefix voaf: <http://purl.org/vocommons/voaf#> .
-@prefix ctrl: <https://w3id.org/ibp/CTRLont#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+
+@prefix ctrl: <https://w3id.org/ibp/CTRLont#> .
+@prefix : <https://w3id.org/ibp/ScheduleOntology#> .
 @base <https://w3id.org/ibp/ScheduleOntology> .
 
 <https://w3id.org/ibp/ScheduleOntology> rdf:type voaf:Vocabulary , owl:Ontology ;
-			   dcterms:title "ScheduleOntology - An ontology to formaly specify the schedules in automation systems."@en ;
-			   dcterms:description """ScheduleOntology describes a typical type of control logic explicitly commonly referred to as schedules. A description is provided in:
+			dcterms:title "ScheduleOntology - An ontology to formaly specify the schedules in automation systems."@en ;
+			dcterms:description """The ontology and its use is described in:
 
-				Schneider, G.F., Pauwels, P. and Steiger, S. (2017): "Ontology-based Modelling of Control Logic in Building Automation Systems" in IEEE Transactions on Industrial Informatics, vol. PP, no. 99, pp. 1-11, DOI: 10.1109/TII.2017.2743221.
-				"""@en ;
-			   dcterms:identifier "https://w3id.org/ibp/ScheduleOntology#" ;
-			   dcterms:creator <https://www.researchgate.net/profile/Georg_Schneider3> ;
-			   dcterms:creator """Georg Ferdinand Schneider, georg.schneider@ibp.fraunhofer.de - Fraunhofer Institute for Building Physics, Nuremberg, Germany"""@en ;
-			   rdfs:comment "This ontology is developed by Georg Ferdinand Schneider during his PhD."^^xsd:string ;
-			   dcterms:rights "Copyright (c) 2017, Fraunhofer Institute for Building Physics, Nuremberg, Germany." ;
-			   dcterms:issued "2016-11-01"^^xsd:date ;
-			   dcterms:modified "2017-08-21"^^xsd:date ;
-			   dcterms:license <http://creativecommons.org/licenses/by-sa/4.0> ;
-			   vann:preferredNamespacePrefix "ctrl" ;
-			   vann:preferredNamespaceUri <https://w3id.org/ibp/ScheduleOntology#> .
+			Schneider, G.F., Pauwels, P. and Steiger, S. (2017): "Ontology-based Modelling of Control Logic in Building Automation Systems" in IEEE Transactions on Industrial Informatics, vol. PP, no. 99, pp. 1-11, DOI: 10.1109/TII.2017.2743221."""@en ;
+			dcterms:creator "Georg Ferdinand Schneider" ;
+			dcterms:creator <https://www.researchgate.net/profile/Georg_Schneider3> ;
+			
+			rdfs:label "ScheduleOntology"@en ;
+			rdfs:comment "ScheduleOntology describes a typical type of control logic explicitly commonly referred to as schedules."@en ;
+			
+			dcterms:identifier "https://w3id.org/ibp/ScheduleOntology#" ;
+			
+			dcterms:rights """Copyright (c) 2017, Fraunhofer Institute for Building Physics,
+			Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution 
+			Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"""@en ;
+			dcterms:issued "2016-11-01"^^xsd:date ;
+			dcterms:modified "2017-08-21"^^xsd:date ;
+			dcterms:license <http://creativecommons.org/licenses/by-sa/4.0> ;
+			
+			vann:preferredNamespacePrefix "sch" ;
+			vann:preferredNamespaceUri <https://w3id.org/ibp/ScheduleOntology#> .
 
+#################################################################
+#    Annotation properties
+#################################################################
+
+voaf:Vocabulary					rdf:type owl:Class .
+dcterms:title 					rdf:type owl:AnnotationProperty .
+dcterms:description				rdf:type owl:AnnotationProperty .
+dcterms:issued 					rdf:type owl:AnnotationProperty .
+dcterms:modified 				rdf:type owl:AnnotationProperty .
+dcterms:creator 				rdf:type owl:AnnotationProperty .
+dcterms:contributor				rdf:type owl:AnnotationProperty .
+dcterms:license					rdf:type owl:AnnotationProperty .
+vann:preferredNamespacePrefix 	rdf:type owl:AnnotationProperty .
+vann:preferredNamespaceUri		rdf:type owl:AnnotationProperty .
+
+dcterms:identifier 				rdf:type owl:AnnotationProperty .
+dcterms:rights 					rdf:type owl:AnnotationProperty .
+rdfs:comment					rdf:type owl:AnnotationProperty .
+rdfs:label						rdf:type owl:AnnotationProperty .
+rdfs:seeAlso  					rdf:type owl:AnnotationProperty .
 
 #################################################################
 #
