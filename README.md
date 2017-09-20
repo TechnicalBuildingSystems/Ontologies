@@ -28,7 +28,7 @@ Each ontology file contains a triple specifying its license. In general all onto
 > (CC BY-SA 4.0); you may not use this file except in compliance with 
 > the license. You may obtain a copy of the license at:
 >
->          [https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/)
+>          https://creativecommons.org/licenses/by-sa/4.0/
 
 ## Acknowledgements
 
