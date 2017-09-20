@@ -11,7 +11,7 @@
 #
 #          https://creativecommons.org/licenses/by-sa/4.0/
 
-@prefix : <http://w3id.org/ibp/CTRLont#> .
+@prefix : <https://w3id.org/ibp/CTRLont#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -21,20 +21,19 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix dcterms:  <http://purl.org/dc/terms/> .
 @prefix voaf: <http://purl.org/vocommons/voaf#> .
-@base <http://www.ibp.fraunhofer.de/ns/CTRLont> .
+@base <https://w3id.org/ibp/CTRLont> .
 
-<http://www.ibp.fraunhofer.de/ns/CTRLont> rdf:type voaf:Vocabulary , owl:Ontology ;
+<https://w3id.org/ibp/CTRLont> rdf:type voaf:Vocabulary , owl:Ontology ;
 			   dcterms:title "CTRLont - An ontology to formaly specify the control domain."@en ;
 			   dcterms:description """CTRLont specified concepts and relationships of control actors on a high level. The ontology and its use has been described in:
 
-				G. F. Schneider, P. Pauwels and S. Steiger, "Ontology-based Modelling of Control Logic in Building Automation Systems," in IEEE Transactions on Industrial Informatics, vol. PP, no. 99, pp. 1-1, DOI: 10.1109/TII.2017.2743221.
+				Schneider, G.F., Pauwels, P. and Steiger, S. (2017): "Ontology-based Modelling of Control Logic in Building Automation Systems" in IEEE Transactions on Industrial Informatics, vol. PP, no. 99, pp. 1-11, DOI: 10.1109/TII.2017.2743221.
 				"""@en ;
-			   dcterms:identifier "http://w3id.org/ibp/CTRLont#" ;
+			   dcterms:identifier "https://w3id.org/ibp/CTRLont#" ;
 			   dcterms:creator <https://www.researchgate.net/profile/Georg_Schneider3> ;
 			   dcterms:creator """Georg Ferdinand Schneider, georg.schneider@ibp.fraunhofer.de - Fraunhofer Institute for Building Physics, Nuremberg, Germany"""@en ;
 			   rdfs:comment "This ontology is developed by Georg Ferdinand Schneider during his PhD."^^xsd:string ;
 			   dcterms:rights "Copyright (c) 2017, Fraunhofer Institute for Building Physics, Nuremberg, Germany." ;
-			   
 			   dcterms:issued "2016-11-01"^^xsd:date ;
 			   dcterms:modified "2017-08-21"^^xsd:date ;
 			   dcterms:license <http://creativecommons.org/licenses/by-sa/4.0> ;

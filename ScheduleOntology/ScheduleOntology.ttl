@@ -1,0 +1,113 @@
+# Copyright (c) 2017 Fraunhofer Institute for Building Physics
+# 
+# This copyright applies to the vocabulary specification within this file and
+# accompanying documentation in RDF. Regarding underlying technology,
+# this ontology uses W3C's RDF technology, an open Web standard that can be
+# freely used by anyone.
+#
+# Licensed under the Creative Commons Attribution Share Alike License 
+#(CC BY-SA 4.0); you may not use this file except in compliance with 
+# the license. You may obtain a copy of the license at:
+#
+#          https://creativecommons.org/licenses/by-sa/4.0/
+
+
+@prefix : <https://w3id.org/ibp/ScheduleOntology#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix ctrl: <https://w3id.org/ibp/CTRLont#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/ibp/ScheduleOntology> .
+
+<https://w3id.org/ibp/ScheduleOntology> rdf:type voaf:Vocabulary , owl:Ontology ;
+			   dcterms:title "ScheduleOntology - An ontology to formaly specify the schedules in automation systems."@en ;
+			   dcterms:description """ScheduleOntology describes a typical type of control logic explicitly commonly referred to as schedules. A description is provided in:
+
+				Schneider, G.F., Pauwels, P. and Steiger, S. (2017): "Ontology-based Modelling of Control Logic in Building Automation Systems" in IEEE Transactions on Industrial Informatics, vol. PP, no. 99, pp. 1-11, DOI: 10.1109/TII.2017.2743221.
+				"""@en ;
+			   dcterms:identifier "https://w3id.org/ibp/ScheduleOntology#" ;
+			   dcterms:creator <https://www.researchgate.net/profile/Georg_Schneider3> ;
+			   dcterms:creator """Georg Ferdinand Schneider, georg.schneider@ibp.fraunhofer.de - Fraunhofer Institute for Building Physics, Nuremberg, Germany"""@en ;
+			   rdfs:comment "This ontology is developed by Georg Ferdinand Schneider during his PhD."^^xsd:string ;
+			   dcterms:rights "Copyright (c) 2017, Fraunhofer Institute for Building Physics, Nuremberg, Germany." ;
+			   dcterms:issued "2016-11-01"^^xsd:date ;
+			   dcterms:modified "2017-08-21"^^xsd:date ;
+			   dcterms:license <http://creativecommons.org/licenses/by-sa/4.0> ;
+			   vann:preferredNamespacePrefix "ctrl" ;
+			   vann:preferredNamespaceUri <https://w3id.org/ibp/ScheduleOntology#> .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+:hasInterval rdf:type owl:ObjectProperty .
+:isConsecutiveInterval rdf:type owl:ObjectProperty .
+:hasStartPoint rdf:type owl:ObjectProperty .
+:hasEndPoint rdf:type owl:ObjectProperty .
+:hasPeriodicity rdf:type owl:ObjectProperty .
+:hasXCoordinate rdf:type owl:ObjectProperty .
+:hasYCoordinate rdf:type owl:ObjectProperty .
+:hasMathematicalFunction rdf:type owl:ObjectProperty .
+:hasPolynomicalConstant rdf:type owl:ObjectProperty .
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+:hasLiteralValue	rdf:type owl:DatatypeProperty ;
+					rdfs:domain :Coordinate ;
+					rdfs:range rdfs:Literal .
+
+:polyConstantDegree rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :PolynomialConstant ;
+                    rdfs:range xsd:nonNegativeInteger .
+
+:polyConstantLiteralValue rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :PolynomialConstant ;
+                          rdfs:range xsd:double .
+ 
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+:Schedule rdf:type owl:Class ;
+		  rdfs:subClassOf ctrl:ApplicationLogic ;
+		  rdfs:subClassOf owl:Thing .
+		  
+:Periodicity rdf:type owl:Class ;
+          rdfs:subClassOf owl:Thing .
+		  
+:Interval rdf:type owl:Class ;
+          rdfs:subClassOf owl:Thing .
+
+:EndPoint rdf:type owl:Class ;
+          rdfs:subClassOf :Point .
+		  
+:StartPoint rdf:type owl:Class ;
+            rdfs:subClassOf :Point .		  
+		  
+:Point rdf:type owl:Class ;
+       rdfs:subClassOf owl:Thing .
+
+:Coordinate rdf:type owl:Class ;
+            rdfs:subClassOf owl:Thing .
+
+:MathematicalFunction rdf:type owl:Class ;
+                      rdfs:subClassOf owl:Thing .
+			
+:PolynomialConstant rdf:type owl:Class ;
+                    rdfs:subClassOf owl:Thing .
+					
