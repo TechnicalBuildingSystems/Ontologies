@@ -25,7 +25,7 @@
 
 <https://w3id.org/ibp/CTRLont> rdf:type voaf:Vocabulary , owl:Ontology ;
 			   dcterms:title "CTRLont - An ontology to formaly specify the control domain."@en ;
-			   dcterms:description """CTRLont specified concepts and relationships of control actors on a high level. The ontology and its use has been described in:
+			   dcterms:description """CTRLont specifies concepts and relationships of control actors on a high level. The ontology and its use has been described in:
 
 				Schneider, G.F., Pauwels, P. and Steiger, S. (2017): "Ontology-based Modelling of Control Logic in Building Automation Systems" in IEEE Transactions on Industrial Informatics, vol. PP, no. 99, pp. 1-11, DOI: 10.1109/TII.2017.2743221.
 				"""@en ;
