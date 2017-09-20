@@ -1,0 +1,256 @@
+# Copyright (c) 2017 Fraunhofer Institute for Building Physics
+# 
+# This copyright applies to the vocabulary specification and in this file
+# accompanying documentation in RDF. Regarding underlying technology,
+# the ontology uses W3C's RDF technology, an open Web standard that can be
+# freely used by anyone.
+#
+# Licensed under the Creative Commons Attribution Share Alike License 
+#(CC BY-SA 4.0); you may not use this file except in compliance with 
+# the license. You may obtain a copy of the license at:
+#
+#          https://creativecommons.org/licenses/by-sa/4.0/
+
+@prefix : <https://w3id.org/StateGraphOntology#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix cond: <https://w3id.org/ibp/ConditionOntology#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@base <https://w3id.org/StateGraphOntology> .
+
+
+<https://w3id.org/StateGraphOntology> a voaf:Vocabulary , owl:Ontology ;
+			   owl:imports <https://w3id.org/ibp/ConditionOntology> ;
+			   dcterms:title "StateGraph - An ontology to formaly specify State Graphs as standardised in VDI 3814-6."@en ;
+			   dcterms:description """StateGraph ontology specifies concepts and relationships of State Graphs according to VDI 3814-3. The ontology and its use is described in:
+
+				Schneider, G.F., Pauwels, P. and Steiger, S. (2017): "Ontology-based Modelling of Control Logic in Building Automation Systems" in IEEE Transactions on Industrial Informatics, vol. PP, no. 99, pp. 1-11, DOI: 10.1109/TII.2017.2743221.
+				"""@en ;
+			   dcterms:identifier "https://w3id.org/ibp/StateGraphOntology#" ;
+			   dcterms:creator <https://www.researchgate.net/profile/Georg_Schneider3> ;
+			   dcterms:creator """Georg Ferdinand Schneider, georg.schneider@ibp.fraunhofer.de - Fraunhofer Institute for Building Physics, Nuremberg, Germany"""@en ;
+			   rdfs:comment "This ontology is developed by Georg Ferdinand Schneider during his PhD."^^xsd:string ;
+			   dcterms:rights "Copyright (c) 2017, Fraunhofer Institute for Building Physics, Nuremberg, Germany." ;
+			   dcterms:issued "2016-11-01"^^xsd:date ;
+			   dcterms:modified "2017-08-21"^^xsd:date ;
+			   dcterms:license <http://creativecommons.org/licenses/by-sa/4.0> ;
+			   vann:preferredNamespacePrefix "ctrl" ;
+			   vann:preferredNamespaceUri <https://w3id.org/ibp/StateGraphOntology#> .
+	
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+
+
+dcterms:license a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/elements/1.1/creator
+
+dc:creator a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/elements/1.1/identifier
+
+dc:identifier a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/elements/1.1/rights
+
+dc:rights a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/elements/1.1/title
+
+dc:title a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/created
+
+dcterms:created a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/modified
+
+dcterms:modified a owl:AnnotationProperty .
+
+ 
+ 
+ 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/ibp/CTRLont#logicInput
+
+<https://w3id.org/ibp/CTRLont#logicInput> a owl:ObjectProperty ;
+
+# 
+# https://w3id.org/ibp/CTRLont#logicOutput
+
+<https://w3id.org/ibp/CTRLont#logicOutput> a owl:ObjectProperty ;
+
+# 
+# https://w3id.org/StateGraphOntology#conditionExpr
+
+:conditionExpr a owl:ObjectProperty ;
+	rdfs:domain :Condition ;
+	rdfs:range cond:BooleanExpression .
+# 
+# https://w3id.org/StateGraphOntology#contains
+
+:contains a owl:ObjectProperty ;
+	rdfs:domain :StateGraph ;
+	rdfs:range :StateGraphElement .
+# 
+# https://w3id.org/StateGraphOntology#source
+
+:source a owl:ObjectProperty ;
+	rdfs:domain :Transition ;
+	rdfs:range :State .
+# 
+# https://w3id.org/StateGraphOntology#stateAction
+
+:stateAction a owl:ObjectProperty ;
+	rdfs:domain :State ;
+	rdfs:range :Action .
+# 
+# https://w3id.org/StateGraphOntology#stateCondition
+
+:stateCondition a owl:ObjectProperty ;
+	rdfs:domain :State ;
+	rdfs:range :Condition .
+# 
+# https://w3id.org/StateGraphOntology#target
+
+:target a owl:ObjectProperty ;
+	rdfs:domain :Transition ;
+	rdfs:range :State .
+# 
+# https://w3id.org/ibp/ConditionOntology#expressionLHS
+
+cond:expressionLHS a owl:ObjectProperty ;
+	rdfs:domain cond:BooleanExpression ;
+	rdfs:range cond:LeftHandSide .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/StateGraphOntology#assignValue
+
+:assignValue a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:domain :Action .
+# 
+# https://w3id.org/StateGraphOntology#hasDescription
+
+:hasDescription a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:domain :State .
+# 
+# https://w3id.org/StateGraphOntology#hasNumbering
+
+:hasNumbering a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:domain :State .
+
+#################################################################
+#
+#    Classes
+#
+################################################################
+ 
+ 
+
+
+<https://w3id.org/ibp/CTRLont#ApplicationLogic> a owl:Class .
+# 
+# https://w3id.org/ibp/CTRLont#Input
+
+<https://w3id.org/ibp/CTRLont#Input> a owl:Class .
+# 
+# https://w3id.org/ibp/CTRLont#Output
+
+<https://w3id.org/ibp/CTRLont#Output> a owl:Class .
+# 
+# https://w3id.org/StateGraphOntology#Action
+
+:Action a owl:Class ;
+	rdfs:subClassOf :StateGraphElement .
+# 
+# https://w3id.org/StateGraphOntology#Condition
+
+:Condition a owl:Class ;
+	rdfs:subClassOf :StateGraphElement , _:genid1 .
+
+_:genid1 a owl:Restriction ;
+	owl:onProperty :conditionExpr ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onClass cond:BooleanExpression .
+# 
+# https://w3id.org/StateGraphOntology#InitialState
+
+:InitialState a owl:Class ;
+	rdfs:subClassOf :State .
+# 
+# https://w3id.org/StateGraphOntology#Return
+
+:Return a owl:Class ;
+	rdfs:subClassOf :State .
+# 
+# https://w3id.org/StateGraphOntology#State
+
+:State a owl:Class ;
+	rdfs:subClassOf :StateGraphElement , _:genid2 .
+
+_:genid2 a owl:Restriction ;
+	owl:onProperty :stateAction ;
+	owl:someValuesFrom :Action .
+
+:State rdfs:subClassOf _:genid3 .
+
+_:genid3 a owl:Restriction ;
+	owl:onProperty :stateCondition ;
+	owl:allValuesFrom :Condition .
+# 
+# https://w3id.org/StateGraphOntology#StateGraph
+
+:StateGraph a owl:Class ;
+	rdfs:subClassOf <https://w3id.org/ibp/CTRLont#ApplicationLogic> , _:genid4 .
+
+_:genid4 a owl:Restriction ;
+	owl:onProperty :contains ;
+	owl:allValuesFrom :StateGraphElement .
+# 
+# https://w3id.org/StateGraphOntology#StateGraphElement
+
+:StateGraphElement a owl:Class ;
+	rdfs:subClassOf <https://w3id.org/ibp/CTRLont#ApplicationLogic> .
+# 
+# https://w3id.org/StateGraphOntology#Transition
+
+:Transition a owl:Class ;
+	rdfs:subClassOf :StateGraphElement , _:genid5 .
+
+_:genid5 a owl:Restriction ;
+	owl:onProperty :source ;
+	owl:someValuesFrom :State .
+
+:Transition rdfs:subClassOf _:genid6 .
+
+_:genid6 a owl:Restriction ;
+	owl:onProperty :target ;
+	owl:someValuesFrom :State .
+
+
+owl:Thing a owl:Class .

@@ -1,0 +1,216 @@
+# Copyright (c) 2017 Fraunhofer Institute for Building Physics
+# 
+# This copyright applies to the ConditionOntology vocabulary specification and
+# accompanying documentation in RDF. Regarding underlying technology,
+# the ontology uses W3C's RDF technology, an open Web standard that can be
+# freely used by anyone.
+#
+# Licensed under the Creative Commons Attribution Share Alike License 
+#(CC BY-SA 4.0); you may not use this file except in compliance with 
+# the license. You may obtain a copy of the license at:
+#
+#          https://creativecommons.org/licenses/by-sa/4.0/
+
+@prefix : <https://w3id.org/ibp/ConditionOntology#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cond: <https://w3id.org/ibp/ConditionOntology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@base <https://w3id.org/ibp/ConditionOntology> .
+
+<https://w3id.org/ibp/ConditionOntology> rdf:type voaf:Vocabulary , owl:Ontology ;
+    terms:title "ConditionOntology - An ontology to explicitly describe domain independent boolean expressions."@en ;
+	terms:description """ConditionOntology specifies concepts and relationships of logical expressions apparent in control logic. The ontology and its use is described in:
+
+	Schneider, G.F., Pauwels, P. and Steiger, S. (2017): "Ontology-based Modelling of Control Logic in Building Automation Systems" in IEEE Transactions on Industrial Informatics, vol. PP, no. 99, pp. 1-11, DOI: 10.1109/TII.2017.2743221."""@en ;
+	dc:identifier "https://w3id.org/ibp/ConditionOntology#" ;
+    dc:creator "Georg Ferdinand Schneider georg.schneider@ibp.fraunhofer.de - Fraunhofer Institute for Building Physics IBP, Nuremberg, Germany" ;
+	terms:license <http://creativecommons.org/licenses/by-sa/4.0> ;
+	terms:created "2016-11-01" ;
+	terms:modified "2017-03-17" ;
+    rdfs:comment "This ontology is developed by Georg Ferdinand Schneider during his PhD."^^xsd:string ;
+    rdfs:seeAlso "https://www.w3.org/community/lbd/"^^xsd:anyURI ;
+	rdfs:seeAlso "http://vocab.deri.ie/csp#"^^xsd:anyURI ;
+	vann:preferredNamespacePrefix "cond" ;
+	vann:preferredNamespaceUri <https://w3id.org/ibp/ConditionOntology#> ;
+    dc:rights "Copyright (c) 2017, Fraunhofer Institute for Building Physics, Nuremberg, Germany."@en ;
+	dc:rights "https://www.ibp.fraunhofer.de"^^xsd:anyURI .
+
+	
+#################################################################
+#    Annotation properties
+#################################################################
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
+###  http://creativecommons.org/ns#license
+terms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/identifier
+dc:identifier rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/rights
+dc:rights rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+terms:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+terms:modified rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/ibp/ConditionOntology#decomposes
+:decomposes rdf:type owl:ObjectProperty ;
+                        rdfs:domain :BooleanExpression ;
+                        rdfs:range :BooleanExpression .
+
+
+###  https://w3id.org/ibp/ConditionOntology#equalTo
+:equalTo rdf:type owl:ObjectProperty ;
+                     rdfs:domain :LeftHandSide ;
+                     rdfs:range :RightHandSide .
+
+
+###  https://w3id.org/ibp/ConditionOntology#expressionLHS
+:expressionLHS rdf:type owl:ObjectProperty ;
+                           rdfs:domain :BooleanExpression ;
+                           rdfs:range :LeftHandSide .
+
+
+###  https://w3id.org/ibp/ConditionOntology#expressionRHS
+:expressionRHS rdf:type owl:ObjectProperty ;
+                           rdfs:domain :BooleanExpression ;
+                           rdfs:range :RightHandSide .
+
+
+###  https://w3id.org/ibp/ConditionOntology#greaterThanOrEqual
+:greaterThanOrEqual rdf:type owl:ObjectProperty ;
+                                rdfs:domain :LeftHandSide ;
+                                rdfs:range :RightHandSide .
+
+
+###  https://w3id.org/ibp/ConditionOntology#greatherThan
+:greatherThan rdf:type owl:ObjectProperty ;
+                          rdfs:domain :LeftHandSide ;
+                          rdfs:range :RightHandSide .
+
+
+###  https://w3id.org/ibp/ConditionOntology#lessThan
+:lessThan rdf:type owl:ObjectProperty ;
+                      rdfs:domain :LeftHandSide ;
+                      rdfs:range :RightHandSide .
+
+
+###  https://w3id.org/ibp/ConditionOntology#lessThanOrEqual
+:lessThanOrEqual rdf:type owl:ObjectProperty ;
+                             rdfs:domain :LeftHandSide ;
+                             rdfs:range :RightHandSide .
+
+
+###  https://w3id.org/ibp/ConditionOntology#logicalConjunction
+:logicalConjunction rdf:type owl:ObjectProperty ;
+                                rdfs:domain :BooleanExpression ;
+                                rdfs:range :BooleanExpression .
+
+
+###  https://w3id.org/ibp/ConditionOntology#logicalDisjunction
+:logicalDisjunction rdf:type owl:ObjectProperty ;
+                                rdfs:domain :BooleanExpression ;
+                                rdfs:range :BooleanExpression .
+
+
+###  https://w3id.org/ibp/ConditionOntology#logicalNegation
+:logicalNegation rdf:type owl:ObjectProperty ;
+                             rdfs:domain :BooleanExpression ;
+                             rdfs:range :BooleanExpression .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/ibp/ConditionOntology#hasLiteralValue
+:hasLiteralValue rdf:type owl:DatatypeProperty ;
+                             rdfs:domain :RightHandSide ;
+                             rdfs:range rdfs:Literal .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/ibp/ConditionOntology#BooleanExpression
+:BooleanExpression rdf:type owl:Class .
+
+
+###  https://w3id.org/ibp/ConditionOntology#ExpressionAtom
+:ExpressionAtom rdf:type owl:Class .
+
+
+###  https://w3id.org/ibp/ConditionOntology#LeftHandSide
+:LeftHandSide rdf:type owl:Class ;
+                          rdfs:subClassOf :ExpressionAtom ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :equalTo ;
+                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                            owl:onClass :RightHandSide
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :greaterThanOrEqual ;
+                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                            owl:onClass :RightHandSide
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :greatherThan ;
+                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                            owl:onClass :RightHandSide
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :lessThan ;
+                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                            owl:onClass :RightHandSide
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :lessThanOrEqual ;
+                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                            owl:onClass :RightHandSide
+                                          ] .
+
+
+###  https://w3id.org/ibp/ConditionOntology#RightHandSide
+:RightHandSide rdf:type owl:Class ;
+                           rdfs:subClassOf :ExpressionAtom .
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+owl:Thing rdf:type owl:Class .

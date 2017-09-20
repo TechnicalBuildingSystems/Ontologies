@@ -24,21 +24,23 @@
 @base <https://w3id.org/ibp/CTRLont> .
 
 <https://w3id.org/ibp/CTRLont> rdf:type voaf:Vocabulary , owl:Ontology ;
-			   dcterms:title "CTRLont - An ontology to formaly specify the control domain."@en ;
-			   dcterms:description """CTRLont specifies concepts and relationships of control actors on a high level. The ontology and its use has been described in:
+			rdfs:label "CTRLont"@en ;
+			dcterms:title "CTRLont - An ontology to formally specify the control domain."@en ;
+			rdfs:comment "CTRLont specifies concepts and relationships of control actors on a high level."@en ;
+			dcterms:description """The ontology and its use is described in:
 
-				Schneider, G.F., Pauwels, P. and Steiger, S. (2017): "Ontology-based Modelling of Control Logic in Building Automation Systems" in IEEE Transactions on Industrial Informatics, vol. PP, no. 99, pp. 1-11, DOI: 10.1109/TII.2017.2743221.
-				"""@en ;
-			   dcterms:identifier "https://w3id.org/ibp/CTRLont#" ;
-			   dcterms:creator <https://www.researchgate.net/profile/Georg_Schneider3> ;
-			   dcterms:creator """Georg Ferdinand Schneider, georg.schneider@ibp.fraunhofer.de - Fraunhofer Institute for Building Physics, Nuremberg, Germany"""@en ;
-			   rdfs:comment "This ontology is developed by Georg Ferdinand Schneider during his PhD."^^xsd:string ;
-			   dcterms:rights "Copyright (c) 2017, Fraunhofer Institute for Building Physics, Nuremberg, Germany." ;
-			   dcterms:issued "2016-11-01"^^xsd:date ;
-			   dcterms:modified "2017-08-21"^^xsd:date ;
-			   dcterms:license <http://creativecommons.org/licenses/by-sa/4.0> ;
-			   vann:preferredNamespacePrefix "ctrl" ;
-			   vann:preferredNamespaceUri <https://w3id.org/ibp/CTRLont#> .
+			Schneider, G.F., Pauwels, P. and Steiger, S. (2017): "Ontology-based Modelling of Control Logic in Building Automation Systems" in IEEE Transactions on Industrial Informatics, vol. PP, no. 99, pp. 1-11, DOI: 10.1109/TII.2017.2743221."""@en ;
+			dcterms:identifier "https://w3id.org/ibp/CTRLont#" ;
+			dcterms:creator "Georg Ferdinand Schneider" ;
+			dcterms:creator <https://www.researchgate.net/profile/Georg_Schneider3> ;
+			dcterms:rights """Copyright (c) 2017, Fraunhofer Institute for Building Physics,
+			Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution 
+			Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"""@en ;
+			dcterms:issued "2016-11-01"^^xsd:date ;
+			dcterms:modified "2017-08-21"^^xsd:date ;
+			dcterms:license <http://creativecommons.org/licenses/by-sa/4.0> ;
+			vann:preferredNamespacePrefix "ctrl" ;
+			vann:preferredNamespaceUri <https://w3id.org/ibp/CTRLont#> .
 
 #################################################################
 #    Annotation properties
@@ -81,11 +83,11 @@ rdfs:seeAlso  					rdf:type owl:AnnotationProperty .
                                     owl:allValuesFrom :Unit
                                   ] ;
 					 rdfs:label "Annotated Element"@en ;
-					 rdfs:comment "An annotated element is a generic superclass for ctrl:Input, ctrl:Output and ctrl:Input"@en .
+					 rdfs:comment "An annotated element is a generic superclass for ctrl:Input, ctrl:Output and ctrl:Parameter"@en .
 
 :ApplicationLogic rdf:type owl:Class ;
 				rdfs:label "Application Logic"@en ;
-				rdfs:comment """Concept to specify the application logic of a Control Actor. Seperate ontologies may be used to further specify this concept."""@en .
+				rdfs:comment """Concept to specify the application logic of a control actor. Seperate ontologies may be used to further specify this concept."""@en .
 
 :ControlActor rdf:type owl:Class ;
               rdfs:subClassOf [ rdf:type owl:Restriction ;
@@ -111,17 +113,17 @@ pattern in automation systems, e.g. function blocks from IEC 61499."""@en .
 :Input rdf:type owl:Class ;
        rdfs:subClassOf :AnnotatedElement ;
 					 rdfs:label "Input"@en ;
-					 rdfs:comment """An Input allow flows of information to enter a control actor. Inputs are processed by the respective application logic of the control actor to compute the outputs."""@en .
+					 rdfs:comment """An input allow flows of information to enter a control actor. Inputs are processed by the respective application logic of the control actor to compute the outputs."""@en .
 
 :Output rdf:type owl:Class ;
         rdfs:subClassOf :AnnotatedElement ;
 					 rdfs:label "Output"@en ;
-					 rdfs:comment """An Output allows compute results by the application logic of an control actore to be fowarded to outside entities such as actuators or other control actors."""@en .
+					 rdfs:comment """An output allows compute results by the application logic of an control actor to be fowarded to outside entities such as actuators or other control actors."""@en .
 
 :Parameter rdf:type owl:Class ;
            rdfs:subClassOf :AnnotatedElement ;
 					 rdfs:label "Parameter"@en ;
-					 rdfs:comment """Parameter describe time-invariant values and settings of the respective ControlActor. Thus thay can be added dependent on the respective ApplicationLogic."""@en .
+					 rdfs:comment """Parameter describe time-invariant values and settings of the respective control actor. Thus thay can be added dependent on the respective application logic."""@en .
 					 
 :Medium rdf:type owl:Class ;
 					 rdfs:label "Medium"@en ;
@@ -170,7 +172,7 @@ owl:Thing rdf:type owl:Class .
 :hasParameter rdf:type owl:ObjectProperty ;
               rdfs:domain :ControlActor ;
               rdfs:range :Parameter ;
-					 rdfs:label ""@en ;
+					 rdfs:label "hasParameter"@en ;
 					 rdfs:comment """Object property to relate a control actor to its parameter."""@en .
 					 
 					 
