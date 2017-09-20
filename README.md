@@ -6,7 +6,7 @@ Within this repository ontologies developed within the [Technical Building Syste
 
 1. Fork this repository;
 2. Create a branch;
-3. Add contribution to ontology or separate alignment file in branch;
+3. Add contribution to ontology file in branch;
 4. Commit your changes and submit a [pull request github documentation](https://help.github.com/articles/about-pull-requests/);
 5. Repository administrators will review your pull request and merge it if everything looks correct. Once the pull request is merged, the changes go live immediately.
 
