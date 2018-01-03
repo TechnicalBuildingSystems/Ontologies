@@ -18,6 +18,7 @@
 @prefix dcterms:  <http://purl.org/dc/terms/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix cond: <https://w3id.org/ConditionOntology#> .
 
 @prefix : <https://w3id.org/StateGraphOntology#> .
 @base <https://w3id.org/StateGraphOntology> .
@@ -80,12 +81,12 @@ rdfs:seeAlso  					rdf:type owl:AnnotationProperty .
 # 
 # https://w3id.org/ibp/CTRLont#logicInput
 
-<https://w3id.org/ibp/CTRLont#logicInput> a owl:ObjectProperty ;
+<https://w3id.org/ibp/CTRLont#logicInput> a owl:ObjectProperty .
 
 # 
 # https://w3id.org/ibp/CTRLont#logicOutput
 
-<https://w3id.org/ibp/CTRLont#logicOutput> a owl:ObjectProperty ;
+<https://w3id.org/ibp/CTRLont#logicOutput> a owl:ObjectProperty .
 
 # 
 # https://w3id.org/StateGraphOntology#conditionExpr
