@@ -1,0 +1,1023 @@
+# Copyright (c) 2018 Fraunhofer Institute for Building Physics
+# 
+# This copyright applies to the FMUont vocabulary specification and
+# accompanying documentation in RDF. Regarding underlying technology,
+# FMUont uses W3C's RDF technology, an open web standard that can be
+# freely used by anyone.
+#
+# Licensed under the Creative Commons Attribution Share Alike License 
+# (CC BY-SA 4.0); you may not use this file except in compliance with 
+# the license. You may obtain a copy of the license at:
+#
+#          https://creativecommons.org/licenses/by-sa/4.0/
+#
+# Unless required by applicable law or agreed to in writing,
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+@prefix : <https://w3id.org/ibp/FMUont#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@base <https://w3id.org/ibp/FMUont> .
+
+<https://w3id.org/ibp/FMUont> rdf:type owl:Ontology ;
+			dcterms:title "FMUont - An ontology to formally specify Functional Mockup-Units (FMU)."@en ;
+			dcterms:description """The ontology and its use is described in:
+
+			Mitterhofer, M., Schneider, G. F., Stratb%C3%BCcker, S. and Sedlbauer, K. (2017) An FMI-enabled methodology for modular building performance simulation based on Semantic Web Technologies. In: Building and Environment (Online) DOI: 10.1016/j.buildenv.2017.08.021.
+
+            Mitterhofer, M., Schneider, G. F., Stratb%C3%BCcker, S. and Steiger, S. (2017) Semantics For Assembling Modular Network Topologies in FMI-Based Building Performance Simulation. In: Proceedings of BuildingSimulation. San Francisco, USA."""@en  ;
+			dcterms:creator "Georg Ferdinand Schneider" ;
+			dcterms:creator <https://www.researchgate.net/profile/Georg_Schneider3> ;
+			dcterms:creator "Matthias Mitterhofer" ;
+            rdfs:label "FMUont"@en ;
+			rdfs:comment "FMUont specifies concepts and relationships of Functional Mock-Up Units."@en ;
+			dcterms:identifier "https://w3id.org/ibp/FMUont#" ;
+			dcterms:rights """Copyright (c) 2018, Fraunhofer Institute for Building Physics, Nuremberg and Holzkirchen, Germany. This ontology is distributed under a Creative Commons Attribution 
+			Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"""@en ;
+			dcterms:issued "2016-12-01"^^xsd:date ;
+			dcterms:modified "2017-08-21"^^xsd:date ;
+			dcterms:license <http://creativecommons.org/licenses/by-sa/4.0> ;
+			vann:preferredNamespacePrefix "FMUont" ;
+			vann:preferredNamespaceUri <https://w3id.org/ibp/FMUont#> .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/ibp/FMUont#belongsTo
+:belongsTo rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Room ;
+                 rdfs:range :ThermalZone .
+
+
+###  https://w3id.org/ibp/FMUont#hasAffiliationTo
+:hasAffiliationTo rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/ibp/FMUont#hasInputVariable
+:hasInputVariable rdf:type owl:ObjectProperty ;
+                        rdfs:domain :FMU ;
+                        rdfs:range :InputVariable .
+
+
+###  https://w3id.org/ibp/FMUont#hasMedium
+:hasMedium rdf:type owl:ObjectProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain :AnnotatedElement ;
+                 rdfs:range :Medium .
+
+
+###  https://w3id.org/ibp/FMUont#hasOutputVariable
+:hasOutputVariable rdf:type owl:ObjectProperty ;
+                         rdfs:domain :FMU ;
+                         rdfs:range :OutputVariable .
+
+
+###  https://w3id.org/ibp/FMUont#hasParameter
+:hasParameter rdf:type owl:ObjectProperty ;
+                    rdfs:domain :FMU ;
+                    rdfs:range :Parameter .
+
+
+###  https://w3id.org/ibp/FMUont#hasQuantity
+:hasQuantity rdf:type owl:ObjectProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain :AnnotatedElement ;
+                   rdfs:range :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#hasRoomAffiliationTo
+:hasRoomAffiliationTo rdf:type owl:ObjectProperty ;
+                            rdfs:domain :AnnotatedElement ;
+                            rdfs:range :Room .
+
+
+###  https://w3id.org/ibp/FMUont#hasSemanticType
+:hasSemanticType rdf:type owl:ObjectProperty ,
+                                owl:FunctionalProperty ;
+                       rdfs:domain :AnnotatedElement ;
+                       rdfs:range :SemanticType .
+
+
+###  https://w3id.org/ibp/FMUont#hasSimulatedSystem
+:hasSimulatedSystem rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf owl:topObjectProperty ;
+                          rdfs:domain :FMU ;
+                          rdfs:range :SimulatedSystem .
+
+
+###  https://w3id.org/ibp/FMUont#hasSpace
+:hasSpace rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:domain :FMU ;
+                rdfs:range :Space .
+
+
+###  https://w3id.org/ibp/FMUont#hasUnit
+:hasUnit rdf:type owl:ObjectProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :AnnotatedElement ;
+               rdfs:range :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#hasZoneAffiliationTo
+:hasZoneAffiliationTo rdf:type owl:ObjectProperty ;
+                            rdfs:domain :AnnotatedElement ;
+                            rdfs:range :ThermalZone .
+
+
+###  https://w3id.org/ibp/FMUont#isComposedOf
+:isComposedOf rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Simulation ;
+                    rdfs:range :FMU .
+
+
+###  https://w3id.org/ibp/FMUont#isConnectedWith
+:isConnectedWith rdf:type owl:ObjectProperty ;
+                       rdfs:domain :InputVariable ;
+                       rdfs:range :OutputVariable .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/ibp/FMUont#hasIdentifier
+:hasIdentifier rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :FMU ;
+                     rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/ibp/FMUont#AnnotatedElement
+:AnnotatedElement rdf:type owl:Class ;
+                        rdfs:subClassOf :FMUontRoot .
+
+
+###  https://w3id.org/ibp/FMUont#BIMTopologyElement
+:BIMTopologyElement rdf:type owl:Class ;
+                          rdfs:subClassOf :FMUontRoot .
+
+
+###  https://w3id.org/ibp/FMUont#FMU
+:FMU rdf:type owl:Class ;
+           rdfs:subClassOf :FMUontRoot .
+
+
+###  https://w3id.org/ibp/FMUont#FMUontRoot
+:FMUontRoot rdf:type owl:Class .
+
+
+###  https://w3id.org/ibp/FMUont#InputVariable
+:InputVariable rdf:type owl:Class ;
+                     rdfs:subClassOf :AnnotatedElement .
+
+
+###  https://w3id.org/ibp/FMUont#Medium
+:Medium rdf:type owl:Class ;
+              rdfs:subClassOf :FMUontRoot .
+
+
+###  https://w3id.org/ibp/FMUont#OutputVariable
+:OutputVariable rdf:type owl:Class ;
+                      rdfs:subClassOf :AnnotatedElement .
+
+
+###  https://w3id.org/ibp/FMUont#Parameter
+:Parameter rdf:type owl:Class ;
+                 rdfs:subClassOf :AnnotatedElement .
+
+
+###  https://w3id.org/ibp/FMUont#Quantity
+:Quantity rdf:type owl:Class ;
+                rdfs:subClassOf :FMUontRoot .
+
+
+###  https://w3id.org/ibp/FMUont#Room
+:Room rdf:type owl:Class ;
+            rdfs:subClassOf :Space .
+
+
+###  https://w3id.org/ibp/FMUont#SemanticType
+:SemanticType rdf:type owl:Class ;
+                    rdfs:subClassOf :FMUontRoot .
+
+
+###  https://w3id.org/ibp/FMUont#SimulatedSystem
+:SimulatedSystem rdf:type owl:Class ;
+                       rdfs:subClassOf :FMUontRoot .
+
+
+###  https://w3id.org/ibp/FMUont#Simulation
+:Simulation rdf:type owl:Class ;
+                  rdfs:subClassOf :FMUontRoot .
+
+
+###  https://w3id.org/ibp/FMUont#Space
+:Space rdf:type owl:Class ;
+             rdfs:subClassOf :FMUontRoot .
+
+
+###  https://w3id.org/ibp/FMUont#ThermalZone
+:ThermalZone rdf:type owl:Class ;
+                   rdfs:subClassOf :Space .
+
+
+###  https://w3id.org/ibp/FMUont#Unit
+:Unit rdf:type owl:Class ;
+            rdfs:subClassOf :FMUontRoot .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/ibp/FMUont#AbsoluteHumidity
+:AbsoluteHumidity rdf:type owl:NamedIndividual ,
+                                 :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#Air
+:Air rdf:type owl:NamedIndividual ,
+                    :Medium .
+
+
+###  https://w3id.org/ibp/FMUont#AirChangeRate
+:AirChangeRate rdf:type owl:NamedIndividual ,
+                              :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#Altitude
+:Altitude rdf:type owl:NamedIndividual ,
+                         :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#Area
+:Area rdf:type owl:NamedIndividual ,
+                     :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#Azimuth
+:Azimuth rdf:type owl:NamedIndividual ,
+                        :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#Brine
+:Brine rdf:type owl:NamedIndividual ,
+                      :Medium .
+
+
+###  https://w3id.org/ibp/FMUont#BuildingAutomation
+:BuildingAutomation rdf:type owl:NamedIndividual ,
+                                   :SimulatedSystem .
+
+
+###  https://w3id.org/ibp/FMUont#BuildingEnvelope
+:BuildingEnvelope rdf:type owl:NamedIndividual ,
+                                 :SimulatedSystem .
+
+
+###  https://w3id.org/ibp/FMUont#BuildingEquipment
+:BuildingEquipment rdf:type owl:NamedIndividual ,
+                                  :SimulatedSystem .
+
+
+###  https://w3id.org/ibp/FMUont#C
+:C rdf:type owl:NamedIndividual ,
+                  :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#CarbonDioxide
+:CarbonDioxide rdf:type owl:NamedIndividual ,
+                              :Medium .
+
+
+###  https://w3id.org/ibp/FMUont#Cleaning
+:Cleaning rdf:type owl:NamedIndividual ,
+                         :SemanticType .
+
+
+###  https://w3id.org/ibp/FMUont#ConductionEnergy
+:ConductionEnergy rdf:type owl:NamedIndividual ,
+                                 :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#ConductionEnergyDensity
+:ConductionEnergyDensity rdf:type owl:NamedIndividual ,
+                                        :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#ConductionFlowRate
+:ConductionFlowRate rdf:type owl:NamedIndividual ,
+                                   :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#ConductionFlowRateDensity
+:ConductionFlowRateDensity rdf:type owl:NamedIndividual ,
+                                          :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#ConvectionEnergy
+:ConvectionEnergy rdf:type owl:NamedIndividual ,
+                                 :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#ConvectionEnergyDensity
+:ConvectionEnergyDensity rdf:type owl:NamedIndividual ,
+                                        :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#ConvectionFlowRate
+:ConvectionFlowRate rdf:type owl:NamedIndividual ,
+                                   :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#ConvectionFlowRateDensity
+:ConvectionFlowRateDensity rdf:type owl:NamedIndividual ,
+                                          :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#Cooling
+:Cooling rdf:type owl:NamedIndividual ,
+                        :SemanticType .
+
+
+###  https://w3id.org/ibp/FMUont#Declination
+:Declination rdf:type owl:NamedIndividual ,
+                            :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#DeepGround
+:DeepGround rdf:type owl:NamedIndividual ,
+                           :Medium .
+
+
+###  https://w3id.org/ibp/FMUont#Dehumidification
+:Dehumidification rdf:type owl:NamedIndividual ,
+                                 :SemanticType .
+
+
+###  https://w3id.org/ibp/FMUont#Density
+:Density rdf:type owl:NamedIndividual ,
+                        :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#Depth
+:Depth rdf:type owl:NamedIndividual ,
+                      :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#Diameter
+:Diameter rdf:type owl:NamedIndividual ,
+                         :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#DiffuseIrradiance
+:DiffuseIrradiance rdf:type owl:NamedIndividual ,
+                                  :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#DirectIrradiance
+:DirectIrradiance rdf:type owl:NamedIndividual ,
+                                 :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#Direction
+:Direction rdf:type owl:NamedIndividual ,
+                          :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#Distance
+:Distance rdf:type owl:NamedIndividual ,
+                         :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#ElectricEnergy
+:ElectricEnergy rdf:type owl:NamedIndividual ,
+                               :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#ElectricPower
+:ElectricPower rdf:type owl:NamedIndividual ,
+                              :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#Elevation
+:Elevation rdf:type owl:NamedIndividual ,
+                          :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#EndEnergy
+:EndEnergy rdf:type owl:NamedIndividual ,
+                          :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#Enthalpy
+:Enthalpy rdf:type owl:NamedIndividual ,
+                         :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#Environment
+:Environment rdf:type owl:NamedIndividual ,
+                            :SimulatedSystem .
+
+
+###  https://w3id.org/ibp/FMUont#Equipment
+:Equipment rdf:type owl:NamedIndividual ,
+                          :SemanticType .
+
+
+###  https://w3id.org/ibp/FMUont#ExteriorWallInside
+:ExteriorWallInside rdf:type owl:NamedIndividual ,
+                                   :Medium .
+
+
+###  https://w3id.org/ibp/FMUont#ExteriorWallOutside
+:ExteriorWallOutside rdf:type owl:NamedIndividual ,
+                                    :Medium .
+
+
+###  https://w3id.org/ibp/FMUont#GasFraction
+:GasFraction rdf:type owl:NamedIndividual ,
+                            :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#GlobalIrradiance
+:GlobalIrradiance rdf:type owl:NamedIndividual ,
+                                 :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#Ground
+:Ground rdf:type owl:NamedIndividual ,
+                       :Medium .
+
+
+###  https://w3id.org/ibp/FMUont#GroundSurface
+:GroundSurface rdf:type owl:NamedIndividual ,
+                              :Medium .
+
+
+###  https://w3id.org/ibp/FMUont#HVAC
+:HVAC rdf:type owl:NamedIndividual ,
+                     :SimulatedSystem .
+
+
+###  https://w3id.org/ibp/FMUont#Heating
+:Heating rdf:type owl:NamedIndividual ,
+                        :SemanticType .
+
+
+###  https://w3id.org/ibp/FMUont#HourAngle
+:HourAngle rdf:type owl:NamedIndividual ,
+                          :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#Humidification
+:Humidification rdf:type owl:NamedIndividual ,
+                               :SemanticType .
+
+
+###  https://w3id.org/ibp/FMUont#Illuminance
+:Illuminance rdf:type owl:NamedIndividual ,
+                            :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#Indicator
+:Indicator rdf:type owl:NamedIndividual ,
+                          :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#InfraredIrradiance
+:InfraredIrradiance rdf:type owl:NamedIndividual ,
+                                   :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#InteriorWall
+:InteriorWall rdf:type owl:NamedIndividual ,
+                             :Medium .
+
+
+###  https://w3id.org/ibp/FMUont#J
+:J rdf:type owl:NamedIndividual ,
+                  :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#K
+:K rdf:type owl:NamedIndividual ,
+                  :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#Lighting
+:Lighting rdf:type owl:NamedIndividual ,
+                         :SemanticType .
+
+
+###  https://w3id.org/ibp/FMUont#Location
+:Location rdf:type owl:NamedIndividual ,
+                         :SemanticType .
+
+
+###  https://w3id.org/ibp/FMUont#Longitude
+:Longitude rdf:type owl:NamedIndividual ,
+                          :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#Mass
+:Mass rdf:type owl:NamedIndividual ,
+                     :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#MassFlow
+:MassFlow rdf:type owl:NamedIndividual ,
+                         :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#MeanRadiantTemperature
+:MeanRadiantTemperature rdf:type owl:NamedIndividual ,
+                                       :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#NoMedium
+:NoMedium rdf:type owl:NamedIndividual ,
+                         :Medium .
+
+
+###  https://w3id.org/ibp/FMUont#NoUnit
+:NoUnit rdf:type owl:NamedIndividual ,
+                       :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#Number
+:Number rdf:type owl:NamedIndividual ,
+                       :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#Occupancy
+:Occupancy rdf:type owl:NamedIndividual ,
+                          :SemanticType .
+
+
+###  https://w3id.org/ibp/FMUont#OperationEnergy
+:OperationEnergy rdf:type owl:NamedIndividual ,
+                                :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#OperativeTemperature
+:OperativeTemperature rdf:type owl:NamedIndividual ,
+                                     :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#PMV
+:PMV rdf:type owl:NamedIndividual ,
+                    :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#PPD
+:PPD rdf:type owl:NamedIndividual ,
+                    :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#Pa
+:Pa rdf:type owl:NamedIndividual ,
+                   :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#People
+:People rdf:type owl:NamedIndividual ,
+                       :SimulatedSystem .
+
+
+###  https://w3id.org/ibp/FMUont#PrecipitationDepth
+:PrecipitationDepth rdf:type owl:NamedIndividual ,
+                                   :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#Pressure
+:Pressure rdf:type owl:NamedIndividual ,
+                         :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#PrimaryEnergy
+:PrimaryEnergy rdf:type owl:NamedIndividual ,
+                              :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#RadiationEnergy
+:RadiationEnergy rdf:type owl:NamedIndividual ,
+                                :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#RadiationEnergyDensity
+:RadiationEnergyDensity rdf:type owl:NamedIndividual ,
+                                       :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#RadiationFlux
+:RadiationFlux rdf:type owl:NamedIndividual ,
+                              :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#RadiationFluxDensity
+:RadiationFluxDensity rdf:type owl:NamedIndividual ,
+                                     :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#Radius
+:Radius rdf:type owl:NamedIndividual ,
+                       :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#Rain
+:Rain rdf:type owl:NamedIndividual ,
+                     :Medium .
+
+
+###  https://w3id.org/ibp/FMUont#RelativeHumidity
+:RelativeHumidity rdf:type owl:NamedIndividual ,
+                                 :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#Setpoint
+:Setpoint rdf:type owl:NamedIndividual ,
+                         :SemanticType .
+
+
+###  https://w3id.org/ibp/FMUont#ShadeAndBlind
+:ShadeAndBlind rdf:type owl:NamedIndividual ,
+                              :SemanticType .
+
+
+###  https://w3id.org/ibp/FMUont#Signal
+:Signal rdf:type owl:NamedIndividual ,
+                       :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#Sky
+:Sky rdf:type owl:NamedIndividual ,
+                    :Medium .
+
+
+###  https://w3id.org/ibp/FMUont#Snow
+:Snow rdf:type owl:NamedIndividual ,
+                     :Medium .
+
+
+###  https://w3id.org/ibp/FMUont#SpaceCondition
+:SpaceCondition rdf:type owl:NamedIndividual ,
+                               :SemanticType .
+
+
+###  https://w3id.org/ibp/FMUont#Temperature
+:Temperature rdf:type owl:NamedIndividual ,
+                            :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#Thickness
+:Thickness rdf:type owl:NamedIndividual ,
+                          :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#TotalEnergy
+:TotalEnergy rdf:type owl:NamedIndividual ,
+                            :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#TotalEnergyDensity
+:TotalEnergyDensity rdf:type owl:NamedIndividual ,
+                                   :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#TotalEnergyFlowRate
+:TotalEnergyFlowRate rdf:type owl:NamedIndividual ,
+                                    :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#TotalEnergyFlowRateDensity
+:TotalEnergyFlowRateDensity rdf:type owl:NamedIndividual ,
+                                           :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#Velocity
+:Velocity rdf:type owl:NamedIndividual ,
+                         :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#Ventilation
+:Ventilation rdf:type owl:NamedIndividual ,
+                            :SemanticType .
+
+
+###  https://w3id.org/ibp/FMUont#Volume
+:Volume rdf:type owl:NamedIndividual ,
+                       :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#VolumetricFlowRate
+:VolumetricFlowRate rdf:type owl:NamedIndividual ,
+                                   :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#W
+:W rdf:type owl:NamedIndividual ,
+                  :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#Wall
+:Wall rdf:type owl:NamedIndividual ,
+                     :Medium .
+
+
+###  https://w3id.org/ibp/FMUont#Water
+:Water rdf:type owl:NamedIndividual ,
+                      :Medium .
+
+
+###  https://w3id.org/ibp/FMUont#WeatherData
+:WeatherData rdf:type owl:NamedIndividual ,
+                            :SemanticType .
+
+
+###  https://w3id.org/ibp/FMUont#Wh
+:Wh rdf:type owl:NamedIndividual ,
+                   :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#Width
+:Width rdf:type owl:NamedIndividual ,
+                      :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#Wind
+:Wind rdf:type owl:NamedIndividual ,
+                     :Medium .
+
+
+###  https://w3id.org/ibp/FMUont#Window
+:Window rdf:type owl:NamedIndividual ,
+                       :SemanticType .
+
+
+###  https://w3id.org/ibp/FMUont#WindowInside
+:WindowInside rdf:type owl:NamedIndividual ,
+                             :Medium .
+
+
+###  https://w3id.org/ibp/FMUont#WindowOutside
+:WindowOutside rdf:type owl:NamedIndividual ,
+                              :Medium .
+
+
+###  https://w3id.org/ibp/FMUont#Zenith
+:Zenith rdf:type owl:NamedIndividual ,
+                       :Quantity .
+
+
+###  https://w3id.org/ibp/FMUont#ZonalAirflow
+:ZonalAirflow rdf:type owl:NamedIndividual ,
+                             :SimulatedSystem .
+
+
+###  https://w3id.org/ibp/FMUont#ac
+:ac rdf:type owl:NamedIndividual ,
+                   :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#bar
+:bar rdf:type owl:NamedIndividual ,
+                    :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#cm
+:cm rdf:type owl:NamedIndividual ,
+                   :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#cm2
+:cm2 rdf:type owl:NamedIndividual ,
+                    :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#degrees
+:degrees rdf:type owl:NamedIndividual ,
+                        :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#g
+:g rdf:type owl:NamedIndividual ,
+                  :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#ha
+:ha rdf:type owl:NamedIndividual ,
+                   :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#kJ
+:kJ rdf:type owl:NamedIndividual ,
+                   :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#kW
+:kW rdf:type owl:NamedIndividual ,
+                   :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#kWh
+:kWh rdf:type owl:NamedIndividual ,
+                    :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#kg
+:kg rdf:type owl:NamedIndividual ,
+                   :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#km
+:km rdf:type owl:NamedIndividual ,
+                   :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#km2
+:km2 rdf:type owl:NamedIndividual ,
+                    :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#l
+:l rdf:type owl:NamedIndividual ,
+                  :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#lx
+:lx rdf:type owl:NamedIndividual ,
+                   :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#m
+:m rdf:type owl:NamedIndividual ,
+                  :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#m2
+:m2 rdf:type owl:NamedIndividual ,
+                   :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#m3
+:m3 rdf:type owl:NamedIndividual ,
+                   :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#mbar
+:mbar rdf:type owl:NamedIndividual ,
+                     :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#mm
+:mm rdf:type owl:NamedIndividual ,
+                   :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#percent
+:percent rdf:type owl:NamedIndividual ,
+                        :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#ppm
+:ppm rdf:type owl:NamedIndividual ,
+                    :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#rad
+:rad rdf:type owl:NamedIndividual ,
+                    :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#1/h
+<https://w3id.org/ibp/FMUont#1/h> rdf:type owl:NamedIndividual ,
+                                           :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#J/m2
+<https://w3id.org/ibp/FMUont#J/m2> rdf:type owl:NamedIndividual ,
+                                            :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#J/s
+<https://w3id.org/ibp/FMUont#J/s> rdf:type owl:NamedIndividual ,
+                                           :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#J/sm2
+<https://w3id.org/ibp/FMUont#J/sm2> rdf:type owl:NamedIndividual ,
+                                             :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#W/m2
+<https://w3id.org/ibp/FMUont#W/m2> rdf:type owl:NamedIndividual ,
+                                            :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#Wh/m2
+<https://w3id.org/ibp/FMUont#Wh/m2> rdf:type owl:NamedIndividual ,
+                                             :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#g/cm3
+<https://w3id.org/ibp/FMUont#g/cm3> rdf:type owl:NamedIndividual ,
+                                             :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#g/g
+<https://w3id.org/ibp/FMUont#g/g> rdf:type owl:NamedIndividual ,
+                                           :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#g/kg
+<https://w3id.org/ibp/FMUont#g/kg> rdf:type owl:NamedIndividual ,
+                                            :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#g/l
+<https://w3id.org/ibp/FMUont#g/l> rdf:type owl:NamedIndividual ,
+                                           :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#kJ/m2
+<https://w3id.org/ibp/FMUont#kJ/m2> rdf:type owl:NamedIndividual ,
+                                             :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#kW/m2
+<https://w3id.org/ibp/FMUont#kW/m2> rdf:type owl:NamedIndividual ,
+                                             :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#kWh/m2
+<https://w3id.org/ibp/FMUont#kWh/m2> rdf:type owl:NamedIndividual ,
+                                              :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#kg/g
+<https://w3id.org/ibp/FMUont#kg/g> rdf:type owl:NamedIndividual ,
+                                            :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#kg/h
+<https://w3id.org/ibp/FMUont#kg/h> rdf:type owl:NamedIndividual ,
+                                            :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#kg/kg
+<https://w3id.org/ibp/FMUont#kg/kg> rdf:type owl:NamedIndividual ,
+                                             :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#kg/l
+<https://w3id.org/ibp/FMUont#kg/l> rdf:type owl:NamedIndividual ,
+                                            :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#kg/m3
+<https://w3id.org/ibp/FMUont#kg/m3> rdf:type owl:NamedIndividual ,
+                                             :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#kg/s
+<https://w3id.org/ibp/FMUont#kg/s> rdf:type owl:NamedIndividual ,
+                                            :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#l/h
+<https://w3id.org/ibp/FMUont#l/h> rdf:type owl:NamedIndividual ,
+                                           :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#l/s
+<https://w3id.org/ibp/FMUont#l/s> rdf:type owl:NamedIndividual ,
+                                           :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#m/s
+<https://w3id.org/ibp/FMUont#m/s> rdf:type owl:NamedIndividual ,
+                                           :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#m3/h
+<https://w3id.org/ibp/FMUont#m3/h> rdf:type owl:NamedIndividual ,
+                                            :Unit .
+
+
+###  https://w3id.org/ibp/FMUont#m3/s
+<https://w3id.org/ibp/FMUont#m3/s> rdf:type owl:NamedIndividual ,
+                                            :Unit .
