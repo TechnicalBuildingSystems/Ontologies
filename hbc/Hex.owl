@@ -1,0 +1,1074 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/ibp/hbc/hex"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/ibp/hbc/hex">
+    <Prefix name="" IRI="http://www.ibp.fraunhofer.de/ontologies/hex"/>
+    <Prefix name="bot" IRI="https://w3id.org/bot#"/>
+    <Prefix name="exp" IRI="http://linkedearth.org/experience/ns#"/>
+    <Prefix name="hex" IRI="http://www.ibp.fraunhofer.de/ontologies/hex#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="https://w3id.org/def/saref4bldg#"/>
+    <Prefix name="time" IRI="http://www.w3.org/2006/time#"/>
+    <Prefix name="saref" IRI="https://w3id.org/saref#"/>
+    <Prefix name="bim4hex" IRI="http://www.ibp.fraunhofer.de/ontologies/bim4hex#"/>
+    <Prefix name="dcterms" IRI="&lt;http://purl.org/dc/terms/&gt;"/>
+    <Prefix name="time4hex" IRI="http://www.ibp.fraunhofer.de/ontologies/time4hex#"/>
+    <Prefix name="saref4bldg" IRI="https://w3id.org/def/saref4bldg#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">1.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/license"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&lt;http://creativecommons.org/licenses/by-sa/4.0&gt;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The ontology formally represents human experiencse about IEQ factors, such as thermal comfort, visual comfort , acoustic comfort and IAQ (Indoor Air Quality). It can intregate with time ontology and bim4hex.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&quot;&quot;Copyright (c) 2017, Fraunhofer Institute for Building Physics,Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0&quot;&quot;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">OWL ontology for human experience which can be integerated with time ontology and building related ontologies.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/language"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">en</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">30.11.2017</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Hex Ontology - An ontology for descripting Human Experience of Indoor Environment</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Haonan Qiu</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Georg Schneider (georg.schneider@ibp.fraunhofer.de)</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#VisualComfort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Quality"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IEQFactor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DimVisualComfort"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasThermalSensation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Negative"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThermalSensation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Positive"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/identifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bright"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="exp:hasTime"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="exp:Experience"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IAQ"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#withObjectSetting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dim"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="saref4bldg:BuildingSpace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NegativeIEQFactor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BrightVisualComfort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QuietAcousticComfort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BadExperience"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Loud"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LoudAcousticComfort"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasVisualSensation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VisualSensation"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cold"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PositiveIEQFactor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/license"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WarmThermalComfort"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AcousticComfort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GoodExperience"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NeutralIEQFactor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Quiet"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAbout"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="exp:hasLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="time:Instant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AuditorySensation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NeutralExperience"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ColdThermalComfort"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Warm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/ibp/hbc/bim4hex#Setting"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAuditorySensation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThermalComfort"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Neutral"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#AcousticComfort"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#IEQFactor"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasAuditorySensation"/>
+                <Class IRI="#AuditorySensation"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#BadExperience"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="exp:Experience"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isAbout"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#AcousticComfort"/>
+                    <Class IRI="#NegativeIEQFactor"/>
+                </ObjectIntersectionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isAbout"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#IAQ"/>
+                    <Class IRI="#NegativeIEQFactor"/>
+                </ObjectIntersectionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isAbout"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#NegativeIEQFactor"/>
+                    <Class IRI="#ThermalComfort"/>
+                </ObjectIntersectionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isAbout"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#NegativeIEQFactor"/>
+                    <Class IRI="#VisualComfort"/>
+                </ObjectIntersectionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#BrightVisualComfort"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#VisualComfort"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasVisualSensation"/>
+                <Class IRI="#Bright"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasVisualSensation"/>
+                <Class IRI="#Bright"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ColdThermalComfort"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#ThermalComfort"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasThermalSensation"/>
+                <Class IRI="#Cold"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasThermalSensation"/>
+                <Class IRI="#Cold"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DimVisualComfort"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#VisualComfort"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasVisualSensation"/>
+                <Class IRI="#Dim"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasVisualSensation"/>
+                <Class IRI="#Dim"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#GoodExperience"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="exp:Experience"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isAbout"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#AcousticComfort"/>
+                    <Class IRI="#PositiveIEQFactor"/>
+                </ObjectIntersectionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isAbout"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#IAQ"/>
+                    <Class IRI="#PositiveIEQFactor"/>
+                </ObjectIntersectionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isAbout"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#PositiveIEQFactor"/>
+                    <Class IRI="#ThermalComfort"/>
+                </ObjectIntersectionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isAbout"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#PositiveIEQFactor"/>
+                    <Class IRI="#VisualComfort"/>
+                </ObjectIntersectionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#LoudAcousticComfort"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#AcousticComfort"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasAuditorySensation"/>
+                <Class IRI="#Loud"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasAuditorySensation"/>
+                <Class IRI="#Loud"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#NeutralExperience"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="exp:Experience"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isAbout"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#AcousticComfort"/>
+                    <Class IRI="#NeutralIEQFactor"/>
+                </ObjectIntersectionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isAbout"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#IAQ"/>
+                    <Class IRI="#NeutralIEQFactor"/>
+                </ObjectIntersectionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isAbout"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#NeutralIEQFactor"/>
+                    <Class IRI="#ThermalComfort"/>
+                </ObjectIntersectionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isAbout"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#NeutralIEQFactor"/>
+                    <Class IRI="#VisualComfort"/>
+                </ObjectIntersectionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#QuietAcousticComfort"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#AcousticComfort"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasAuditorySensation"/>
+                <Class IRI="#Quiet"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasAuditorySensation"/>
+                <Class IRI="#Quiet"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#WarmThermalComfort"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#ThermalComfort"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasThermalSensation"/>
+                <Class IRI="#Warm"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasThermalSensation"/>
+                <Class IRI="#Warm"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class abbreviatedIRI="exp:Experience"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="exp:hasLocation"/>
+            <Class abbreviatedIRI="saref4bldg:BuildingSpace"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="exp:Experience"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="exp:hasTime"/>
+            <Class abbreviatedIRI="time:Instant"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="exp:Experience"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#withObjectSetting"/>
+            <Class IRI="https://w3id.org/ibp/hbc/bim4hex#Setting"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="exp:Experience"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#isAbout"/>
+            <Class IRI="#AcousticComfort"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="exp:Experience"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#isAbout"/>
+            <Class IRI="#IAQ"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="exp:Experience"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#isAbout"/>
+            <Class IRI="#ThermalComfort"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="exp:Experience"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#isAbout"/>
+            <Class IRI="#VisualComfort"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AcousticComfort"/>
+        <Class IRI="#IEQFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AuditorySensation"/>
+        <Class IRI="#Sensation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BadExperience"/>
+        <Class abbreviatedIRI="exp:Experience"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bright"/>
+        <Class IRI="#VisualSensation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BrightVisualComfort"/>
+        <Class IRI="#VisualComfort"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cold"/>
+        <Class IRI="#ThermalSensation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ColdThermalComfort"/>
+        <Class IRI="#ThermalComfort"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dim"/>
+        <Class IRI="#VisualSensation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DimVisualComfort"/>
+        <Class IRI="#VisualComfort"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GoodExperience"/>
+        <Class abbreviatedIRI="exp:Experience"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IAQ"/>
+        <Class IRI="#IEQFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IEQFactor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasQuality"/>
+            <Class IRI="#Quality"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Loud"/>
+        <Class IRI="#AuditorySensation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LoudAcousticComfort"/>
+        <Class IRI="#AcousticComfort"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Negative"/>
+        <Class IRI="#Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NegativeIEQFactor"/>
+        <Class IRI="#IEQFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Neutral"/>
+        <Class IRI="#Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NeutralExperience"/>
+        <Class abbreviatedIRI="exp:Experience"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NeutralIEQFactor"/>
+        <Class IRI="#IEQFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Positive"/>
+        <Class IRI="#Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PositiveIEQFactor"/>
+        <Class IRI="#IEQFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Quiet"/>
+        <Class IRI="#AuditorySensation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#QuietAcousticComfort"/>
+        <Class IRI="#AcousticComfort"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThermalComfort"/>
+        <Class IRI="#IEQFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThermalSensation"/>
+        <Class IRI="#Sensation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VisualComfort"/>
+        <Class IRI="#IEQFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VisualSensation"/>
+        <Class IRI="#Sensation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Warm"/>
+        <Class IRI="#ThermalSensation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WarmThermalComfort"/>
+        <Class IRI="#ThermalComfort"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AuditorySensation"/>
+        <Class IRI="#ThermalSensation"/>
+        <Class IRI="#VisualSensation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Bright"/>
+        <Class IRI="#Dim"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cold"/>
+        <Class IRI="#Warm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Loud"/>
+        <Class IRI="#Quiet"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Negative"/>
+        <Class IRI="#Neutral"/>
+        <Class IRI="#Positive"/>
+    </DisjointClasses>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="exp:hasLocation"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasAuditorySensation"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasThermalSensation"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasVisualSensation"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="exp:hasLocation"/>
+        <Class abbreviatedIRI="exp:Experience"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAuditorySensation"/>
+        <Class IRI="#AcousticComfort"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasQuality"/>
+        <Class IRI="#IEQFactor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasThermalSensation"/>
+        <Class IRI="#ThermalComfort"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasVisualSensation"/>
+        <Class IRI="#VisualComfort"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAbout"/>
+        <Class abbreviatedIRI="exp:Experience"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#withObjectSetting"/>
+        <Class abbreviatedIRI="exp:Experience"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="exp:hasLocation"/>
+        <Class abbreviatedIRI="saref4bldg:BuildingSpace"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAuditorySensation"/>
+        <Class IRI="#AuditorySensation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasQuality"/>
+        <Class IRI="#Quality"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasThermalSensation"/>
+        <Class IRI="#ThermalSensation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasVisualSensation"/>
+        <Class IRI="#VisualSensation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAbout"/>
+        <Class IRI="#IEQFactor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#withObjectSetting"/>
+        <Class IRI="https://w3id.org/ibp/hbc/bim4hex#Setting"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <AbbreviatedIRI>exp:Experience</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A concpet desicrbes occupants perspectives of indoor environemental quality.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <AbbreviatedIRI>exp:Experience</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Experience</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <AbbreviatedIRI>exp:hasLocation</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasLocation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <AbbreviatedIRI>exp:hasTime</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasTime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+        <AbbreviatedIRI>time:Instant</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.w3.org/2006/time#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <AbbreviatedIRI>time:Instant</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Instant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+        <AbbreviatedIRI>saref4bldg:BuildingSpace</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://w3id.org/def/saref4bldg#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <AbbreviatedIRI>saref4bldg:BuildingSpace</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">BuildingSpace</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>https://w3id.org/ibp/hbc/bim4hex#Setting</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Building objects settings.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+        <IRI>https://w3id.org/ibp/hbc/bim4hex#Setting</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.ibp.fraunhofer.de/ontologies/bim4hex#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>https://w3id.org/ibp/hbc/bim4hex#Setting</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Setting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#AcousticComfort</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A concept of IEQ factor representing acoustic comfort. It can be described by the combination of quality and acoustic sensation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#AcousticComfort</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">AcousticComfort</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#AuditorySensation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Auditory sensation is the experience of sound on ear, which can be loud or quiet.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#AuditorySensation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">AuditorySensation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#BadExperience</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A concept represents expereiences which have all negative IEQ factors.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#BadExperience</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">BadExperience</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#Bright</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A cocept describes that people experience light as bright.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#Bright</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Bright</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#BrightVisualComfort</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A concept represents those visual comfort which has been sensed as birght by occupants.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#BrightVisualComfort</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">BrightVisualComfort</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#Cold</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">cold is often a subjective perception of thermal sensation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#Cold</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Cold</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#ColdThermalComfort</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A concepts represents thermal comfort which has been sensed by occpuants as cold.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#ColdThermalComfort</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ColdThermalComfort</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#Dim</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A cocept describes that people experience light as dim.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#Dim</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Dim</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#DimVisualComfort</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A concept represents those visual comfort which has been sensed as dim by occupants.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#DimVisualComfort</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">DimVisualComfort</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#GoodExperience</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A concept represents expereiences which have all positive IEQ factors.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#GoodExperience</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">GoodExperience</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#IAQ</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sub-concept of IEQ factor representing indoor air quality. It can be described by the quality.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#IAQ</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">IAQ</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#IEQFactor</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A concept represents IEQ factors.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#IEQFactor</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">IEQFactor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#Loud</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Loudness is the subjective perception of  auditory sensation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#Loud</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Loud</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#LoudAcousticComfort</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A concepts represents acoustic comfort which has been sensed by occpuants as loud.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#LoudAcousticComfort</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LoudAcousticComfort</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#Negative</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A concept represents negative.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#Negative</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Negative</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#NegativeIEQFactor</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A concept represents the IEQ factors which have been assesssed as negative by occupants.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#NegativeIEQFactor</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">NegativeIEQFactor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#Neutral</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A concept represent neutral</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#Neutral</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Neutral</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#NeutralExperience</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A concept represents expereiences which have all neutral IEQ factors.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#NeutralExperience</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">NeutralExperience</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#NeutralIEQFactor</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A concept represents the IEQ factors which have been assesssed as neutral by occupants.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#NeutralIEQFactor</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">NeutralIEQFactor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#Positive</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A concept represents positive</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#Positive</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Positive</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#PositiveIEQFactor</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A concept represents the IEQ factors which have been assesssed as positive by occupants.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#PositiveIEQFactor</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PositiveIEQFactor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#Quality</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A concept representing the quality of relevant IE factors assessed by occupants.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#Quality</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Quality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#Quiet</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Quietness is the subjective perception of  auditory sensation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#Quiet</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Quiet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#QuietAcousticComfort</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A concepts represents acoustic comfort which has been sensed by occpuants as quiet.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#QuietAcousticComfort</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">QuietAcousticComfort</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#Sensation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A concept represents the sensation of human in terms of indoor environment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#Sensation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sensation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#ThermalComfort</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sub-concept of IEQ factor representing thermal comfort. It can be described by the combination of quality and thermal sensation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#ThermalComfort</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ThermalComfort</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#ThermalSensation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Thermal sensation is a concept representing  how people ’feel’ and would typically classify their thermal states using words such as warm and cold.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#ThermalSensation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ThermalSensation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#VisualComfort</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sub-concept of IEQ factor representing visual comfort. It can be described by the combination of quality and visual sensation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#VisualComfort</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">VisualComfort</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#VisualSensation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A concept represents visual sensation which is the experience of light in the eye.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#VisualSensation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">VisualSensation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#Warm</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Warm is often a subjective perception of thermal sensation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#Warm</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Warm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#WarmThermalComfort</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A concepts represents thermal comfort which has been sensed by occpuants as warm.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#WarmThermalComfort</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">WarmThermalComfort</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#hasAuditorySensation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasAuditorySensation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#hasQuality</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasQuality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#hasThermalSensation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasThermalSensation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#hasVisualSensation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasVisualSensation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#isAbout</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">isAbout</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#withObjectSetting</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">withObjectSetting</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

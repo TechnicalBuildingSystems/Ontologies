@@ -1,0 +1,1009 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/ibp/hbc/bim4hex"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/ibp/hbc/bim4hex">
+    <Prefix name="" IRI="https://w3id.org/ibp/hbc/bim4hex"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="bim4hex" IRI="http://www.ibp.fraunhofer.de/ontologies/bim4hex#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">1.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&quot;&quot;Copyright (c) 2017, Fraunhofer Institute for Building Physics, Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0&quot;&quot;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">building information ontology for human experience of IEQ.  Axioms are reused from SAREF, SAREF4BLDG and BOT</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Haonan Qiu</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">bim4Hex-An ontology for descripting BIM information for Hex module in HBC ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/license"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&lt;http://creativecommons.org/licenses/by-sa/4.0&gt;</Literal>
+    </Annotation>
+    <Declaration>
+        <NamedIndividual IRI="/Abox#Room16.2.05"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OpenState"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSettingState"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NotDeployedStateInst"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/def/saref4bldg#isContainedIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AirTerminal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WindowSetting"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PartlyDeployedStateInst"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OffStateInst"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OpenStateInstant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpaceWithHeater"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/saref#State"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSettingObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NotDeployed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/def/saref4bldg#isSpaceOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OffState"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PartlyDeployed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/def/saref4bldg#PhysicalObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/def/saref4bldg#BuildingDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpaceWithWindow"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OnStateInst"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/saref#OpenCloseState"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpaceWithoutHeater"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/def/saref4bldg#ShadingDevice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Abox#RadiatorRoom16.2.05"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/def/saref4bldg#BuildingSpace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpaceWithoutWindow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpaceWithoutShadingDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/def/saref4bldg#Building"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FullyDeployedStateInst"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Abox#VentilationRoom16.2.05"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShadingDeviceSetting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/def/saref4bldg#SpaceHeater"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpaceWithAirTerminal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSimilarAirTerminalTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/def/saref4bldg#contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSimilarShadingDeviceTo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/saref#Window"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OnState"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/saref#OnOffState"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/license"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CloseStateInstant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpaceHeaterSetting"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/bot#adjacentElement"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSimilarWindowTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSimilarObjectTo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpaceWithShadingDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FullyDeployed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CloseState"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AirTerminalSetting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Setting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeployedState"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSimilarSpaceHeaterTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/saref#hasState"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpaceWithoutAirTerminal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/def/saref4bldg#hasSpace"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#AirTerminalSetting"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Setting"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSettingObject"/>
+                <Class IRI="#AirTerminal"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSettingState"/>
+                <Class IRI="https://w3id.org/saref#OnOffState"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ShadingDeviceSetting"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Setting"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSettingObject"/>
+                <Class IRI="https://w3id.org/def/saref4bldg#ShadingDevice"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSettingState"/>
+                <Class IRI="#DeployedState"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SpaceHeaterSetting"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Setting"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSettingObject"/>
+                <Class IRI="https://w3id.org/def/saref4bldg#SpaceHeater"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSettingState"/>
+                <Class IRI="https://w3id.org/saref#OnOffState"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SpaceWithAirTerminal"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://w3id.org/def/saref4bldg#BuildingSpace"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/def/saref4bldg#contains"/>
+                <Class IRI="#AirTerminal"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SpaceWithHeater"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://w3id.org/def/saref4bldg#BuildingSpace"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/def/saref4bldg#contains"/>
+                <Class IRI="https://w3id.org/def/saref4bldg#SpaceHeater"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SpaceWithShadingDevice"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://w3id.org/def/saref4bldg#BuildingSpace"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/def/saref4bldg#contains"/>
+                <Class IRI="https://w3id.org/def/saref4bldg#ShadingDevice"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SpaceWithWindow"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://w3id.org/def/saref4bldg#BuildingSpace"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/bot#adjacentElement"/>
+                <Class IRI="https://w3id.org/saref#Window"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SpaceWithoutAirTerminal"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://w3id.org/def/saref4bldg#BuildingSpace"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/def/saref4bldg#contains"/>
+                <ObjectComplementOf>
+                    <Class IRI="#AirTerminal"/>
+                </ObjectComplementOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SpaceWithoutHeater"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://w3id.org/def/saref4bldg#BuildingSpace"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/def/saref4bldg#contains"/>
+                <ObjectComplementOf>
+                    <Class IRI="https://w3id.org/def/saref4bldg#SpaceHeater"/>
+                </ObjectComplementOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SpaceWithoutShadingDevice"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://w3id.org/def/saref4bldg#BuildingSpace"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/def/saref4bldg#contains"/>
+                <ObjectComplementOf>
+                    <Class IRI="https://w3id.org/def/saref4bldg#ShadingDevice"/>
+                </ObjectComplementOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SpaceWithoutWindow"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://w3id.org/def/saref4bldg#BuildingSpace"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="https://w3id.org/bot#adjacentElement"/>
+                <ObjectComplementOf>
+                    <Class IRI="https://w3id.org/saref#Window"/>
+                </ObjectComplementOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#WindowSetting"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Setting"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSettingObject"/>
+                <Class IRI="https://w3id.org/saref#Window"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSettingState"/>
+                <Class IRI="https://w3id.org/saref#OpenCloseState"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/def/saref4bldg#Building"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/def/saref4bldg#Building"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://w3id.org/def/saref4bldg#hasSpace"/>
+            <Class IRI="https://w3id.org/def/saref4bldg#BuildingSpace"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/def/saref4bldg#BuildingDevice"/>
+        <Class IRI="https://w3id.org/def/saref4bldg#PhysicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/def/saref4bldg#BuildingDevice"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://w3id.org/saref#hasState"/>
+            <Class IRI="https://w3id.org/saref#State"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/def/saref4bldg#BuildingSpace"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/def/saref4bldg#BuildingSpace"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://w3id.org/bot#adjacentElement"/>
+            <Class IRI="https://w3id.org/saref#Window"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/def/saref4bldg#BuildingSpace"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://w3id.org/def/saref4bldg#contains"/>
+            <Class IRI="https://w3id.org/def/saref4bldg#BuildingDevice"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/def/saref4bldg#BuildingSpace"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://w3id.org/def/saref4bldg#hasSpace"/>
+            <Class IRI="https://w3id.org/def/saref4bldg#BuildingSpace"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/def/saref4bldg#BuildingSpace"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://w3id.org/def/saref4bldg#isSpaceOf"/>
+            <ObjectUnionOf>
+                <Class IRI="https://w3id.org/def/saref4bldg#Building"/>
+                <Class IRI="https://w3id.org/def/saref4bldg#BuildingSpace"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/def/saref4bldg#PhysicalObject"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/def/saref4bldg#PhysicalObject"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://w3id.org/def/saref4bldg#isContainedIn"/>
+            <ObjectUnionOf>
+                <Class IRI="https://w3id.org/def/saref4bldg#BuildingSpace"/>
+                <Class IRI="https://w3id.org/def/saref4bldg#PhysicalObject"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/def/saref4bldg#ShadingDevice"/>
+        <Class IRI="https://w3id.org/def/saref4bldg#BuildingDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/def/saref4bldg#ShadingDevice"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://w3id.org/saref#hasState"/>
+            <Class IRI="#DeployedState"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/def/saref4bldg#ShadingDevice"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://w3id.org/saref#hasState"/>
+            <Class IRI="#DeployedState"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/def/saref4bldg#SpaceHeater"/>
+        <Class IRI="https://w3id.org/def/saref4bldg#BuildingDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/def/saref4bldg#SpaceHeater"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://w3id.org/saref#hasState"/>
+            <Class IRI="https://w3id.org/saref#OnOffState"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/def/saref4bldg#SpaceHeater"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://w3id.org/saref#hasState"/>
+            <Class IRI="https://w3id.org/saref#OnOffState"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AirTerminal"/>
+        <Class IRI="https://w3id.org/def/saref4bldg#BuildingDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AirTerminal"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://w3id.org/saref#hasState"/>
+            <Class IRI="https://w3id.org/saref#OnOffState"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AirTerminal"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://w3id.org/saref#hasState"/>
+            <Class IRI="https://w3id.org/saref#OnOffState"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CloseState"/>
+        <Class IRI="https://w3id.org/saref#OpenCloseState"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeployedState"/>
+        <Class IRI="https://w3id.org/saref#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FullyDeployed"/>
+        <Class IRI="#DeployedState"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NotDeployed"/>
+        <Class IRI="#DeployedState"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OffState"/>
+        <Class IRI="https://w3id.org/saref#OnOffState"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OnState"/>
+        <Class IRI="https://w3id.org/saref#OnOffState"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OpenState"/>
+        <Class IRI="https://w3id.org/saref#OpenCloseState"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PartlyDeployed"/>
+        <Class IRI="#DeployedState"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Setting"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSettingState"/>
+            <Class IRI="https://w3id.org/saref#State"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpaceWithoutWindow"/>
+        <Class IRI="https://w3id.org/def/saref4bldg#BuildingSpace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/saref#OnOffState"/>
+        <Class IRI="https://w3id.org/saref#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/saref#OpenCloseState"/>
+        <Class IRI="https://w3id.org/saref#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/saref#Window"/>
+        <Class IRI="https://w3id.org/def/saref4bldg#PhysicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/saref#Window"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://w3id.org/saref#hasState"/>
+            <Class IRI="https://w3id.org/saref#OpenCloseState"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/saref#Window"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://w3id.org/saref#hasState"/>
+            <Class IRI="https://w3id.org/saref#OpenCloseState"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="https://w3id.org/def/saref4bldg#BuildingDevice"/>
+        <Class IRI="https://w3id.org/saref#Window"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="https://w3id.org/def/saref4bldg#ShadingDevice"/>
+        <Class IRI="https://w3id.org/def/saref4bldg#SpaceHeater"/>
+        <Class IRI="#AirTerminal"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DeployedState"/>
+        <Class IRI="https://w3id.org/saref#OnOffState"/>
+        <Class IRI="https://w3id.org/saref#OpenCloseState"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SpaceWithAirTerminal"/>
+        <Class IRI="#SpaceWithoutAirTerminal"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SpaceWithHeater"/>
+        <Class IRI="#SpaceWithoutHeater"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SpaceWithShadingDevice"/>
+        <Class IRI="#SpaceWithoutShadingDevice"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SpaceWithWindow"/>
+        <Class IRI="#SpaceWithoutWindow"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#CloseState"/>
+        <NamedIndividual IRI="#CloseStateInstant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FullyDeployed"/>
+        <NamedIndividual IRI="#FullyDeployedStateInst"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NotDeployed"/>
+        <NamedIndividual IRI="#NotDeployedStateInst"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OffState"/>
+        <NamedIndividual IRI="#OffStateInst"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OnState"/>
+        <NamedIndividual IRI="#OnStateInst"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OpenState"/>
+        <NamedIndividual IRI="#OpenStateInstant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PartlyDeployed"/>
+        <NamedIndividual IRI="#PartlyDeployedStateInst"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://w3id.org/def/saref4bldg#contains"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="/Abox#RadiatorRoom16.2.05"/>
+                <NamedIndividual IRI="/Abox#VentilationRoom16.2.05"/>
+            </ObjectOneOf>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="/Abox#Room16.2.05"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/def/saref4bldg#contains"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/def/saref4bldg#isSpaceOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSettingState"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSimilarObjectTo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSimilarShadingDeviceTo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="https://w3id.org/def/saref4bldg#contains"/>
+        <ObjectProperty IRI="https://w3id.org/def/saref4bldg#isContainedIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="https://w3id.org/def/saref4bldg#isSpaceOf"/>
+        <ObjectProperty IRI="https://w3id.org/def/saref4bldg#isSpaceOf"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasSettingObject"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasSettingState"/>
+    </FunctionalObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="https://w3id.org/def/saref4bldg#contains"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="https://w3id.org/def/saref4bldg#hasSpace"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="https://w3id.org/def/saref4bldg#isSpaceOf"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://w3id.org/bot#adjacentElement"/>
+        <Class IRI="https://w3id.org/def/saref4bldg#BuildingSpace"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSettingObject"/>
+        <Class IRI="#Setting"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSettingState"/>
+        <Class IRI="#Setting"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://w3id.org/saref#hasState"/>
+        <Class IRI="https://w3id.org/def/saref4bldg#PhysicalObject"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://w3id.org/bot#adjacentElement"/>
+        <Class IRI="https://w3id.org/saref#Window"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://w3id.org/def/saref4bldg#contains"/>
+        <Class IRI="https://w3id.org/def/saref4bldg#BuildingDevice"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSettingObject"/>
+        <Class IRI="https://w3id.org/def/saref4bldg#PhysicalObject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSettingState"/>
+        <Class IRI="https://w3id.org/saref#State"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://w3id.org/saref#hasState"/>
+        <Class IRI="https://w3id.org/saref#State"/>
+    </ObjectPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">isSimilarAirTerminalTo(with)</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#SpaceWithAirTerminal"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#SpaceWithAirTerminal"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isSimilarAirTerminalTo"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">isSimilarSpaceHeaterTo(with)</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#SpaceWithHeater"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#SpaceWithHeater"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isSimilarSpaceHeaterTo"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">isSimilarShadingDeviceTo(without)</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#SpaceWithShadingDevice"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#SpaceWithShadingDevice"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isSimilarShadingDeviceTo"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">isSimilarWindowTo(with)</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#SpaceWithWindow"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#SpaceWithWindow"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isSimilarWindowTo"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">isSimilarAirTerminalTo(without)</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#SpaceWithoutAirTerminal"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#SpaceWithoutAirTerminal"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isSimilarAirTerminalTo"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">isSimilarSpaceHeaterTo(without)</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#SpaceWithoutHeater"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#SpaceWithoutHeater"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isSimilarSpaceHeaterTo"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">isSimilarShadingDeviceTo(with)</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#SpaceWithoutShadingDevice"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#SpaceWithoutShadingDevice"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isSimilarShadingDeviceTo"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">isSimilarWindowTo(without)</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#SpaceWithoutWindow"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#SpaceWithoutWindow"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isSimilarWindowTo"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">isSimilarObjectTo</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isSimilarSpaceHeaterTo"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isSimilarAirTerminalTo"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isSimilarShadingDeviceTo"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isSimilarWindowTo"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isSimilarObjectTo"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/def/saref4bldg#BuildingSpace</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An entity used to define the physical spaces of the building. A building space contains devices or building objects.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
