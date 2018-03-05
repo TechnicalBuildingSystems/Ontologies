@@ -1,0 +1,818 @@
+@prefix : <https://w3id.org/ibp/hbc/bim4hex> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix bim4hex: <https://w3id.org/ibp/hbc/bim4hex#> .
+@base <https://w3id.org/ibp/hbc/bim4hex> .
+
+<https://w3id.org/ibp/hbc/bim4hex> rdf:type owl:Ontology ;
+                                    owl:versionInfo "1.0"@en ;
+                                    <http://purl.org/dc/elements/1.1/rights> "\"\"Copyright (c) 2017, Fraunhofer Institute for Building Physics, Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0\"\""@en ;
+                                    rdfs:comment "building information ontology for human experience of IEQ.  Axioms are reused from SAREF, SAREF4BLDG and BOT"@en ;
+                                    <http://purl.org/dc/elements/1.1/creator> "Haonan Qiu"@en ;
+                                    <http://purl.org/dc/elements/1.1/title> "bim4Hex-An ontology for descripting BIM information for Hex module in HBC ontology"@en ;
+                                    <http://purl.org/dc/elements/1.1/license> "<http://creativecommons.org/licenses/by-sa/4.0>"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/bot#adjacentElement
+<https://w3id.org/bot#adjacentElement> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://w3id.org/def/saref4bldg#BuildingSpace> ;
+                                       rdfs:range <https://w3id.org/saref#Window> .
+
+
+###  https://w3id.org/def/saref4bldg#contains
+<https://w3id.org/def/saref4bldg#contains> rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf owl:topObjectProperty ;
+                                           owl:inverseOf <https://w3id.org/def/saref4bldg#isContainedIn> ;
+                                           rdf:type owl:TransitiveProperty ;
+                                           rdfs:range <https://w3id.org/def/saref4bldg#BuildingDevice> .
+
+
+###  https://w3id.org/def/saref4bldg#hasSpace
+<https://w3id.org/def/saref4bldg#hasSpace> rdf:type owl:ObjectProperty ,
+                                                    owl:TransitiveProperty .
+
+
+###  https://w3id.org/def/saref4bldg#isContainedIn
+<https://w3id.org/def/saref4bldg#isContainedIn> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/saref4bldg#isSpaceOf
+<https://w3id.org/def/saref4bldg#isSpaceOf> rdf:type owl:ObjectProperty ;
+                                            rdfs:subPropertyOf owl:topObjectProperty ;
+                                            owl:inverseOf <https://w3id.org/def/saref4bldg#isSpaceOf> ;
+                                            rdf:type owl:TransitiveProperty .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#hasSettingObject
+bim4hex:hasSettingObject rdf:type owl:ObjectProperty ,
+                                  owl:FunctionalProperty ;
+                         rdfs:domain bim4hex:Setting ;
+                         rdfs:range <https://w3id.org/def/saref4bldg#PhysicalObject> .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#hasSettingState
+bim4hex:hasSettingState rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf owl:topObjectProperty ;
+                        rdf:type owl:FunctionalProperty ;
+                        rdfs:domain bim4hex:Setting ;
+                        rdfs:range <https://w3id.org/saref#State> .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#isSimilarAirTerminalTo
+bim4hex:isSimilarAirTerminalTo rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#isSimilarObjectTo
+bim4hex:isSimilarObjectTo rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#isSimilarShadingDeviceTo
+bim4hex:isSimilarShadingDeviceTo rdf:type owl:ObjectProperty ;
+                                 rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#isSimilarSpaceHeaterTo
+bim4hex:isSimilarSpaceHeaterTo rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#isSimilarWindowTo
+bim4hex:isSimilarWindowTo rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/saref#hasState
+<https://w3id.org/saref#hasState> rdf:type owl:ObjectProperty ;
+                                  rdfs:domain <https://w3id.org/def/saref4bldg#PhysicalObject> ;
+                                  rdfs:range <https://w3id.org/saref#State> .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/saref4bldg#Building
+<https://w3id.org/def/saref4bldg#Building> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <https://w3id.org/def/saref4bldg#hasSpace> ;
+                                                             owl:allValuesFrom <https://w3id.org/def/saref4bldg#BuildingSpace>
+                                                           ] .
+
+
+###  https://w3id.org/def/saref4bldg#BuildingDevice
+<https://w3id.org/def/saref4bldg#BuildingDevice> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <https://w3id.org/def/saref4bldg#PhysicalObject> ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <https://w3id.org/saref#hasState> ;
+                                                                   owl:allValuesFrom <https://w3id.org/saref#State>
+                                                                 ] ;
+                                                 owl:disjointWith <https://w3id.org/saref#Window> .
+
+
+###  https://w3id.org/def/saref4bldg#BuildingSpace
+<https://w3id.org/def/saref4bldg#BuildingSpace> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ,
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <https://w3id.org/bot#adjacentElement> ;
+                                                                  owl:allValuesFrom <https://w3id.org/saref#Window>
+                                                                ] ,
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <https://w3id.org/def/saref4bldg#contains> ;
+                                                                  owl:allValuesFrom <https://w3id.org/def/saref4bldg#BuildingDevice>
+                                                                ] ,
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <https://w3id.org/def/saref4bldg#hasSpace> ;
+                                                                  owl:allValuesFrom <https://w3id.org/def/saref4bldg#BuildingSpace>
+                                                                ] ,
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <https://w3id.org/def/saref4bldg#isSpaceOf> ;
+                                                                  owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                      owl:unionOf ( <https://w3id.org/def/saref4bldg#Building>
+                                                                                                    <https://w3id.org/def/saref4bldg#BuildingSpace>
+                                                                                                  )
+                                                                                    ]
+                                                                ] ;
+                                                rdfs:comment "An entity used to define the physical spaces of the building. A building space contains devices or building objects."@en .
+
+
+###  https://w3id.org/def/saref4bldg#PhysicalObject
+<https://w3id.org/def/saref4bldg#PhysicalObject> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <https://w3id.org/def/saref4bldg#isContainedIn> ;
+                                                                   owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                       owl:unionOf ( <https://w3id.org/def/saref4bldg#BuildingSpace>
+                                                                                                     <https://w3id.org/def/saref4bldg#PhysicalObject>
+                                                                                                   )
+                                                                                     ]
+                                                                 ] .
+
+
+###  https://w3id.org/def/saref4bldg#ShadingDevice
+<https://w3id.org/def/saref4bldg#ShadingDevice> rdf:type owl:Class ;
+                                                rdfs:subClassOf <https://w3id.org/def/saref4bldg#BuildingDevice> ,
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <https://w3id.org/saref#hasState> ;
+                                                                  owl:someValuesFrom bim4hex:DeployedState
+                                                                ] ,
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <https://w3id.org/saref#hasState> ;
+                                                                  owl:allValuesFrom bim4hex:DeployedState
+                                                                ] .
+
+
+###  https://w3id.org/def/saref4bldg#SpaceHeater
+<https://w3id.org/def/saref4bldg#SpaceHeater> rdf:type owl:Class ;
+                                              rdfs:subClassOf <https://w3id.org/def/saref4bldg#BuildingDevice> ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <https://w3id.org/saref#hasState> ;
+                                                                owl:someValuesFrom <https://w3id.org/saref#OnOffState>
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <https://w3id.org/saref#hasState> ;
+                                                                owl:allValuesFrom <https://w3id.org/saref#OnOffState>
+                                                              ] .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#AirTerminal
+bim4hex:AirTerminal rdf:type owl:Class ;
+                    rdfs:subClassOf <https://w3id.org/def/saref4bldg#BuildingDevice> ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <https://w3id.org/saref#hasState> ;
+                                      owl:someValuesFrom <https://w3id.org/saref#OnOffState>
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <https://w3id.org/saref#hasState> ;
+                                      owl:allValuesFrom <https://w3id.org/saref#OnOffState>
+                                    ] .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#AirTerminalSetting
+bim4hex:AirTerminalSetting rdf:type owl:Class ;
+                           owl:equivalentClass [ owl:intersectionOf ( bim4hex:Setting
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty bim4hex:hasSettingObject ;
+                                                                        owl:someValuesFrom bim4hex:AirTerminal
+                                                                      ]
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty bim4hex:hasSettingState ;
+                                                                        owl:someValuesFrom <https://w3id.org/saref#OnOffState>
+                                                                      ]
+                                                                    ) ;
+                                                 rdf:type owl:Class
+                                               ] .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#CloseState
+bim4hex:CloseState rdf:type owl:Class ;
+                   rdfs:subClassOf <https://w3id.org/saref#OpenCloseState> .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#DeployedState
+bim4hex:DeployedState rdf:type owl:Class ;
+                      rdfs:subClassOf <https://w3id.org/saref#State> .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#FullyDeployed
+bim4hex:FullyDeployed rdf:type owl:Class ;
+                      rdfs:subClassOf bim4hex:DeployedState .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#NotDeployed
+bim4hex:NotDeployed rdf:type owl:Class ;
+                    rdfs:subClassOf bim4hex:DeployedState .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#OffState
+bim4hex:OffState rdf:type owl:Class ;
+                 rdfs:subClassOf <https://w3id.org/saref#OnOffState> .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#OnState
+bim4hex:OnState rdf:type owl:Class ;
+                rdfs:subClassOf <https://w3id.org/saref#OnOffState> .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#OpenState
+bim4hex:OpenState rdf:type owl:Class ;
+                  rdfs:subClassOf <https://w3id.org/saref#OpenCloseState> .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#PartlyDeployed
+bim4hex:PartlyDeployed rdf:type owl:Class ;
+                       rdfs:subClassOf bim4hex:DeployedState .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#Setting
+bim4hex:Setting rdf:type owl:Class ;
+                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                  owl:onProperty bim4hex:hasSettingState ;
+                                  owl:someValuesFrom <https://w3id.org/saref#State>
+                                ] .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#ShadingDeviceSetting
+bim4hex:ShadingDeviceSetting rdf:type owl:Class ;
+                             owl:equivalentClass [ owl:intersectionOf ( bim4hex:Setting
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty bim4hex:hasSettingObject ;
+                                                                          owl:someValuesFrom <https://w3id.org/def/saref4bldg#ShadingDevice>
+                                                                        ]
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty bim4hex:hasSettingState ;
+                                                                          owl:someValuesFrom bim4hex:DeployedState
+                                                                        ]
+                                                                      ) ;
+                                                   rdf:type owl:Class
+                                                 ] .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#SpaceHeaterSetting
+bim4hex:SpaceHeaterSetting rdf:type owl:Class ;
+                           owl:equivalentClass [ owl:intersectionOf ( bim4hex:Setting
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty bim4hex:hasSettingObject ;
+                                                                        owl:someValuesFrom <https://w3id.org/def/saref4bldg#SpaceHeater>
+                                                                      ]
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty bim4hex:hasSettingState ;
+                                                                        owl:someValuesFrom <https://w3id.org/saref#OnOffState>
+                                                                      ]
+                                                                    ) ;
+                                                 rdf:type owl:Class
+                                               ] .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#SpaceWithAirTerminal
+bim4hex:SpaceWithAirTerminal rdf:type owl:Class ;
+                             owl:equivalentClass [ owl:intersectionOf ( <https://w3id.org/def/saref4bldg#BuildingSpace>
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty <https://w3id.org/def/saref4bldg#contains> ;
+                                                                          owl:someValuesFrom bim4hex:AirTerminal
+                                                                        ]
+                                                                      ) ;
+                                                   rdf:type owl:Class
+                                                 ] ;
+                             owl:disjointWith bim4hex:SpaceWithoutAirTerminal .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#SpaceWithHeater
+bim4hex:SpaceWithHeater rdf:type owl:Class ;
+                        owl:equivalentClass [ owl:intersectionOf ( <https://w3id.org/def/saref4bldg#BuildingSpace>
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <https://w3id.org/def/saref4bldg#contains> ;
+                                                                     owl:someValuesFrom <https://w3id.org/def/saref4bldg#SpaceHeater>
+                                                                   ]
+                                                                 ) ;
+                                              rdf:type owl:Class
+                                            ] ;
+                        owl:disjointWith bim4hex:SpaceWithoutHeater .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#SpaceWithShadingDevice
+bim4hex:SpaceWithShadingDevice rdf:type owl:Class ;
+                               owl:equivalentClass [ owl:intersectionOf ( <https://w3id.org/def/saref4bldg#BuildingSpace>
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty <https://w3id.org/def/saref4bldg#contains> ;
+                                                                            owl:someValuesFrom <https://w3id.org/def/saref4bldg#ShadingDevice>
+                                                                          ]
+                                                                        ) ;
+                                                     rdf:type owl:Class
+                                                   ] ;
+                               owl:disjointWith bim4hex:SpaceWithoutShadingDevice .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#SpaceWithWindow
+bim4hex:SpaceWithWindow rdf:type owl:Class ;
+                        owl:equivalentClass [ owl:intersectionOf ( <https://w3id.org/def/saref4bldg#BuildingSpace>
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <https://w3id.org/bot#adjacentElement> ;
+                                                                     owl:someValuesFrom <https://w3id.org/saref#Window>
+                                                                   ]
+                                                                 ) ;
+                                              rdf:type owl:Class
+                                            ] ;
+                        owl:disjointWith bim4hex:SpaceWithoutWindow .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#SpaceWithoutAirTerminal
+bim4hex:SpaceWithoutAirTerminal rdf:type owl:Class ;
+                                owl:equivalentClass [ owl:intersectionOf ( <https://w3id.org/def/saref4bldg#BuildingSpace>
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <https://w3id.org/def/saref4bldg#contains> ;
+                                                                             owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                                 owl:complementOf bim4hex:AirTerminal
+                                                                                               ]
+                                                                           ]
+                                                                         ) ;
+                                                      rdf:type owl:Class
+                                                    ] .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#SpaceWithoutHeater
+bim4hex:SpaceWithoutHeater rdf:type owl:Class ;
+                           owl:equivalentClass [ owl:intersectionOf ( <https://w3id.org/def/saref4bldg#BuildingSpace>
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty <https://w3id.org/def/saref4bldg#contains> ;
+                                                                        owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                            owl:complementOf <https://w3id.org/def/saref4bldg#SpaceHeater>
+                                                                                          ]
+                                                                      ]
+                                                                    ) ;
+                                                 rdf:type owl:Class
+                                               ] .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#SpaceWithoutShadingDevice
+bim4hex:SpaceWithoutShadingDevice rdf:type owl:Class ;
+                                  owl:equivalentClass [ owl:intersectionOf ( <https://w3id.org/def/saref4bldg#BuildingSpace>
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty <https://w3id.org/def/saref4bldg#contains> ;
+                                                                               owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                                   owl:complementOf <https://w3id.org/def/saref4bldg#ShadingDevice>
+                                                                                                 ]
+                                                                             ]
+                                                                           ) ;
+                                                        rdf:type owl:Class
+                                                      ] .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#SpaceWithoutWindow
+bim4hex:SpaceWithoutWindow rdf:type owl:Class ;
+                           owl:equivalentClass [ owl:intersectionOf ( <https://w3id.org/def/saref4bldg#BuildingSpace>
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty <https://w3id.org/bot#adjacentElement> ;
+                                                                        owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                            owl:complementOf <https://w3id.org/saref#Window>
+                                                                                          ]
+                                                                      ]
+                                                                    ) ;
+                                                 rdf:type owl:Class
+                                               ] ;
+                           rdfs:subClassOf <https://w3id.org/def/saref4bldg#BuildingSpace> .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#WindowSetting
+bim4hex:WindowSetting rdf:type owl:Class ;
+                      owl:equivalentClass [ owl:intersectionOf ( bim4hex:Setting
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty bim4hex:hasSettingObject ;
+                                                                   owl:someValuesFrom <https://w3id.org/saref#Window>
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty bim4hex:hasSettingState ;
+                                                                   owl:someValuesFrom <https://w3id.org/saref#OpenCloseState>
+                                                                 ]
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ] .
+
+
+###  https://w3id.org/saref#OnOffState
+<https://w3id.org/saref#OnOffState> rdf:type owl:Class ;
+                                    rdfs:subClassOf <https://w3id.org/saref#State> .
+
+
+###  https://w3id.org/saref#OpenCloseState
+<https://w3id.org/saref#OpenCloseState> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://w3id.org/saref#State> .
+
+
+###  https://w3id.org/saref#State
+<https://w3id.org/saref#State> rdf:type owl:Class .
+
+
+###  https://w3id.org/saref#Window
+<https://w3id.org/saref#Window> rdf:type owl:Class ;
+                                rdfs:subClassOf <https://w3id.org/def/saref4bldg#PhysicalObject> ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <https://w3id.org/saref#hasState> ;
+                                                  owl:someValuesFrom <https://w3id.org/saref#OpenCloseState>
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <https://w3id.org/saref#hasState> ;
+                                                  owl:allValuesFrom <https://w3id.org/saref#OpenCloseState>
+                                                ] .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/ibp/hbc/bim4hex#CloseStateInstant
+bim4hex:CloseStateInstant rdf:type owl:NamedIndividual ,
+                                   bim4hex:CloseState .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#FullyDeployedStateInst
+bim4hex:FullyDeployedStateInst rdf:type owl:NamedIndividual ,
+                                        bim4hex:FullyDeployed .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#NotDeployedStateInst
+bim4hex:NotDeployedStateInst rdf:type owl:NamedIndividual ,
+                                      bim4hex:NotDeployed .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#OffStateInst
+bim4hex:OffStateInst rdf:type owl:NamedIndividual ,
+                              bim4hex:OffState .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#OnStateInst
+bim4hex:OnStateInst rdf:type owl:NamedIndividual ,
+                             bim4hex:OnState .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#OpenStateInstant
+bim4hex:OpenStateInstant rdf:type owl:NamedIndividual ,
+                                  bim4hex:OpenState .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex#PartlyDeployedStateInst
+bim4hex:PartlyDeployedStateInst rdf:type owl:NamedIndividual ,
+                                         bim4hex:PartlyDeployed .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex/Abox#RadiatorRoom16.2.05
+<https://w3id.org/ibp/hbc/bim4hex/Abox#RadiatorRoom16.2.05> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex/Abox#Room16.2.05
+<https://w3id.org/ibp/hbc/bim4hex/Abox#Room16.2.05> rdf:type owl:NamedIndividual ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <https://w3id.org/def/saref4bldg#contains> ;
+                                                               owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                   owl:oneOf ( <https://w3id.org/ibp/hbc/bim4hex/Abox#RadiatorRoom16.2.05>
+                                                                                               <https://w3id.org/ibp/hbc/bim4hex/Abox#VentilationRoom16.2.05>
+                                                                                             )
+                                                                                 ]
+                                                             ] .
+
+
+###  https://w3id.org/ibp/hbc/bim4hex/Abox#VentilationRoom16.2.05
+<https://w3id.org/ibp/hbc/bim4hex/Abox#VentilationRoom16.2.05> rdf:type owl:NamedIndividual .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <https://w3id.org/def/saref4bldg#ShadingDevice>
+                <https://w3id.org/def/saref4bldg#SpaceHeater>
+                bim4hex:AirTerminal
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( bim4hex:DeployedState
+                <https://w3id.org/saref#OnOffState>
+                <https://w3id.org/saref#OpenCloseState>
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl#x> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl#y> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment ""^^xsd:string ;
+   rdfs:label "isSimilarSpaceHeaterTo(with)"^^xsd:string ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> bim4hex:SpaceWithHeater ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#y>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> bim4hex:SpaceWithHeater ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> bim4hex:isSimilarSpaceHeaterTo ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment ""^^xsd:string ;
+   rdfs:label "isSimilarShadingDeviceTo(without)"^^xsd:string ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> bim4hex:SpaceWithShadingDevice ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> bim4hex:SpaceWithShadingDevice ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#y>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> bim4hex:isSimilarShadingDeviceTo ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment ""^^xsd:string ;
+   rdfs:label "isSimilarWindowTo(with)"^^xsd:string ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> bim4hex:SpaceWithWindow ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#y>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> bim4hex:SpaceWithWindow ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> bim4hex:isSimilarWindowTo ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment ""^^xsd:string ;
+   rdfs:label "isSimilarAirTerminalTo(without)"^^xsd:string ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> bim4hex:SpaceWithoutAirTerminal ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#y>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> bim4hex:SpaceWithoutAirTerminal ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> bim4hex:isSimilarAirTerminalTo ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment ""^^xsd:string ;
+   rdfs:label "isSimilarSpaceHeaterTo(without)"^^xsd:string ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> bim4hex:SpaceWithoutHeater ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#y>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> bim4hex:SpaceWithoutHeater ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> bim4hex:isSimilarSpaceHeaterTo ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment ""^^xsd:string ;
+   rdfs:label "isSimilarShadingDeviceTo(with)"^^xsd:string ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> bim4hex:SpaceWithoutShadingDevice ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> bim4hex:SpaceWithoutShadingDevice ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#y>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> bim4hex:isSimilarShadingDeviceTo ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment ""^^xsd:string ;
+   rdfs:label "isSimilarWindowTo(without)"^^xsd:string ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> bim4hex:SpaceWithoutWindow ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#y>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> bim4hex:SpaceWithoutWindow ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> bim4hex:isSimilarWindowTo ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment ""^^xsd:string ;
+   rdfs:label "isSimilarObjectTo"^^xsd:string ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> bim4hex:isSimilarSpaceHeaterTo ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> bim4hex:isSimilarAirTerminalTo ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> bim4hex:isSimilarShadingDeviceTo ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> bim4hex:isSimilarWindowTo ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y>
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> bim4hex:isSimilarObjectTo ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment ""^^xsd:string ;
+   rdfs:label "isSimilarAirTerminalTo(with)"^^xsd:string ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> bim4hex:SpaceWithAirTerminal ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> bim4hex:SpaceWithAirTerminal ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#y>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> bim4hex:isSimilarAirTerminalTo ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
