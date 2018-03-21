@@ -195,7 +195,6 @@ rdfs:seeAlso rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/ibp/CTRLont#logicInput
 :logicInput rdf:type owl:ObjectProperty ;
-            rdfs:domain :ApplicationLogic ;
             rdfs:range :Input ;
             rdfs:comment "Object property to express the relationship of some application logic concept to an input."@en ;
             rdfs:label "logicInput"@en .
@@ -203,7 +202,6 @@ rdfs:seeAlso rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/ibp/CTRLont#logicOutput
 :logicOutput rdf:type owl:ObjectProperty ;
-             rdfs:domain :ApplicationLogic ;
              rdfs:range :Output ;
              rdfs:comment "Object property to express the relationship of some application logic concept to an output."@en ;
              rdfs:label "logicOutput"@en .
@@ -211,7 +209,6 @@ rdfs:seeAlso rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/ibp/CTRLont#logicParameter
 :logicParameter rdf:type owl:ObjectProperty ;
-                rdfs:domain :ApplicationLogic ;
                 rdfs:range :Parameter ;
                 rdfs:comment "Object property to express the relationship of some application logic concept to an parameter."@en ;
                 rdfs:label "logicParameter"@en .
