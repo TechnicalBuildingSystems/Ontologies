@@ -1,0 +1,194 @@
+# Copyright (c) 2017, 2018 Fraunhofer Institute for Building Physics
+# 
+# This copyright applies to the vocabulary specification and
+# accompanying documentation in RDF in this file. Regarding underlying
+# technology, the ontology uses W3C's RDF technology, an open Web standard
+#  that can be freely used by anyone.
+#
+# Licensed under the Creative Commons Attribution Share Alike License 
+# (CC BY-SA 4.0); you may not use this file except in compliance with 
+# the license. You may obtain a copy of the license at:
+#
+#          https://creativecommons.org/licenses/by-sa/4.0/
+
+@prefix : <https://w3id.org/ibp/MealyMachineOntology#> .
+@prefix mea: <https://w3id.org/ibp/MealyMachineOntology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ctrl: <https://w3id.org/ibp/CTRLont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <https://w3id.org/ibp/MealyMachineOntology> .
+
+<https://w3id.org/ibp/MealyMachineOntology> rdf:type owl:Ontology ;
+                                             dcterms:creator <https://www.researchgate.net/profile/Georg_Schneider3> ;
+                                             dcterms:modified "2018-03-25" ;
+                                             dcterms:license <http://creativecommons.org/licenses/by-sa/4.0> ;
+                                             <http://purl.org/vocab/vann/preferredNamespacePrefix> "mea" ;
+                                             dcterms:description """The ontology and its use will be documented.
+
+Mealy machines are first defined in:
+
+G. H. Mealy, ''A method for synthesizing sequential circuits,'' Bell Labs
+Technical Journal, vol. 34, no. 5, pp. 1045–1079, 1955.
+"""@en ;
+                                             rdfs:comment "Ontology to explicitly model control logic based on the Mealy machine formalism."@en ;
+                                             dcterms:title "Mealy Machine Ontology - An ontology to formally specify the discrete control logic expressed as a Mealy machine"@en ;
+                                             dcterms:issued "2018-02-01" ;
+                                             rdfs:label "Mealy Machine Ontology"@en ;
+                                             dcterms:creator "Georg Ferdinand Schneider" ;
+                                             dcterms:identifier "https://w3id.org/ibp/MealyMachineOntology#" ;
+                                             <http://purl.org/vocab/vann/preferredNamespaceUri> mea: ;
+                                             dcterms:rights """Copyright (c) 2017/ 2018, Fraunhofer Institute for Building Physics,
+			Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution 
+			Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"""@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/contributor
+dcterms:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/identifier
+dcterms:identifier rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rights
+dcterms:rights rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#seeAlso
+rdfs:seeAlso rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/ibp/MealyMachineOntology#conditionExpr
+mea:conditionExpr rdf:type owl:ObjectProperty ;
+                  rdfs:domain mea:Condition .
+
+
+###  https://w3id.org/ibp/MealyMachineOntology#contains
+mea:contains rdf:type owl:ObjectProperty ;
+             rdfs:domain mea:MealyMachine ;
+             rdfs:range mea:MealyElement .
+
+
+###  https://w3id.org/ibp/MealyMachineOntology#source
+mea:source rdf:type owl:ObjectProperty ;
+           rdfs:domain mea:Transition ;
+           rdfs:range mea:State .
+
+
+###  https://w3id.org/ibp/MealyMachineOntology#target
+mea:target rdf:type owl:ObjectProperty ;
+           rdfs:domain mea:Transition ;
+           rdfs:range mea:State .
+
+
+###  https://w3id.org/ibp/MealyMachineOntology#transitionAction
+mea:transitionAction rdf:type owl:ObjectProperty ;
+                     rdfs:domain mea:Transition ;
+                     rdfs:range mea:Action .
+
+
+###  https://w3id.org/ibp/MealyMachineOntology#transitionCondition
+mea:transitionCondition rdf:type owl:ObjectProperty ;
+                        rdfs:domain mea:Transition ;
+                        rdfs:range mea:Condition .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/ibp/MealyMachineOntology#assignSimpleValue
+mea:assignSimpleValue rdf:type owl:DatatypeProperty ;
+                      rdfs:domain mea:Action ;
+                      rdfs:range rdfs:Literal .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/ibp/MealyMachineOntology#Action
+mea:Action rdf:type owl:Class ;
+           rdfs:subClassOf mea:MealyElement .
+
+
+###  https://w3id.org/ibp/MealyMachineOntology#Condition
+mea:Condition rdf:type owl:Class ;
+              rdfs:subClassOf mea:MealyElement .
+
+
+###  https://w3id.org/ibp/MealyMachineOntology#InitialState
+mea:InitialState rdf:type owl:Class ;
+                 rdfs:subClassOf mea:State .
+
+
+###  https://w3id.org/ibp/MealyMachineOntology#MealyElement
+mea:MealyElement rdf:type owl:Class .
+
+
+###  https://w3id.org/ibp/MealyMachineOntology#MealyMachine
+mea:MealyMachine rdf:type owl:Class .
+
+
+###  https://w3id.org/ibp/MealyMachineOntology#State
+mea:State rdf:type owl:Class ;
+          rdfs:subClassOf mea:MealyElement .
+
+
+###  https://w3id.org/ibp/MealyMachineOntology#Transition
+mea:Transition rdf:type owl:Class ;
+               rdfs:subClassOf mea:MealyElement .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

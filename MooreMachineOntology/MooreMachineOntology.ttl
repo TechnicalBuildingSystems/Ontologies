@@ -1,0 +1,183 @@
+# Copyright (c) 2017, 2018 Fraunhofer Institute for Building Physics
+# 
+# This copyright applies to the vocabulary specification and
+# accompanying documentation in RDF in this file. Regarding underlying
+# technology, the ontology uses W3C's RDF technology, an open Web standard
+#  that can be freely used by anyone.
+#
+# Licensed under the Creative Commons Attribution Share Alike License 
+# (CC BY-SA 4.0); you may not use this file except in compliance with 
+# the license. You may obtain a copy of the license at:
+#
+#          https://creativecommons.org/licenses/by-sa/4.0/
+
+@prefix : <https://w3id.org/ibp/MooreMachineOntology#> .
+@prefix moo: <https://w3id.org/ibp/MooreMachineOntology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <https://w3id.org/ibp/MooreMachineOntology> .
+
+<https://w3id.org/ibp/MooreMachineOntology> rdf:type owl:Ontology ;
+                                             dcterms:creator <https://www.researchgate.net/profile/Georg_Schneider3> ;
+                                             dcterms:modified "2018-03-25" ;
+                                             dcterms:license <http://creativecommons.org/licenses/by-sa/4.0> ;
+                                             <http://purl.org/vocab/vann/preferredNamespacePrefix> "moo" ;
+                                             dcterms:description """The ontology and its use will be documented.
+
+"""@en ;
+                                             rdfs:comment "Ontology to explicitly model control logic based on the Moore Machine formalism."@en ;
+                                             dcterms:title "Moore Machine Ontology - An ontology to formally specify the discrete control logic expressed as a Moore Machine"@en ;
+                                             dcterms:issued "2018-02-01" ;
+                                             rdfs:label "Moore Machine Ontology"@en ;
+                                             dcterms:creator "Georg Ferdinand Schneider" ;
+                                             dcterms:identifier "https://w3id.org/ibp/MooreMachineOntology#" ;
+                                             <http://purl.org/vocab/vann/preferredNamespaceUri> moo: ;
+                                             dcterms:rights """Copyright (c) 2017/ 2018, Fraunhofer Institute for Building Physics,
+			Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution 
+			Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"""@en .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+
+###  http://purl.org/dc/terms/contributor
+dcterms:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/identifier
+dcterms:identifier rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rights
+dcterms:rights rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#seeAlso
+rdfs:seeAlso rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ibp/MooreMachineOntology#conditionExpr
+moo:conditionExpr rdf:type owl:ObjectProperty ;
+                  rdfs:domain moo:Condition .
+
+
+###  https://w3id.org/ibp/MooreMachineOntology#source
+moo:source rdf:type owl:ObjectProperty ;
+           rdfs:domain moo:Transition ;
+           rdfs:range moo:State .
+
+
+###  https://w3id.org/ibp/MooreMachineOntology#stateAction
+moo:stateAction rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:domain moo:State ;
+                rdfs:range moo:Action .
+
+
+###  https://w3id.org/ibp/MooreMachineOntology#target
+moo:target rdf:type owl:ObjectProperty ;
+           rdfs:domain moo:Transition ;
+           rdfs:range moo:State .
+
+
+###  https://w3id.org/ibp/MooreMachineOntology#transitionCondition
+moo:transitionCondition rdf:type owl:ObjectProperty ;
+                        rdfs:domain moo:Transition ;
+                        rdfs:range moo:Condition .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/ibp/MooreMachineOntology#assignSimpleValue
+moo:assignSimpleValue rdf:type owl:DatatypeProperty ;
+                      rdfs:domain moo:Action ;
+                      rdfs:range rdfs:Literal .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/ibp/MooreMachineOntology#Action
+moo:Action rdf:type owl:Class ;
+           rdfs:subClassOf moo:MooreElement .
+
+
+###  https://w3id.org/ibp/MooreMachineOntology#Condition
+moo:Condition rdf:type owl:Class ;
+              rdfs:subClassOf moo:MooreElement .
+
+
+###  https://w3id.org/ibp/MooreMachineOntology#InitialState
+moo:InitialState rdf:type owl:Class ;
+                 rdfs:subClassOf moo:State .
+
+
+###  https://w3id.org/ibp/MooreMachineOntology#MooreElement
+moo:MooreElement rdf:type owl:Class .
+
+
+###  https://w3id.org/ibp/MooreMachineOntology#MooreMachine
+moo:MooreMachine rdf:type owl:Class .
+
+
+###  https://w3id.org/ibp/MooreMachineOntology#State
+moo:State rdf:type owl:Class ;
+          rdfs:subClassOf moo:MooreElement .
+
+
+###  https://w3id.org/ibp/MooreMachineOntology#Transition
+moo:Transition rdf:type owl:Class ;
+               rdfs:subClassOf moo:MooreElement .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
