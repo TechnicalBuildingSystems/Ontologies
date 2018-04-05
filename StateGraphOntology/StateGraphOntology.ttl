@@ -6,7 +6,7 @@
 # freely used by anyone.
 #
 # Licensed under the Creative Commons Attribution Share Alike License 
-#(CC BY-SA 4.0); you may not use this file except in compliance with 
+# (CC BY-SA 4.0); you may not use this file except in compliance with 
 # the license. You may obtain a copy of the license at:
 #
 #          https://creativecommons.org/licenses/by-sa/4.0/
@@ -192,6 +192,10 @@ _:genid1 a owl:Restriction ;
 # https://w3id.org/StateGraphOntology#InitialState
 
 :InitialState a owl:Class ;
+	owl:equivalentClass [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasNumbering ;
+                                    owl:hasValue 0
+                                  ] ;
 	rdfs:subClassOf :State .
 # 
 # https://w3id.org/StateGraphOntology#Return
