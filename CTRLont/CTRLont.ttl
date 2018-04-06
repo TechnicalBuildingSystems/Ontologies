@@ -24,6 +24,7 @@
 
 <https://w3id.org/ibp/CTRLont> rdf:type owl:Ontology ;
                                 dcterms:creator <https://www.researchgate.net/profile/Georg_Schneider3> ;
+				dcterms:creator <https://orcid.org/0000-0002-2033-859X> ;
                                 dcterms:license <http://creativecommons.org/licenses/by-sa/4.0> ;
                                 dcterms:identifier "https://w3id.org/ibp/CTRLont#" ;
                                 rdfs:label "CTRLont"@en ;
