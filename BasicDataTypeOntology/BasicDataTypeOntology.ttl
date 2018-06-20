@@ -11,6 +11,7 @@
 #
 #          https://creativecommons.org/licenses/by-sa/4.0/
 
+
 @prefix BDO: <https://w3id.org/ibp/BasicDatatypeOntology#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
