@@ -12,12 +12,12 @@ Within this repository ontologies developed within the [Technical Building Syste
 
 ## Copyright and Licensing
 
-Copyright (c) 2017, Fraunhofer Institute for Building Physics IBP, Fuerther Strasse 250, Nuremberg, Germany
+Copyright (c) 2017-2019, Fraunhofer Institute for Building Physics IBP, Fuerther Strasse 250, Nuremberg, Germany
 
 Each ontology file contains a triple specifying its license. In general all ontologies published here are licensed under a Creative Commons Attribution Share Alike License 
 [(CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/) as stated in each file, e.g. :
 
-> Copyright (c) 2017 Fraunhofer Institute for Building Physics
+> Copyright (c) 2017-2019 Fraunhofer Institute for Building Physics
 > 
 > This copyright applies to the CTRLont vocabulary specification and
 > accompanying documentation in RDF. Regarding underlying technology,
