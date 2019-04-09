@@ -1,93 +1,88 @@
-# Copyright (c) 2017, 2018 Fraunhofer Institute for Building Physics
-# 
-# This copyright applies to the CTRLont vocabulary specification and
-# accompanying documentation in RDF. Regarding underlying technology,
-# CTRLont uses W3C's RDF technology, an open Web standard that can be
-# freely used by anyone.
-#
-# Licensed under the Creative Commons Attribution Share Alike License 
-# (CC BY-SA 4.0); you may not use this file except in compliance with 
-# the license. You may obtain a copy of the license at:
-#
-#          https://creativecommons.org/licenses/by-sa/4.0/
-
 @prefix : <https://w3id.org/ibp/CTRLont#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix vann: <http://purl.org/vocab/vann/> .
-@prefix voaf: <http://purl.org/vocommons/voaf#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
 @base <https://w3id.org/ibp/CTRLont> .
 
 <https://w3id.org/ibp/CTRLont> rdf:type owl:Ontology ;
-                                dcterms:creator <https://www.researchgate.net/profile/Georg_Schneider3> ;
-				dcterms:creator <https://orcid.org/0000-0002-2033-859X> ;
-                                dcterms:license <http://creativecommons.org/licenses/by-sa/4.0> ;
-                                dcterms:identifier "https://w3id.org/ibp/CTRLont#" ;
-                                rdfs:label "CTRLont"@en ;
-                                dcterms:rights """Copyright (c) 2017/ 2018, Fraunhofer Institute for Building Physics,
-			Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution 
-			Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"""@en ;
-                                dcterms:issued "2016-11-01"^^xsd:date ;
-                                dcterms:creator "Georg Ferdinand Schneider" ;
-                                rdfs:comment "CTRLont specifies concepts and relationships of control actors on a high level."@en ;
-                                dcterms:title "CTRLont - An ontology to formally specify the control domain."@en ;
-                                vann:preferredNamespacePrefix "ctrl" ;
-                                dcterms:modified "2018-03-12"^^xsd:date ;
-                                vann:preferredNamespaceUri : ;
-                                dcterms:description """The ontology and its use is described in:
+                                owl:versionIRI <https://w3id.org/ibp/CTRLont-0.2.0> ;
+                                <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-2033-859X> ,
+                                                                   <https://www.researchgate.net/profile/Georg_Schneider3> ,
+                                                                   "Georg Ferdinand Schneider" ;
+                                <http://purl.org/dc/terms/description> """The ontology and its use are described in [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].
 
-			Schneider, G.F., Pauwels, P. and Steiger, S. (2017): \"Ontology-based Modelling of Control Logic in Building Automation Systems\" in IEEE Transactions on Industrial Informatics, vol. 13, no. 6, pp. 3350-3360, DOI: 10.1109/TII.2017.2743221."""@en .
+[1] Schneider, G.F., Pauwels, P. and Steiger, S. (2017): \"Ontology-based Modelling of Control Logic in Building Automation Systems\" in IEEE Transactions on Industrial Informatics, vol. 13, no. 6, pp. 3350-3360, DOI: 10.1109/TII.2017.2743221.
+
+[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003."""@en ;
+                                <http://purl.org/dc/terms/identifier> "https://w3id.org/ibp/CTRLont#" ;
+                                <http://purl.org/dc/terms/issued> "2016-11-01"^^xsd:date ;
+                                <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/4.0> ;
+                                <http://purl.org/dc/terms/modified> "2018-03-12"^^xsd:date ;
+                                <http://purl.org/dc/terms/publisher> <https://www.ibp.fraunhofer.de> ;
+                                <http://purl.org/dc/terms/rights> """Copyright (c) 2017/ 2018, Fraunhofer Institute for Building Physics,
+Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution 
+Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"""@en ,
+                                                                  "Copyright (c) 2019 Georg Ferdinand Schneider/ Fraunhofer Institute for Building Physics IBP" ;
+                                <http://purl.org/dc/terms/title> "CTRLont - An ontology to formally specify the control domain."@en ;
+                                <http://purl.org/vocab/vann/preferredNamespacePrefix> "ctrl" ;
+                                <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
+                                rdfs:comment "CTRLont specifies concepts and relationships of control actors on a high level."@en ;
+                                rdfs:label "CTRLont"@en ;
+                                owl:priorVersion <https://w3id.org/ibp/CTRLont-0.0.1> ;
+                                owl:versionInfo "v0.2.0" .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
 ###  http://purl.org/dc/terms/contributor
-dcterms:contributor rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/creator
-dcterms:creator rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/description
-dcterms:description rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/identifier
-dcterms:identifier rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/terms/identifier> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/issued
-dcterms:issued rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/license
-dcterms:license rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/modified
-dcterms:modified rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/rights
-dcterms:rights rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/terms/rights> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/title
-dcterms:title rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/vocab/vann/preferredNamespacePrefix
-vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/vocab/vann/preferredNamespaceUri
-vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2000/01/rdf-schema#comment
@@ -228,7 +223,7 @@ rdfs:seeAlso rdf:type owl:AnnotationProperty .
 #################################################################
 
 ###  http://purl.org/vocommons/voaf#Vocabulary
-voaf:Vocabulary rdf:type owl:Class .
+<http://purl.org/vocommons/voaf#Vocabulary> rdf:type owl:Class .
 
 
 ###  http://www.w3.org/2002/07/owl#Thing
@@ -362,5 +357,7 @@ pattern in automation systems, e.g. function blocks from IEC 61499."""@en ;
 
 ###  https://w3id.org/ibp/CTRLont
 <https://w3id.org/ibp/CTRLont> rdf:type owl:NamedIndividual ,
-                                        voaf:Vocabulary .
+                                        <http://purl.org/vocommons/voaf#Vocabulary> .
 
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

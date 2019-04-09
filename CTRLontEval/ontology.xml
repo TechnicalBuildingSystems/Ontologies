@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/ibp/CTRLontEval#"
+     xml:base="https://w3id.org/ibp/CTRLontEval"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:CTRLont="https://w3id.org/ibp/CTRLont#">
+    <owl:Ontology rdf:about="https://w3id.org/ibp/CTRLontEval">
+        <owl:imports rdf:resource="https://w3id.org/ibp/CTRLont"/>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-2033-859X"/>
+        <terms:creator rdf:resource="https://www.researchgate.net/profile/Georg_Schneider3"/>
+        <terms:creator>Georg Ferdinand Schneider</terms:creator>
+        <terms:description xml:lang="en">The ontology provides instances of the examples described in the PhD thesis of Georg Ferdinand Schneider [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].
+
+[1] Schneider, G. F. (2019): &quot;Semantic Model for Control Logic in Automation Systems - Knowledge-Based Support of the Engineering and Operation of Control Logic in Building and Industrial Automation Systems&quot; PhD thesis, Karlsruhe Institute of Technology, Karlsruhe, Germany.
+
+[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003.</terms:description>
+        <terms:identifier>https://w3id.org/ibp/CTRLontEval#</terms:identifier>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-06-30</terms:issued>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-03-07</terms:modified>
+        <terms:rights xml:lang="en">Copyright (c) 2019, Georg Ferdinand Schneider, Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0</terms:rights>
+        <terms:title xml:lang="en">Ontology CTRLontEval.</terms:title>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/ibp/CTRLontEval#"/>
+        <rdfs:comment xml:lang="en">Ontology with instances of CTRLontEval.</rdfs:comment>
+        <rdfs:label xml:lang="en">CTRLontEval</rdfs:label>
+        <owl:versionInfo>v0.2.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/ibp/CTRLont#isConnectedWith -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ibp/CTRLont#isConnectedWith"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://vcharpenay.github.io/hto/hto.xml#air -->
+
+
+    <owl:NamedIndividual rdf:about="http://vcharpenay.github.io/hto/hto.xml#air"/>
+    
+
+
+    <!-- http://www.buildingsmart-tech.org/ifcOWL/IFC4_ADD2#WATERHEATINGCOIL -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.buildingsmart-tech.org/ifcOWL/IFC4_ADD2#WATERHEATINGCOIL"/>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/Temperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/Temperature"/>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius"/>
+    
+
+
+    <!-- https://w3id.org/ibp/BasicDatatypeOntology#double -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/BasicDatatypeOntology#double"/>
+    
+
+
+    <!-- https://w3id.org/ibp/CTRLontEval#R1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/CTRLontEval#R1">
+        <rdf:type rdf:resource="https://w3id.org/ibp/CTRLont#ControlActor"/>
+        <CTRLont:hasApplicationLogic rdf:resource="https://w3id.org/ibp/CTRLontEval#R1_logic"/>
+        <CTRLont:hasInput rdf:resource="https://w3id.org/ibp/CTRLontEval#R1_Inp"/>
+        <CTRLont:hasInput rdf:resource="https://w3id.org/ibp/CTRLontEval#R1_InpTHcr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/CTRLontEval#R1_Inp -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/CTRLontEval#R1_Inp">
+        <rdf:type rdf:resource="https://w3id.org/ibp/CTRLont#Input"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/CTRLontEval#R1_InpTHcr -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/CTRLontEval#R1_InpTHcr">
+        <rdf:type rdf:resource="https://w3id.org/ibp/CTRLont#Input"/>
+        <CTRLont:hasDataType rdf:resource="https://w3id.org/ibp/BasicDatatypeOntology#double"/>
+        <CTRLont:hasMedium rdf:resource="http://vcharpenay.github.io/hto/hto.xml#air"/>
+        <CTRLont:hasQuantity rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Temperature"/>
+        <CTRLont:hasSemanticType rdf:resource="http://www.buildingsmart-tech.org/ifcOWL/IFC4_ADD2#WATERHEATINGCOIL"/>
+        <CTRLont:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/CTRLontEval#R1_logic -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/CTRLontEval#R1_logic">
+        <rdf:type rdf:resource="https://w3id.org/ibp/CTRLont#ApplicationLogic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/CTRLontEval#R2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/CTRLontEval#R2">
+        <rdf:type rdf:resource="https://w3id.org/ibp/CTRLont#ControlActor"/>
+        <CTRLont:hasOutput rdf:resource="https://w3id.org/ibp/CTRLontEval#R2_Outp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/CTRLontEval#R2_Outp -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/CTRLontEval#R2_Outp">
+        <rdf:type rdf:resource="https://w3id.org/ibp/CTRLont#Output"/>
+        <CTRLont:isConnectedWith rdf:resource="https://w3id.org/ibp/CTRLontEval#R1_Inp"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+
