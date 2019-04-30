@@ -7,7 +7,7 @@
 @base <https://w3id.org/ibp/CTRLont> .
 
 <https://w3id.org/ibp/CTRLont> rdf:type owl:Ontology ;
-                                owl:versionIRI <https://w3id.org/ibp/CTRLont-0.2.0> ;
+                                owl:versionIRI <https://w3id.org/ibp/CTRLont-0.3.0> ;
                                 <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-2033-859X> ,
                                                                    <https://www.researchgate.net/profile/Georg_Schneider3> ,
                                                                    "Georg Ferdinand Schneider" ;
@@ -19,19 +19,17 @@
                                 <http://purl.org/dc/terms/identifier> "https://w3id.org/ibp/CTRLont#" ;
                                 <http://purl.org/dc/terms/issued> "2016-11-01"^^xsd:date ;
                                 <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/4.0> ;
-                                <http://purl.org/dc/terms/modified> "2018-03-12"^^xsd:date ;
+                                <http://purl.org/dc/terms/modified> "2019-04-29"^^xsd:date ;
                                 <http://purl.org/dc/terms/publisher> <https://www.ibp.fraunhofer.de> ;
-                                <http://purl.org/dc/terms/rights> """Copyright (c) 2017/ 2018, Fraunhofer Institute for Building Physics,
-Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution 
-Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"""@en ,
-                                                                  "Copyright (c) 2019 Georg Ferdinand Schneider/ Fraunhofer Institute for Building Physics IBP" ;
+                                <http://purl.org/dc/terms/rights> """Copyright (c) 2019 Georg Ferdinand Schneider/ Fraunhofer Institute for Building Physics IBP. This ontology is distributed under a Creative Commons Attribution 
+Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"""@en ;
                                 <http://purl.org/dc/terms/title> "CTRLont - An ontology to formally specify the control domain."@en ;
                                 <http://purl.org/vocab/vann/preferredNamespacePrefix> "ctrl" ;
                                 <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
                                 rdfs:comment "CTRLont specifies concepts and relationships of control actors on a high level."@en ;
                                 rdfs:label "CTRLont"@en ;
                                 owl:priorVersion <https://w3id.org/ibp/CTRLont-0.0.1> ;
-                                owl:versionInfo "v0.2.0" .
+                                owl:versionInfo "v0.3.0" .
 
 #################################################################
 #    Annotation properties
@@ -89,12 +87,20 @@ Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0
 rdfs:comment rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/2000/01/rdf-schema#isDefinedBy
+rdfs:isDefinedBy rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2000/01/rdf-schema#label
 rdfs:label rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2000/01/rdf-schema#seeAlso
 rdfs:seeAlso rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -105,7 +111,9 @@ rdfs:seeAlso rdf:type owl:AnnotationProperty .
 :hasApplicationLogic rdf:type owl:ObjectProperty ;
                      rdfs:range :ApplicationLogic ;
                      rdfs:comment "Object property to relate a control actor to its specific application logic"@en ;
-                     rdfs:label "hasApplicationLogic"@en .
+                     rdfs:isDefinedBy :ctrl ;
+                     rdfs:label "hasApplicationLogic"@en ;
+                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/ibp/CTRLont#hasDataType
@@ -113,7 +121,9 @@ rdfs:seeAlso rdf:type owl:AnnotationProperty .
              rdfs:domain :AnnotatedElement ;
              rdfs:range :DataType ;
              rdfs:comment "Object property to annotate a input, output or parameter with its data type."@en ;
-             rdfs:label "hasDataType"@en .
+             rdfs:isDefinedBy :ctrl ;
+             rdfs:label "hasDataType"@en ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/ibp/CTRLont#hasInput
@@ -121,7 +131,9 @@ rdfs:seeAlso rdf:type owl:AnnotationProperty .
           rdfs:domain :ControlActor ;
           rdfs:range :Input ;
           rdfs:comment "Object property to relate a control actor to its inputs."@en ;
-          rdfs:label "hasInput"@en .
+          rdfs:isDefinedBy :ctrl ;
+          rdfs:label "hasInput"@en ;
+          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/ibp/CTRLont#hasMedium
@@ -129,7 +141,9 @@ rdfs:seeAlso rdf:type owl:AnnotationProperty .
            rdfs:domain :AnnotatedElement ;
            rdfs:range :Medium ;
            rdfs:comment "Object property to annotate an input, output or parameter with its medium."@en ;
-           rdfs:label "hasMedium"@en .
+           rdfs:isDefinedBy :ctrl ;
+           rdfs:label "hasMedium"@en ;
+           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/ibp/CTRLont#hasOutput
@@ -137,7 +151,9 @@ rdfs:seeAlso rdf:type owl:AnnotationProperty .
            rdfs:domain :ControlActor ;
            rdfs:range :Output ;
            rdfs:comment "Object property to relate a control actor to its outputs."@en ;
-           rdfs:label "hasOutput"@en .
+           rdfs:isDefinedBy :ctrl ;
+           rdfs:label "hasOutput"@en ;
+           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/ibp/CTRLont#hasParameter
@@ -145,7 +161,9 @@ rdfs:seeAlso rdf:type owl:AnnotationProperty .
               rdfs:domain :ControlActor ;
               rdfs:range :Parameter ;
               rdfs:comment "Object property to relate a control actor to its parameter."@en ;
-              rdfs:label "hasParameter"@en .
+              rdfs:isDefinedBy :ctrl ;
+              rdfs:label "hasParameter"@en ;
+              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/ibp/CTRLont#hasQuantity
@@ -153,7 +171,9 @@ rdfs:seeAlso rdf:type owl:AnnotationProperty .
              rdfs:domain :AnnotatedElement ;
              rdfs:range :Quantity ;
              rdfs:comment "Object property to annotate an input, output or parameter with its quantity."@en ;
-             rdfs:label "hasQuantity"@en .
+             rdfs:isDefinedBy :ctrl ;
+             rdfs:label "hasQuantity"@en ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/ibp/CTRLont#hasSemanticType
@@ -161,7 +181,9 @@ rdfs:seeAlso rdf:type owl:AnnotationProperty .
                  rdfs:domain :AnnotatedElement ;
                  rdfs:range :SemanticType ;
                  rdfs:comment "Object property to relate an input, output or parameter with its semantic type."@en ;
-                 rdfs:label "hasSemanticType"@en .
+                 rdfs:isDefinedBy :ctrl ;
+                 rdfs:label "hasSemanticType"@en ;
+                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/ibp/CTRLont#hasUnit
@@ -169,7 +191,9 @@ rdfs:seeAlso rdf:type owl:AnnotationProperty .
          rdfs:domain :AnnotatedElement ;
          rdfs:range :Unit ;
          rdfs:comment "Object property to relate an input, output or parameter with its unit."@en ;
-         rdfs:label "hasUnit"@en .
+         rdfs:isDefinedBy :ctrl ;
+         rdfs:label "hasUnit"@en ;
+         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/ibp/CTRLont#isConnectedTo
@@ -177,7 +201,9 @@ rdfs:seeAlso rdf:type owl:AnnotationProperty .
                rdfs:domain :Output ;
                rdfs:range :Input ;
                rdfs:comment "Object property to describe the topological relationship between an input of one control actor and the output of another."@en ;
-               rdfs:label "isConnectedTo"@en .
+               rdfs:isDefinedBy :ctrl ;
+               rdfs:label "isConnectedTo"@en ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/ibp/CTRLont#isSupervisedBy
@@ -186,28 +212,36 @@ rdfs:seeAlso rdf:type owl:AnnotationProperty .
                 rdfs:domain :ControlActor ;
                 rdfs:range :ControlActor ;
                 rdfs:comment "Object property to describe hierarchical composition of control actors."@en ;
-                rdfs:label "isSupervisedBy"@en .
+                rdfs:isDefinedBy :ctrl ;
+                rdfs:label "isSupervisedBy"@en ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/ibp/CTRLont#logicInput
 :logicInput rdf:type owl:ObjectProperty ;
             rdfs:range :Input ;
             rdfs:comment "Object property to express the relationship of some application logic concept to an input."@en ;
-            rdfs:label "logicInput"@en .
+            rdfs:isDefinedBy :ctrl ;
+            rdfs:label "logicInput"@en ;
+            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/ibp/CTRLont#logicOutput
 :logicOutput rdf:type owl:ObjectProperty ;
              rdfs:range :Output ;
              rdfs:comment "Object property to express the relationship of some application logic concept to an output."@en ;
-             rdfs:label "logicOutput"@en .
+             rdfs:isDefinedBy :ctrl ;
+             rdfs:label "logicOutput"@en ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/ibp/CTRLont#logicParameter
 :logicParameter rdf:type owl:ObjectProperty ;
                 rdfs:range :Parameter ;
                 rdfs:comment "Object property to express the relationship of some application logic concept to an parameter."@en ;
-                rdfs:label "logicParameter"@en .
+                rdfs:isDefinedBy :ctrl ;
+                rdfs:label "logicParameter"@en ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/ibp/CTRLont#supervises
@@ -215,7 +249,9 @@ rdfs:seeAlso rdf:type owl:AnnotationProperty .
             rdfs:domain :ControlActor ;
             rdfs:range :ControlActor ;
             rdfs:comment "Object property to describe if one control actor supervises another."@en ;
-            rdfs:label "supervises"@en .
+            rdfs:isDefinedBy :ctrl ;
+            rdfs:label "supervises"@en ;
+            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 #################################################################
@@ -253,13 +289,17 @@ owl:Thing rdf:type owl:Class .
                                     owl:allValuesFrom :Unit
                                   ] ;
                   rdfs:comment "An annotated element is a generic superclass for ctrl:Input, ctrl:Output and ctrl:Parameter"@en ;
-                  rdfs:label "Annotated Element"@en .
+                  rdfs:isDefinedBy :ctrl ;
+                  rdfs:label "Annotated Element"@en ;
+                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/ibp/CTRLont#ApplicationLogic
 :ApplicationLogic rdf:type owl:Class ;
                   rdfs:comment "Concept to specify the application logic of a control actor. Seperate ontologies may be used to further specify this concept."@en ;
-                  rdfs:label "Application Logic"@en .
+                  rdfs:isDefinedBy :ctrl ;
+                  rdfs:label "Application Logic"@en ;
+                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/ibp/CTRLont#ControlActor
@@ -290,14 +330,18 @@ owl:Thing rdf:type owl:Class .
                               ] ;
               rdfs:comment """Concept to describe the in general accepted Sense-Process-Actuate
 pattern in automation systems, e.g. function blocks from IEC 61499."""@en ;
-              rdfs:label "Control Actor"@en .
+              rdfs:isDefinedBy :ctrl ;
+              rdfs:label "Control Actor"@en ;
+              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/ibp/CTRLont#DataType
 :DataType rdf:type owl:Class ;
           rdfs:comment "Placeholder class for the specification of basic data types such as, e.g. integer, boolean or double."@en ;
+          rdfs:isDefinedBy :ctrl ;
           rdfs:label "Data type"@en ;
-          rdfs:seeAlso "https://www.w3.org/TR/xmlschema-2/#built-in-datatypes"^^xsd:anyURI .
+          rdfs:seeAlso "https://www.w3.org/TR/xmlschema-2/#built-in-datatypes"^^xsd:anyURI ;
+          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/ibp/CTRLont#Input
@@ -305,15 +349,19 @@ pattern in automation systems, e.g. function blocks from IEC 61499."""@en ;
        rdfs:subClassOf :AnnotatedElement ;
        owl:disjointWith :Parameter ;
        rdfs:comment "An input allow flows of information to enter a control actor. Inputs are processed by the respective application logic of the control actor to compute the outputs."@en ;
-       rdfs:label "Input"@en .
+       rdfs:isDefinedBy :ctrl ;
+       rdfs:label "Input"@en ;
+       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/ibp/CTRLont#Medium
 :Medium rdf:type owl:Class ;
         rdfs:comment "Placeholder concept to stipulate reuse of existing ontologies such as dbpedia or  	http://www.productontology.org/id/"@en ;
+        rdfs:isDefinedBy :ctrl ;
         rdfs:label "Medium"@en ;
         rdfs:seeAlso <http://wiki.dbpedia.org/> ,
-                     <http://www.productontology.org/id/> .
+                     <http://www.productontology.org/id/> ;
+        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/ibp/CTRLont#Output
@@ -321,34 +369,44 @@ pattern in automation systems, e.g. function blocks from IEC 61499."""@en ;
         rdfs:subClassOf :AnnotatedElement ;
         owl:disjointWith :Parameter ;
         rdfs:comment "An output allows compute results by the application logic of an control actor to be fowarded to outside entities such as actuators or other control actors."@en ;
-        rdfs:label "Output"@en .
+        rdfs:isDefinedBy :ctrl ;
+        rdfs:label "Output"@en ;
+        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/ibp/CTRLont#Parameter
 :Parameter rdf:type owl:Class ;
            rdfs:subClassOf :AnnotatedElement ;
            rdfs:comment "Parameter describe time-invariant values and settings of the respective control actor. Thus thay can be added dependent on the respective application logic."@en ;
-           rdfs:label "Parameter"@en .
+           rdfs:isDefinedBy :ctrl ;
+           rdfs:label "Parameter"@en ;
+           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/ibp/CTRLont#Quantity
 :Quantity rdf:type owl:Class ;
           rdfs:comment "Placeholder concept to stipulate reuse of existing ontologies such as Ontology for Units and Measures (OM) or QUDT."@en ;
+          rdfs:isDefinedBy :ctrl ;
           rdfs:label "Quantity"@en ;
           rdfs:seeAlso <http://qudt.org/schema/qudt> ,
-                       <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+                       <http://www.ontology-of-units-of-measure.org/resource/om-2/> ;
+          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/ibp/CTRLont#SemanticType
 :SemanticType rdf:type owl:Class ;
               rdfs:comment "It may be required to further annotate an Input, Output or Parameter with a specific Semantic Type. For example in building automation to differ between room air temperature or outdoor air temperature."@en ;
-              rdfs:label "Semantic Type"@en .
+              rdfs:isDefinedBy :ctrl ;
+              rdfs:label "Semantic Type"@en ;
+              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/ibp/CTRLont#Unit
 :Unit rdf:type owl:Class ;
       rdfs:comment "Placeholder concept to stipulate reuse of existing ontologies such as Ontology for Units and Measures (OM) or QUDT."@en ;
-      rdfs:label "Unit"@en .
+      rdfs:isDefinedBy :ctrl ;
+      rdfs:label "Unit"@en ;
+      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 #################################################################

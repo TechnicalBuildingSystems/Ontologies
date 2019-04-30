@@ -140,6 +140,9 @@
   "@id" : "http://www.w3.org/2000/01/rdf-schema#comment",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://www.w3.org/2000/01/rdf-schema#label",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -148,6 +151,9 @@
 }, {
   "@id" : "http://www.w3.org/2002/07/owl#Thing",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://w3id.org/ibp/CTRLont",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/vocommons/voaf#Vocabulary" ],
@@ -174,16 +180,14 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2018-03-12"
+    "@value" : "2019-04-29"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "https://www.ibp.fraunhofer.de"
   } ],
   "http://purl.org/dc/terms/rights" : [ {
     "@language" : "en",
-    "@value" : "Copyright (c) 2017/ 2018, Fraunhofer Institute for Building Physics,\r\nNuremberg, Germany. This ontology is distributed under a Creative Commons Attribution \r\nShare Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"
-  }, {
-    "@value" : "Copyright (c) 2019 Georg Ferdinand Schneider/ Fraunhofer Institute for Building Physics IBP"
+    "@value" : "Copyright (c) 2019 Georg Ferdinand Schneider/ Fraunhofer Institute for Building Physics IBP. This ontology is distributed under a Creative Commons Attribution \r\nShare Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
@@ -207,10 +211,10 @@
     "@id" : "https://w3id.org/ibp/CTRLont-0.0.1"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://w3id.org/ibp/CTRLont-0.2.0"
+    "@id" : "https://w3id.org/ibp/CTRLont-0.3.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "v0.2.0"
+    "@value" : "v0.3.0"
   } ]
 }, {
   "@id" : "https://w3id.org/ibp/CTRLont#AnnotatedElement",
@@ -218,6 +222,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "An annotated element is a generic superclass for ctrl:Input, ctrl:Output and ctrl:Parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ibp/CTRLont#ctrl"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -233,6 +240,9 @@
     "@id" : "_:genid4"
   }, {
     "@id" : "_:genid5"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/ibp/CTRLont#ApplicationLogic",
@@ -241,9 +251,15 @@
     "@language" : "en",
     "@value" : "Concept to specify the application logic of a control actor. Seperate ontologies may be used to further specify this concept."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ibp/CTRLont#ctrl"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Application Logic"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/ibp/CTRLont#ControlActor",
@@ -251,6 +267,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Concept to describe the in general accepted Sense-Process-Actuate\r\npattern in automation systems, e.g. function blocks from IEC 61499."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ibp/CTRLont#ctrl"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -268,6 +287,9 @@
     "@id" : "_:genid10"
   }, {
     "@id" : "_:genid11"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/ibp/CTRLont#DataType",
@@ -276,6 +298,9 @@
     "@language" : "en",
     "@value" : "Placeholder class for the specification of basic data types such as, e.g. integer, boolean or double."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ibp/CTRLont#ctrl"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Data type"
@@ -283,6 +308,9 @@
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
     "@value" : "https://www.w3.org/TR/xmlschema-2/#built-in-datatypes"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/ibp/CTRLont#Input",
@@ -290,6 +318,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "An input allow flows of information to enter a control actor. Inputs are processed by the respective application logic of the control actor to compute the outputs."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ibp/CTRLont#ctrl"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -300,6 +331,9 @@
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://w3id.org/ibp/CTRLont#Parameter"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/ibp/CTRLont#Medium",
@@ -307,6 +341,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Placeholder concept to stipulate reuse of existing ontologies such as dbpedia or  \thttp://www.productontology.org/id/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ibp/CTRLont#ctrl"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -316,6 +353,9 @@
     "@id" : "http://wiki.dbpedia.org/"
   }, {
     "@id" : "http://www.productontology.org/id/"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/ibp/CTRLont#Output",
@@ -323,6 +363,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "An output allows compute results by the application logic of an control actor to be fowarded to outside entities such as actuators or other control actors."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ibp/CTRLont#ctrl"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -333,6 +376,9 @@
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://w3id.org/ibp/CTRLont#Parameter"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/ibp/CTRLont#Parameter",
@@ -341,12 +387,18 @@
     "@language" : "en",
     "@value" : "Parameter describe time-invariant values and settings of the respective control actor. Thus thay can be added dependent on the respective application logic."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ibp/CTRLont#ctrl"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Parameter"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/ibp/CTRLont#AnnotatedElement"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/ibp/CTRLont#Quantity",
@@ -354,6 +406,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Placeholder concept to stipulate reuse of existing ontologies such as Ontology for Units and Measures (OM) or QUDT."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ibp/CTRLont#ctrl"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -363,6 +418,9 @@
     "@id" : "http://qudt.org/schema/qudt"
   }, {
     "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/ibp/CTRLont#SemanticType",
@@ -371,9 +429,15 @@
     "@language" : "en",
     "@value" : "It may be required to further annotate an Input, Output or Parameter with a specific Semantic Type. For example in building automation to differ between room air temperature or outdoor air temperature."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ibp/CTRLont#ctrl"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Semantic Type"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/ibp/CTRLont#Unit",
@@ -382,9 +446,15 @@
     "@language" : "en",
     "@value" : "Placeholder concept to stipulate reuse of existing ontologies such as Ontology for Units and Measures (OM) or QUDT."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ibp/CTRLont#ctrl"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Unit"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/ibp/CTRLont#hasApplicationLogic",
@@ -393,12 +463,18 @@
     "@language" : "en",
     "@value" : "Object property to relate a control actor to its specific application logic"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ibp/CTRLont#ctrl"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "hasApplicationLogic"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ibp/CTRLont#ApplicationLogic"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/ibp/CTRLont#hasDataType",
@@ -410,12 +486,18 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ibp/CTRLont#AnnotatedElement"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ibp/CTRLont#ctrl"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "hasDataType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ibp/CTRLont#DataType"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/ibp/CTRLont#hasInput",
@@ -427,12 +509,18 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ibp/CTRLont#ControlActor"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ibp/CTRLont#ctrl"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "hasInput"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ibp/CTRLont#Input"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/ibp/CTRLont#hasMedium",
@@ -444,12 +532,18 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ibp/CTRLont#AnnotatedElement"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ibp/CTRLont#ctrl"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "hasMedium"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ibp/CTRLont#Medium"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/ibp/CTRLont#hasOutput",
@@ -461,12 +555,18 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ibp/CTRLont#ControlActor"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ibp/CTRLont#ctrl"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "hasOutput"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ibp/CTRLont#Output"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/ibp/CTRLont#hasParameter",
@@ -478,12 +578,18 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ibp/CTRLont#ControlActor"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ibp/CTRLont#ctrl"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "hasParameter"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ibp/CTRLont#Parameter"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/ibp/CTRLont#hasQuantity",
@@ -495,12 +601,18 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ibp/CTRLont#AnnotatedElement"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ibp/CTRLont#ctrl"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "hasQuantity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ibp/CTRLont#Quantity"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/ibp/CTRLont#hasSemanticType",
@@ -512,12 +624,18 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ibp/CTRLont#AnnotatedElement"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ibp/CTRLont#ctrl"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "hasSemanticType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ibp/CTRLont#SemanticType"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/ibp/CTRLont#hasUnit",
@@ -529,12 +647,18 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ibp/CTRLont#AnnotatedElement"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ibp/CTRLont#ctrl"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "hasUnit"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ibp/CTRLont#Unit"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/ibp/CTRLont#isConnectedTo",
@@ -546,12 +670,18 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ibp/CTRLont#Output"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ibp/CTRLont#ctrl"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "isConnectedTo"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ibp/CTRLont#Input"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/ibp/CTRLont#isSupervisedBy",
@@ -563,6 +693,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ibp/CTRLont#ControlActor"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ibp/CTRLont#ctrl"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "isSupervisedBy"
@@ -572,6 +705,9 @@
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/ibp/CTRLont#supervises"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/ibp/CTRLont#logicInput",
@@ -580,12 +716,18 @@
     "@language" : "en",
     "@value" : "Object property to express the relationship of some application logic concept to an input."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ibp/CTRLont#ctrl"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "logicInput"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ibp/CTRLont#Input"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/ibp/CTRLont#logicOutput",
@@ -594,12 +736,18 @@
     "@language" : "en",
     "@value" : "Object property to express the relationship of some application logic concept to an output."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ibp/CTRLont#ctrl"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "logicOutput"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ibp/CTRLont#Output"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/ibp/CTRLont#logicParameter",
@@ -608,12 +756,18 @@
     "@language" : "en",
     "@value" : "Object property to express the relationship of some application logic concept to an parameter."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ibp/CTRLont#ctrl"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "logicParameter"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ibp/CTRLont#Parameter"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "https://w3id.org/ibp/CTRLont#supervises",
@@ -625,11 +779,17 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ibp/CTRLont#ControlActor"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ibp/CTRLont#ctrl"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "supervises"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ibp/CTRLont#ControlActor"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
   } ]
 } ]

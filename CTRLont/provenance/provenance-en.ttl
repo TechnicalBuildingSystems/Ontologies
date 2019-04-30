@@ -1,7 +1,7 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-<https://w3id.org/ibp/CTRLont-0.2.0> a prov:Entity;
+<https://w3id.org/ibp/CTRLont-0.3.0> a prov:Entity;
 	 dc:title "CTRLont - An ontology to formally specify the control domain.";
 	 prov:wasAttributedTo <https://orcid.org/0000-0002-2033-859X>;
 	 dc:creator <https://orcid.org/0000-0002-2033-859X>;
@@ -10,6 +10,6 @@
 	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 	 prov:wasRevisionOf <https://w3id.org/ibp/CTRLont-0.0.1>;
-	 prov:wasGeneratedAt "2018-03-12";
+	 prov:wasGeneratedAt "2019-04-29";
 .
 :agent0 a prov:Agent; foaf:name "Georg Ferdinand Schneider".

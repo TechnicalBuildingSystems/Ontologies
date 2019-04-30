@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/ibp/CTRLont#"
      xml:base="https://w3id.org/ibp/CTRLont"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -9,7 +10,7 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/ibp/CTRLont">
-        <owl:versionIRI rdf:resource="https://w3id.org/ibp/CTRLont-0.2.0"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/ibp/CTRLont-0.3.0"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0002-2033-859X"/>
         <terms:creator rdf:resource="https://www.researchgate.net/profile/Georg_Schneider3"/>
         <terms:creator>Georg Ferdinand Schneider</terms:creator>
@@ -21,19 +22,17 @@
         <terms:identifier>https://w3id.org/ibp/CTRLont#</terms:identifier>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-11-01</terms:issued>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0"/>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-12</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-04-29</terms:modified>
         <terms:publisher rdf:resource="https://www.ibp.fraunhofer.de"/>
-        <terms:rights xml:lang="en">Copyright (c) 2017/ 2018, Fraunhofer Institute for Building Physics,
-Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution 
+        <terms:rights xml:lang="en">Copyright (c) 2019 Georg Ferdinand Schneider/ Fraunhofer Institute for Building Physics IBP. This ontology is distributed under a Creative Commons Attribution 
 Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0</terms:rights>
-        <terms:rights>Copyright (c) 2019 Georg Ferdinand Schneider/ Fraunhofer Institute for Building Physics IBP</terms:rights>
         <terms:title xml:lang="en">CTRLont - An ontology to formally specify the control domain.</terms:title>
         <vann:preferredNamespacePrefix>ctrl</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="https://w3id.org/ibp/CTRLont#"/>
         <rdfs:comment xml:lang="en">CTRLont specifies concepts and relationships of control actors on a high level.</rdfs:comment>
         <rdfs:label xml:lang="en">CTRLont</rdfs:label>
         <owl:priorVersion rdf:resource="https://w3id.org/ibp/CTRLont-0.0.1"/>
-        <owl:versionInfo>v0.2.0</owl:versionInfo>
+        <owl:versionInfo>v0.3.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -141,6 +140,13 @@ Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0
     
 
 
+    <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+    
+
+
     <!-- http://www.w3.org/2000/01/rdf-schema#label -->
 
 
@@ -152,6 +158,13 @@ Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0
 
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
     
 
 
@@ -173,7 +186,9 @@ Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0
     <owl:ObjectProperty rdf:about="https://w3id.org/ibp/CTRLont#hasApplicationLogic">
         <rdfs:range rdf:resource="https://w3id.org/ibp/CTRLont#ApplicationLogic"/>
         <rdfs:comment xml:lang="en">Object property to relate a control actor to its specific application logic</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ibp/CTRLont#ctrl"/>
         <rdfs:label xml:lang="en">hasApplicationLogic</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
 
@@ -185,7 +200,9 @@ Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0
         <rdfs:domain rdf:resource="https://w3id.org/ibp/CTRLont#AnnotatedElement"/>
         <rdfs:range rdf:resource="https://w3id.org/ibp/CTRLont#DataType"/>
         <rdfs:comment xml:lang="en">Object property to annotate a input, output or parameter with its data type.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ibp/CTRLont#ctrl"/>
         <rdfs:label xml:lang="en">hasDataType</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
 
@@ -197,7 +214,9 @@ Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0
         <rdfs:domain rdf:resource="https://w3id.org/ibp/CTRLont#ControlActor"/>
         <rdfs:range rdf:resource="https://w3id.org/ibp/CTRLont#Input"/>
         <rdfs:comment xml:lang="en">Object property to relate a control actor to its inputs.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ibp/CTRLont#ctrl"/>
         <rdfs:label xml:lang="en">hasInput</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
 
@@ -209,7 +228,9 @@ Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0
         <rdfs:domain rdf:resource="https://w3id.org/ibp/CTRLont#AnnotatedElement"/>
         <rdfs:range rdf:resource="https://w3id.org/ibp/CTRLont#Medium"/>
         <rdfs:comment xml:lang="en">Object property to annotate an input, output or parameter with its medium.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ibp/CTRLont#ctrl"/>
         <rdfs:label xml:lang="en">hasMedium</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
 
@@ -221,7 +242,9 @@ Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0
         <rdfs:domain rdf:resource="https://w3id.org/ibp/CTRLont#ControlActor"/>
         <rdfs:range rdf:resource="https://w3id.org/ibp/CTRLont#Output"/>
         <rdfs:comment xml:lang="en">Object property to relate a control actor to its outputs.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ibp/CTRLont#ctrl"/>
         <rdfs:label xml:lang="en">hasOutput</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
 
@@ -233,7 +256,9 @@ Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0
         <rdfs:domain rdf:resource="https://w3id.org/ibp/CTRLont#ControlActor"/>
         <rdfs:range rdf:resource="https://w3id.org/ibp/CTRLont#Parameter"/>
         <rdfs:comment xml:lang="en">Object property to relate a control actor to its parameter.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ibp/CTRLont#ctrl"/>
         <rdfs:label xml:lang="en">hasParameter</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
 
@@ -245,7 +270,9 @@ Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0
         <rdfs:domain rdf:resource="https://w3id.org/ibp/CTRLont#AnnotatedElement"/>
         <rdfs:range rdf:resource="https://w3id.org/ibp/CTRLont#Quantity"/>
         <rdfs:comment xml:lang="en">Object property to annotate an input, output or parameter with its quantity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ibp/CTRLont#ctrl"/>
         <rdfs:label xml:lang="en">hasQuantity</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
 
@@ -257,7 +284,9 @@ Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0
         <rdfs:domain rdf:resource="https://w3id.org/ibp/CTRLont#AnnotatedElement"/>
         <rdfs:range rdf:resource="https://w3id.org/ibp/CTRLont#SemanticType"/>
         <rdfs:comment xml:lang="en">Object property to relate an input, output or parameter with its semantic type.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ibp/CTRLont#ctrl"/>
         <rdfs:label xml:lang="en">hasSemanticType</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
 
@@ -269,7 +298,9 @@ Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0
         <rdfs:domain rdf:resource="https://w3id.org/ibp/CTRLont#AnnotatedElement"/>
         <rdfs:range rdf:resource="https://w3id.org/ibp/CTRLont#Unit"/>
         <rdfs:comment xml:lang="en">Object property to relate an input, output or parameter with its unit.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ibp/CTRLont#ctrl"/>
         <rdfs:label xml:lang="en">hasUnit</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
 
@@ -281,7 +312,9 @@ Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0
         <rdfs:domain rdf:resource="https://w3id.org/ibp/CTRLont#Output"/>
         <rdfs:range rdf:resource="https://w3id.org/ibp/CTRLont#Input"/>
         <rdfs:comment xml:lang="en">Object property to describe the topological relationship between an input of one control actor and the output of another.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ibp/CTRLont#ctrl"/>
         <rdfs:label xml:lang="en">isConnectedTo</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
 
@@ -294,7 +327,9 @@ Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0
         <rdfs:domain rdf:resource="https://w3id.org/ibp/CTRLont#ControlActor"/>
         <rdfs:range rdf:resource="https://w3id.org/ibp/CTRLont#ControlActor"/>
         <rdfs:comment xml:lang="en">Object property to describe hierarchical composition of control actors.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ibp/CTRLont#ctrl"/>
         <rdfs:label xml:lang="en">isSupervisedBy</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
 
@@ -305,7 +340,9 @@ Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0
     <owl:ObjectProperty rdf:about="https://w3id.org/ibp/CTRLont#logicInput">
         <rdfs:range rdf:resource="https://w3id.org/ibp/CTRLont#Input"/>
         <rdfs:comment xml:lang="en">Object property to express the relationship of some application logic concept to an input.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ibp/CTRLont#ctrl"/>
         <rdfs:label xml:lang="en">logicInput</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
 
@@ -316,7 +353,9 @@ Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0
     <owl:ObjectProperty rdf:about="https://w3id.org/ibp/CTRLont#logicOutput">
         <rdfs:range rdf:resource="https://w3id.org/ibp/CTRLont#Output"/>
         <rdfs:comment xml:lang="en">Object property to express the relationship of some application logic concept to an output.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ibp/CTRLont#ctrl"/>
         <rdfs:label xml:lang="en">logicOutput</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
 
@@ -327,7 +366,9 @@ Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0
     <owl:ObjectProperty rdf:about="https://w3id.org/ibp/CTRLont#logicParameter">
         <rdfs:range rdf:resource="https://w3id.org/ibp/CTRLont#Parameter"/>
         <rdfs:comment xml:lang="en">Object property to express the relationship of some application logic concept to an parameter.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ibp/CTRLont#ctrl"/>
         <rdfs:label xml:lang="en">logicParameter</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
 
@@ -339,7 +380,9 @@ Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0
         <rdfs:domain rdf:resource="https://w3id.org/ibp/CTRLont#ControlActor"/>
         <rdfs:range rdf:resource="https://w3id.org/ibp/CTRLont#ControlActor"/>
         <rdfs:comment xml:lang="en">Object property to describe if one control actor supervises another.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ibp/CTRLont#ctrl"/>
         <rdfs:label xml:lang="en">supervises</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
 
@@ -405,7 +448,9 @@ Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">An annotated element is a generic superclass for ctrl:Input, ctrl:Output and ctrl:Parameter</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ibp/CTRLont#ctrl"/>
         <rdfs:label xml:lang="en">Annotated Element</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
     </owl:Class>
     
 
@@ -415,7 +460,9 @@ Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0
 
     <owl:Class rdf:about="https://w3id.org/ibp/CTRLont#ApplicationLogic">
         <rdfs:comment xml:lang="en">Concept to specify the application logic of a control actor. Seperate ontologies may be used to further specify this concept.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ibp/CTRLont#ctrl"/>
         <rdfs:label xml:lang="en">Application Logic</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
     </owl:Class>
     
 
@@ -462,7 +509,9 @@ Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Concept to describe the in general accepted Sense-Process-Actuate
 pattern in automation systems, e.g. function blocks from IEC 61499.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ibp/CTRLont#ctrl"/>
         <rdfs:label xml:lang="en">Control Actor</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
     </owl:Class>
     
 
@@ -472,8 +521,10 @@ pattern in automation systems, e.g. function blocks from IEC 61499.</rdfs:commen
 
     <owl:Class rdf:about="https://w3id.org/ibp/CTRLont#DataType">
         <rdfs:comment xml:lang="en">Placeholder class for the specification of basic data types such as, e.g. integer, boolean or double.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ibp/CTRLont#ctrl"/>
         <rdfs:label xml:lang="en">Data type</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.w3.org/TR/xmlschema-2/#built-in-datatypes</rdfs:seeAlso>
+        <ns:term_status>stable</ns:term_status>
     </owl:Class>
     
 
@@ -485,7 +536,9 @@ pattern in automation systems, e.g. function blocks from IEC 61499.</rdfs:commen
         <rdfs:subClassOf rdf:resource="https://w3id.org/ibp/CTRLont#AnnotatedElement"/>
         <owl:disjointWith rdf:resource="https://w3id.org/ibp/CTRLont#Parameter"/>
         <rdfs:comment xml:lang="en">An input allow flows of information to enter a control actor. Inputs are processed by the respective application logic of the control actor to compute the outputs.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ibp/CTRLont#ctrl"/>
         <rdfs:label xml:lang="en">Input</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
     </owl:Class>
     
 
@@ -495,9 +548,11 @@ pattern in automation systems, e.g. function blocks from IEC 61499.</rdfs:commen
 
     <owl:Class rdf:about="https://w3id.org/ibp/CTRLont#Medium">
         <rdfs:comment xml:lang="en">Placeholder concept to stipulate reuse of existing ontologies such as dbpedia or  	http://www.productontology.org/id/</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ibp/CTRLont#ctrl"/>
         <rdfs:label xml:lang="en">Medium</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://wiki.dbpedia.org/"/>
         <rdfs:seeAlso rdf:resource="http://www.productontology.org/id/"/>
+        <ns:term_status>stable</ns:term_status>
     </owl:Class>
     
 
@@ -509,7 +564,9 @@ pattern in automation systems, e.g. function blocks from IEC 61499.</rdfs:commen
         <rdfs:subClassOf rdf:resource="https://w3id.org/ibp/CTRLont#AnnotatedElement"/>
         <owl:disjointWith rdf:resource="https://w3id.org/ibp/CTRLont#Parameter"/>
         <rdfs:comment xml:lang="en">An output allows compute results by the application logic of an control actor to be fowarded to outside entities such as actuators or other control actors.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ibp/CTRLont#ctrl"/>
         <rdfs:label xml:lang="en">Output</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
     </owl:Class>
     
 
@@ -520,7 +577,9 @@ pattern in automation systems, e.g. function blocks from IEC 61499.</rdfs:commen
     <owl:Class rdf:about="https://w3id.org/ibp/CTRLont#Parameter">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ibp/CTRLont#AnnotatedElement"/>
         <rdfs:comment xml:lang="en">Parameter describe time-invariant values and settings of the respective control actor. Thus thay can be added dependent on the respective application logic.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ibp/CTRLont#ctrl"/>
         <rdfs:label xml:lang="en">Parameter</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
     </owl:Class>
     
 
@@ -530,9 +589,11 @@ pattern in automation systems, e.g. function blocks from IEC 61499.</rdfs:commen
 
     <owl:Class rdf:about="https://w3id.org/ibp/CTRLont#Quantity">
         <rdfs:comment xml:lang="en">Placeholder concept to stipulate reuse of existing ontologies such as Ontology for Units and Measures (OM) or QUDT.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ibp/CTRLont#ctrl"/>
         <rdfs:label xml:lang="en">Quantity</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://qudt.org/schema/qudt"/>
         <rdfs:seeAlso rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+        <ns:term_status>stable</ns:term_status>
     </owl:Class>
     
 
@@ -542,7 +603,9 @@ pattern in automation systems, e.g. function blocks from IEC 61499.</rdfs:commen
 
     <owl:Class rdf:about="https://w3id.org/ibp/CTRLont#SemanticType">
         <rdfs:comment xml:lang="en">It may be required to further annotate an Input, Output or Parameter with a specific Semantic Type. For example in building automation to differ between room air temperature or outdoor air temperature.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ibp/CTRLont#ctrl"/>
         <rdfs:label xml:lang="en">Semantic Type</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
     </owl:Class>
     
 
@@ -552,7 +615,9 @@ pattern in automation systems, e.g. function blocks from IEC 61499.</rdfs:commen
 
     <owl:Class rdf:about="https://w3id.org/ibp/CTRLont#Unit">
         <rdfs:comment xml:lang="en">Placeholder concept to stipulate reuse of existing ontologies such as Ontology for Units and Measures (OM) or QUDT.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ibp/CTRLont#ctrl"/>
         <rdfs:label xml:lang="en">Unit</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
     </owl:Class>
     
 

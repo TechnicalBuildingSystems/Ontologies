@@ -1,5 +1,5 @@
 <https://w3id.org/ibp/CTRLont> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/ibp/CTRLont> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/ibp/CTRLont-0.2.0> .
+<https://w3id.org/ibp/CTRLont> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/ibp/CTRLont-0.3.0> .
 <https://w3id.org/ibp/CTRLont> <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-2033-859X> .
 <https://w3id.org/ibp/CTRLont> <http://purl.org/dc/terms/creator> <https://www.researchgate.net/profile/Georg_Schneider3> .
 <https://w3id.org/ibp/CTRLont> <http://purl.org/dc/terms/creator> "Georg Ferdinand Schneider" .
@@ -7,17 +7,16 @@
 <https://w3id.org/ibp/CTRLont> <http://purl.org/dc/terms/identifier> "https://w3id.org/ibp/CTRLont#" .
 <https://w3id.org/ibp/CTRLont> <http://purl.org/dc/terms/issued> "2016-11-01"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/ibp/CTRLont> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/4.0> .
-<https://w3id.org/ibp/CTRLont> <http://purl.org/dc/terms/modified> "2018-03-12"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/ibp/CTRLont> <http://purl.org/dc/terms/modified> "2019-04-29"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/ibp/CTRLont> <http://purl.org/dc/terms/publisher> <https://www.ibp.fraunhofer.de> .
-<https://w3id.org/ibp/CTRLont> <http://purl.org/dc/terms/rights> "Copyright (c) 2017/ 2018, Fraunhofer Institute for Building Physics,\r\nNuremberg, Germany. This ontology is distributed under a Creative Commons Attribution \r\nShare Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"@en .
-<https://w3id.org/ibp/CTRLont> <http://purl.org/dc/terms/rights> "Copyright (c) 2019 Georg Ferdinand Schneider/ Fraunhofer Institute for Building Physics IBP" .
+<https://w3id.org/ibp/CTRLont> <http://purl.org/dc/terms/rights> "Copyright (c) 2019 Georg Ferdinand Schneider/ Fraunhofer Institute for Building Physics IBP. This ontology is distributed under a Creative Commons Attribution \r\nShare Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"@en .
 <https://w3id.org/ibp/CTRLont> <http://purl.org/dc/terms/title> "CTRLont - An ontology to formally specify the control domain."@en .
 <https://w3id.org/ibp/CTRLont> <http://purl.org/vocab/vann/preferredNamespacePrefix> "ctrl" .
 <https://w3id.org/ibp/CTRLont> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/ibp/CTRLont#> .
 <https://w3id.org/ibp/CTRLont> <http://www.w3.org/2000/01/rdf-schema#comment> "CTRLont specifies concepts and relationships of control actors on a high level."@en .
 <https://w3id.org/ibp/CTRLont> <http://www.w3.org/2000/01/rdf-schema#label> "CTRLont"@en .
 <https://w3id.org/ibp/CTRLont> <http://www.w3.org/2002/07/owl#priorVersion> <https://w3id.org/ibp/CTRLont-0.0.1> .
-<https://w3id.org/ibp/CTRLont> <http://www.w3.org/2002/07/owl#versionInfo> "v0.2.0" .
+<https://w3id.org/ibp/CTRLont> <http://www.w3.org/2002/07/owl#versionInfo> "v0.3.0" .
 # 
 # 
 # #################################################################
@@ -66,11 +65,17 @@
 # http://www.w3.org/2000/01/rdf-schema#comment
 <http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://www.w3.org/2000/01/rdf-schema#isDefinedBy
+<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://www.w3.org/2000/01/rdf-schema#label
 <http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.w3.org/2000/01/rdf-schema#seeAlso
 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # 
 # 
@@ -85,70 +90,90 @@
 <https://w3id.org/ibp/CTRLont#hasApplicationLogic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ibp/CTRLont#hasApplicationLogic> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/CTRLont#ApplicationLogic> .
 <https://w3id.org/ibp/CTRLont#hasApplicationLogic> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to relate a control actor to its specific application logic"@en .
+<https://w3id.org/ibp/CTRLont#hasApplicationLogic> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ibp/CTRLont#ctrl> .
 <https://w3id.org/ibp/CTRLont#hasApplicationLogic> <http://www.w3.org/2000/01/rdf-schema#label> "hasApplicationLogic"@en .
+<https://w3id.org/ibp/CTRLont#hasApplicationLogic> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # https://w3id.org/ibp/CTRLont#hasDataType
 <https://w3id.org/ibp/CTRLont#hasDataType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ibp/CTRLont#hasDataType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/CTRLont#AnnotatedElement> .
 <https://w3id.org/ibp/CTRLont#hasDataType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/CTRLont#DataType> .
 <https://w3id.org/ibp/CTRLont#hasDataType> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to annotate a input, output or parameter with its data type."@en .
+<https://w3id.org/ibp/CTRLont#hasDataType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ibp/CTRLont#ctrl> .
 <https://w3id.org/ibp/CTRLont#hasDataType> <http://www.w3.org/2000/01/rdf-schema#label> "hasDataType"@en .
+<https://w3id.org/ibp/CTRLont#hasDataType> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # https://w3id.org/ibp/CTRLont#hasInput
 <https://w3id.org/ibp/CTRLont#hasInput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ibp/CTRLont#hasInput> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/CTRLont#ControlActor> .
 <https://w3id.org/ibp/CTRLont#hasInput> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/CTRLont#Input> .
 <https://w3id.org/ibp/CTRLont#hasInput> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to relate a control actor to its inputs."@en .
+<https://w3id.org/ibp/CTRLont#hasInput> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ibp/CTRLont#ctrl> .
 <https://w3id.org/ibp/CTRLont#hasInput> <http://www.w3.org/2000/01/rdf-schema#label> "hasInput"@en .
+<https://w3id.org/ibp/CTRLont#hasInput> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # https://w3id.org/ibp/CTRLont#hasMedium
 <https://w3id.org/ibp/CTRLont#hasMedium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ibp/CTRLont#hasMedium> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/CTRLont#AnnotatedElement> .
 <https://w3id.org/ibp/CTRLont#hasMedium> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/CTRLont#Medium> .
 <https://w3id.org/ibp/CTRLont#hasMedium> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to annotate an input, output or parameter with its medium."@en .
+<https://w3id.org/ibp/CTRLont#hasMedium> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ibp/CTRLont#ctrl> .
 <https://w3id.org/ibp/CTRLont#hasMedium> <http://www.w3.org/2000/01/rdf-schema#label> "hasMedium"@en .
+<https://w3id.org/ibp/CTRLont#hasMedium> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # https://w3id.org/ibp/CTRLont#hasOutput
 <https://w3id.org/ibp/CTRLont#hasOutput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ibp/CTRLont#hasOutput> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/CTRLont#ControlActor> .
 <https://w3id.org/ibp/CTRLont#hasOutput> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/CTRLont#Output> .
 <https://w3id.org/ibp/CTRLont#hasOutput> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to relate a control actor to its outputs."@en .
+<https://w3id.org/ibp/CTRLont#hasOutput> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ibp/CTRLont#ctrl> .
 <https://w3id.org/ibp/CTRLont#hasOutput> <http://www.w3.org/2000/01/rdf-schema#label> "hasOutput"@en .
+<https://w3id.org/ibp/CTRLont#hasOutput> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # https://w3id.org/ibp/CTRLont#hasParameter
 <https://w3id.org/ibp/CTRLont#hasParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ibp/CTRLont#hasParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/CTRLont#ControlActor> .
 <https://w3id.org/ibp/CTRLont#hasParameter> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/CTRLont#Parameter> .
 <https://w3id.org/ibp/CTRLont#hasParameter> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to relate a control actor to its parameter."@en .
+<https://w3id.org/ibp/CTRLont#hasParameter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ibp/CTRLont#ctrl> .
 <https://w3id.org/ibp/CTRLont#hasParameter> <http://www.w3.org/2000/01/rdf-schema#label> "hasParameter"@en .
+<https://w3id.org/ibp/CTRLont#hasParameter> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # https://w3id.org/ibp/CTRLont#hasQuantity
 <https://w3id.org/ibp/CTRLont#hasQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ibp/CTRLont#hasQuantity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/CTRLont#AnnotatedElement> .
 <https://w3id.org/ibp/CTRLont#hasQuantity> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/CTRLont#Quantity> .
 <https://w3id.org/ibp/CTRLont#hasQuantity> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to annotate an input, output or parameter with its quantity."@en .
+<https://w3id.org/ibp/CTRLont#hasQuantity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ibp/CTRLont#ctrl> .
 <https://w3id.org/ibp/CTRLont#hasQuantity> <http://www.w3.org/2000/01/rdf-schema#label> "hasQuantity"@en .
+<https://w3id.org/ibp/CTRLont#hasQuantity> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # https://w3id.org/ibp/CTRLont#hasSemanticType
 <https://w3id.org/ibp/CTRLont#hasSemanticType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ibp/CTRLont#hasSemanticType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/CTRLont#AnnotatedElement> .
 <https://w3id.org/ibp/CTRLont#hasSemanticType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/CTRLont#SemanticType> .
 <https://w3id.org/ibp/CTRLont#hasSemanticType> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to relate an input, output or parameter with its semantic type."@en .
+<https://w3id.org/ibp/CTRLont#hasSemanticType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ibp/CTRLont#ctrl> .
 <https://w3id.org/ibp/CTRLont#hasSemanticType> <http://www.w3.org/2000/01/rdf-schema#label> "hasSemanticType"@en .
+<https://w3id.org/ibp/CTRLont#hasSemanticType> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # https://w3id.org/ibp/CTRLont#hasUnit
 <https://w3id.org/ibp/CTRLont#hasUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ibp/CTRLont#hasUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/CTRLont#AnnotatedElement> .
 <https://w3id.org/ibp/CTRLont#hasUnit> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/CTRLont#Unit> .
 <https://w3id.org/ibp/CTRLont#hasUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to relate an input, output or parameter with its unit."@en .
+<https://w3id.org/ibp/CTRLont#hasUnit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ibp/CTRLont#ctrl> .
 <https://w3id.org/ibp/CTRLont#hasUnit> <http://www.w3.org/2000/01/rdf-schema#label> "hasUnit"@en .
+<https://w3id.org/ibp/CTRLont#hasUnit> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # https://w3id.org/ibp/CTRLont#isConnectedTo
 <https://w3id.org/ibp/CTRLont#isConnectedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ibp/CTRLont#isConnectedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/CTRLont#Output> .
 <https://w3id.org/ibp/CTRLont#isConnectedTo> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/CTRLont#Input> .
 <https://w3id.org/ibp/CTRLont#isConnectedTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to describe the topological relationship between an input of one control actor and the output of another."@en .
+<https://w3id.org/ibp/CTRLont#isConnectedTo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ibp/CTRLont#ctrl> .
 <https://w3id.org/ibp/CTRLont#isConnectedTo> <http://www.w3.org/2000/01/rdf-schema#label> "isConnectedTo"@en .
+<https://w3id.org/ibp/CTRLont#isConnectedTo> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # https://w3id.org/ibp/CTRLont#isSupervisedBy
 <https://w3id.org/ibp/CTRLont#isSupervisedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -156,32 +181,42 @@
 <https://w3id.org/ibp/CTRLont#isSupervisedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/CTRLont#ControlActor> .
 <https://w3id.org/ibp/CTRLont#isSupervisedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/CTRLont#ControlActor> .
 <https://w3id.org/ibp/CTRLont#isSupervisedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to describe hierarchical composition of control actors."@en .
+<https://w3id.org/ibp/CTRLont#isSupervisedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ibp/CTRLont#ctrl> .
 <https://w3id.org/ibp/CTRLont#isSupervisedBy> <http://www.w3.org/2000/01/rdf-schema#label> "isSupervisedBy"@en .
+<https://w3id.org/ibp/CTRLont#isSupervisedBy> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # https://w3id.org/ibp/CTRLont#logicInput
 <https://w3id.org/ibp/CTRLont#logicInput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ibp/CTRLont#logicInput> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/CTRLont#Input> .
 <https://w3id.org/ibp/CTRLont#logicInput> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to express the relationship of some application logic concept to an input."@en .
+<https://w3id.org/ibp/CTRLont#logicInput> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ibp/CTRLont#ctrl> .
 <https://w3id.org/ibp/CTRLont#logicInput> <http://www.w3.org/2000/01/rdf-schema#label> "logicInput"@en .
+<https://w3id.org/ibp/CTRLont#logicInput> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # https://w3id.org/ibp/CTRLont#logicOutput
 <https://w3id.org/ibp/CTRLont#logicOutput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ibp/CTRLont#logicOutput> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/CTRLont#Output> .
 <https://w3id.org/ibp/CTRLont#logicOutput> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to express the relationship of some application logic concept to an output."@en .
+<https://w3id.org/ibp/CTRLont#logicOutput> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ibp/CTRLont#ctrl> .
 <https://w3id.org/ibp/CTRLont#logicOutput> <http://www.w3.org/2000/01/rdf-schema#label> "logicOutput"@en .
+<https://w3id.org/ibp/CTRLont#logicOutput> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # https://w3id.org/ibp/CTRLont#logicParameter
 <https://w3id.org/ibp/CTRLont#logicParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ibp/CTRLont#logicParameter> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/CTRLont#Parameter> .
 <https://w3id.org/ibp/CTRLont#logicParameter> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to express the relationship of some application logic concept to an parameter."@en .
+<https://w3id.org/ibp/CTRLont#logicParameter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ibp/CTRLont#ctrl> .
 <https://w3id.org/ibp/CTRLont#logicParameter> <http://www.w3.org/2000/01/rdf-schema#label> "logicParameter"@en .
+<https://w3id.org/ibp/CTRLont#logicParameter> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # https://w3id.org/ibp/CTRLont#supervises
 <https://w3id.org/ibp/CTRLont#supervises> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ibp/CTRLont#supervises> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/CTRLont#ControlActor> .
 <https://w3id.org/ibp/CTRLont#supervises> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/CTRLont#ControlActor> .
 <https://w3id.org/ibp/CTRLont#supervises> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to describe if one control actor supervises another."@en .
+<https://w3id.org/ibp/CTRLont#supervises> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ibp/CTRLont#ctrl> .
 <https://w3id.org/ibp/CTRLont#supervises> <http://www.w3.org/2000/01/rdf-schema#label> "supervises"@en .
+<https://w3id.org/ibp/CTRLont#supervises> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # 
 # 
@@ -221,12 +256,16 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 _:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/CTRLont#hasUnit> .
 _:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/ibp/CTRLont#Unit> .
 <https://w3id.org/ibp/CTRLont#AnnotatedElement> <http://www.w3.org/2000/01/rdf-schema#comment> "An annotated element is a generic superclass for ctrl:Input, ctrl:Output and ctrl:Parameter"@en .
+<https://w3id.org/ibp/CTRLont#AnnotatedElement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ibp/CTRLont#ctrl> .
 <https://w3id.org/ibp/CTRLont#AnnotatedElement> <http://www.w3.org/2000/01/rdf-schema#label> "Annotated Element"@en .
+<https://w3id.org/ibp/CTRLont#AnnotatedElement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # https://w3id.org/ibp/CTRLont#ApplicationLogic
 <https://w3id.org/ibp/CTRLont#ApplicationLogic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ibp/CTRLont#ApplicationLogic> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept to specify the application logic of a control actor. Seperate ontologies may be used to further specify this concept."@en .
+<https://w3id.org/ibp/CTRLont#ApplicationLogic> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ibp/CTRLont#ctrl> .
 <https://w3id.org/ibp/CTRLont#ApplicationLogic> <http://www.w3.org/2000/01/rdf-schema#label> "Application Logic"@en .
+<https://w3id.org/ibp/CTRLont#ApplicationLogic> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # https://w3id.org/ibp/CTRLont#ControlActor
 <https://w3id.org/ibp/CTRLont#ControlActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -255,57 +294,75 @@ _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/CTRLont#hasParameter> .
 _:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/ibp/CTRLont#Parameter> .
 <https://w3id.org/ibp/CTRLont#ControlActor> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept to describe the in general accepted Sense-Process-Actuate\r\npattern in automation systems, e.g. function blocks from IEC 61499."@en .
+<https://w3id.org/ibp/CTRLont#ControlActor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ibp/CTRLont#ctrl> .
 <https://w3id.org/ibp/CTRLont#ControlActor> <http://www.w3.org/2000/01/rdf-schema#label> "Control Actor"@en .
+<https://w3id.org/ibp/CTRLont#ControlActor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # https://w3id.org/ibp/CTRLont#DataType
 <https://w3id.org/ibp/CTRLont#DataType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ibp/CTRLont#DataType> <http://www.w3.org/2000/01/rdf-schema#comment> "Placeholder class for the specification of basic data types such as, e.g. integer, boolean or double."@en .
+<https://w3id.org/ibp/CTRLont#DataType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ibp/CTRLont#ctrl> .
 <https://w3id.org/ibp/CTRLont#DataType> <http://www.w3.org/2000/01/rdf-schema#label> "Data type"@en .
 <https://w3id.org/ibp/CTRLont#DataType> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.w3.org/TR/xmlschema-2/#built-in-datatypes"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/ibp/CTRLont#DataType> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # https://w3id.org/ibp/CTRLont#Input
 <https://w3id.org/ibp/CTRLont#Input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ibp/CTRLont#Input> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/CTRLont#AnnotatedElement> .
 <https://w3id.org/ibp/CTRLont#Input> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/ibp/CTRLont#Parameter> .
 <https://w3id.org/ibp/CTRLont#Input> <http://www.w3.org/2000/01/rdf-schema#comment> "An input allow flows of information to enter a control actor. Inputs are processed by the respective application logic of the control actor to compute the outputs."@en .
+<https://w3id.org/ibp/CTRLont#Input> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ibp/CTRLont#ctrl> .
 <https://w3id.org/ibp/CTRLont#Input> <http://www.w3.org/2000/01/rdf-schema#label> "Input"@en .
+<https://w3id.org/ibp/CTRLont#Input> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # https://w3id.org/ibp/CTRLont#Medium
 <https://w3id.org/ibp/CTRLont#Medium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ibp/CTRLont#Medium> <http://www.w3.org/2000/01/rdf-schema#comment> "Placeholder concept to stipulate reuse of existing ontologies such as dbpedia or  \thttp://www.productontology.org/id/"@en .
+<https://w3id.org/ibp/CTRLont#Medium> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ibp/CTRLont#ctrl> .
 <https://w3id.org/ibp/CTRLont#Medium> <http://www.w3.org/2000/01/rdf-schema#label> "Medium"@en .
 <https://w3id.org/ibp/CTRLont#Medium> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://wiki.dbpedia.org/> .
 <https://w3id.org/ibp/CTRLont#Medium> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.productontology.org/id/> .
+<https://w3id.org/ibp/CTRLont#Medium> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # https://w3id.org/ibp/CTRLont#Output
 <https://w3id.org/ibp/CTRLont#Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ibp/CTRLont#Output> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/CTRLont#AnnotatedElement> .
 <https://w3id.org/ibp/CTRLont#Output> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/ibp/CTRLont#Parameter> .
 <https://w3id.org/ibp/CTRLont#Output> <http://www.w3.org/2000/01/rdf-schema#comment> "An output allows compute results by the application logic of an control actor to be fowarded to outside entities such as actuators or other control actors."@en .
+<https://w3id.org/ibp/CTRLont#Output> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ibp/CTRLont#ctrl> .
 <https://w3id.org/ibp/CTRLont#Output> <http://www.w3.org/2000/01/rdf-schema#label> "Output"@en .
+<https://w3id.org/ibp/CTRLont#Output> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # https://w3id.org/ibp/CTRLont#Parameter
 <https://w3id.org/ibp/CTRLont#Parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ibp/CTRLont#Parameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/CTRLont#AnnotatedElement> .
 <https://w3id.org/ibp/CTRLont#Parameter> <http://www.w3.org/2000/01/rdf-schema#comment> "Parameter describe time-invariant values and settings of the respective control actor. Thus thay can be added dependent on the respective application logic."@en .
+<https://w3id.org/ibp/CTRLont#Parameter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ibp/CTRLont#ctrl> .
 <https://w3id.org/ibp/CTRLont#Parameter> <http://www.w3.org/2000/01/rdf-schema#label> "Parameter"@en .
+<https://w3id.org/ibp/CTRLont#Parameter> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # https://w3id.org/ibp/CTRLont#Quantity
 <https://w3id.org/ibp/CTRLont#Quantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ibp/CTRLont#Quantity> <http://www.w3.org/2000/01/rdf-schema#comment> "Placeholder concept to stipulate reuse of existing ontologies such as Ontology for Units and Measures (OM) or QUDT."@en .
+<https://w3id.org/ibp/CTRLont#Quantity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ibp/CTRLont#ctrl> .
 <https://w3id.org/ibp/CTRLont#Quantity> <http://www.w3.org/2000/01/rdf-schema#label> "Quantity"@en .
 <https://w3id.org/ibp/CTRLont#Quantity> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://qudt.org/schema/qudt> .
 <https://w3id.org/ibp/CTRLont#Quantity> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+<https://w3id.org/ibp/CTRLont#Quantity> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # https://w3id.org/ibp/CTRLont#SemanticType
 <https://w3id.org/ibp/CTRLont#SemanticType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ibp/CTRLont#SemanticType> <http://www.w3.org/2000/01/rdf-schema#comment> "It may be required to further annotate an Input, Output or Parameter with a specific Semantic Type. For example in building automation to differ between room air temperature or outdoor air temperature."@en .
+<https://w3id.org/ibp/CTRLont#SemanticType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ibp/CTRLont#ctrl> .
 <https://w3id.org/ibp/CTRLont#SemanticType> <http://www.w3.org/2000/01/rdf-schema#label> "Semantic Type"@en .
+<https://w3id.org/ibp/CTRLont#SemanticType> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # https://w3id.org/ibp/CTRLont#Unit
 <https://w3id.org/ibp/CTRLont#Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ibp/CTRLont#Unit> <http://www.w3.org/2000/01/rdf-schema#comment> "Placeholder concept to stipulate reuse of existing ontologies such as Ontology for Units and Measures (OM) or QUDT."@en .
+<https://w3id.org/ibp/CTRLont#Unit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ibp/CTRLont#ctrl> .
 <https://w3id.org/ibp/CTRLont#Unit> <http://www.w3.org/2000/01/rdf-schema#label> "Unit"@en .
+<https://w3id.org/ibp/CTRLont#Unit> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # 
 # 
