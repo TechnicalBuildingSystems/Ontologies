@@ -1,0 +1,1347 @@
+[ {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Ana Roxin"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-2033-859X"
+  }, {
+    "@id" : "https://www.researchgate.net/profile/Georg_Schneider3"
+  }, {
+    "@value" : "Georg Ferdinand Schneider"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "This ontology aims at modelling the semantics of the basic data types \n    provided by the XSD standard for OWL ontologies. In particular, it provides the possibility \n    to describe basic data types as resources rather then RDF Literals.\n\n    \n    This problem appears to be existent also in other domains such as e-commerce, e.g.\n    https://www.w3.org/2011/webschema/track/issues/14\n    "
+  } ],
+  "http://purl.org/dc/terms/identifier" : [ {
+    "@value" : "https://w3id.org/ibp/BasicDatatypeOntology#"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2018-06-20"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://creativecommons.org/licenses/by-sa/4.0"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2018-06-20"
+  } ],
+  "http://purl.org/dc/terms/rights" : [ {
+    "@value" : "Copyright (c) 2017/ 2018, Fraunhofer Institute for Building Physics, Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "The Basic Data Types ontology."
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "BDO"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Basic Datatype Ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#"
+  }, {
+    "@id" : "https://www.github.com/TechnicalBuildingSystems/Ontologies"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Anysimpletype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a  All simple types from XSD"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "anySimpleType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anySimpleType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Anytype"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Anytype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Top-level XSD type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "anyType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Anyuri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a URI (Uniform Resource Identifier)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "anyURI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Anysimpletype"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Base64binary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Binary content coded as base64. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "base64Binary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#base64Binary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Anysimpletype"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Boolean",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Boolean (true or false). This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Anysimpletype"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Byte",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Signed value of 8 bits. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "byte"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#byte"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Short"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Complextype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Complex xsd type, which can be customised"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "complexType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#complexType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Anytype"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Gregorian calendar date. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Anysimpletype"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Datetime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Instant of time (Gregorian calendar). This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "dateTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Anysimpletype"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Decimal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Decimal numbers. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Anysimpletype"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Double",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a IEEE 64-bit floating-point. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "double"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Anysimpletype"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Duration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Time durations. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "duration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#duration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Anysimpletype"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Entities",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Whitespace-separated list of unparsed entity references. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ENTITIES"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#ENTITIES"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Entity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Entity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Reference to an unparsed entity. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ENTITY"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#ENTITY"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Ncname"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Float",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a IEEE 32-bit floating-point. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Anysimpletype"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Gday",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Recurring period of time: monthly day. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "gDay"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gDay"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Anysimpletype"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Gmonth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Recurring period of time: yearly month. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "gMonth"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gMonth"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Anysimpletype"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Gmonthday",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Recurring period of time: yearly day. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "gMonthDay"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gMonthDay"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Anysimpletype"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Gyear",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Period of one year. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "gYear"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gYear"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Anysimpletype"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Gyearmonth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Period of one month. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "gYearMonth"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gYearMonth"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Anysimpletype"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Hexbinary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Binary contents coded in hexadecimal. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hexBinary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#hexBinary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Anysimpletype"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Id",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Definition of unique identifiers. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ID"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#ID"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Ncname"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Idref",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Definition of references to unique identifiers. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "IDREF"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#IDREF"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Ncname"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Idrefs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Definition of lists of references to unique identifiers. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "IDREFS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#IDREFS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Idref"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Int",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a 32-bit signed integers. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Long"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Integer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Signed integers of arbitrary length. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Decimal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a RFC 1766 language codes. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "language"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#language"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Token"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Long",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a 64-bit signed integers. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "long"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#long"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Integer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a XML 1.O name. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#Name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Token"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Ncname",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Unqualified names. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "NCName"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#NCName"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Name"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Negativeinteger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Strictly negative integers of arbitrary length. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "negativeInteger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#negativeInteger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Nonpositiveinteger"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Nmtoken",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a XML 1.0 name token (NMTOKEN). This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "NMTOKEN"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#NMTOKEN"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Token"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Nmtokens",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a List of XML 1.0 name tokens (NMTOKEN). This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "NMTOKENS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#NMTOKENS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Nmtoken"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Nonnegativeinteger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Integers of arbitrary length positive or equal to zero. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Integer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Nonpositiveinteger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Integers of arbitrary length negative or equal to zero. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "nonPositiveInteger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonPositiveInteger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Integer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Normalizedstring",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Whitespace-replaced strings. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "normalizedString"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#normalizedString"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#String"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Notation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Emulation of the XML 1.0 feature. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "NOTATION"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#NOTATION"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Anysimpletype"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Positiveinteger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Strictly positive integers of arbitrary length. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "positiveInteger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Nonnegativeinteger"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Qname",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Namespaces in XML-qualified names. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "QName"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#QName"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Anysimpletype"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Short",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a 32-bit signed integers. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "short"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#short"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Int"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#String",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Any string. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Anysimpletype"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Point in time recurring each day. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Anysimpletype"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Token",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Whitespace-replaced and collapsed strings. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "token"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#token"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Normalizedstring"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Unsignedbyte",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Unsigned value of 8 bits. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "unsignedByte"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#unsignedByte"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Unsignedshort"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Unsignedint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Unsigned integer of 32 bits. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "unsignedInt"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#unsignedInt"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Unsignedlong"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Unsignedlong",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Unsigned integer of 64 bits. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "unsignedLong"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#unsignedLong"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Nonnegativeinteger"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Unsignedshort",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL class to classify a Unsigned integer of 16 bits"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "unsignedShort"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#unsignedShort"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#Unsignedint"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#anysimpletype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Anysimpletype" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a  All simple types from XSD"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "anySimpleType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anySimpleType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#anytype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Anytype" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Top-level XSD type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "anyType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#anyuri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Anyuri" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a URI (Uniform Resource Identifier)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "anyURI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#base64binary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Base64binary" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Binary content coded as base64. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "base64Binary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#base64Binary"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#boolean",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Boolean" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Boolean (true or false). This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#byte",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Byte" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Signed value of 8 bits. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "byte"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#byte"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#complextype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Complextype" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Complex xsd type, which can be customised"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "complexType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#complexType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Date" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Gregorian calendar date. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#datetime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Datetime" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Instant of time (Gregorian calendar). This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "dateTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#decimal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Decimal" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Decimal numbers. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#double",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Double" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a IEEE 64-bit floating-point. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "double"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#duration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Duration" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Time durations. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "duration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#duration"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#entities",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Entities" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Whitespace-separated list of unparsed entity references. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ENTITIES"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#ENTITIES"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#entity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Entity" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Reference to an unparsed entity. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ENTITY"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#ENTITY"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#float",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Float" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a IEEE 32-bit floating-point. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#gday",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Gday" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Recurring period of time: monthly day. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "gDay"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gDay"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#gmonth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Gmonth" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Recurring period of time: yearly month. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "gMonth"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gMonth"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#gmonthday",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Gmonthday" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Recurring period of time: yearly day. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "gMonthDay"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gMonthDay"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#gyear",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Gyear" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Period of one year. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "gYear"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gYear"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#gyearmonth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Gyearmonth" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Period of one month. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "gYearMonth"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gYearMonth"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#hexbinary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Hexbinary" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Binary contents coded in hexadecimal. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hexBinary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#hexBinary"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#id",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Id" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Definition of unique identifiers. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ID"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#ID"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#idref",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Idref" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Definition of references to unique identifiers. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "IDREF"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#IDREF"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#idrefs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Idrefs" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Definition of lists of references to unique identifiers. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "IDREFS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#IDREFS"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#int",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Int" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a 32-bit signed integers. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#integer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Integer" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Signed integers of arbitrary length. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Language" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a RFC 1766 language codes. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "language"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#language"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#long",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Long" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a 64-bit signed integers. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "long"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#long"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Name" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a XML 1.O name. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#Name"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#ncname",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Ncname" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Unqualified names. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "NCName"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#NCName"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#negativeinteger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Negativeinteger" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Strictly negative integers of arbitrary length. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "negativeInteger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#negativeInteger"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#nmtoken",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Nmtoken" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a XML 1.0 name token (NMTOKEN). This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "NMTOKEN"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#NMTOKEN"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#nmtokens",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Nmtokens" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a List of XML 1.0 name tokens (NMTOKEN). This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "NMTOKENS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#NMTOKENS"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#nonnegativeinteger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Nonnegativeinteger" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Integers of arbitrary length positive or equal to zero. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#nonpositiveinteger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Nonpositiveinteger" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Integers of arbitrary length negative or equal to zero. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "nonPositiveInteger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonPositiveInteger"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#normalizedstring",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Normalizedstring" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Whitespace-replaced strings. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "normalizedString"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#normalizedString"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#notation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Notation" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Emulation of the XML 1.0 feature. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "NOTATION"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#NOTATION"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#positiveinteger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Positiveinteger" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Strictly positive integers of arbitrary length. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "positiveInteger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#qname",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Qname" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Namespaces in XML-qualified names. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "QName"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#QName"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#short",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Short" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a 32-bit signed integers. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "short"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#short"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#string",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#String" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Any string. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Time" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Point in time recurring each day. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#time"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#token",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Token" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Whitespace-replaced and collapsed strings. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "token"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#token"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#unsignedbyte",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Unsignedbyte" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Unsigned value of 8 bits. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "unsignedByte"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#unsignedByte"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#unsignedint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Unsignedint" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Unsigned integer of 32 bits. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "unsignedInt"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#unsignedInt"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#unsignedlong",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Unsignedlong" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Unsigned integer of 64 bits. This description is reproduced from van der Vlist, Eric (2011) Relax NG A Simpler Schema Language for XML, OReilly Media, ISBN 0596004214. This content is licensed under a Free Software Foundation GFDL license, which can be obtained here: http://books.xmlschemata.org/relaxng/relax-APP-B.html."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "unsignedLong"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#unsignedLong"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/BasicDatatypeOntology#unsignedshort",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/BasicDatatypeOntology#Unsignedshort" ],
+  "http://www.w3.org/2000/01/rdf-schema#description" : [ {
+    "@value" : "OWL NamedIndividual to relate to a Unsigned integer of 16 bits"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "unsignedShort"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#unsignedShort"
+  } ]
+} ]

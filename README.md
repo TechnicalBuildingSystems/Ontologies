@@ -4,7 +4,7 @@ Within this repository ontologies developed within the [Technical Building Syste
 
 ## Adding content to any of the ontologies
 
-1. Fork this repository;
+1. [Fork](https://github.com/TechnicalBuildingSystems/Ontologies/fork) this [repository](https://github.com/TechnicalBuildingSystems/Ontologies);
 2. Create a branch;
 3. Add contribution to ontology file in branch;
 4. Commit your changes and submit a [pull request github documentation](https://help.github.com/articles/about-pull-requests/);
