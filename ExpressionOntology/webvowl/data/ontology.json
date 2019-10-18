@@ -1,0 +1,653 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.4), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.org/vocommons/voaf", "file:/C:/OntoCAPE/meta_model/mereology/mereology.owl", "http://numerateweb.org/vocab/math", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/ibp/CTRLont", "https://w3id.org/ibp/ExpressionOntology", "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl" ],
+    "title" : {
+      "en" : "The Expression Ontology."
+    },
+    "iri" : "https://w3id.org/ibp/ExpressionOntology",
+    "version" : "v0.0.1",
+    "author" : [ "Georg Ferdinand Schneider", "https://www.researchgate.net/profile/Georg_Schneider3", "https://orcid.org/0000-0002-2033-859X" ],
+    "description" : {
+      "en" : "The expression ontology is an ontology to represent mathematical expressions from the  engineering domain.  The ontology and is used are documented in [1]. Precursors of the model developed simultaneously are published in [2,3]. The ontology reuses concepts from the OntoCAPE [4] and OpenMath [5] ontologies. The ontology is implemented using the free protege tool (protege.stanford.edu) [5].\n\n[1] G. F. Schneider, H. Wicaksono, and J. Ovtcharova. Virtual Engineering of Cyber-Physical Automation Systems: The Case of Control Logic. Advanced Engineering Informatics, February 2018. Submitted.\n\n[2] W. Terkaj, G. F. Schneider, and P. Pauwels. Reusing Domain Ontologies in Linked Building Data: the Case of Building Automation and Control. In Proceedings of the 8th International Workshop on Formal Ontologies Meet Industry (FOMI), pages 1{12, Bolzano, Italy, September 2017.\n\n[3] G. F. Schneider, P. Pauwels, and S. Steiger. Ontology-based Modeling of Control Logic in Building Automation Systems. IEEE Transactions on Industrial Informatics, 13(6):3350-3360, December 2017.\n\n[4] W. Marquardt, J. Morbach, A. Wiesner, and A. Yang. OntoCAPE: A re-usable ontology for chemical process engineering. Springer, Berlin, Germany, 2009.\n\n[5] K. Wenzel and H. Reinhardt. Mathematical computations for linked data applications with OpenMath. In Joint Proceedings of the 24th Workshop on OpenMath and the 7th Workshop on Mathematical User Interfaces (MathUI), pages 38{48, Bremen, Germany, 2012\n\n[6] M. A. Musen. The protege project: a look back and a look forward. AI matters, 1(4):4-12, 2015, doi: 10.1145/2757001.2757003."
+    },
+    "labels" : {
+      "en" : "ExpressionOntology"
+    },
+    "comments" : {
+      "en" : "ExpressionOntology specifies concepts and relationships to describe mathematical expressions."
+    },
+    "other" : {
+      "identifier" : [ {
+        "identifier" : "identifier",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ibp/ExpressionOntology#",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by-sa/4.0",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://www.researchgate.net/profile/Georg_Schneider3",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://orcid.org/0000-0002-2033-859X",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Georg Ferdinand Schneider",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Walter Terkaj",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "exp",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "en",
+        "value" : "Copyright (c) 2018, Fraunhofer Institute for Building Physics,\n\t\t\tNuremberg, Germany. This ontology is distributed under a Creative Commons Attribution \n\t\t\tShare Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2018-03-10",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ibp/ExpressionOntology#",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "v0.0.1",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2018-03-01",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "The Expression Ontology.",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://github.com/numerateweb/numerateweb",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://dx.doi.org/10.1007/978-3-642-04655-1",
+        "type" : "iri"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 13,
+    "objectPropertyCount" : 6,
+    "datatypePropertyCount" : 2,
+    "individualCount" : 16
+  },
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "6",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/ibp/ExpressionOntology#BinaryOperator",
+    "baseIri" : "https://w3id.org/ibp/ExpressionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BinaryOperator"
+    },
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "2",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "3",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "6",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/ibp/ExpressionOntology#Expression",
+    "baseIri" : "https://w3id.org/ibp/ExpressionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Expression"
+    },
+    "id" : "10",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#Parameter",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Parameter"
+    },
+    "attributes" : [ "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#ListElement",
+    "baseIri" : "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ListElement"
+    },
+    "subClasses" : [ "8" ],
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#LinkedList",
+    "baseIri" : "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LinkedList"
+    },
+    "subClasses" : [ "10" ],
+    "attributes" : [ "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://w3id.org/ibp/ExpressionOntology#Operand",
+    "baseIri" : "https://w3id.org/ibp/ExpressionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Operand"
+    },
+    "subClasses" : [ "16", "19" ],
+    "id" : "17",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/ExpressionOntology#UnaryOperator",
+    "baseIri" : "https://w3id.org/ibp/ExpressionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UnaryOperator"
+    },
+    "id" : "25",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://numerateweb.org/vocab/math#Symbol",
+    "baseIri" : "http://numerateweb.org/vocab/math",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Symbol"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.openmath.org/cd/arith1#minus",
+      "baseIri" : "http://www.openmath.org/cd/arith1",
+      "comment" : {
+        "en" : "Subtraction -"
+      },
+      "labels" : {
+        "IRI-based" : "minus"
+      }
+    }, {
+      "iri" : "http://www.openmath.org/cd/logic1#not",
+      "baseIri" : "http://www.openmath.org/cd/logic1",
+      "comment" : {
+        "en" : "Logical NOT"
+      },
+      "labels" : {
+        "IRI-based" : "not"
+      }
+    }, {
+      "iri" : "http://www.openmath.org/cd/relation1#lt",
+      "baseIri" : "http://www.openmath.org/cd/relation1",
+      "comment" : {
+        "en" : "Less than <"
+      },
+      "labels" : {
+        "IRI-based" : "lt"
+      }
+    }, {
+      "iri" : "http://www.openmath.org/cd/logic1#and",
+      "baseIri" : "http://www.openmath.org/cd/logic1",
+      "comment" : {
+        "en" : "Logical AND"
+      },
+      "labels" : {
+        "IRI-based" : "and"
+      }
+    }, {
+      "iri" : "http://www.openmath.org/cd/arith1#plus",
+      "baseIri" : "http://www.openmath.org/cd/arith1",
+      "comment" : {
+        "en" : "Addition +"
+      },
+      "labels" : {
+        "IRI-based" : "plus"
+      }
+    }, {
+      "iri" : "http://www.openmath.org/cd/relation1#eq",
+      "baseIri" : "http://www.openmath.org/cd/relation1",
+      "comment" : {
+        "en" : "equal = <"
+      },
+      "labels" : {
+        "IRI-based" : "eq"
+      }
+    }, {
+      "iri" : "http://www.openmath.org/cd/relation1#gt",
+      "baseIri" : "http://www.openmath.org/cd/relation1",
+      "comment" : {
+        "en" : "Greater than >"
+      },
+      "labels" : {
+        "IRI-based" : "gt"
+      }
+    }, {
+      "iri" : "http://www.openmath.org/cd/logic1#xor",
+      "baseIri" : "http://www.openmath.org/cd/logic1",
+      "comment" : {
+        "en" : "Logical XOR <"
+      },
+      "labels" : {
+        "IRI-based" : "xor"
+      }
+    }, {
+      "iri" : "http://www.openmath.org/cd/relation1#leq",
+      "baseIri" : "http://www.openmath.org/cd/relation1",
+      "comment" : {
+        "en" : "Less than or equal <="
+      },
+      "labels" : {
+        "IRI-based" : "leq"
+      }
+    }, {
+      "iri" : "http://www.openmath.org/cd/logic1#or",
+      "baseIri" : "http://www.openmath.org/cd/logic1",
+      "comment" : {
+        "en" : "Logical OR"
+      },
+      "labels" : {
+        "IRI-based" : "or"
+      }
+    }, {
+      "iri" : "http://www.openmath.org/cd/arith1#times",
+      "baseIri" : "http://www.openmath.org/cd/arith1",
+      "comment" : {
+        "en" : "Multiplication"
+      },
+      "labels" : {
+        "IRI-based" : "times"
+      }
+    }, {
+      "iri" : "http://www.openmath.org/cd/arith1#divide",
+      "baseIri" : "http://www.openmath.org/cd/arith1",
+      "comment" : {
+        "en" : "Division /"
+      },
+      "labels" : {
+        "IRI-based" : "divide"
+      }
+    }, {
+      "iri" : "http://www.openmath.org/cd/relation1#geq",
+      "baseIri" : "http://www.openmath.org/cd/relation1",
+      "comment" : {
+        "en" : "greater than or equal >="
+      },
+      "labels" : {
+        "IRI-based" : "geq"
+      }
+    }, {
+      "iri" : "http://www.openmath.org/cd/relation1#neq",
+      "baseIri" : "http://www.openmath.org/cd/relation1",
+      "comment" : {
+        "en" : "Not equal != <"
+      },
+      "labels" : {
+        "IRI-based" : "neq"
+      }
+    }, {
+      "iri" : "http://www.openmath.org/cd/arith1#power",
+      "baseIri" : "http://www.openmath.org/cd/arith1",
+      "comment" : {
+        "en" : "To the power of ^"
+      },
+      "labels" : {
+        "IRI-based" : "power"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://numerateweb.org/vocab/math#Variable",
+    "baseIri" : "http://numerateweb.org/vocab/math",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Variable"
+    },
+    "attributes" : [ "external" ],
+    "id" : "19",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/ExpressionOntology#Operator",
+    "baseIri" : "https://w3id.org/ibp/ExpressionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Operator"
+    },
+    "subClasses" : [ "25", "0" ],
+    "id" : "1",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/ExpressionOntology#ExpressionElement",
+    "baseIri" : "https://w3id.org/ibp/ExpressionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExpressionElement"
+    },
+    "subClasses" : [ "17", "1" ],
+    "id" : "8",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://numerateweb.org/vocab/math#Literal",
+    "baseIri" : "http://numerateweb.org/vocab/math",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "attributes" : [ "external" ],
+    "id" : "16",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://purl.org/vocommons/voaf#Vocabulary",
+    "baseIri" : "http://purl.org/vocommons/voaf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Vocabulary"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/ExpressionOntology",
+      "baseIri" : "https://w3id.org/ibp",
+      "labels" : {
+        "IRI-based" : "ExpressionOntology"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "31"
+  } ],
+  "property" : [ {
+    "id" : "4",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "24",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://numerateweb.org/vocab/math#name",
+    "baseIri" : "http://numerateweb.org/vocab/math",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "name"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "4"
+  }, {
+    "range" : "9",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://numerateweb.org/vocab/math#value",
+    "baseIri" : "http://numerateweb.org/vocab/math",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "value"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "12"
+  }, {
+    "range" : "11",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "13"
+  }, {
+    "range" : "17",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "15"
+  }, {
+    "range" : "17",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "18"
+  }, {
+    "iri" : "file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf",
+    "baseIri" : "file:/C:/OntoCAPE/meta_model/mereology/mereology.owl",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "isComposedOf"
+    },
+    "domain" : "11",
+    "attributes" : [ "object", "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement",
+    "inverse" : "22",
+    "baseIri" : "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "nextElement"
+    },
+    "domain" : "9",
+    "attributes" : [ "object", "external" ],
+    "id" : "21"
+  }, {
+    "range" : "19",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "range" : "25",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://numerateweb.org/vocab/math#operator",
+    "baseIri" : "http://numerateweb.org/vocab/math",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "operator"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "26"
+  }, {
+    "iri" : "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#previousElement",
+    "baseIri" : "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "previousElement"
+    },
+    "domain" : "9",
+    "attributes" : [ "object", "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#logicInput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "logicInput"
+    },
+    "domain" : "2",
+    "attributes" : [ "object", "external" ],
+    "id" : "28"
+  }, {
+    "range" : "8",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "29"
+  }, {
+    "range" : "1",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#logicParameter",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "logicParameter"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "external" ],
+    "id" : "32"
+  }, {
+    "range" : "8",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  } ]
+}

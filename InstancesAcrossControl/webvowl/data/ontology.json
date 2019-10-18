@@ -1,0 +1,1109 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.4), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://numerateweb.org/vocab/math", "http://www.w3.org/2000/01/rdf-schema", "http://w3id.org/ibp/StateMachineOntology", "http://w3id.org/ibp/TransferFunctionElementOntology", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/ibp/ExpressionOntology", "http://w3id.org/ibp/CTRLont", "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl" ],
+    "title" : {
+      "en" : "Ontology InstancesAcrossControl."
+    },
+    "iri" : "https://w3id.org/ibp/InstancesAcrossControl",
+    "version" : "v0.1.0",
+    "author" : [ "Georg Ferdinand Schneider", "https://www.researchgate.net/profile/Georg_Schneider3", "https://orcid.org/0000-0002-2033-859X" ],
+    "description" : {
+      "en" : "The ontology provides instances of the examples described in the PhD thesis of Georg Ferdinand Schneider [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].\r\n\r\n[1] Schneider, G.F. (2019): \"Semantic Model for Control Logic in Automation Systems - Knowledge-Based Support of the Engineering and Operation of Control Logic in Building and Industrial Automation Systems\" PhD thesis, Karlsruhe Institute of Technology, Karlsruhe, Germany.\r\n\r\n[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003."
+    },
+    "labels" : {
+      "en" : "InstancesAcrossControl"
+    },
+    "comments" : {
+      "en" : "Ontology with instances of InstancesAcrossControl."
+    },
+    "other" : {
+      "identifier" : [ {
+        "identifier" : "identifier",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ibp/InstancesAcrossControl#",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by-sa/4.0",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://www.researchgate.net/profile/Georg_Schneider3",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://orcid.org/0000-0002-2033-859X",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Georg Ferdinand Schneider",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "en",
+        "value" : "Copyright (c) 2019, Georg Ferdinand Schneider, Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-03-13",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "v0.1.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ibp/InstancesAcrossControl#",
+        "type" : "iri"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Ontology InstancesAcrossControl.",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2018-02-07",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 18,
+    "objectPropertyCount" : 0,
+    "datatypePropertyCount" : 0,
+    "individualCount" : 24
+  },
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://w3id.org/ibp/StateMachineOntology#SimpleState",
+    "baseIri" : "http://w3id.org/ibp/StateMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SimpleState"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#s10",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "do" : [ {
+          "identifier" : "do",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#s10-DoAct",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "s10"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://w3id.org/ibp/CTRLont#ApplicationLogic",
+    "baseIri" : "http://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ApplicationLogic"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#fb_PUM901_Safety",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "hasExpression" : [ {
+          "identifier" : "hasExpression",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-Expr",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "fb_PUM901_Safety"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#fb_StateMachine",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "contains" : [ {
+          "identifier" : "contains",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#s10",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "fb_StateMachine"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://w3id.org/ibp/StateMachineOntology#Value",
+    "baseIri" : "http://w3id.org/ibp/StateMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Value"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#s10-DoVal",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "logicParameter" : [ {
+          "identifier" : "logicParameter",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_StateMachine.s10-DoVal",
+          "type" : "iri"
+        } ],
+        "hasLiteralValue" : [ {
+          "identifier" : "hasLiteralValue",
+          "language" : "undefined",
+          "value" : "true",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "s10-DoVal"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://numerateweb.org/vocab/math#Variable",
+    "baseIri" : "http://numerateweb.org/vocab/math",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Variable"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-5",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "PIS901",
+          "type" : "label"
+        } ],
+        "logicInput" : [ {
+          "identifier" : "logicInput",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-PIS901",
+          "type" : "iri"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-6",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "fB_PUM901_Safety-ExpEle-5"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-0",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "bPUM901",
+          "type" : "label"
+        } ],
+        "logicInput" : [ {
+          "identifier" : "logicInput",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-bPUM901",
+          "type" : "iri"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "fB_PUM901_Safety-ExpEle-0"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/ibp/ExpressionOntology#Expression",
+    "baseIri" : "https://w3id.org/ibp/ExpressionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Expression"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-Expr",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "isComposedOf" : [ {
+          "identifier" : "isComposedOf",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-5",
+          "type" : "iri"
+        }, {
+          "identifier" : "isComposedOf",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-1",
+          "type" : "iri"
+        }, {
+          "identifier" : "isComposedOf",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-4",
+          "type" : "iri"
+        }, {
+          "identifier" : "isComposedOf",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-6",
+          "type" : "iri"
+        }, {
+          "identifier" : "isComposedOf",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-7",
+          "type" : "iri"
+        }, {
+          "identifier" : "isComposedOf",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-3",
+          "type" : "iri"
+        }, {
+          "identifier" : "isComposedOf",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-2",
+          "type" : "iri"
+        }, {
+          "identifier" : "isComposedOf",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-0",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "fB_PUM901_Safety-Expr"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "https://w3id.org/ibp/ExpressionOntology#Operator",
+    "baseIri" : "https://w3id.org/ibp/ExpressionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Operator"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-6",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "operator" : [ {
+          "identifier" : "operator",
+          "language" : "undefined",
+          "value" : "http://www.openmath.org/cd/relation1#gt",
+          "type" : "iri"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-7",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "fB_PUM901_Safety-ExpEle-6"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-3",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "operator" : [ {
+          "identifier" : "operator",
+          "language" : "undefined",
+          "value" : "http://www.openmath.org/cd/logic1#and",
+          "type" : "iri"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-4",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "fB_PUM901_Safety-ExpEle-3"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-4",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "operator" : [ {
+          "identifier" : "operator",
+          "language" : "undefined",
+          "value" : "http://www.openmath.org/cd/logic1#not",
+          "type" : "iri"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-5",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "fB_PUM901_Safety-ExpEle-4"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-1",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "operator" : [ {
+          "identifier" : "operator",
+          "language" : "undefined",
+          "value" : "http://www.openmath.org/cd/relation1#eq",
+          "type" : "iri"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-2",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "fB_PUM901_Safety-ExpEle-1"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://w3id.org/ibp/StateMachineOntology#Behaviour",
+    "baseIri" : "http://w3id.org/ibp/StateMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Behaviour"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#s10-DoBehav",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "logicOutput" : [ {
+          "identifier" : "logicOutput",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_StateMachine.bPUM901",
+          "type" : "iri"
+        } ],
+        "assignValue" : [ {
+          "identifier" : "assignValue",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#s10-DoVal",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "s10-DoBehav"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://w3id.org/ibp/ExpressionOntology#ExpressionElement",
+    "baseIri" : "https://w3id.org/ibp/ExpressionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExpressionElement"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-5",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "PIS901",
+          "type" : "label"
+        } ],
+        "logicInput" : [ {
+          "identifier" : "logicInput",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-PIS901",
+          "type" : "iri"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-6",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "fB_PUM901_Safety-ExpEle-5"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-6",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "operator" : [ {
+          "identifier" : "operator",
+          "language" : "undefined",
+          "value" : "http://www.openmath.org/cd/relation1#gt",
+          "type" : "iri"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-7",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "fB_PUM901_Safety-ExpEle-6"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-3",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "operator" : [ {
+          "identifier" : "operator",
+          "language" : "undefined",
+          "value" : "http://www.openmath.org/cd/logic1#and",
+          "type" : "iri"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-4",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "fB_PUM901_Safety-ExpEle-3"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-4",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "operator" : [ {
+          "identifier" : "operator",
+          "language" : "undefined",
+          "value" : "http://www.openmath.org/cd/logic1#not",
+          "type" : "iri"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-5",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "fB_PUM901_Safety-ExpEle-4"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-7",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "logicParameter" : [ {
+          "identifier" : "logicParameter",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-7-Par",
+          "type" : "iri"
+        } ],
+        "value" : [ {
+          "identifier" : "value",
+          "language" : "undefined",
+          "value" : "200000",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "fB_PUM901_Safety-ExpEle-7"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-1",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "operator" : [ {
+          "identifier" : "operator",
+          "language" : "undefined",
+          "value" : "http://www.openmath.org/cd/relation1#eq",
+          "type" : "iri"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-2",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "fB_PUM901_Safety-ExpEle-1"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-2",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "logicParameter" : [ {
+          "identifier" : "logicParameter",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-2-Par",
+          "type" : "iri"
+        } ],
+        "value" : [ {
+          "identifier" : "value",
+          "language" : "undefined",
+          "value" : "true",
+          "type" : "label"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-3",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "fB_PUM901_Safety-ExpEle-2"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-0",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "bPUM901",
+          "type" : "label"
+        } ],
+        "logicInput" : [ {
+          "identifier" : "logicInput",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-bPUM901",
+          "type" : "iri"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "fB_PUM901_Safety-ExpEle-0"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://w3id.org/ibp/TransferFunctionElementOntology#MISO",
+    "baseIri" : "http://w3id.org/ibp/TransferFunctionElementOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MISO"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#fb_PUM901_Safety",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "hasExpression" : [ {
+          "identifier" : "hasExpression",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-Expr",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "fb_PUM901_Safety"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://w3id.org/ibp/CTRLont#Input",
+    "baseIri" : "http://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Input"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-bPUM901",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "hasDataType" : [ {
+          "identifier" : "hasDataType",
+          "language" : "undefined",
+          "value" : "http://w3id.org/ibp/BasicDatatypeOntology#boolean",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "fB_PUM901_Safety-bPUM901"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-PIS901",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "hasDataType" : [ {
+          "identifier" : "hasDataType",
+          "language" : "undefined",
+          "value" : "http://w3id.org/ibp/BasicDatatypeOntology#float",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "fB_PUM901_Safety-PIS901"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://w3id.org/ibp/CTRLont#Output",
+    "baseIri" : "http://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Output"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-bPUM901_SAFE",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "hasDataType" : [ {
+          "identifier" : "hasDataType",
+          "language" : "undefined",
+          "value" : "http://w3id.org/ibp/BasicDatatypeOntology#boolean",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "fB_PUM901_Safety-bPUM901_SAFE"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://w3id.org/ibp/StateMachineOntology#Action",
+    "baseIri" : "http://w3id.org/ibp/StateMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Action"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#s10-DoAct",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "actionBehaviour" : [ {
+          "identifier" : "actionBehaviour",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#s10-DoBehav",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "s10-DoAct"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://numerateweb.org/vocab/math#Literal",
+    "baseIri" : "http://numerateweb.org/vocab/math",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-7",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "logicParameter" : [ {
+          "identifier" : "logicParameter",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-7-Par",
+          "type" : "iri"
+        } ],
+        "value" : [ {
+          "identifier" : "value",
+          "language" : "undefined",
+          "value" : "200000",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "fB_PUM901_Safety-ExpEle-7"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-2",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "logicParameter" : [ {
+          "identifier" : "logicParameter",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-2-Par",
+          "type" : "iri"
+        } ],
+        "value" : [ {
+          "identifier" : "value",
+          "language" : "undefined",
+          "value" : "true",
+          "type" : "label"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-3",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "fB_PUM901_Safety-ExpEle-2"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://w3id.org/ibp/CTRLont#Parameter",
+    "baseIri" : "http://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Parameter"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-7-Par",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "labels" : {
+        "IRI-based" : "fB_PUM901_Safety-ExpEle-7-Par"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-2-Par",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "hasDataType" : [ {
+          "identifier" : "hasDataType",
+          "language" : "undefined",
+          "value" : "http://w3id.org/ibp/BasicDatatypeOntology#boolean",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "fB_PUM901_Safety-ExpEle-2-Par"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://w3id.org/ibp/CTRLont#ControlActor",
+    "baseIri" : "http://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ControlActor"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#fb_StateMachine-CA",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "hasApplicationLogic" : [ {
+          "identifier" : "hasApplicationLogic",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fb_StateMachine",
+          "type" : "iri"
+        } ],
+        "hasOuput" : [ {
+          "identifier" : "hasOuput",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_StateMachine.bPUM901",
+          "type" : "iri"
+        } ],
+        "hasParameter" : [ {
+          "identifier" : "hasParameter",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_StateMachine.s10-DoVal",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "fb_StateMachine-CA"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#fb_PUM901_Safety-CA",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "hasApplicationLogic" : [ {
+          "identifier" : "hasApplicationLogic",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fb_PUM901_Safety",
+          "type" : "iri"
+        } ],
+        "hasOutput" : [ {
+          "identifier" : "hasOutput",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-bPUM901_SAFE",
+          "type" : "iri"
+        } ],
+        "hasInput" : [ {
+          "identifier" : "hasInput",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fb_PUM901_Safety-bPUM901",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasInput",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-PIS901",
+          "type" : "iri"
+        } ],
+        "hasParameter" : [ {
+          "identifier" : "hasParameter",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-2-Par",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "fb_PUM901_Safety-CA"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement",
+    "baseIri" : "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FirstElement"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-0",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "bPUM901",
+          "type" : "label"
+        } ],
+        "logicInput" : [ {
+          "identifier" : "logicInput",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-bPUM901",
+          "type" : "iri"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "fB_PUM901_Safety-ExpEle-0"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://w3id.org/ibp/ExpressionOntology#Operand",
+    "baseIri" : "https://w3id.org/ibp/ExpressionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Operand"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-5",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "PIS901",
+          "type" : "label"
+        } ],
+        "logicInput" : [ {
+          "identifier" : "logicInput",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-PIS901",
+          "type" : "iri"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-6",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "fB_PUM901_Safety-ExpEle-5"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-7",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "logicParameter" : [ {
+          "identifier" : "logicParameter",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-7-Par",
+          "type" : "iri"
+        } ],
+        "value" : [ {
+          "identifier" : "value",
+          "language" : "undefined",
+          "value" : "200000",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "fB_PUM901_Safety-ExpEle-7"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-2",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "logicParameter" : [ {
+          "identifier" : "logicParameter",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-2-Par",
+          "type" : "iri"
+        } ],
+        "value" : [ {
+          "identifier" : "value",
+          "language" : "undefined",
+          "value" : "true",
+          "type" : "label"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-3",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "fB_PUM901_Safety-ExpEle-2"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-0",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "bPUM901",
+          "type" : "label"
+        } ],
+        "logicInput" : [ {
+          "identifier" : "logicInput",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-bPUM901",
+          "type" : "iri"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "fB_PUM901_Safety-ExpEle-0"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://w3id.org/ibp/StateMachineOntology#StateMachine",
+    "baseIri" : "http://w3id.org/ibp/StateMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StateMachine"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAcrossControl#fb_StateMachine",
+      "baseIri" : "https://w3id.org/ibp/InstancesAcrossControl",
+      "annotations" : {
+        "contains" : [ {
+          "identifier" : "contains",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAcrossControl#s10",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "fb_StateMachine"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "17"
+  } ]
+}

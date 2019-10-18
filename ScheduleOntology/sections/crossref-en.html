@@ -1,0 +1,764 @@
+<html><h2 id="crossreference" class="list">Cross reference for ScheduleOntology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by ScheduleOntology.
+<div id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Coordinate" title="https://w3id.org/ibp/ScheduleOntology#Coordinate">
+            <span>coordinate</span>
+         </a>
+      </li>
+      <li>
+         <a href="#EndPoint" title="https://w3id.org/ibp/ScheduleOntology#EndPoint">
+            <span>end point</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Interval" title="https://w3id.org/ibp/ScheduleOntology#Interval">
+            <span>interval</span>
+         </a>
+      </li>
+      <li>
+         <a href="#MathematicalFunction"
+            title="https://w3id.org/ibp/ScheduleOntology#MathematicalFunction">
+            <span>mathematical function</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Periodicity"
+            title="https://w3id.org/ibp/ScheduleOntology#Periodicity">
+            <span>periodicity</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Point" title="https://w3id.org/ibp/ScheduleOntology#Point">
+            <span>point</span>
+         </a>
+      </li>
+      <li>
+         <a href="#PolynomialConstant"
+            title="https://w3id.org/ibp/ScheduleOntology#PolynomialConstant">
+            <span>polynomial constant</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Schedule" title="https://w3id.org/ibp/ScheduleOntology#Schedule">
+            <span>schedule</span>
+         </a>
+      </li>
+      <li>
+         <a href="#StartPoint" title="https://w3id.org/ibp/ScheduleOntology#StartPoint">
+            <span>start point</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="Coordinate">
+      <h3>coordinate<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/ScheduleOntology#Coordinate</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasLiteralValue"
+               title="https://w3id.org/ibp/ScheduleOntology#hasLiteralValue">has literal value</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasXCoordinate"
+               title="https://w3id.org/ibp/ScheduleOntology#hasXCoordinate">has x coordinate</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasYCoordinate"
+               title="https://w3id.org/ibp/ScheduleOntology#hasYCoordinate">has y coordinate</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="EndPoint">
+      <h3>end point<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/ScheduleOntology#EndPoint</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Point" title="https://w3id.org/ibp/ScheduleOntology#Point">point</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasEndPoint"
+               title="https://w3id.org/ibp/ScheduleOntology#hasEndPoint">has end point</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Interval">
+      <h3>interval<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/ScheduleOntology#Interval</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasEndPoint"
+               title="https://w3id.org/ibp/ScheduleOntology#hasEndPoint">has end point</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasMathematicalFunction"
+               title="https://w3id.org/ibp/ScheduleOntology#hasMathematicalFunction">has mathematical function</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasStartPoint"
+               title="https://w3id.org/ibp/ScheduleOntology#hasStartPoint">has start point</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isConsecutiveInterval"
+               title="https://w3id.org/ibp/ScheduleOntology#isConsecutiveInterval">is consecutive interval</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasInterval"
+               title="https://w3id.org/ibp/ScheduleOntology#hasInterval">has interval</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isConsecutiveInterval"
+               title="https://w3id.org/ibp/ScheduleOntology#isConsecutiveInterval">is consecutive interval</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="MathematicalFunction">
+      <h3>mathematical function<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/ScheduleOntology#MathematicalFunction</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasPolynomicalConstant"
+               title="https://w3id.org/ibp/ScheduleOntology#hasPolynomicalConstant">has polynomical constant</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasMathematicalFunction"
+               title="https://w3id.org/ibp/ScheduleOntology#hasMathematicalFunction">has mathematical function</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Periodicity">
+      <h3>periodicity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/ScheduleOntology#Periodicity</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasPeriodicity"
+               title="https://w3id.org/ibp/ScheduleOntology#hasPeriodicity">has periodicity</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#Daily" title="https://w3id.org/ibp/ScheduleOntology#Daily">daily</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Monthly" title="https://w3id.org/ibp/ScheduleOntology#Monthly">monthly</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Weekly" title="https://w3id.org/ibp/ScheduleOntology#Weekly">weekly</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Yearly" title="https://w3id.org/ibp/ScheduleOntology#Yearly">yearly</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Point">
+      <h3>point<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/ScheduleOntology#Point</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#EndPoint" title="https://w3id.org/ibp/ScheduleOntology#EndPoint">end point</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#StartPoint" title="https://w3id.org/ibp/ScheduleOntology#StartPoint">start point</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasXCoordinate"
+               title="https://w3id.org/ibp/ScheduleOntology#hasXCoordinate">has x coordinate</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasYCoordinate"
+               title="https://w3id.org/ibp/ScheduleOntology#hasYCoordinate">has y coordinate</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PolynomialConstant">
+      <h3>polynomial constant<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/ScheduleOntology#PolynomialConstant</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#polyConstantDegree"
+               title="https://w3id.org/ibp/ScheduleOntology#polyConstantDegree">poly constant degree</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#polyConstantLiteralValue"
+               title="https://w3id.org/ibp/ScheduleOntology#polyConstantLiteralValue">poly constant literal value</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasPolynomicalConstant"
+               title="https://w3id.org/ibp/ScheduleOntology#hasPolynomicalConstant">has polynomical constant</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Schedule">
+      <h3>schedule<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/ScheduleOntology#Schedule</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="https://w3id.org/ibp/CTRLont#ApplicationLogic">application logic</span>
+            <sup class="type-c" title="class">c</sup>, <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasInterval"
+               title="https://w3id.org/ibp/ScheduleOntology#hasInterval">has interval</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasPeriodicity"
+               title="https://w3id.org/ibp/ScheduleOntology#hasPeriodicity">has periodicity</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="StartPoint">
+      <h3>start point<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/ScheduleOntology#StartPoint</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Point" title="https://w3id.org/ibp/ScheduleOntology#Point">point</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasStartPoint"
+               title="https://w3id.org/ibp/ScheduleOntology#hasStartPoint">has start point</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#hasEndPoint"
+            title="https://w3id.org/ibp/ScheduleOntology#hasEndPoint">
+            <span>has end point</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasInterval"
+            title="https://w3id.org/ibp/ScheduleOntology#hasInterval">
+            <span>has interval</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasMathematicalFunction"
+            title="https://w3id.org/ibp/ScheduleOntology#hasMathematicalFunction">
+            <span>has mathematical function</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasPeriodicity"
+            title="https://w3id.org/ibp/ScheduleOntology#hasPeriodicity">
+            <span>has periodicity</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasPolynomicalConstant"
+            title="https://w3id.org/ibp/ScheduleOntology#hasPolynomicalConstant">
+            <span>has polynomical constant</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasStartPoint"
+            title="https://w3id.org/ibp/ScheduleOntology#hasStartPoint">
+            <span>has start point</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasXCoordinate"
+            title="https://w3id.org/ibp/ScheduleOntology#hasXCoordinate">
+            <span>has x coordinate</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasYCoordinate"
+            title="https://w3id.org/ibp/ScheduleOntology#hasYCoordinate">
+            <span>has y coordinate</span>
+         </a>
+      </li>
+      <li>
+         <a href="#isConsecutiveInterval"
+            title="https://w3id.org/ibp/ScheduleOntology#isConsecutiveInterval">
+            <span>is consecutive interval</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="hasEndPoint">
+      <h3>has end point<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/ScheduleOntology#hasEndPoint</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Interval" title="https://w3id.org/ibp/ScheduleOntology#Interval">interval</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#EndPoint" title="https://w3id.org/ibp/ScheduleOntology#EndPoint">end point</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasInterval">
+      <h3>has interval<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/ScheduleOntology#hasInterval</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Schedule" title="https://w3id.org/ibp/ScheduleOntology#Schedule">schedule</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Interval" title="https://w3id.org/ibp/ScheduleOntology#Interval">interval</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasMathematicalFunction">
+      <h3>has mathematical function<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/ScheduleOntology#hasMathematicalFunction</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Interval" title="https://w3id.org/ibp/ScheduleOntology#Interval">interval</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#MathematicalFunction"
+                  title="https://w3id.org/ibp/ScheduleOntology#MathematicalFunction">mathematical function</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasPeriodicity">
+      <h3>has periodicity<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/ScheduleOntology#hasPeriodicity</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Schedule" title="https://w3id.org/ibp/ScheduleOntology#Schedule">schedule</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Periodicity"
+                  title="https://w3id.org/ibp/ScheduleOntology#Periodicity">periodicity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasPolynomicalConstant">
+      <h3>has polynomical constant<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/ScheduleOntology#hasPolynomicalConstant</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#MathematicalFunction"
+                  title="https://w3id.org/ibp/ScheduleOntology#MathematicalFunction">mathematical function</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#PolynomialConstant"
+                  title="https://w3id.org/ibp/ScheduleOntology#PolynomialConstant">polynomial constant</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasStartPoint">
+      <h3>has start point<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/ScheduleOntology#hasStartPoint</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Interval" title="https://w3id.org/ibp/ScheduleOntology#Interval">interval</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#StartPoint" title="https://w3id.org/ibp/ScheduleOntology#StartPoint">start point</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasXCoordinate">
+      <h3>has x coordinate<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/ScheduleOntology#hasXCoordinate</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Point" title="https://w3id.org/ibp/ScheduleOntology#Point">point</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Coordinate" title="https://w3id.org/ibp/ScheduleOntology#Coordinate">coordinate</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasYCoordinate">
+      <h3>has y coordinate<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/ScheduleOntology#hasYCoordinate</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Point" title="https://w3id.org/ibp/ScheduleOntology#Point">point</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Coordinate" title="https://w3id.org/ibp/ScheduleOntology#Coordinate">coordinate</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isConsecutiveInterval">
+      <h3>is consecutive interval<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/ScheduleOntology#isConsecutiveInterval</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Interval" title="https://w3id.org/ibp/ScheduleOntology#Interval">interval</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Interval" title="https://w3id.org/ibp/ScheduleOntology#Interval">interval</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#hasLiteralValue"
+            title="https://w3id.org/ibp/ScheduleOntology#hasLiteralValue">
+            <span>has literal value</span>
+         </a>
+      </li>
+      <li>
+         <a href="#polyConstantDegree"
+            title="https://w3id.org/ibp/ScheduleOntology#polyConstantDegree">
+            <span>poly constant degree</span>
+         </a>
+      </li>
+      <li>
+         <a href="#polyConstantLiteralValue"
+            title="https://w3id.org/ibp/ScheduleOntology#polyConstantLiteralValue">
+            <span>poly constant literal value</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="hasLiteralValue">
+      <h3>has literal value<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/ScheduleOntology#hasLiteralValue</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Coordinate" title="https://w3id.org/ibp/ScheduleOntology#Coordinate">coordinate</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="polyConstantDegree">
+      <h3>poly constant degree<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/ScheduleOntology#polyConstantDegree</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#PolynomialConstant"
+                  title="https://w3id.org/ibp/ScheduleOntology#PolynomialConstant">polynomial constant</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">non negative integer</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="polyConstantLiteralValue">
+      <h3>poly constant literal value<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/ScheduleOntology#polyConstantLiteralValue</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#PolynomialConstant"
+                  title="https://w3id.org/ibp/ScheduleOntology#PolynomialConstant">polynomial constant</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="namedindividuals">
+   <h3 id="namedindividuals" class="list">Named Individuals</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Daily" title="https://w3id.org/ibp/ScheduleOntology#Daily">
+            <span>daily</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Monthly" title="https://w3id.org/ibp/ScheduleOntology#Monthly">
+            <span>monthly</span>
+         </a>
+      </li>
+      <li>
+         <a href="#" title="https://w3id.org/ibp/ScheduleOntology">
+            <span>ScheduleOntology</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Weekly" title="https://w3id.org/ibp/ScheduleOntology#Weekly">
+            <span>weekly</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Yearly" title="https://w3id.org/ibp/ScheduleOntology#Yearly">
+            <span>yearly</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="Daily">
+      <h3>daily<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/ScheduleOntology#Daily</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Periodicity"
+               title="https://w3id.org/ibp/ScheduleOntology#Periodicity">periodicity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Monthly">
+      <h3>monthly<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/ScheduleOntology#Monthly</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Periodicity"
+               title="https://w3id.org/ibp/ScheduleOntology#Periodicity">periodicity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="">
+      <h3>ScheduleOntology<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/ScheduleOntology</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://purl.org/vocommons/voaf#Vocabulary">vocabulary</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Weekly">
+      <h3>weekly<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/ScheduleOntology#Weekly</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Periodicity"
+               title="https://w3id.org/ibp/ScheduleOntology#Periodicity">periodicity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Yearly">
+      <h3>yearly<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/ScheduleOntology#Yearly</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Periodicity"
+               title="https://w3id.org/ibp/ScheduleOntology#Periodicity">periodicity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
+</html>

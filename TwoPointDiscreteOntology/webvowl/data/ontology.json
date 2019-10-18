@@ -1,0 +1,305 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.4), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.org/vocommons/voaf", "https://w3id.org/ibp/TwoPointDiscreteOntology", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/ibp/CTRLont" ],
+    "title" : {
+      "en" : "TwoPointDiscreteOntology - An ontology to formally specify the non-linear discrete two-point control in automation systems."
+    },
+    "iri" : "https://w3id.org/ibp/TwoPointDiscreteOntology",
+    "version" : "v0.0.1",
+    "author" : [ "Georg Ferdinand Schneider", "https://www.researchgate.net/profile/Georg_Schneider3", "https://orcid.org/0000-0002-2033-859X" ],
+    "description" : {
+      "en" : "The ontology and its use are described in [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].\n\n[1] Schneider, G.F. (2018): \"Semantic Model for Control Logic in Automation Systems Knowledge-Based Support of the Engineering and Operation of Control Logic in Building and Industrial Automation Systems\" PhD thesis, Karlsruhe Institute of Technology, Faculty of Mechanical Engineering, Karlsruhe, Germany.\n\n[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003."
+    },
+    "labels" : {
+      "en" : "TwoPointDiscreteOntology"
+    },
+    "comments" : {
+      "en" : "TwoPointDiscreteOntology describes a typical type of control logic explicitly, which is a non-linear alternation between two values. The input is restricted to a Boolean value."
+    },
+    "other" : {
+      "identifier" : [ {
+        "identifier" : "identifier",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ibp/TwoPointDiscreteOntology#",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by-sa/4.0",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://orcid.org/0000-0002-2033-859X",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Georg Ferdinand Schneider",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://www.researchgate.net/profile/Georg_Schneider3",
+        "type" : "iri"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "dtp",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "en",
+        "value" : "Copyright (c) 2018, Fraunhofer Institute for Building Physics,\n\t\t\tNuremberg, Germany. This ontology is distributed under a Creative Commons Attribution \n\t\t\tShare Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ibp/TwoPointDiscreteOntology#",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "en",
+        "value" : "v0.0.1",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "TwoPointDiscreteOntology - An ontology to formally specify the non-linear discrete two-point control in automation systems.",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2018-04-06",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 8,
+    "objectPropertyCount" : 4,
+    "datatypePropertyCount" : 1,
+    "individualCount" : 0
+  },
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "5",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/ibp/CTRLont#Input",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Input"
+    },
+    "attributes" : [ "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#ApplicationLogic",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ApplicationLogic"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "2",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "5",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#Output",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Output"
+    },
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#Parameter",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Parameter"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://w3id.org/ibp/TwoPointDiscreteOntology#LowerOutput",
+    "baseIri" : "https://w3id.org/ibp/TwoPointDiscreteOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LowerOutput"
+    },
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/ibp/TwoPointDiscreteOntology#TwoPointDiscrete",
+    "baseIri" : "https://w3id.org/ibp/TwoPointDiscreteOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TwoPointDiscrete"
+    },
+    "id" : "1",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://purl.org/vocommons/voaf#Vocabulary",
+    "baseIri" : "http://purl.org/vocommons/voaf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Vocabulary"
+    },
+    "attributes" : [ "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://w3id.org/ibp/TwoPointDiscreteOntology#UpperOutput",
+    "baseIri" : "https://w3id.org/ibp/TwoPointDiscreteOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UpperOutput"
+    },
+    "id" : "12"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "14",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/ibp/TwoPointDiscreteOntology#contains",
+    "baseIri" : "https://w3id.org/ibp/TwoPointDiscreteOntology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "contains"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "range" : "4",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#logicOutput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "logicOutput"
+    },
+    "domain" : "5",
+    "attributes" : [ "external", "object" ],
+    "id" : "7"
+  }, {
+    "range" : "12",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://w3id.org/ibp/TwoPointDiscreteOntology#hasValue",
+    "baseIri" : "https://w3id.org/ibp/TwoPointDiscreteOntology",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "hasValue"
+    },
+    "domain" : "5",
+    "attributes" : [ "datatype" ],
+    "id" : "14"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#logicInput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "logicInput"
+    },
+    "domain" : "5",
+    "attributes" : [ "external", "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#logicParameter",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "logicParameter"
+    },
+    "domain" : "5",
+    "attributes" : [ "external", "object" ],
+    "id" : "17"
+  } ]
+}

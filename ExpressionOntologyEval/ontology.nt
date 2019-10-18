@@ -1,0 +1,385 @@
+<https://w3id.org/ibp/ExpressionOntologyEval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/ibp/ExpressionOntologyEval> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/ibp/CTRLont> .
+<https://w3id.org/ibp/ExpressionOntologyEval> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/ibp/ExpressionOntology> .
+<https://w3id.org/ibp/ExpressionOntologyEval> <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-2033-859X> .
+<https://w3id.org/ibp/ExpressionOntologyEval> <http://purl.org/dc/terms/creator> <https://www.researchgate.net/profile/Georg_Schneider3> .
+<https://w3id.org/ibp/ExpressionOntologyEval> <http://purl.org/dc/terms/creator> "Georg Ferdinand Schneider" .
+<https://w3id.org/ibp/ExpressionOntologyEval> <http://purl.org/dc/terms/description> "The ontology provides instances of the examples described in the PhD thesis of Georg Ferdinand Schneider [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].\r\n\r\n[1] Schneider, G.F. (2019): \"Semantic Model for Control Logic in Automation Systems - Knowledge-Based Support of the Engineering and Operation of Control Logic in Building and Industrial Automation Systems\" PhD thesis, Karlsruhe Institute of Technology, Karlsruhe, Germany.\r\n\r\n[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003."@en .
+<https://w3id.org/ibp/ExpressionOntologyEval> <http://purl.org/dc/terms/identifier> "https://w3id.org/ibp/ExpressionOntologyEval#" .
+<https://w3id.org/ibp/ExpressionOntologyEval> <http://purl.org/dc/terms/issued> "2018-06-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/ibp/ExpressionOntologyEval> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/4.0> .
+<https://w3id.org/ibp/ExpressionOntologyEval> <http://purl.org/dc/terms/modified> "2019-03-07"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/ibp/ExpressionOntologyEval> <http://purl.org/dc/terms/rights> "Copyright (c) 2019, Georg Ferdinand Schneider, Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"@en .
+<https://w3id.org/ibp/ExpressionOntologyEval> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/ibp/ExpressionOntologyEval#> .
+<https://w3id.org/ibp/ExpressionOntologyEval> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology with instances of ExpressionOntologyEval."@en .
+<https://w3id.org/ibp/ExpressionOntologyEval> <http://www.w3.org/2000/01/rdf-schema#label> "ExpressionOntologyEval"@en .
+<https://w3id.org/ibp/ExpressionOntologyEval> <http://www.w3.org/2002/07/owl#versionInfo> "v0.1.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement
+<file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf
+<file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://numerateweb.org/vocab/math#operator
+<http://numerateweb.org/vocab/math#operator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://numerateweb.org/vocab/math#value
+<http://numerateweb.org/vocab/math#value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#comment
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#label
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#seeAlso
+<http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/ibp/CTRLont#hasApplicationLogic
+<https://w3id.org/ibp/CTRLont#hasApplicationLogic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/CTRLont#hasApplicationLogic> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/CTRLont#ApplicationLogic> .
+<https://w3id.org/ibp/CTRLont#hasApplicationLogic> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to relate a control actor to its specific application logic"@en .
+<https://w3id.org/ibp/CTRLont#hasApplicationLogic> <http://www.w3.org/2000/01/rdf-schema#label> "hasApplicationLogic"@en .
+# 
+# https://w3id.org/ibp/CTRLont#hasDataType
+<https://w3id.org/ibp/CTRLont#hasDataType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/CTRLont#hasDataType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/CTRLont#AnnotatedElement> .
+<https://w3id.org/ibp/CTRLont#hasDataType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/CTRLont#DataType> .
+<https://w3id.org/ibp/CTRLont#hasDataType> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to annotate a input, output or parameter with its data type."@en .
+<https://w3id.org/ibp/CTRLont#hasDataType> <http://www.w3.org/2000/01/rdf-schema#label> "hasDataType"@en .
+# 
+# https://w3id.org/ibp/CTRLont#hasInput
+<https://w3id.org/ibp/CTRLont#hasInput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/CTRLont#hasInput> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/CTRLont#ControlActor> .
+<https://w3id.org/ibp/CTRLont#hasInput> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/CTRLont#Input> .
+<https://w3id.org/ibp/CTRLont#hasInput> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to relate a control actor to its inputs."@en .
+<https://w3id.org/ibp/CTRLont#hasInput> <http://www.w3.org/2000/01/rdf-schema#label> "hasInput"@en .
+# 
+# https://w3id.org/ibp/CTRLont#hasMedium
+<https://w3id.org/ibp/CTRLont#hasMedium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/CTRLont#hasMedium> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/CTRLont#AnnotatedElement> .
+<https://w3id.org/ibp/CTRLont#hasMedium> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/CTRLont#Medium> .
+<https://w3id.org/ibp/CTRLont#hasMedium> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to annotate an input, output or parameter with its medium."@en .
+<https://w3id.org/ibp/CTRLont#hasMedium> <http://www.w3.org/2000/01/rdf-schema#label> "hasMedium"@en .
+# 
+# https://w3id.org/ibp/CTRLont#hasOutput
+<https://w3id.org/ibp/CTRLont#hasOutput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/CTRLont#hasOutput> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/CTRLont#ControlActor> .
+<https://w3id.org/ibp/CTRLont#hasOutput> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/CTRLont#Output> .
+<https://w3id.org/ibp/CTRLont#hasOutput> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to relate a control actor to its outputs."@en .
+<https://w3id.org/ibp/CTRLont#hasOutput> <http://www.w3.org/2000/01/rdf-schema#label> "hasOutput"@en .
+# 
+# https://w3id.org/ibp/CTRLont#hasParameter
+<https://w3id.org/ibp/CTRLont#hasParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/CTRLont#hasParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/CTRLont#ControlActor> .
+<https://w3id.org/ibp/CTRLont#hasParameter> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/CTRLont#Parameter> .
+<https://w3id.org/ibp/CTRLont#hasParameter> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to relate a control actor to its parameter."@en .
+<https://w3id.org/ibp/CTRLont#hasParameter> <http://www.w3.org/2000/01/rdf-schema#label> "hasParameter"@en .
+# 
+# https://w3id.org/ibp/CTRLont#hasQuantity
+<https://w3id.org/ibp/CTRLont#hasQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/CTRLont#hasQuantity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/CTRLont#AnnotatedElement> .
+<https://w3id.org/ibp/CTRLont#hasQuantity> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/CTRLont#Quantity> .
+<https://w3id.org/ibp/CTRLont#hasQuantity> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to annotate an input, output or parameter with its quantity."@en .
+<https://w3id.org/ibp/CTRLont#hasQuantity> <http://www.w3.org/2000/01/rdf-schema#label> "hasQuantity"@en .
+# 
+# https://w3id.org/ibp/CTRLont#hasSemanticType
+<https://w3id.org/ibp/CTRLont#hasSemanticType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/CTRLont#hasSemanticType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/CTRLont#AnnotatedElement> .
+<https://w3id.org/ibp/CTRLont#hasSemanticType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/CTRLont#SemanticType> .
+<https://w3id.org/ibp/CTRLont#hasSemanticType> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to relate an input, output or parameter with its semantic type."@en .
+<https://w3id.org/ibp/CTRLont#hasSemanticType> <http://www.w3.org/2000/01/rdf-schema#label> "hasSemanticType"@en .
+# 
+# https://w3id.org/ibp/CTRLont#hasUnit
+<https://w3id.org/ibp/CTRLont#hasUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/CTRLont#hasUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/CTRLont#AnnotatedElement> .
+<https://w3id.org/ibp/CTRLont#hasUnit> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/CTRLont#Unit> .
+<https://w3id.org/ibp/CTRLont#hasUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to relate an input, output or parameter with its unit."@en .
+<https://w3id.org/ibp/CTRLont#hasUnit> <http://www.w3.org/2000/01/rdf-schema#label> "hasUnit"@en .
+# 
+# https://w3id.org/ibp/CTRLont#isConnectedTo
+<https://w3id.org/ibp/CTRLont#isConnectedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/CTRLont#isConnectedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/CTRLont#Output> .
+<https://w3id.org/ibp/CTRLont#isConnectedTo> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/CTRLont#Input> .
+<https://w3id.org/ibp/CTRLont#isConnectedTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to describe the topological relationship between an input of one control actor and the output of another."@en .
+<https://w3id.org/ibp/CTRLont#isConnectedTo> <http://www.w3.org/2000/01/rdf-schema#label> "isConnectedTo"@en .
+# 
+# https://w3id.org/ibp/CTRLont#isSupervisedBy
+<https://w3id.org/ibp/CTRLont#isSupervisedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/CTRLont#isSupervisedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ibp/CTRLont#supervises> .
+<https://w3id.org/ibp/CTRLont#isSupervisedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/CTRLont#ControlActor> .
+<https://w3id.org/ibp/CTRLont#isSupervisedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/CTRLont#ControlActor> .
+<https://w3id.org/ibp/CTRLont#isSupervisedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to describe hierarchical composition of control actors."@en .
+<https://w3id.org/ibp/CTRLont#isSupervisedBy> <http://www.w3.org/2000/01/rdf-schema#label> "isSupervisedBy"@en .
+# 
+# https://w3id.org/ibp/CTRLont#logicInput
+<https://w3id.org/ibp/CTRLont#logicInput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/CTRLont#logicInput> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/CTRLont#Input> .
+<https://w3id.org/ibp/CTRLont#logicInput> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to express the relationship of some application logic concept to an input."@en .
+<https://w3id.org/ibp/CTRLont#logicInput> <http://www.w3.org/2000/01/rdf-schema#label> "logicInput"@en .
+# 
+# https://w3id.org/ibp/CTRLont#logicOutput
+<https://w3id.org/ibp/CTRLont#logicOutput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/CTRLont#logicOutput> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/CTRLont#Output> .
+<https://w3id.org/ibp/CTRLont#logicOutput> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to express the relationship of some application logic concept to an output."@en .
+<https://w3id.org/ibp/CTRLont#logicOutput> <http://www.w3.org/2000/01/rdf-schema#label> "logicOutput"@en .
+# 
+# https://w3id.org/ibp/CTRLont#logicParameter
+<https://w3id.org/ibp/CTRLont#logicParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/CTRLont#logicParameter> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/CTRLont#Parameter> .
+<https://w3id.org/ibp/CTRLont#logicParameter> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to express the relationship of some application logic concept to an parameter."@en .
+<https://w3id.org/ibp/CTRLont#logicParameter> <http://www.w3.org/2000/01/rdf-schema#label> "logicParameter"@en .
+# 
+# https://w3id.org/ibp/CTRLont#supervises
+<https://w3id.org/ibp/CTRLont#supervises> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/CTRLont#supervises> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/CTRLont#ControlActor> .
+<https://w3id.org/ibp/CTRLont#supervises> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/CTRLont#ControlActor> .
+<https://w3id.org/ibp/CTRLont#supervises> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to describe if one control actor supervises another."@en .
+<https://w3id.org/ibp/CTRLont#supervises> <http://www.w3.org/2000/01/rdf-schema#label> "supervises"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement
+<file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://numerateweb.org/vocab/math#Literal
+<http://numerateweb.org/vocab/math#Literal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://numerateweb.org/vocab/math#Variable
+<http://numerateweb.org/vocab/math#Variable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2002/07/owl#Thing
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/CTRLont#AnnotatedElement
+<https://w3id.org/ibp/CTRLont#AnnotatedElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/CTRLont#AnnotatedElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/CTRLont#hasDataType> .
+_:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/ibp/CTRLont#DataType> .
+<https://w3id.org/ibp/CTRLont#AnnotatedElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/CTRLont#hasMedium> .
+_:genid2 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/ibp/CTRLont#Medium> .
+<https://w3id.org/ibp/CTRLont#AnnotatedElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/CTRLont#hasQuantity> .
+_:genid3 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/ibp/CTRLont#Quantity> .
+<https://w3id.org/ibp/CTRLont#AnnotatedElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/CTRLont#hasSemanticType> .
+_:genid4 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/ibp/CTRLont#SemanticType> .
+<https://w3id.org/ibp/CTRLont#AnnotatedElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/CTRLont#hasUnit> .
+_:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/ibp/CTRLont#Unit> .
+<https://w3id.org/ibp/CTRLont#AnnotatedElement> <http://www.w3.org/2000/01/rdf-schema#comment> "An annotated element is a generic superclass for ctrl:Input, ctrl:Output and ctrl:Parameter"@en .
+<https://w3id.org/ibp/CTRLont#AnnotatedElement> <http://www.w3.org/2000/01/rdf-schema#label> "Annotated Element"@en .
+# 
+# https://w3id.org/ibp/CTRLont#ApplicationLogic
+<https://w3id.org/ibp/CTRLont#ApplicationLogic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/CTRLont#ApplicationLogic> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept to specify the application logic of a control actor. Seperate ontologies may be used to further specify this concept."@en .
+<https://w3id.org/ibp/CTRLont#ApplicationLogic> <http://www.w3.org/2000/01/rdf-schema#label> "Application Logic"@en .
+# 
+# https://w3id.org/ibp/CTRLont#ControlActor
+<https://w3id.org/ibp/CTRLont#ControlActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/CTRLont#ControlActor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/CTRLont#hasApplicationLogic> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/ibp/CTRLont#ApplicationLogic> .
+<https://w3id.org/ibp/CTRLont#ControlActor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/CTRLont#hasOutput> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/ibp/CTRLont#Output> .
+<https://w3id.org/ibp/CTRLont#ControlActor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/CTRLont#hasApplicationLogic> .
+_:genid8 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/ibp/CTRLont#ApplicationLogic> .
+<https://w3id.org/ibp/CTRLont#ControlActor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/CTRLont#hasInput> .
+_:genid9 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/ibp/CTRLont#Input> .
+<https://w3id.org/ibp/CTRLont#ControlActor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/CTRLont#hasOutput> .
+_:genid10 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/ibp/CTRLont#Output> .
+<https://w3id.org/ibp/CTRLont#ControlActor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/CTRLont#hasParameter> .
+_:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/ibp/CTRLont#Parameter> .
+<https://w3id.org/ibp/CTRLont#ControlActor> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept to describe the in general accepted Sense-Process-Actuate\npattern in automation systems, e.g. function blocks from IEC 61499."@en .
+<https://w3id.org/ibp/CTRLont#ControlActor> <http://www.w3.org/2000/01/rdf-schema#label> "Control Actor"@en .
+# 
+# https://w3id.org/ibp/CTRLont#DataType
+<https://w3id.org/ibp/CTRLont#DataType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/CTRLont#DataType> <http://www.w3.org/2000/01/rdf-schema#comment> "Placeholder class for the specification of basic data types such as, e.g. integer, boolean or double."@en .
+<https://w3id.org/ibp/CTRLont#DataType> <http://www.w3.org/2000/01/rdf-schema#label> "Data type"@en .
+<https://w3id.org/ibp/CTRLont#DataType> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.w3.org/TR/xmlschema-2/#built-in-datatypes"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# https://w3id.org/ibp/CTRLont#Input
+<https://w3id.org/ibp/CTRLont#Input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/CTRLont#Input> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/CTRLont#AnnotatedElement> .
+<https://w3id.org/ibp/CTRLont#Input> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/ibp/CTRLont#Parameter> .
+<https://w3id.org/ibp/CTRLont#Input> <http://www.w3.org/2000/01/rdf-schema#comment> "An input allow flows of information to enter a control actor. Inputs are processed by the respective application logic of the control actor to compute the outputs."@en .
+<https://w3id.org/ibp/CTRLont#Input> <http://www.w3.org/2000/01/rdf-schema#label> "Input"@en .
+# 
+# https://w3id.org/ibp/CTRLont#Medium
+<https://w3id.org/ibp/CTRLont#Medium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/CTRLont#Medium> <http://www.w3.org/2000/01/rdf-schema#comment> "Placeholder concept to stipulate reuse of existing ontologies such as dbpedia or  \thttp://www.productontology.org/id/"@en .
+<https://w3id.org/ibp/CTRLont#Medium> <http://www.w3.org/2000/01/rdf-schema#label> "Medium"@en .
+<https://w3id.org/ibp/CTRLont#Medium> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://wiki.dbpedia.org/> .
+<https://w3id.org/ibp/CTRLont#Medium> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.productontology.org/id/> .
+# 
+# https://w3id.org/ibp/CTRLont#Output
+<https://w3id.org/ibp/CTRLont#Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/CTRLont#Output> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/CTRLont#AnnotatedElement> .
+<https://w3id.org/ibp/CTRLont#Output> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/ibp/CTRLont#Parameter> .
+<https://w3id.org/ibp/CTRLont#Output> <http://www.w3.org/2000/01/rdf-schema#comment> "An output allows compute results by the application logic of an control actor to be fowarded to outside entities such as actuators or other control actors."@en .
+<https://w3id.org/ibp/CTRLont#Output> <http://www.w3.org/2000/01/rdf-schema#label> "Output"@en .
+# 
+# https://w3id.org/ibp/CTRLont#Parameter
+<https://w3id.org/ibp/CTRLont#Parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/CTRLont#Parameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/CTRLont#AnnotatedElement> .
+<https://w3id.org/ibp/CTRLont#Parameter> <http://www.w3.org/2000/01/rdf-schema#comment> "Parameter describe time-invariant values and settings of the respective control actor. Thus thay can be added dependent on the respective application logic."@en .
+<https://w3id.org/ibp/CTRLont#Parameter> <http://www.w3.org/2000/01/rdf-schema#label> "Parameter"@en .
+# 
+# https://w3id.org/ibp/CTRLont#Quantity
+<https://w3id.org/ibp/CTRLont#Quantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/CTRLont#Quantity> <http://www.w3.org/2000/01/rdf-schema#comment> "Placeholder concept to stipulate reuse of existing ontologies such as Ontology for Units and Measures (OM) or QUDT."@en .
+<https://w3id.org/ibp/CTRLont#Quantity> <http://www.w3.org/2000/01/rdf-schema#label> "Quantity"@en .
+<https://w3id.org/ibp/CTRLont#Quantity> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://qudt.org/schema/qudt> .
+<https://w3id.org/ibp/CTRLont#Quantity> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+# 
+# https://w3id.org/ibp/CTRLont#SemanticType
+<https://w3id.org/ibp/CTRLont#SemanticType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/CTRLont#SemanticType> <http://www.w3.org/2000/01/rdf-schema#comment> "It may be required to further annotate an Input, Output or Parameter with a specific Semantic Type. For example in building automation to differ between room air temperature or outdoor air temperature."@en .
+<https://w3id.org/ibp/CTRLont#SemanticType> <http://www.w3.org/2000/01/rdf-schema#label> "Semantic Type"@en .
+# 
+# https://w3id.org/ibp/CTRLont#Unit
+<https://w3id.org/ibp/CTRLont#Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/CTRLont#Unit> <http://www.w3.org/2000/01/rdf-schema#comment> "Placeholder concept to stipulate reuse of existing ontologies such as Ontology for Units and Measures (OM) or QUDT."@en .
+<https://w3id.org/ibp/CTRLont#Unit> <http://www.w3.org/2000/01/rdf-schema#label> "Unit"@en .
+# 
+# https://w3id.org/ibp/ExpressionOntology#Expression
+<https://w3id.org/ibp/ExpressionOntology#Expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/ExpressionOntology#Operand
+<https://w3id.org/ibp/ExpressionOntology#Operand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/ExpressionOntology#Operator
+<https://w3id.org/ibp/ExpressionOntology#Operator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/ibp/CTRLont
+<https://w3id.org/ibp/CTRLont> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/CTRLont> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocommons/voaf#Vocabulary> .
+# 
+# https://w3id.org/ibp/ExpressionOntologyEval#R1_Inp
+<https://w3id.org/ibp/ExpressionOntologyEval#R1_Inp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/ExpressionOntologyEval#R1_Inp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/CTRLont#Input> .
+# 
+# https://w3id.org/ibp/ExpressionOntologyEval#R1_par1
+<https://w3id.org/ibp/ExpressionOntologyEval#R1_par1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/ExpressionOntologyEval#R1_par1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/CTRLont#Parameter> .
+# 
+# https://w3id.org/ibp/ExpressionOntologyEval#ele0
+<https://w3id.org/ibp/ExpressionOntologyEval#ele0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/ExpressionOntologyEval#ele0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement> .
+<https://w3id.org/ibp/ExpressionOntologyEval#ele0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://numerateweb.org/vocab/math#Variable> .
+<https://w3id.org/ibp/ExpressionOntologyEval#ele0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#Operand> .
+<https://w3id.org/ibp/ExpressionOntologyEval#ele0> <https://w3id.org/ibp/CTRLont#logicInput> <https://w3id.org/ibp/ExpressionOntologyEval#R1_Inp> .
+<https://w3id.org/ibp/ExpressionOntologyEval#ele0> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> <https://w3id.org/ibp/ExpressionOntologyEval#ele1> .
+# 
+# https://w3id.org/ibp/ExpressionOntologyEval#ele1
+<https://w3id.org/ibp/ExpressionOntologyEval#ele1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/ExpressionOntologyEval#ele1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#Operator> .
+<https://w3id.org/ibp/ExpressionOntologyEval#ele1> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> <https://w3id.org/ibp/ExpressionOntologyEval#ele2> .
+<https://w3id.org/ibp/ExpressionOntologyEval#ele1> <http://numerateweb.org/vocab/math#operator> <http://www.openmath.org/cd/relation1#leq> .
+# 
+# https://w3id.org/ibp/ExpressionOntologyEval#ele2
+<https://w3id.org/ibp/ExpressionOntologyEval#ele2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/ExpressionOntologyEval#ele2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://numerateweb.org/vocab/math#Literal> .
+<https://w3id.org/ibp/ExpressionOntologyEval#ele2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#Operand> .
+<https://w3id.org/ibp/ExpressionOntologyEval#ele2> <https://w3id.org/ibp/CTRLont#logicParameter> <https://w3id.org/ibp/ExpressionOntologyEval#R1_par1> .
+<https://w3id.org/ibp/ExpressionOntologyEval#ele2> <http://numerateweb.org/vocab/math#value> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/ibp/ExpressionOntologyEval#exp
+<https://w3id.org/ibp/ExpressionOntologyEval#exp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/ExpressionOntologyEval#exp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#Expression> .
+<https://w3id.org/ibp/ExpressionOntologyEval#exp> <file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> <https://w3id.org/ibp/ExpressionOntologyEval#ele0> .
+<https://w3id.org/ibp/ExpressionOntologyEval#exp> <file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> <https://w3id.org/ibp/ExpressionOntologyEval#ele1> .
+<https://w3id.org/ibp/ExpressionOntologyEval#exp> <file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> <https://w3id.org/ibp/ExpressionOntologyEval#ele2> .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

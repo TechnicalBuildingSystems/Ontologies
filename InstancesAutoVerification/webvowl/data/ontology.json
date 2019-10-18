@@ -1,0 +1,5990 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.4), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.org/vocommons/voaf", "http://www.w3.org/2002/07/owl", "https://w3id.org/ibp/ScheduleOntology", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/ibp/ExpressionOntology", "https://w3id.org/ibp/CTRLont", "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl", "https://w3id.org/ibp/ConditionOntology", "http://numerateweb.org/vocab/math", "http://www.w3.org/2003/01/geo/wgs84_pos", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/StateGraphOntology", "http://xmlns.com/foaf/0.1", "https://w3id.org/pep", "https://w3id.org/seas", "http://www.w3.org/2006/time", "https://w3id.org/ConditionOntology", "https://w3id.org/ibp/StateGraphOntology" ],
+    "title" : {
+      "en" : "Ontology InstancesAutoVerification."
+    },
+    "iri" : "https://w3id.org/ibp/InstancesAutoVerification",
+    "version" : "v0.3.0",
+    "author" : [ "Georg Ferdinand Schneider", "https://www.researchgate.net/profile/Georg_Schneider3", "https://orcid.org/0000-0002-2033-859X" ],
+    "description" : {
+      "en" : "The ontology provides instances of the examples described in the PhD thesis of Georg Ferdinand Schneider [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].\r\n\r\n[1] Schneider, G. F. (2019): \"Semantic Model for Control Logic in Automation Systems - Knowledge-Based Support of the Engineering and Operation of Control Logic in Building and Industrial Automation Systems\" PhD thesis, Karlsruhe Institute of Technology, Karlsruhe, Germany.\r\n\r\n[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003."
+    },
+    "labels" : {
+      "en" : "InstancesAutoVerification"
+    },
+    "comments" : {
+      "en" : "Ontology with instances of InstancesAutoVerification."
+    },
+    "other" : {
+      "identifier" : [ {
+        "identifier" : "identifier",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ibp/InstancesAutoVerification#",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by-sa/4.0",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://orcid.org/0000-0002-2033-859X",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Georg Ferdinand Schneider",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://www.researchgate.net/profile/Georg_Schneider3",
+        "type" : "iri"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "en",
+        "value" : "Copyright (c) 2019, Georg Ferdinand Schneider, Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-03-07",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "v0.3.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ibp/InstancesAutoVerification#",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2017-11-01",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Ontology InstancesAutoVerification.",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 25,
+    "objectPropertyCount" : 22,
+    "datatypePropertyCount" : 3,
+    "individualCount" : 120
+  },
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "98",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "114",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "130",
+    "type" : "owl:Class"
+  }, {
+    "id" : "131",
+    "type" : "owl:Class"
+  }, {
+    "id" : "134",
+    "type" : "owl:Class"
+  }, {
+    "id" : "124",
+    "type" : "owl:Class"
+  }, {
+    "id" : "141",
+    "type" : "owl:Class"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "160",
+    "type" : "owl:Class"
+  }, {
+    "id" : "161",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "162",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "163",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "165",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "166",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "167",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "54",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "157",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "171",
+    "type" : "owl:Class"
+  }, {
+    "id" : "172",
+    "type" : "owl:Class"
+  }, {
+    "id" : "125",
+    "type" : "owl:Class"
+  }, {
+    "id" : "152",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "106",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "151",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "174",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "6",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "183",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "188",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "201",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "128",
+    "type" : "owl:Class"
+  }, {
+    "id" : "217",
+    "type" : "owl:Class"
+  }, {
+    "id" : "110",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "224",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/seas/OutgoingEvaluation",
+    "baseIri" : "https://w3id.org/seas",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/ZoneOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OutgoingEvaluation",
+      "en" : "Outgoing Evaluation"
+    },
+    "comment" : {
+      "en" : "Evaluation of how the property contributes to the exterior."
+    },
+    "attributes" : [ "external" ],
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/StateGraphOntology#State",
+    "baseIri" : "https://w3id.org/ibp/StateGraphOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "State"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_StateOff",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "stateAction" : [ {
+          "identifier" : "stateAction",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_OffActMix",
+          "type" : "iri"
+        }, {
+          "identifier" : "stateAction",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_OffActPump",
+          "type" : "iri"
+        }, {
+          "identifier" : "stateAction",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_OffActFan",
+          "type" : "iri"
+        } ],
+        "stateCondition" : [ {
+          "identifier" : "stateCondition",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOnOff",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_StateOff"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_StateOn",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "stateAction" : [ {
+          "identifier" : "stateAction",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_OnActPump",
+          "type" : "iri"
+        }, {
+          "identifier" : "stateAction",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_OnActMix",
+          "type" : "iri"
+        }, {
+          "identifier" : "stateAction",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_OnActFan",
+          "type" : "iri"
+        } ],
+        "stateCondition" : [ {
+          "identifier" : "stateCondition",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionStartUpOn",
+          "type" : "iri"
+        }, {
+          "identifier" : "stateCondition",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOffOn",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_StateOn"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_StateStartUp",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "stateAction" : [ {
+          "identifier" : "stateAction",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActMix",
+          "type" : "iri"
+        }, {
+          "identifier" : "stateAction",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActFan",
+          "type" : "iri"
+        }, {
+          "identifier" : "stateAction",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActPump",
+          "type" : "iri"
+        } ],
+        "stateCondition" : [ {
+          "identifier" : "stateCondition",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOffStartUp",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_StateStartUp"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#Parameter",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Parameter",
+      "en" : "Parameter"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-2-Par",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffOn-ExpEle-2-Par"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-2-Par",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "SG_Tran_OnOff-ExpEle-2-Par"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-2-Par",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffStartUp-ExpEle-2-Par"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-6-Par",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffStartUp-ExpEle-6-Par"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-2-Par",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "SG_Tran_StartUpOn-ExpEle-2-Par"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-6-Par",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffOn-ExpEle-6-Par"
+      }
+    } ],
+    "comment" : {
+      "en" : "Parameter describe time-invariant values and settings of the respective control actor. Thus thay can be added dependent on the respective application logic."
+    },
+    "attributes" : [ "external" ],
+    "id" : "8",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#Unit",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Unit",
+      "en" : "Unit"
+    },
+    "comment" : {
+      "en" : "Placeholder concept to stipulate reuse of existing ontologies such as Ontology for Units and Measures (OM) or QUDT."
+    },
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#AnnotatedElement",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AnnotatedElement",
+      "en" : "Annotated Element"
+    },
+    "subClasses" : [ "11", "12", "8" ],
+    "comment" : {
+      "en" : "An annotated element is a generic superclass for ctrl:Input, ctrl:Output and ctrl:Parameter"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://w3id.org/seas/CommunicationConnectionPoint",
+    "baseIri" : "https://w3id.org/seas",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CommunicationConnectionPoint"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#r1.yPump",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "r1.yPump"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#r1.SG_StateStartUp.active",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "r1.SG_StateStartUp.active"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#r1.THcrCoiRet",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "r1.THcrCoiRet"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#r1.SG_StateOff.active",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "r1.SG_StateOff.active"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#r1.yFan",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "r1.yFan"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#time",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "time"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#r1.SG_StateOn.active",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "r1.SG_StateOn.active"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#r1.uSchedule",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "r1.uSchedule"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#r1.yMix",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "r1.yMix"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#r1.Toa",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "r1.Toa"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#PolynomialConstant",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PolynomialConstant"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#sched_PolyCon1",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "sched_PolyCon1"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#sched_PolyCon3",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "sched_PolyCon3"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#sched_PolyCon2",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "sched_PolyCon2"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "https://w3id.org/ibp/ConditionOntology#RightHandSide",
+    "baseIri" : "https://w3id.org/ibp/ConditionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RightHandSide"
+    },
+    "attributes" : [ "external" ],
+    "id" : "19",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#DataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataProperty"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/ScheduleOntology#polyConstantLiteralValue",
+      "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+      "labels" : {
+        "IRI-based" : "polyConstantLiteralValue"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/ScheduleOntology#polyConstantDegree",
+      "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+      "labels" : {
+        "IRI-based" : "polyConstantDegree"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/ScheduleOntology#hasLiteralValue",
+      "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+      "labels" : {
+        "IRI-based" : "hasLiteralValue"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#DataType",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://www.w3.org/TR/xmlschema-2/#built-in-datatypes",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DataType",
+      "en" : "Data type"
+    },
+    "comment" : {
+      "en" : "Placeholder class for the specification of basic data types such as, e.g. integer, boolean or double."
+    },
+    "attributes" : [ "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#Output",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Output",
+      "en" : "Output"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#R1_OutpSStartup",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "R1_OutpSStartup"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#R1_OutpPump",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "R1_OutpPump"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#R2_Outp",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "R2_Outp"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#R1_OutpSOff",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "R1_OutpSOff"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#R1_Outp",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "R1_Outp"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#R1_OutpMix",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "R1_OutpMix"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#R1_OutpSOn",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "R1_OutpSOn"
+      }
+    } ],
+    "comment" : {
+      "en" : "An output allows compute results by the application logic of an control actor to be fowarded to outside entities such as actuators or other control actors."
+    },
+    "attributes" : [ "external" ],
+    "id" : "12",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/StateGraphOntology#StateGraph",
+    "baseIri" : "https://w3id.org/ibp/StateGraphOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StateGraph"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#R1_logic",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "contains" : [ {
+          "identifier" : "contains",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp",
+          "type" : "iri"
+        }, {
+          "identifier" : "contains",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_StateStartUp",
+          "type" : "iri"
+        }, {
+          "identifier" : "contains",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_OffActFan",
+          "type" : "iri"
+        }, {
+          "identifier" : "contains",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActMix",
+          "type" : "iri"
+        }, {
+          "identifier" : "contains",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_OffActPump",
+          "type" : "iri"
+        }, {
+          "identifier" : "contains",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_OnActMix",
+          "type" : "iri"
+        }, {
+          "identifier" : "contains",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActPump",
+          "type" : "iri"
+        }, {
+          "identifier" : "contains",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn",
+          "type" : "iri"
+        }, {
+          "identifier" : "contains",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn",
+          "type" : "iri"
+        }, {
+          "identifier" : "contains",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff",
+          "type" : "iri"
+        }, {
+          "identifier" : "contains",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOffOn",
+          "type" : "iri"
+        }, {
+          "identifier" : "contains",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOffStartUp",
+          "type" : "iri"
+        }, {
+          "identifier" : "contains",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_OffActMix",
+          "type" : "iri"
+        }, {
+          "identifier" : "contains",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionStartUpOn",
+          "type" : "iri"
+        }, {
+          "identifier" : "contains",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_StateOff",
+          "type" : "iri"
+        }, {
+          "identifier" : "contains",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_StateOn",
+          "type" : "iri"
+        }, {
+          "identifier" : "contains",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOnOff",
+          "type" : "iri"
+        }, {
+          "identifier" : "contains",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActFan",
+          "type" : "iri"
+        }, {
+          "identifier" : "contains",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_OnActFan",
+          "type" : "iri"
+        }, {
+          "identifier" : "contains",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_OnActPump",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "R1_logic"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://purl.org/vocommons/voaf#Vocabulary",
+    "baseIri" : "http://purl.org/vocommons/voaf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Vocabulary"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/pep/",
+      "baseIri" : "https://w3id.org",
+      "labels" : { }
+    }, {
+      "iri" : "https://w3id.org/ibp/CTRLont",
+      "baseIri" : "https://w3id.org/ibp",
+      "labels" : {
+        "IRI-based" : "CTRLont"
+      }
+    }, {
+      "iri" : "https://w3id.org/StateGraphOntology",
+      "baseIri" : "https://w3id.org",
+      "labels" : {
+        "IRI-based" : "StateGraphOntology"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/ScheduleOntology",
+      "baseIri" : "https://w3id.org/ibp",
+      "labels" : {
+        "IRI-based" : "ScheduleOntology"
+      }
+    }, {
+      "iri" : "https://w3id.org/seas/FeatureOfInterestOntology",
+      "baseIri" : "https://w3id.org/seas",
+      "labels" : {
+        "IRI-based" : "FeatureOfInterestOntology"
+      }
+    }, {
+      "iri" : "https://w3id.org/seas/EvaluationOntology",
+      "baseIri" : "https://w3id.org/seas",
+      "labels" : {
+        "IRI-based" : "EvaluationOntology"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/ConditionOntology",
+      "baseIri" : "https://w3id.org/ibp",
+      "labels" : {
+        "IRI-based" : "ConditionOntology"
+      }
+    }, {
+      "iri" : "https://w3id.org/seas/SystemOntology",
+      "baseIri" : "https://w3id.org/seas",
+      "labels" : {
+        "IRI-based" : "SystemOntology"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "25"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#ApplicationLogic",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ApplicationLogic",
+      "en" : "Application Logic"
+    },
+    "subClasses" : [ "29", "30", "31" ],
+    "comment" : {
+      "en" : "Concept to specify the application logic of a control actor. Seperate ontologies may be used to further specify this concept."
+    },
+    "attributes" : [ "external" ],
+    "id" : "28"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#StartPoint",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StartPoint"
+    },
+    "attributes" : [ "external" ],
+    "id" : "32",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#ControlActor",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ControlActor",
+      "en" : "Control Actor"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#R2",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "R2"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#R1",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "R1"
+      }
+    } ],
+    "comment" : {
+      "en" : "Concept to describe the in general accepted Sense-Process-Actuate\npattern in automation systems, e.g. function blocks from IEC 61499."
+    },
+    "attributes" : [ "external" ],
+    "id" : "37"
+  }, {
+    "iri" : "https://w3id.org/pep/ProcedureExecution",
+    "baseIri" : "https://w3id.org/pep",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/pep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ProcedureExecution",
+      "undefined" : "Procedure Execution"
+    },
+    "comment" : {
+      "en" : "Act of carrying out a Procedure. Links to:\r\n\r\n- a Procedure Executor to describe what made it and how; \r\n- the used procedure;\r\n- the command and the result of the procedure execution (simple or complex).\r\n"
+    },
+    "attributes" : [ "external" ],
+    "id" : "44"
+  }, {
+    "iri" : "https://w3id.org/seas/MinimumEvaluation",
+    "baseIri" : "https://w3id.org/seas",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/EvaluationOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MinimumEvaluation",
+      "en" : "Minimum Evaluation"
+    },
+    "comment" : {
+      "en" : "Minimum Evaluation is an Evaluation which is the minimum value that the evaluation \r\n              can take for the evaluated property.\r\n                "
+    },
+    "attributes" : [ "external" ],
+    "id" : "48",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpatialThing"
+    },
+    "attributes" : [ "external" ],
+    "id" : "49"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#Input",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Input",
+      "en" : "Input"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#R1_InpToa",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "R1_InpToa"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#R1_InpTHcr",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "R1_InpTHcr"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#R1_Inp",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "R1_Inp"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#R2_Inp",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "R2_Inp"
+      }
+    } ],
+    "comment" : {
+      "en" : "An input allow flows of information to enter a control actor. Inputs are processed by the respective application logic of the control actor to compute the outputs."
+    },
+    "attributes" : [ "external" ],
+    "id" : "11",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://w3id.org/seas/FeatureOfInterest",
+    "baseIri" : "https://w3id.org/seas",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/FeatureOfInterestOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FeatureOfInterest",
+      "en" : "Feature of Interest"
+    },
+    "subClasses" : [ "17", "1", "36" ],
+    "comment" : {
+      "en" : "A feature of interest is an abstraction of a real world phenomena (thing, person, event, etc). A feature of interest is then defined in terms of its properties."
+    },
+    "attributes" : [ "external" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#Quantity",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://qudt.org/schema/qudt",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Quantity",
+      "en" : "Quantity"
+    },
+    "comment" : {
+      "en" : "Placeholder concept to stipulate reuse of existing ontologies such as Ontology for Units and Measures (OM) or QUDT."
+    },
+    "attributes" : [ "external" ],
+    "id" : "63"
+  }, {
+    "iri" : "https://w3id.org/ibp/StateGraphOntology#Transition",
+    "baseIri" : "https://w3id.org/ibp/StateGraphOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Transition"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "source" : [ {
+          "identifier" : "source",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_StateOff",
+          "type" : "iri"
+        } ],
+        "target" : [ {
+          "identifier" : "target",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_StateOn",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffOn"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "source" : [ {
+          "identifier" : "source",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_StateOn",
+          "type" : "iri"
+        } ],
+        "target" : [ {
+          "identifier" : "target",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_StateOff",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OnOff"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "source" : [ {
+          "identifier" : "source",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_StateStartUp",
+          "type" : "iri"
+        } ],
+        "target" : [ {
+          "identifier" : "target",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_StateOn",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_StartUpOn"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "source" : [ {
+          "identifier" : "source",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_StateOff",
+          "type" : "iri"
+        } ],
+        "target" : [ {
+          "identifier" : "target",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_StateStartUp",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffStartUp"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "64"
+  }, {
+    "iri" : "https://w3id.org/pep/Procedure",
+    "baseIri" : "https://w3id.org/pep",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/pep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Procedure",
+      "en" : "Procedure"
+    },
+    "comment" : {
+      "en" : "A workflow, protocol, plan, algorithm, or computational method. It explains the steps to be carried out to arrive at reproducible results. A Procedure is re-usable, and might be implemented by several Procedure Executors and used for several Procedure Executions. \r\n\r\nExamples of sub-classes of Procedure include Sensing, Actuating, Planning, Forecasting."
+    },
+    "attributes" : [ "external" ],
+    "id" : "67"
+  }, {
+    "iri" : "https://w3id.org/ibp/ConditionOntology#LeftHandSide",
+    "baseIri" : "https://w3id.org/ibp/ConditionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LeftHandSide"
+    },
+    "attributes" : [ "external" ],
+    "id" : "41",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#StateGraphElement",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StateGraphElement"
+    },
+    "subClasses" : [ "46", "47", "70", "71" ],
+    "attributes" : [ "external" ],
+    "id" : "29",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#MathematicalFunction",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MathematicalFunction"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#sched_MathFun3",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "sched_MathFun3"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#sched_MathFun2",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "sched_MathFun2"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#sched_MathFun1",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "sched_MathFun1"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "74"
+  }, {
+    "iri" : "https://w3id.org/seas/BalanceEvaluation",
+    "baseIri" : "https://w3id.org/seas",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/ZoneOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BalanceEvaluation",
+      "undefined" : "Balance Evaluation"
+    },
+    "comment" : {
+      "en" : "Evaluation of the difference between the incoming evaluation and the outgoing evaluation."
+    },
+    "attributes" : [ "external" ],
+    "id" : "76",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/pep/ProcedureExecutor",
+    "baseIri" : "https://w3id.org/pep",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/pep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ProcedureExecutor",
+      "undefined" : "Procedure Executor"
+    },
+    "comment" : {
+      "en" : "Device, agent (including humans), or software (simulation, web service) involved in, or implementing, a `Procedure`. Examples of sub-classes of Procedure Executor are Sensor, Actuator, Estimator.\r\n\r\nA Procedure Executor can be linked to the executions that it made using property `made`. Also, it can be linked to one or more `Procedure`s it implements using property `implements`. A Procedure Executor implements each of the methods used by the `Execution`s it made. \r\n\r\nOther metadata may detail geolocation, vendor, operator, consumed power, etc."
+    },
+    "attributes" : [ "external" ],
+    "id" : "56",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/StateGraphOntology#Condition",
+    "baseIri" : "https://w3id.org/ibp/StateGraphOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Condition"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionStartUpOn",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "conditionExpr" : [ {
+          "identifier" : "conditionExpr",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#ExprConditionStartUpOn",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_ConditionStartUpOn"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOffOn",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "conditionExpr" : [ {
+          "identifier" : "conditionExpr",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOffOn",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_ConditionOffOn"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOnOff",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "conditionExpr" : [ {
+          "identifier" : "conditionExpr",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOnOff",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_ConditionOnOff"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOffStartUp",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "conditionExpr" : [ {
+          "identifier" : "conditionExpr",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOffStartUp",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_ConditionOffStartUp"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "84"
+  }, {
+    "iri" : "https://w3id.org/seas/System",
+    "baseIri" : "https://w3id.org/seas",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/SystemOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "System",
+      "en" : "System"
+    },
+    "subClasses" : [ "56" ],
+    "comment" : {
+      "en" : "The class of systems, i.e., systems virtually isolated from the environment, whose behaviour and interactions with the environment are modeled.\r\n\r\n  Systems can be connected to other systems. Connected systems interact in some ways. For example:\r\n\r\n```\r\n<electric_vehicle> seas:connectedTo <electric_vehicle_service_equipment> .\r\n```\r\n\r\n  Systems can also have subsystems. Properties of subsystems somehow contribute to the properties of the supersystem. For example:\r\n\r\n```\r\n<battery> seas:subSystemOf <electric_vehicle> .\r\n```\r\n\r\nFigure below illustrates systems and their connections:\r\n\r\n[![Systems and their connections](https://w3id.org/seas/system1.png)](https://w3id.org/seas/system1.png)\r\n\r\n"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "58" ]
+  }, {
+    "iri" : "https://w3id.org/seas/ConnectionPoint",
+    "baseIri" : "https://w3id.org/seas",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/SystemOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ConnectionPoint",
+      "en" : "Connection Point"
+    },
+    "comment" : {
+      "en" : "The class of connection points of systems, at which they may be connected to other systems.\r\n\r\nThis class qualifies properties `seas:connectsSystem` and `seas:connectedThrough`.\r\n\r\nA connection point belongs to exactly one system.\r\n\r\n\r\nFor example, an electric vehicle service equipment may have three power connection points: two different kinds of plugs that enable to charge electric vehicles, and a three phase power bus connection point to the grid:\r\n\r\n```\r\n<electric_vehicle> seas:connectsAt <plug_high_voltage> , <normal_plug> , <three_phase_connection_point> .\r\n```\r\n\r\n\r\nAny system connected through a connection is connected at one of its connection points to the connection:\r\n  if:\r\n\r\n```\r\n<system> a seas:System .\r\n<system> seas:connectedThrough <connection> .\r\n<connection> a seas:Connection .\r\n```\r\n\r\n  then there exists `_:connectionPoint` such that:\r\n\r\n```\r\n<system> seas:connectsAt _:connectionPoint .\r\n\r\n_:connectionPoint seas:connectsSystemAt <connection> .\r\n```\r\n\r\n\r\nThe system of a connection point that is connected through a connection is itself connected through the connection:. If:\r\n\r\n```\r\n<connection> a seas:Connection .\r\n<system> a seas:System .\r\n<connectionPoint> a seas:ConnectionPoint ;\r\n<connectionPoint> seas:connectsSystemThrough <connection> .\r\n```\r\n\r\nthen it is true that:\r\n\r\n```\r\n<connectionPoint> seas:connectionPointOf <system> .\r\n```\r\n\r\nFigure below illustrates connection points of systems:\r\n\r\n[![Connection points of systems](https://w3id.org/seas/system3.png)](https://w3id.org/seas/system3.png)\r\n\r\n"
+    },
+    "attributes" : [ "external" ],
+    "id" : "36",
+    "superClasses" : [ "58" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/StateGraphOntology#Action",
+    "baseIri" : "https://w3id.org/ibp/StateGraphOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Action"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_OnActMix",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "assignValue" : [ {
+          "identifier" : "assignValue",
+          "language" : "undefined",
+          "value" : "0.5",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_OnActMix"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_OnActPump",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "assignValue" : [ {
+          "identifier" : "assignValue",
+          "language" : "undefined",
+          "value" : "1.0",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_OnActPump"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActMix",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "assignValue" : [ {
+          "identifier" : "assignValue",
+          "language" : "undefined",
+          "value" : "0.0",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_StartUpActMix"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_OffActFan",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "assignValue" : [ {
+          "identifier" : "assignValue",
+          "language" : "undefined",
+          "value" : "0.0",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_OffActFan"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActPump",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "assignValue" : [ {
+          "identifier" : "assignValue",
+          "language" : "undefined",
+          "value" : "1.0",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_StartUpActPump"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_OffActPump",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "assignValue" : [ {
+          "identifier" : "assignValue",
+          "language" : "undefined",
+          "value" : "0.0",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_OffActPump"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActFan",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "assignValue" : [ {
+          "identifier" : "assignValue",
+          "language" : "undefined",
+          "value" : "1.0",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_StartUpActFan"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_OffActMix",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "assignValue" : [ {
+          "identifier" : "assignValue",
+          "language" : "undefined",
+          "value" : "0.0",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_OffActMix"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_OnActFan",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "assignValue" : [ {
+          "identifier" : "assignValue",
+          "language" : "undefined",
+          "value" : "1.0",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_OnActFan"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "88"
+  }, {
+    "iri" : "https://w3id.org/seas/Property",
+    "baseIri" : "https://w3id.org/seas",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/FeatureOfInterestOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Property",
+      "en" : "Property"
+    },
+    "comment" : {
+      "en" : "An observable or operable Quality of an Event or Object. That is, not a quality of an abstract entity as is also allowed by DUL's Quality, but rather an aspect of an entity that is intrinsic to and cannot exist without the entity and is observable by a sensor, or operable by an actuator. \r\n\r\nOn the other hand, a property may also itself be a feature of interest. For example if a fridge uses alternative current energy, then several aspects of its energy consumption property may be quantified. Examples of such aspects include:\r\n\r\n- the active power consumption;\r\n- the reactive power consumption;\r\n- the phase of voltage relative to current;\r\n- the frequency;\r\n- the minimal operating value of the frequency;\r\n- the number of occurences of unusual values.\r\n\r\nThese are different properties of the same property:\r\n\r\n```\r\nex:activePower a owl:ObjectProperty ;\r\n  rdfs:subPropertyOf seas:hasProperty ;\r\n  rdfs:domain seas:PowerProperty ;\r\n  rdfs:range seas:PowerProperty .\r\n\r\n<fridge/1/consumption> a seas:FeatureOfInterest ;\r\n  ex:activePower <fridge/1/consumption/activePower> .\r\n```\r\n\r\n"
+    },
+    "attributes" : [ "external" ],
+    "id" : "53"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#Coordinate",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Coordinate"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3StartY",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "sched_Interval3StartY"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3StartX",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "sched_Interval3StartX"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1EndX",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "sched_Interval1EndX"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1StartX",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "sched_Interval1StartX"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1StartY",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "sched_Interval1StartY"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3EndX",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "sched_Interval3EndX"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2EndY",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "sched_Interval2EndY"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3EndY",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "sched_Interval3EndY"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2EndX",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "sched_Interval2EndX"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2StartX",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "sched_Interval2StartX"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1EndY",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "sched_Interval1EndY"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2StartY",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "sched_Interval2StartY"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://numerateweb.org/vocab/math#Variable",
+    "baseIri" : "http://numerateweb.org/vocab/math",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Variable"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-0",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "R1_Inp",
+          "type" : "label"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OnOff-ExpEle-0"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-0",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "R1_Inp",
+          "type" : "label"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffOn-ExpEle-0"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-4",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "R1_InpToa",
+          "type" : "label"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-5",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffOn-ExpEle-4"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-0",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "R1_Inp",
+          "type" : "label"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffStartUp-ExpEle-0"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-4",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "R1_InpToa",
+          "type" : "label"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-5",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffStartUp-ExpEle-4"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-0",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "R1_InpTHcr",
+          "type" : "label"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_StartUpOn-ExpEle-0"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "94"
+  }, {
+    "iri" : "https://w3id.org/pep/ProcedureExecutionContainer",
+    "baseIri" : "https://w3id.org/pep",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/pep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ProcedureExecutionContainer",
+      "undefined" : "Procedure Execution Container"
+    },
+    "comment" : {
+      "en" : "The class of containers of Procedure Executions made by a specific Procedure Executor using a specific Procedure. \r\n\r\nA Procedure Executor Container can be for example a Web container of Procedure Execution resources, where one may operate HTTP POST requests to execute a given procedure."
+    },
+    "attributes" : [ "external" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://www.w3.org/2006/time#TemporalEntity",
+    "baseIri" : "http://www.w3.org/2006/time",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TemporalEntity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "103",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/ibp/ConditionOntology#BooleanExpression",
+    "baseIri" : "https://w3id.org/ibp/ConditionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BooleanExpression"
+    },
+    "attributes" : [ "external" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#Interval",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Interval"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "sched_Interval3"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "sched_Interval1"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "sched_Interval2"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "114"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#Transition",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Transition"
+    },
+    "attributes" : [ "external" ],
+    "id" : "70",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#Medium",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://www.productontology.org/id/",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://wiki.dbpedia.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Medium",
+      "en" : "Medium"
+    },
+    "comment" : {
+      "en" : "Placeholder concept to stipulate reuse of existing ontologies such as dbpedia or  \thttp://www.productontology.org/id/"
+    },
+    "attributes" : [ "external" ],
+    "id" : "96"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#Point",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Point"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#sched_Point3Start",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "sched_Point3Start"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#sched_Point2End",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "sched_Point2End"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#sched_Point3End",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "sched_Point3End"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#sched_Point2Start",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "sched_Point2Start"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#sched_Point1End",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "sched_Point1End"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#sched_Point1Start",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "sched_Point1Start"
+      }
+    } ],
+    "subClasses" : [ "128", "32" ],
+    "attributes" : [ "external" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#SemanticType",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SemanticType",
+      "en" : "Semantic Type"
+    },
+    "comment" : {
+      "en" : "It may be required to further annotate an Input, Output or Parameter with a specific Semantic Type. For example in building automation to differ between room air temperature or outdoor air temperature."
+    },
+    "attributes" : [ "external" ],
+    "id" : "130"
+  }, {
+    "iri" : "https://w3id.org/ibp/ExpressionOntology#ExpressionElement",
+    "baseIri" : "https://w3id.org/ibp/ExpressionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExpressionElement"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-2",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "value" : [ {
+          "identifier" : "value",
+          "language" : "undefined",
+          "value" : "0.0",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OnOff-ExpEle-2"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-0",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "R1_Inp",
+          "type" : "label"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffOn-ExpEle-0"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-0",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "R1_Inp",
+          "type" : "label"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OnOff-ExpEle-0"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-1",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "operator" : [ {
+          "identifier" : "operator",
+          "language" : "undefined",
+          "value" : "http://www.openmath.org/cd/relation1#geq",
+          "type" : "iri"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-2",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffOn-ExpEle-1"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-1",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "operator" : [ {
+          "identifier" : "operator",
+          "language" : "undefined",
+          "value" : "http://www.openmath.org/cd/relation1#leq",
+          "type" : "iri"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-2",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OnOff-ExpEle-1"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-2",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "value" : [ {
+          "identifier" : "value",
+          "language" : "undefined",
+          "value" : "1.0",
+          "type" : "label"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-3",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffOn-ExpEle-2"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-3",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "operator" : [ {
+          "identifier" : "operator",
+          "language" : "undefined",
+          "value" : "http://www.openmath.org/cd/logic1#and",
+          "type" : "iri"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-4",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffOn-ExpEle-3"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-4",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "R1_InpToa",
+          "type" : "label"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-5",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffOn-ExpEle-4"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-5",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "operator" : [ {
+          "identifier" : "operator",
+          "language" : "undefined",
+          "value" : "http://www.openmath.org/cd/relation1#geq",
+          "type" : "iri"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-6",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffOn-ExpEle-5"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-0",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "R1_Inp",
+          "type" : "label"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffStartUp-ExpEle-0"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-6",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "value" : [ {
+          "identifier" : "value",
+          "language" : "undefined",
+          "value" : "1.0",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffOn-ExpEle-6"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-1",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "operator" : [ {
+          "identifier" : "operator",
+          "language" : "undefined",
+          "value" : "http://www.openmath.org/cd/relation1#geq",
+          "type" : "iri"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-2",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffStartUp-ExpEle-1"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-2",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "value" : [ {
+          "identifier" : "value",
+          "language" : "undefined",
+          "value" : "1.0",
+          "type" : "label"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-3",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffStartUp-ExpEle-2"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-3",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "operator" : [ {
+          "identifier" : "operator",
+          "language" : "undefined",
+          "value" : "http://www.openmath.org/cd/logic1#and",
+          "type" : "iri"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-4",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffStartUp-ExpEle-3"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-4",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "R1_InpToa",
+          "type" : "label"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-5",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffStartUp-ExpEle-4"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-2",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "value" : [ {
+          "identifier" : "value",
+          "language" : "undefined",
+          "value" : "30",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_StartUpOn-ExpEle-2"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-5",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "operator" : [ {
+          "identifier" : "operator",
+          "language" : "undefined",
+          "value" : "http://www.openmath.org/cd/relation1#lt",
+          "type" : "iri"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-6",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffStartUp-ExpEle-5"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-0",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "R1_InpTHcr",
+          "type" : "label"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_StartUpOn-ExpEle-0"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-6",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "value" : [ {
+          "identifier" : "value",
+          "language" : "undefined",
+          "value" : "1",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffStartUp-ExpEle-6"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-1",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "operator" : [ {
+          "identifier" : "operator",
+          "language" : "undefined",
+          "value" : "http://www.openmath.org/cd/relation1#gt",
+          "type" : "iri"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-2",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_StartUpOn-ExpEle-1"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "131"
+  }, {
+    "iri" : "https://w3id.org/seas/MaximumEvaluation",
+    "baseIri" : "https://w3id.org/seas",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/EvaluationOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MaximumEvaluation",
+      "en" : "Maximum Evaluation"
+    },
+    "comment" : {
+      "en" : "Maximum Evaluation is an Evaluation which is the maximum value that the evaluation \r\n                can take for the evaluated property.\r\n                "
+    },
+    "attributes" : [ "external" ],
+    "id" : "134",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/ConditionOntology#BooleanExpression",
+    "baseIri" : "https://w3id.org/ConditionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BooleanExpression"
+    },
+    "attributes" : [ "external" ],
+    "id" : "124"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "attributes" : [ "external" ],
+    "id" : "141"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "100",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/seas/Evaluation",
+    "baseIri" : "https://w3id.org/seas",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/EvaluationOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Evaluation",
+      "en" : "Evaluation"
+    },
+    "subClasses" : [ "3", "152", "134", "110", "48", "76" ],
+    "comment" : {
+      "en" : "Evaluations qualify the link [`seas:value`](https://w3id.org/seas/value). In particular, they may hold metadata about:\r\n\r\n1. the type of evaluation;\r\n2. the context of validity of the evaluation;\r\n3. provenance information or any other data.\r\n"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#InitialState",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InitialState"
+    },
+    "attributes" : [ "external" ],
+    "id" : "160",
+    "superClasses" : [ "46" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "161",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "162",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "90",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "163",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/ibp/ExpressionOntology#Operand",
+    "baseIri" : "https://w3id.org/ibp/ExpressionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Operand"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-2",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "value" : [ {
+          "identifier" : "value",
+          "language" : "undefined",
+          "value" : "0.0",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OnOff-ExpEle-2"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-0",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "R1_Inp",
+          "type" : "label"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffOn-ExpEle-0"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-0",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "R1_Inp",
+          "type" : "label"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OnOff-ExpEle-0"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-2",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "value" : [ {
+          "identifier" : "value",
+          "language" : "undefined",
+          "value" : "1.0",
+          "type" : "label"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-3",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffOn-ExpEle-2"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-4",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "R1_InpToa",
+          "type" : "label"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-5",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffOn-ExpEle-4"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-0",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "R1_Inp",
+          "type" : "label"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffStartUp-ExpEle-0"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-6",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "value" : [ {
+          "identifier" : "value",
+          "language" : "undefined",
+          "value" : "1.0",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffOn-ExpEle-6"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-2",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "value" : [ {
+          "identifier" : "value",
+          "language" : "undefined",
+          "value" : "1.0",
+          "type" : "label"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-3",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffStartUp-ExpEle-2"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-2",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "value" : [ {
+          "identifier" : "value",
+          "language" : "undefined",
+          "value" : "30",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_StartUpOn-ExpEle-2"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-4",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "R1_InpToa",
+          "type" : "label"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-5",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffStartUp-ExpEle-4"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-0",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "R1_InpTHcr",
+          "type" : "label"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_StartUpOn-ExpEle-0"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-6",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "value" : [ {
+          "identifier" : "value",
+          "language" : "undefined",
+          "value" : "1",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffStartUp-ExpEle-6"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "165"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "60",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "166",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "167",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "168",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "54",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "157",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#Periodicity",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Periodicity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "171"
+  }, {
+    "iri" : "https://w3id.org/ibp/ExpressionOntology#Operator",
+    "baseIri" : "https://w3id.org/ibp/ExpressionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Operator"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-1",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "operator" : [ {
+          "identifier" : "operator",
+          "language" : "undefined",
+          "value" : "http://www.openmath.org/cd/relation1#leq",
+          "type" : "iri"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-2",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OnOff-ExpEle-1"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-1",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "operator" : [ {
+          "identifier" : "operator",
+          "language" : "undefined",
+          "value" : "http://www.openmath.org/cd/relation1#geq",
+          "type" : "iri"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-2",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffOn-ExpEle-1"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-3",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "operator" : [ {
+          "identifier" : "operator",
+          "language" : "undefined",
+          "value" : "http://www.openmath.org/cd/logic1#and",
+          "type" : "iri"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-4",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffOn-ExpEle-3"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-5",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "operator" : [ {
+          "identifier" : "operator",
+          "language" : "undefined",
+          "value" : "http://www.openmath.org/cd/relation1#geq",
+          "type" : "iri"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-6",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffOn-ExpEle-5"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-1",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "operator" : [ {
+          "identifier" : "operator",
+          "language" : "undefined",
+          "value" : "http://www.openmath.org/cd/relation1#geq",
+          "type" : "iri"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-2",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffStartUp-ExpEle-1"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-3",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "operator" : [ {
+          "identifier" : "operator",
+          "language" : "undefined",
+          "value" : "http://www.openmath.org/cd/logic1#and",
+          "type" : "iri"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-4",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffStartUp-ExpEle-3"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-5",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "operator" : [ {
+          "identifier" : "operator",
+          "language" : "undefined",
+          "value" : "http://www.openmath.org/cd/relation1#lt",
+          "type" : "iri"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-6",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffStartUp-ExpEle-5"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-1",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "operator" : [ {
+          "identifier" : "operator",
+          "language" : "undefined",
+          "value" : "http://www.openmath.org/cd/relation1#gt",
+          "type" : "iri"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-2",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_StartUpOn-ExpEle-1"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "172"
+  }, {
+    "iri" : "https://w3id.org/ConditionOntology#LeftHandSide",
+    "baseIri" : "https://w3id.org/ConditionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LeftHandSide"
+    },
+    "attributes" : [ "external" ],
+    "id" : "125"
+  }, {
+    "iri" : "https://w3id.org/seas/AverageEvaluation",
+    "baseIri" : "https://w3id.org/seas",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/EvaluationOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AverageEvaluation",
+      "en" : "Average Evaluation"
+    },
+    "comment" : {
+      "en" : "Average Evaluation is an Evaluation wich evaluate  the sum of a list \r\n                  of evaluations divided by the number of evalautions in the list."
+    },
+    "attributes" : [ "external" ],
+    "id" : "152",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "106",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "102",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "151",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "174",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "93",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "6",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "87",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "https://w3id.org/ibp/ConditionOntology#ExpressionAtom",
+    "baseIri" : "https://w3id.org/ibp/ConditionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExpressionAtom"
+    },
+    "subClasses" : [ "19", "41" ],
+    "attributes" : [ "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "https://w3id.org/ibp/ExpressionOntology#Expression",
+    "baseIri" : "https://w3id.org/ibp/ExpressionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Expression"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOnOff",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "isComposedOf" : [ {
+          "identifier" : "isComposedOf",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-0",
+          "type" : "iri"
+        }, {
+          "identifier" : "isComposedOf",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-1",
+          "type" : "iri"
+        }, {
+          "identifier" : "isComposedOf",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-2",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ExprConditionOnOff"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOffStartUp",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "isComposedOf" : [ {
+          "identifier" : "isComposedOf",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-1",
+          "type" : "iri"
+        }, {
+          "identifier" : "isComposedOf",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-2",
+          "type" : "iri"
+        }, {
+          "identifier" : "isComposedOf",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-4",
+          "type" : "iri"
+        }, {
+          "identifier" : "isComposedOf",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-0",
+          "type" : "iri"
+        }, {
+          "identifier" : "isComposedOf",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-5",
+          "type" : "iri"
+        }, {
+          "identifier" : "isComposedOf",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-3",
+          "type" : "iri"
+        }, {
+          "identifier" : "isComposedOf",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-6",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ExprConditionOffStartUp"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#ExprConditionStartUpOn",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "isComposedOf" : [ {
+          "identifier" : "isComposedOf",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-0",
+          "type" : "iri"
+        }, {
+          "identifier" : "isComposedOf",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-2",
+          "type" : "iri"
+        }, {
+          "identifier" : "isComposedOf",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ExprConditionStartUpOn"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOffOn",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "isComposedOf" : [ {
+          "identifier" : "isComposedOf",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-6",
+          "type" : "iri"
+        }, {
+          "identifier" : "isComposedOf",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-5",
+          "type" : "iri"
+        }, {
+          "identifier" : "isComposedOf",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-4",
+          "type" : "iri"
+        }, {
+          "identifier" : "isComposedOf",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-3",
+          "type" : "iri"
+        }, {
+          "identifier" : "isComposedOf",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-1",
+          "type" : "iri"
+        }, {
+          "identifier" : "isComposedOf",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-2",
+          "type" : "iri"
+        }, {
+          "identifier" : "isComposedOf",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-0",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ExprConditionOffOn"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "183"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#Condition",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Condition"
+    },
+    "attributes" : [ "external" ],
+    "id" : "47",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement",
+    "baseIri" : "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FirstElement"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-0",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "R1_Inp",
+          "type" : "label"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffOn-ExpEle-0"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-0",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "R1_Inp",
+          "type" : "label"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OnOff-ExpEle-0"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-0",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "R1_Inp",
+          "type" : "label"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffStartUp-ExpEle-0"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-0",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "R1_InpTHcr",
+          "type" : "label"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_StartUpOn-ExpEle-0"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "188"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#Schedule",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Schedule"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#R2_logic",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "R2_logic"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "31",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#Action",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Action"
+    },
+    "attributes" : [ "external" ],
+    "id" : "71",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://numerateweb.org/vocab/math#Literal",
+    "baseIri" : "http://numerateweb.org/vocab/math",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-2",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "value" : [ {
+          "identifier" : "value",
+          "language" : "undefined",
+          "value" : "0.0",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OnOff-ExpEle-2"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-2",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "value" : [ {
+          "identifier" : "value",
+          "language" : "undefined",
+          "value" : "1.0",
+          "type" : "label"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-3",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffOn-ExpEle-2"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-6",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "value" : [ {
+          "identifier" : "value",
+          "language" : "undefined",
+          "value" : "1.0",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffOn-ExpEle-6"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-2",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "value" : [ {
+          "identifier" : "value",
+          "language" : "undefined",
+          "value" : "1.0",
+          "type" : "label"
+        } ],
+        "nextElement" : [ {
+          "identifier" : "nextElement",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-3",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffStartUp-ExpEle-2"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-2",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "value" : [ {
+          "identifier" : "value",
+          "language" : "undefined",
+          "value" : "30",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_StartUpOn-ExpEle-2"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-6",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "annotations" : {
+        "value" : [ {
+          "identifier" : "value",
+          "language" : "undefined",
+          "value" : "1",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SG_Tran_OffStartUp-ExpEle-6"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "201"
+  }, {
+    "iri" : "https://w3id.org/seas/Connection",
+    "baseIri" : "https://w3id.org/seas",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/SystemOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Connection",
+      "en" : "Connection"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#connR1InpSce",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "connR1InpSce"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#connR1OutpSStartUp",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "connR1OutpSStartUp"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#connR2OutpYsce",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "connR2OutpYsce"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#connR1InpTHcr",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "connR1InpTHcr"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#connR1OutpSOff",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "connR1OutpSOff"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#connR1OutyMix",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "connR1OutyMix"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#connR1InpToa",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "connR1InpToa"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#connR1OutyFan",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "connR1OutyFan"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#connR1OutyPump",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "connR1OutyPump"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#connR1OutpSOn",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "connR1OutpSOn"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/InstancesAutoVerification#connR2InpTime",
+      "baseIri" : "https://w3id.org/ibp/InstancesAutoVerification",
+      "labels" : {
+        "IRI-based" : "connR2InpTime"
+      }
+    } ],
+    "comment" : {
+      "en" : "The class of connections between systems.\r\n\r\nThis class qualifies property `seas:connectedTo`. \r\n\r\nA connection describes potential interactions between systems. \r\n\r\nFor example, a power connection between power systems describes the fact that these systems may exchange electricity.\r\n\r\n```\r\n<connection> seas:connectsSystem <electric_vehicle> , <electric_vehicle_service_equipment> .\r\n<electric_vehicle> seas:connectedThrough <connection> .\r\n<electric_vehicle_service_equipment> seas:connectedThrough <connection> .\r\n```\r\n\r\nAny two connected systems are connected through a connection. If:\r\n\r\n```\r\n<system1> a seas:System .\r\n<system2> a seas:System .\r\n<system1> seas:connectedTo <system2> .\r\n```\r\n\r\nthen there exists `_:connection` such that:\r\n\r\n```\r\n_:connection seas:connectsSystem <system1> , <system2> .\r\n```\r\n\r\nA connection can connect more than two systems at the same time.\r\n\r\n\r\nFigure below illustrates connections of systems:\r\n\r\n[![Connections of systems](https://w3id.org/seas/system2.png)](https://w3id.org/seas/system2.png)\r\n\r\n"
+    },
+    "attributes" : [ "external" ],
+    "id" : "17",
+    "superClasses" : [ "58" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#EndPoint",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EndPoint"
+    },
+    "attributes" : [ "external" ],
+    "id" : "128",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#Return",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Return"
+    },
+    "attributes" : [ "external" ],
+    "id" : "217",
+    "superClasses" : [ "46" ]
+  }, {
+    "iri" : "https://w3id.org/seas/IncomingEvaluation",
+    "baseIri" : "https://w3id.org/seas",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/ZoneOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IncomingEvaluation",
+      "en" : "Incoming evaluation"
+    },
+    "comment" : {
+      "en" : "Evaluation of how the exterior contributes to the property."
+    },
+    "attributes" : [ "external" ],
+    "id" : "110",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#StateGraph",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StateGraph"
+    },
+    "attributes" : [ "external" ],
+    "id" : "30",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#State",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "State"
+    },
+    "subClasses" : [ "217", "160" ],
+    "attributes" : [ "external" ],
+    "id" : "46",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Document",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Document"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/pep/",
+      "baseIri" : "https://w3id.org",
+      "labels" : { }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "224"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "82",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "109",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "111",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "112",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "113",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "115",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "116",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "117",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "118",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "119",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "120",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "121",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "122",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "123",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "126",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "127",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "129",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "132",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "133",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "135",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "136",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "137",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "138",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "139",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "140",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "142",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "143",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "144",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "145",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "147",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "149",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "150",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "153",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "154",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "155",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "156",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "159",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "164",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "169",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "170",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "173",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "175",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "176",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "177",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "178",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "179",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "180",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "181",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "182",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "184",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "185",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "186",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "187",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "189",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "190",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "191",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "192",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "158",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "193",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "194",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "195",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "196",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "197",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "198",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "199",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "200",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "202",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "203",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "204",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "205",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "206",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "207",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "208",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "209",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "210",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "211",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "212",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "213",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "214",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "215",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "216",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "218",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "219",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "220",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "221",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "2",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "222",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "223",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "225",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "226",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "227",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/seas/subSystemOf",
+    "inverse" : "2",
+    "baseIri" : "https://w3id.org/seas",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/SystemOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "subSystemOf",
+      "en" : "sub system of"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Links a system to its super system.\r\n\r\nProperties of subsystems somehow contribute to the properties of the super system. The exact meaning of _contribute_ is defined by sub properties of `seas:subSystemOf`.\r\n\r\nFor example, if a fridge is a subsystem of a kitchen, then its consumption power contributes to the consumption power of the kitchen. \r\n\r\nProperty `seas:subSystemOf` is functional, and should be asymmetric:\r\n\r\n```\r\nif x seas:subSystemOf y1 and x seas:subSystemOf y2, then y1 and y2 refer to the same resource.\r\nif x seas:subSystemOf y, then it can't be the case that y seas:subSystemOf x.\r\n```\r\n\r\nThe asymmetric aspect of property `seas:subSystemOf` would prevents a system from being its own sub-system. Unfortunately, OWL 2 DL disallow a non-simple property (e.g., a functional property) from being asymmetric, see OWL 2 Syntax section 11.\r\n\r\nIf it was possible that both the fridge and the kitchen be sub systems of a common super system, say, the house, then the consumption power of the fridge would contribute twice to the consumption power of the house. The functional aspect of property `seas:subSystemOf` prevents this undesired effect. \r\n\r\nDue to the open world assumption of RDF, it is not possible to model the closed set of sub systems of a system using property `seas:subSystemOf`.\r\n"
+    },
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#hasStartPoint",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasStartPoint"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#hasPeriodicity",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasPeriodicity"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://w3id.org/seas/connectsSystem",
+    "inverse" : "18",
+    "baseIri" : "https://w3id.org/seas",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/SystemOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "connectsSystem",
+      "en" : "connects system"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Links a connection to one of the systems it connects."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#hasPolynomialConstant",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasPolynomialConstant"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/name",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "name"
+    },
+    "domain" : "6",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://w3id.org/pep/hasOutput",
+    "baseIri" : "https://w3id.org/pep",
+    "range" : "6",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/pep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOutput",
+      "undefined" : "has output"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Links a Procedure to the (unique) description of its output."
+    },
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://w3id.org/seas/connectionPointOf",
+    "baseIri" : "https://w3id.org/seas",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/SystemOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "connectionPointOf",
+      "en" : "connection point to"
+    },
+    "cardinality" : "1",
+    "domain" : "36",
+    "comment" : {
+      "en" : "Links a connection point to the one and only one system it belongs to."
+    },
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://w3id.org/seas/evaluatedSimpleValue",
+    "baseIri" : "https://w3id.org/seas",
+    "range" : "39",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/EvaluationOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "evaluatedSimpleValue",
+      "en" : "evaluated simple value"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Links an evaluation to the literal that qualifies some aspect of the property, modeled as a RDF Literal."
+    },
+    "attributes" : [ "datatype", "external", "functional" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://w3id.org/ibp/ConditionOntology#lessThan",
+    "baseIri" : "https://w3id.org/ibp/ConditionOntology",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "lessThan"
+    },
+    "domain" : "41",
+    "attributes" : [ "object", "external" ],
+    "id" : "40"
+  }, {
+    "iri" : "https://w3id.org/seas/connectsSystemAt",
+    "inverse" : "43",
+    "baseIri" : "https://w3id.org/seas",
+    "range" : "36",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/SystemOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "connectsSystemAt",
+      "en" : "connects system at"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Links a connection to one of the connection points at which it connects a system."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "42"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#stateCondition",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "stateCondition"
+    },
+    "domain" : "46",
+    "attributes" : [ "object", "external" ],
+    "id" : "45"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#supervises",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "supervises",
+      "en" : "supervises"
+    },
+    "domain" : "37",
+    "comment" : {
+      "en" : "Object property to describe if one control actor supervises another."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasUnit",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasUnit",
+      "en" : "hasUnit"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Object property to relate an input, output or parameter with its unit."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "51"
+  }, {
+    "iri" : "https://w3id.org/seas/value",
+    "baseIri" : "https://w3id.org/seas",
+    "range" : "54",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/EvaluationOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "value",
+      "en" : "value"
+    },
+    "domain" : "53",
+    "comment" : {
+      "en" : "Links a property to a unique, constant, quality or quantity value for that property, modeled as a RDF IRI or blank node.\r\n\r\nFor example, the exact length of `<car/1>` is  4.27 m, and this is true in the validity context of the RDF graph.\r\n\r\n```\r\n  <car/1/length> a seas:Property ;\r\n    seas:value [ a qudt:QuantityValue ; qudt:numericalValue 4.27 ; qudt:unit qudt-unit:meter ] .\r\n```\r\n\r\nThis property is a shortcut for an exact evaluation with all context being the most generic contexts (although this notion is not planned to be formalized)."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "52"
+  }, {
+    "iri" : "https://w3id.org/pep/made",
+    "inverse" : "57",
+    "baseIri" : "https://w3id.org/pep",
+    "range" : "44",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/pep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "made",
+      "undefined" : "made"
+    },
+    "domain" : "56",
+    "comment" : {
+      "en" : "Relation between a procedure executor and an execution it made."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "55"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#logicInput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "logicInput",
+      "en" : "logicInput"
+    },
+    "domain" : "60",
+    "comment" : {
+      "en" : "Object property to express the relationship of some application logic concept to an input."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "59"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#hasInterval",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasInterval"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "external" ],
+    "id" : "61"
+  }, {
+    "iri" : "https://w3id.org/seas/connectedTo",
+    "baseIri" : "https://w3id.org/seas",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/SystemOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "connectedTo",
+      "en" : "connected to"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Links a system to a system it is connected to.\r\n\r\nConnected systems interact in some way. The exact meaning of _interact_ is defined by sub properties of `seas:connectedTo`.\r\n\r\nFor example, for the electricity to directly flow between an electric vehicle service equipment and an electric vehicle, then they must be linked by property `seas:exchangesElectricityWith`: \r\n\r\n```\r\nseas:exchangesElectricityWith rdfs:subPropertyOf seas:connectedTo .\r\n\r\n<electric_vehicle> seas:exchangesElectricityWith <electric_vehicle_service_equipment> .\r\n```\r\n\r\nProperty `seas:connectedTo` is symmetric:\r\n\r\n```\r\nif x seas:connectedTo y, then it is true that y seas:connectedTo x.\r\n```\r\n\r\nThis property can be qualified using class `seas:Connection`, which connects the two systems.\r\n\r\nIf there is a connection between several systems, then one may infer these systems are pairwise connected."
+    },
+    "attributes" : [ "object", "external", "symmetric" ],
+    "id" : "62"
+  }, {
+    "iri" : "https://w3id.org/ibp/ConditionOntology#expressionRHS",
+    "baseIri" : "https://w3id.org/ibp/ConditionOntology",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "expressionRHS"
+    },
+    "domain" : "66",
+    "attributes" : [ "object", "external" ],
+    "id" : "65"
+  }, {
+    "iri" : "https://w3id.org/pep/hasCommand",
+    "baseIri" : "https://w3id.org/pep",
+    "range" : "6",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/pep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCommand",
+      "undefined" : "has command"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Links a Procedure Execution to its unique command (a OWL individual)."
+    },
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "68"
+  }, {
+    "iri" : "https://w3id.org/ibp/ConditionOntology#equalTo",
+    "baseIri" : "https://w3id.org/ibp/ConditionOntology",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "equalTo"
+    },
+    "domain" : "41",
+    "attributes" : [ "object", "external" ],
+    "id" : "69"
+  }, {
+    "iri" : "https://w3id.org/ibp/ConditionOntology#greaterThanOrEqual",
+    "baseIri" : "https://w3id.org/ibp/ConditionOntology",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "greaterThanOrEqual"
+    },
+    "domain" : "41",
+    "attributes" : [ "object", "external" ],
+    "id" : "72"
+  }, {
+    "iri" : "https://w3id.org/ibp/ConditionOntology#logicalNegation",
+    "baseIri" : "https://w3id.org/ibp/ConditionOntology",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "logicalNegation"
+    },
+    "domain" : "66",
+    "attributes" : [ "object", "external" ],
+    "id" : "73"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasOutput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasOutput",
+      "en" : "hasOutput"
+    },
+    "domain" : "37",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its outputs."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "75"
+  }, {
+    "iri" : "https://w3id.org/ibp/ConditionOntology#logicalDisjunction",
+    "baseIri" : "https://w3id.org/ibp/ConditionOntology",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "logicalDisjunction"
+    },
+    "domain" : "66",
+    "attributes" : [ "object", "external" ],
+    "id" : "77"
+  }, {
+    "iri" : "https://w3id.org/seas/evaluation",
+    "inverse" : "79",
+    "baseIri" : "https://w3id.org/seas",
+    "range" : "4",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/EvaluationOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "evaluation",
+      "en" : "evaluation"
+    },
+    "domain" : "53",
+    "comment" : {
+      "en" : "Links a property to one of its evaluations."
+    },
+    "attributes" : [ "object", "inverse functional", "external" ],
+    "id" : "78"
+  }, {
+    "iri" : "https://w3id.org/ibp/ConditionOntology#greatherThan",
+    "baseIri" : "https://w3id.org/ibp/ConditionOntology",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "greatherThan"
+    },
+    "domain" : "41",
+    "attributes" : [ "object", "external" ],
+    "id" : "80"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#hasPolynomicalConstant",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasPolynomicalConstant"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "external" ],
+    "id" : "81"
+  }, {
+    "iri" : "https://w3id.org/pep/forProcedure",
+    "baseIri" : "https://w3id.org/pep",
+    "range" : "67",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/pep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "forProcedure",
+      "undefined" : "for procedure"
+    },
+    "domain" : "83",
+    "comment" : {
+      "en" : "Links a Procedure Execution Container to the Procedure that the executions it contains used."
+    },
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "82"
+  }, {
+    "iri" : "https://w3id.org/seas/evaluationOf",
+    "baseIri" : "https://w3id.org/seas",
+    "range" : "53",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/EvaluationOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "evaluationOf",
+      "en" : "evaluation of"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Links an evaluation to the one and only property it evaluates."
+    },
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "79"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#contains",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "contains"
+    },
+    "domain" : "30",
+    "attributes" : [ "object", "external" ],
+    "id" : "85"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#polyConstantLiteralValue",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "range" : "87",
+    "label" : {
+      "IRI-based" : "polyConstantLiteralValue"
+    },
+    "domain" : "14",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "86"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#hasNumbering",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "range" : "90",
+    "label" : {
+      "IRI-based" : "hasNumbering"
+    },
+    "domain" : "46",
+    "attributes" : [ "datatype", "external", "functional" ],
+    "id" : "89"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#hasLiteralValue",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "range" : "93",
+    "label" : {
+      "IRI-based" : "hasLiteralValue"
+    },
+    "domain" : "91",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "92"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasMedium",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "hasMedium",
+      "en" : "hasMedium"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Object property to annotate an input, output or parameter with its medium."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "95"
+  }, {
+    "iri" : "https://w3id.org/seas/connectsAt",
+    "inverse" : "35",
+    "baseIri" : "https://w3id.org/seas",
+    "range" : "36",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/SystemOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "connectsAt",
+      "en" : "connects at"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Links a system to one of the connection points at which it connects."
+    },
+    "attributes" : [ "object", "inverse functional", "external" ],
+    "id" : "97"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#hasDescription",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "range" : "100",
+    "label" : {
+      "IRI-based" : "hasDescription"
+    },
+    "domain" : "46",
+    "attributes" : [ "datatype", "external", "functional" ],
+    "id" : "99"
+  }, {
+    "iri" : "https://w3id.org/pep/hasSimpleResult",
+    "baseIri" : "https://w3id.org/pep",
+    "range" : "102",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/pep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSimpleResult",
+      "undefined" : "has simple result"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Links a Procedure Execution to its unique simple result (a RDFS literal)."
+    },
+    "attributes" : [ "datatype", "external", "functional" ],
+    "id" : "101"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasQuantity",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "hasQuantity",
+      "en" : "hasQuantity"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Object property to annotate an input, output or parameter with its quantity."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "104"
+  }, {
+    "iri" : "https://w3id.org/seas/evaluatedValue",
+    "baseIri" : "https://w3id.org/seas",
+    "range" : "106",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/EvaluationOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "evaluatedValue",
+      "en" : "evaluated value"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Links an evaluation to the literal that qualifies some aspect of the property, modeled as a RDF IRI or blank node."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "105"
+  }, {
+    "iri" : "https://w3id.org/ibp/ConditionOntology#expressionLHS",
+    "baseIri" : "https://w3id.org/ibp/ConditionOntology",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "expressionLHS"
+    },
+    "domain" : "66",
+    "attributes" : [ "object", "external" ],
+    "id" : "107"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#isConsecutiveInterval",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "isConsecutiveInterval"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "external" ],
+    "id" : "108"
+  }, {
+    "range" : "3",
+    "domain" : "110",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "109"
+  }, {
+    "range" : "58",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "111"
+  }, {
+    "iri" : "https://w3id.org/pep/hasResult",
+    "baseIri" : "https://w3id.org/pep",
+    "range" : "6",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/pep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasResult",
+      "undefined" : "has result"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Links a Procedure Execution to its unique result (a OWL individual)."
+    },
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "112"
+  }, {
+    "range" : "36",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "113"
+  }, {
+    "iri" : "https://w3id.org/seas/connectsSystemAt",
+    "inverse" : "43",
+    "baseIri" : "https://w3id.org/seas",
+    "range" : "36",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/SystemOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "connectsSystemAt",
+      "en" : "connects system at"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Links a connection to one of the connection points at which it connects a system."
+    },
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "115"
+  }, {
+    "range" : "53",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "116"
+  }, {
+    "range" : "1",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "117"
+  }, {
+    "range" : "110",
+    "domain" : "76",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "118"
+  }, {
+    "range" : "56",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "119"
+  }, {
+    "range" : "1",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "120"
+  }, {
+    "iri" : "https://w3id.org/seas/connectsSystem",
+    "inverse" : "18",
+    "baseIri" : "https://w3id.org/seas",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/SystemOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "connectsSystem",
+      "en" : "connects system"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Links a connection to one of the systems it connects."
+    },
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "121"
+  }, {
+    "iri" : "https://w3id.org/ibp/ConditionOntology#logicalConjunction",
+    "baseIri" : "https://w3id.org/ibp/ConditionOntology",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "logicalConjunction"
+    },
+    "domain" : "66",
+    "attributes" : [ "object", "external" ],
+    "id" : "122"
+  }, {
+    "iri" : "https://w3id.org/ConditionOntology#expressionLHS",
+    "baseIri" : "https://w3id.org/ConditionOntology",
+    "range" : "125",
+    "label" : {
+      "IRI-based" : "expressionLHS"
+    },
+    "domain" : "124",
+    "attributes" : [ "object", "external" ],
+    "id" : "123"
+  }, {
+    "iri" : "https://w3id.org/pep/hasInput",
+    "baseIri" : "https://w3id.org/pep",
+    "range" : "6",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/pep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasInput",
+      "undefined" : "has input"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Links a Procedure to the (unique) description of its input."
+    },
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "126"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#hasYCoordinate",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasYCoordinate"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "external" ],
+    "id" : "127"
+  }, {
+    "iri" : "https://w3id.org/seas/connectsSystemThrough",
+    "baseIri" : "https://w3id.org/seas",
+    "range" : "17",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/SystemOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "connectsSystemThrough",
+      "en" : "connects system through"
+    },
+    "domain" : "36",
+    "comment" : {
+      "en" : "Links a connection point to one of the connections through which it connects its system."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#hasEndPoint",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasEndPoint"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "external" ],
+    "id" : "129"
+  }, {
+    "range" : "56",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "132"
+  }, {
+    "range" : "8",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "133"
+  }, {
+    "range" : "44",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "135"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasApplicationLogic",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "hasApplicationLogic",
+      "en" : "hasApplicationLogic"
+    },
+    "domain" : "37",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its specific application logic"
+    },
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "136"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasApplicationLogic",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "hasApplicationLogic",
+      "en" : "hasApplicationLogic"
+    },
+    "domain" : "37",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its specific application logic"
+    },
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "137"
+  }, {
+    "range" : "8",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "138"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasInput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasInput",
+      "en" : "hasInput"
+    },
+    "domain" : "37",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its inputs."
+    },
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "139"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasParameter",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasParameter",
+      "en" : "hasParameter"
+    },
+    "domain" : "37",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its parameter."
+    },
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "140"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasOutput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasOutput",
+      "en" : "hasOutput"
+    },
+    "domain" : "37",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its outputs."
+    },
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "142"
+  }, {
+    "iri" : "https://w3id.org/ibp/ConditionOntology#lessThanOrEqual",
+    "baseIri" : "https://w3id.org/ibp/ConditionOntology",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "lessThanOrEqual"
+    },
+    "domain" : "41",
+    "attributes" : [ "object", "external" ],
+    "id" : "143"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasOutput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasOutput",
+      "en" : "hasOutput"
+    },
+    "domain" : "37",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its outputs."
+    },
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "144"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#source",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "source"
+    },
+    "domain" : "70",
+    "attributes" : [ "object", "external" ],
+    "id" : "145"
+  }, {
+    "range" : "9",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "146"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#hasXCoordinate",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasXCoordinate"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "external" ],
+    "id" : "147"
+  }, {
+    "range" : "9",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "148"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasDataType",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "hasDataType",
+      "en" : "hasDataType"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Object property to annotate a input, output or parameter with its data type."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "149"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#logicOutput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "logicOutput",
+      "en" : "logicOutput"
+    },
+    "domain" : "151",
+    "comment" : {
+      "en" : "Object property to express the relationship of some application logic concept to an output."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "150"
+  }, {
+    "iri" : "https://w3id.org/pep/implements",
+    "baseIri" : "https://w3id.org/pep",
+    "range" : "67",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/pep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "implements",
+      "undefined" : "implements"
+    },
+    "domain" : "56",
+    "comment" : {
+      "en" : "A relation between a Procedure Executor and a Procedure it implements."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "153"
+  }, {
+    "iri" : "https://w3id.org/pep/usedProcedure",
+    "baseIri" : "https://w3id.org/pep",
+    "range" : "67",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/pep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "usedProcedure",
+      "undefined" : "used procedure"
+    },
+    "domain" : "44",
+    "comment" : {
+      "en" : "Relation between a Procedure Execution and the Procedure it used."
+    },
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "154"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#isSupervisedBy",
+    "inverse" : "50",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "isSupervisedBy",
+      "en" : "isSupervisedBy"
+    },
+    "domain" : "37",
+    "comment" : {
+      "en" : "Object property to describe hierarchical composition of control actors."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "155"
+  }, {
+    "iri" : "https://w3id.org/seas/hasTemporalContext",
+    "baseIri" : "https://w3id.org/seas",
+    "range" : "98",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/EvaluationOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTemporalContext",
+      "en" : "has temporal context"
+    },
+    "superproperty" : [ "158" ],
+    "domain" : "157",
+    "comment" : {
+      "en" : "Links an evaluation to its temporal validity context, a [time:TemporalEntity](http://www.w3.org/2006/time#TemporalEntity)."
+    },
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "156"
+  }, {
+    "iri" : "https://w3id.org/ibp/ConditionOntology#hasLiteralValue",
+    "baseIri" : "https://w3id.org/ibp/ConditionOntology",
+    "range" : "103",
+    "label" : {
+      "IRI-based" : "hasLiteralValue"
+    },
+    "domain" : "19",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "159"
+  }, {
+    "iri" : "https://w3id.org/ibp/ConditionOntology#decomposes",
+    "baseIri" : "https://w3id.org/ibp/ConditionOntology",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "decomposes"
+    },
+    "domain" : "66",
+    "attributes" : [ "object", "external" ],
+    "id" : "164"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasParameter",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasParameter",
+      "en" : "hasParameter"
+    },
+    "domain" : "37",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its parameter."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "169"
+  }, {
+    "iri" : "https://w3id.org/seas/hasSpatialContext",
+    "baseIri" : "https://w3id.org/seas",
+    "range" : "49",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/EvaluationOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSpatialContext",
+      "en" : "has spatial context"
+    },
+    "superproperty" : [ "158" ],
+    "domain" : "166",
+    "comment" : {
+      "en" : "Links an evaluation to its spatial validity context, a [geo:SpatialThing](http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing)."
+    },
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "170"
+  }, {
+    "iri" : "https://w3id.org/pep/hasSimpleCommand",
+    "baseIri" : "https://w3id.org/pep",
+    "range" : "168",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/pep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSimpleCommand",
+      "undefined" : "has simple command"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Links a Procedure Execution to its unique simple command (a RDFS literal)."
+    },
+    "attributes" : [ "datatype", "external", "functional" ],
+    "id" : "173"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#logicParameter",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "logicParameter",
+      "en" : "logicParameter"
+    },
+    "domain" : "167",
+    "comment" : {
+      "en" : "Object property to express the relationship of some application logic concept to an parameter."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "175"
+  }, {
+    "range" : "4",
+    "domain" : "76",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "176"
+  }, {
+    "range" : "4",
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "177"
+  }, {
+    "range" : "20",
+    "domain" : "41",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "178"
+  }, {
+    "range" : "20",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "179"
+  }, {
+    "range" : "4",
+    "domain" : "110",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "180"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#assignValue",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "range" : "162",
+    "label" : {
+      "IRI-based" : "assignValue"
+    },
+    "domain" : "71",
+    "attributes" : [ "datatype", "external", "functional" ],
+    "id" : "181"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasApplicationLogic",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "hasApplicationLogic",
+      "en" : "hasApplicationLogic"
+    },
+    "domain" : "161",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its specific application logic"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "182"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#isConnectedTo",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "isConnectedTo",
+      "en" : "isConnectedTo"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Object property to describe the topological relationship between an input of one control actor and the output of another."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "184"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#stateAction",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "stateAction"
+    },
+    "domain" : "46",
+    "attributes" : [ "object", "external" ],
+    "id" : "185"
+  }, {
+    "range" : "4",
+    "domain" : "134",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "186"
+  }, {
+    "range" : "4",
+    "domain" : "152",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "187"
+  }, {
+    "range" : "33",
+    "domain" : "128",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "189"
+  }, {
+    "range" : "1",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "190"
+  }, {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "191"
+  }, {
+    "range" : "33",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "192"
+  }, {
+    "iri" : "https://w3id.org/seas/hasValidityContext",
+    "baseIri" : "https://w3id.org/seas",
+    "range" : "6",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/EvaluationOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasValidityContext",
+      "en" : "has validity context"
+    },
+    "domain" : "6",
+    "subproperty" : [ "156", "170" ],
+    "comment" : {
+      "en" : "Links some object to one of its validity contexts.\r\n\r\nA validity context is described using functional sub properties of [seas:hasValidityContext](https://w3id.org/seas/hasValidityContext). There are two such properties defined:\r\n\r\n- [seas:hasTemporalContext](https://w3id.org/seas/hasTemporalContext) links an entity to its temporal validity context, a [time:TemporalEntity](http://www.w3.org/2006/time#TemporalEntity);\r\n- [seas:hasSpatialContext](https://w3id.org/seas/hasSpatialContext) links an entity to its spatial validity context, a [geo:SpatialThing](http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing).\r\n"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "158"
+  }, {
+    "range" : "29",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "193"
+  }, {
+    "range" : "29",
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "194"
+  }, {
+    "range" : "29",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "195"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#conditionExpr",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "range" : "124",
+    "label" : {
+      "IRI-based" : "conditionExpr"
+    },
+    "domain" : "47",
+    "attributes" : [ "object", "external" ],
+    "id" : "196"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasSemanticType",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "130",
+    "label" : {
+      "IRI-based" : "hasSemanticType",
+      "en" : "hasSemanticType"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Object property to relate an input, output or parameter with its semantic type."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "197"
+  }, {
+    "range" : "29",
+    "domain" : "70",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "198"
+  }, {
+    "iri" : "https://w3id.org/seas/connectedThrough",
+    "baseIri" : "https://w3id.org/seas",
+    "range" : "17",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/SystemOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "connectedThrough",
+      "en" : "connected through"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Links a system to one of its connections to other systems."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "18"
+  }, {
+    "range" : "58",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "199"
+  }, {
+    "range" : "58",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "200"
+  }, {
+    "range" : "58",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "202"
+  }, {
+    "range" : "28",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "203"
+  }, {
+    "range" : "9",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "204"
+  }, {
+    "range" : "28",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "205"
+  }, {
+    "range" : "28",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "206"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#polyConstantDegree",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "range" : "174",
+    "label" : {
+      "IRI-based" : "polyConstantDegree"
+    },
+    "domain" : "14",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "207"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#contains",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "contains"
+    },
+    "domain" : "30",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "208"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#source",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "source"
+    },
+    "domain" : "70",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "209"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#target",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "target"
+    },
+    "domain" : "70",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "210"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasSemanticType",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "130",
+    "label" : {
+      "IRI-based" : "hasSemanticType",
+      "en" : "hasSemanticType"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Object property to relate an input, output or parameter with its semantic type."
+    },
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "211"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasMedium",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "hasMedium",
+      "en" : "hasMedium"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Object property to annotate an input, output or parameter with its medium."
+    },
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "212"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasQuantity",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "hasQuantity",
+      "en" : "hasQuantity"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Object property to annotate an input, output or parameter with its quantity."
+    },
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "213"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasDataType",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "hasDataType",
+      "en" : "hasDataType"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Object property to annotate a input, output or parameter with its data type."
+    },
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "214"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasUnit",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasUnit",
+      "en" : "hasUnit"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Object property to relate an input, output or parameter with its unit."
+    },
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "215"
+  }, {
+    "iri" : "https://w3id.org/seas/simpleValue",
+    "baseIri" : "https://w3id.org/seas",
+    "range" : "163",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/EvaluationOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "simpleValue",
+      "en" : "simple value"
+    },
+    "domain" : "53",
+    "comment" : {
+      "en" : "Links a property to a unique, constant, quality or quantity value for that property, modeled as a RDF Literal.\r\n\r\nFor example, the exact length of `<car/1>` is  4.27 m, and this is true in the validity context of the RDF graph.\r\n\r\n```\r\n  <car/1/length> a seas:Property ;\r\n    seas:simpleValue \"4.27 m\"^^cdt:ucum .\r\n```\r\n\r\nThis property is a shortcut for an exact evaluation with all context being the most generic contexts (although this notion is not planned to be formalized)."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "216"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#stateAction",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "stateAction"
+    },
+    "domain" : "46",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "218"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#stateCondition",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "stateCondition"
+    },
+    "domain" : "46",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "219"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#target",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "target"
+    },
+    "domain" : "70",
+    "attributes" : [ "object", "external" ],
+    "id" : "220"
+  }, {
+    "iri" : "https://w3id.org/pep/forExecutor",
+    "baseIri" : "https://w3id.org/pep",
+    "range" : "56",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/pep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "forExecutor",
+      "undefined" : "for executor"
+    },
+    "domain" : "83",
+    "comment" : {
+      "en" : "Links a Procedure Execution Container to the Procedure Executor that makes the executions it contains."
+    },
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "221"
+  }, {
+    "iri" : "https://w3id.org/pep/madeBy",
+    "baseIri" : "https://w3id.org/pep",
+    "range" : "56",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/pep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "madeBy",
+      "undefined" : "made by"
+    },
+    "domain" : "44",
+    "comment" : {
+      "en" : "Relation between a Procedure Execution and what made it."
+    },
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "57"
+  }, {
+    "iri" : "https://w3id.org/seas/hasSubSystem",
+    "baseIri" : "https://w3id.org/seas",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/seas/SystemOntology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSubSystem",
+      "en" : "has sub system"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Links a system to one of its sub systems."
+    },
+    "attributes" : [ "object", "inverse functional", "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "https://w3id.org/ibp/StateGraphOntology#transitionCondition",
+    "baseIri" : "https://w3id.org/ibp/StateGraphOntology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "transitionCondition"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "external" ],
+    "id" : "222"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasInput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasInput",
+      "en" : "hasInput"
+    },
+    "domain" : "37",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its inputs."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "223"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#hasMathematicalFunction",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasMathematicalFunction"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "external" ],
+    "id" : "225"
+  }, {
+    "range" : "46",
+    "domain" : "160",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "226"
+  }, {
+    "range" : "46",
+    "domain" : "217",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "227"
+  } ]
+}

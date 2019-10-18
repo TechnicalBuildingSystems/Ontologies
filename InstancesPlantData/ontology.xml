@@ -1,0 +1,567 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/ibp/InstancesPlantData#"
+     xml:base="https://w3id.org/ibp/InstancesPlantData"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:math="http://numerateweb.org/vocab/math#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:seas="https://w3id.org/seas/"
+     xmlns:sosa="http://www.w3.org/ns/sosa/"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
+     xmlns:CTRLont="http://w3id.org/ibp/CTRLont#"
+     xmlns:systems="http://www.w3.org/ns/ssn/systems/"
+     xmlns:mereology="file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#"
+     xmlns:linked_list="file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#">
+    <owl:Ontology rdf:about="https://w3id.org/ibp/InstancesPlantData">
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-2033-859X"/>
+        <terms:creator rdf:resource="https://www.researchgate.net/profile/Georg_Schneider3"/>
+        <terms:creator>Georg Ferdinand Schneider</terms:creator>
+        <terms:description xml:lang="en">The ontology provides instances of the examples described in the PhD thesis of Georg Ferdinand Schneider [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].
+
+[1] Schneider, G.F. (2019): &quot;Semantic Model for Control Logic in Automation Systems - Knowledge-Based Support of the Engineering and Operation of Control Logic in Building and Industrial Automation Systems&quot; PhD thesis, Karlsruhe Institute of Technology, Karlsruhe, Germany.
+
+[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003.</terms:description>
+        <terms:identifier>https://w3id.org/ibp/InstancesPlantData#</terms:identifier>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-06-30</terms:issued>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-03-07</terms:modified>
+        <terms:rights xml:lang="en">Copyright (c) 2019, Georg Ferdinand Schneider, Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0</terms:rights>
+        <terms:title xml:lang="en">Ontology InstancesPlantData.</terms:title>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/ibp/InstancesPlantData#"/>
+        <rdfs:comment xml:lang="en">Ontology with instances of InstancesPlantData.</rdfs:comment>
+        <rdfs:label xml:lang="en">InstancesPlantData</rdfs:label>
+        <owl:versionInfo>v0.1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement -->
+
+
+    <owl:AnnotationProperty rdf:about="file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement"/>
+    
+
+
+    <!-- file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf -->
+
+
+    <owl:AnnotationProperty rdf:about="file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf"/>
+    
+
+
+    <!-- http://numerateweb.org/vocab/math#name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://numerateweb.org/vocab/math#name"/>
+    
+
+
+    <!-- http://numerateweb.org/vocab/math#operator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://numerateweb.org/vocab/math#operator"/>
+    
+
+
+    <!-- http://numerateweb.org/vocab/math#value -->
+
+
+    <owl:AnnotationProperty rdf:about="http://numerateweb.org/vocab/math#value"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://schema.org/maxValue -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/maxValue"/>
+    
+
+
+    <!-- http://schema.org/minValue -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/minValue"/>
+    
+
+
+    <!-- http://schema.org/unitCode -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/unitCode"/>
+    
+
+
+    <!-- http://w3id.org/ibp/CTRLont#hasDataType -->
+
+
+    <owl:AnnotationProperty rdf:about="http://w3id.org/ibp/CTRLont#hasDataType"/>
+    
+
+
+    <!-- http://w3id.org/ibp/CTRLont#logicInput -->
+
+
+    <owl:AnnotationProperty rdf:about="http://w3id.org/ibp/CTRLont#logicInput"/>
+    
+
+
+    <!-- http://w3id.org/ibp/CTRLont#logicParameter -->
+
+
+    <owl:AnnotationProperty rdf:about="http://w3id.org/ibp/CTRLont#logicParameter"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/observes -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/sosa/observes"/>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/hasOperatingRange -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/ssn/systems/hasOperatingRange"/>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/hasSystemCapability -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/ssn/systems/hasSystemCapability"/>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/hasSystemProperty -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/ssn/systems/hasSystemProperty"/>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/inCondition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/ssn/systems/inCondition"/>
+    
+
+
+    <!-- https://w3id.org/seas/connectionPointOf -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/seas/connectionPointOf"/>
+    
+
+
+    <!-- https://w3id.org/seas/connectsAt -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/seas/connectsAt"/>
+    
+
+
+    <!-- https://w3id.org/seas/connectsSystemsThrough -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/seas/connectsSystemsThrough"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- file:/C:/OntoCAPE/OntoCAPE/chemical_process_system/CPS_realization/process_control_equipment/measuring_instrument.owl#T-Sensor -->
+
+
+    <owl:Class rdf:about="file:/C:/OntoCAPE/OntoCAPE/chemical_process_system/CPS_realization/process_control_equipment/measuring_instrument.owl#T-Sensor"/>
+    
+
+
+    <!-- file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement -->
+
+
+    <owl:Class rdf:about="file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement"/>
+    
+
+
+    <!-- http://numerateweb.org/vocab/math#Literal -->
+
+
+    <owl:Class rdf:about="http://numerateweb.org/vocab/math#Literal"/>
+    
+
+
+    <!-- http://numerateweb.org/vocab/math#Variable -->
+
+
+    <owl:Class rdf:about="http://numerateweb.org/vocab/math#Variable"/>
+    
+
+
+    <!-- http://schema.org/PropertyValue -->
+
+
+    <owl:Class rdf:about="http://schema.org/PropertyValue"/>
+    
+
+
+    <!-- http://w3id.org/ibp/CTRLont#Input -->
+
+
+    <owl:Class rdf:about="http://w3id.org/ibp/CTRLont#Input"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/ObservableProperty -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Sensor -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Sensor"/>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/System -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/System"/>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/Condition -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/Condition"/>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/MeasurementRange -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/MeasurementRange"/>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/OperatingRange -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/OperatingRange"/>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/SystemCapability -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/SystemCapability"/>
+    
+
+
+    <!-- https://w3id.org/ibp/ExpressionOntology#Expression -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/ExpressionOntology#Expression"/>
+    
+
+
+    <!-- https://w3id.org/ibp/ExpressionOntology#ExpressionElement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+    
+
+
+    <!-- https://w3id.org/ibp/ExpressionOntology#Operand -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/ExpressionOntology#Operand"/>
+    
+
+
+    <!-- https://w3id.org/ibp/ExpressionOntology#Operator -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/ExpressionOntology#Operator"/>
+    
+
+
+    <!-- https://w3id.org/seas/CommunicationConnectionPoint -->
+
+
+    <owl:Class rdf:about="https://w3id.org/seas/CommunicationConnectionPoint"/>
+    
+
+
+    <!-- https://w3id.org/seas/WireCommunicationConnection -->
+
+
+    <owl:Class rdf:about="https://w3id.org/seas/WireCommunicationConnection"/>
+    
+
+
+    <!-- https://w3id.org/seas/WireCommunicationConnectionPoint -->
+
+
+    <owl:Class rdf:about="https://w3id.org/seas/WireCommunicationConnectionPoint"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesPlantData#B6-T -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesPlantData#B6-T">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesPlantData#B6-T-Capa -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesPlantData#B6-T-Capa">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/SystemCapability"/>
+        <rdfs:comment xml:lang="en">The measurement range of ABB SensyTemp TSP121. Tab 12.2 in technical data sheet option A6</rdfs:comment>
+        <systems:hasSystemProperty>
+            <rdf:Description rdf:nodeID="genid1">
+                <rdf:type rdf:resource="http://schema.org/PropertyValue"/>
+                <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/MeasurementRange"/>
+                <schema:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">120.0</schema:maxValue>
+                <schema:minValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</schema:minValue>
+                <schema:unitCode rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius"/>
+            </rdf:Description>
+        </systems:hasSystemProperty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesPlantData#B6-T-OpRa -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesPlantData#B6-T-OpRa">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingRange"/>
+        <rdfs:comment xml:lang="en">The conditions in which the B6 temperature sensor is allowed to operate. Table 3.1 in technical data sheet, option plastic.</rdfs:comment>
+        <systems:inCondition>
+            <rdf:Description rdf:nodeID="genid2">
+                <rdf:type rdf:resource="http://schema.org/PropertyValue"/>
+                <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/Condition"/>
+                <schema:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">120.0</schema:maxValue>
+                <schema:minValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-40.0</schema:minValue>
+                <schema:unitCode rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius"/>
+            </rdf:Description>
+        </systems:inCondition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesPlantData#B6-T-Sensor -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesPlantData#B6-T-Sensor">
+        <rdf:type rdf:resource="file:/C:/OntoCAPE/OntoCAPE/chemical_process_system/CPS_realization/process_control_equipment/measuring_instrument.owl#T-Sensor"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/System"/>
+        <rdfs:comment xml:lang="en">Sensor in tank B6.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://bit.ly/2Eln615"/>
+        <sosa:observes rdf:resource="https://w3id.org/ibp/InstancesPlantData#B6-T"/>
+        <systems:hasOperatingRange rdf:resource="https://w3id.org/ibp/InstancesPlantData#B6-T-OpRa"/>
+        <systems:hasSystemCapability rdf:resource="https://w3id.org/ibp/InstancesPlantData#B6-T-Capa"/>
+        <seas:connectsAt rdf:resource="https://w3id.org/ibp/InstancesPlantData#TIS602-CP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesPlantData#TIS602-CP -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesPlantData#TIS602-CP">
+        <rdf:type rdf:resource="https://w3id.org/seas/WireCommunicationConnectionPoint"/>
+        <terms:identifier>TIS602</terms:identifier>
+        <seas:connectsSystemsThrough rdf:resource="https://w3id.org/ibp/InstancesPlantData#TIS602-Conn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesPlantData#TIS602-Conn -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesPlantData#TIS602-Conn">
+        <rdf:type rdf:resource="https://w3id.org/seas/WireCommunicationConnection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesPlantData#ele0 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesPlantData#ele0">
+        <rdf:type rdf:resource="file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement"/>
+        <rdf:type rdf:resource="http://numerateweb.org/vocab/math#Variable"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Operand"/>
+        <linked_list:nextElement rdf:resource="https://w3id.org/ibp/InstancesPlantData#ele1"/>
+        <math:name>TIS602</math:name>
+        <CTRLont:logicInput rdf:resource="https://w3id.org/ibp/InstancesPlantData#fB_StateMachine.TIS602"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesPlantData#ele1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesPlantData#ele1">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Operator"/>
+        <linked_list:nextElement rdf:resource="https://w3id.org/ibp/InstancesPlantData#ele2"/>
+        <math:operator rdf:resource="http://www.openmath.org/cd/relation1#leq"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesPlantData#ele2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesPlantData#ele2">
+        <rdf:type rdf:resource="http://numerateweb.org/vocab/math#Literal"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Operand"/>
+        <math:value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">298.0</math:value>
+        <CTRLont:logicParameter rdf:resource="https://w3id.org/ibp/InstancesPlantData#ele2-Par"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesPlantData#fB_StateMachine.TIS602 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesPlantData#fB_StateMachine.TIS602">
+        <rdf:type rdf:resource="http://w3id.org/ibp/CTRLont#Input"/>
+        <rdf:type rdf:resource="https://w3id.org/seas/CommunicationConnectionPoint"/>
+        <terms:identifier>fB_StateMachine.TIS602</terms:identifier>
+        <CTRLont:hasDataType rdf:resource="http://w3id.org/ibp/BasicDatatypeOntology#float"/>
+        <seas:connectionPointOf rdf:resource="https://w3id.org/ibp/InstancesPlantData#fB_StateMachine"/>
+        <seas:connectsSystemsThrough rdf:resource="https://w3id.org/ibp/InstancesPlantData#TIS602-Conn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesPlantData#test-Expr -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesPlantData#test-Expr">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Expression"/>
+        <mereology:isComposedOf rdf:resource="https://w3id.org/ibp/InstancesPlantData#ele0"/>
+        <mereology:isComposedOf rdf:resource="https://w3id.org/ibp/InstancesPlantData#ele1"/>
+        <mereology:isComposedOf rdf:resource="https://w3id.org/ibp/InstancesPlantData#ele2"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,711 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/ibp/InstancesAcrossControl#"
+     xml:base="https://w3id.org/ibp/InstancesAcrossControl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:math="http://numerateweb.org/vocab/math#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:CTRLont="http://w3id.org/ibp/CTRLont#"
+     xmlns:mereology="file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#"
+     xmlns:linked_list="file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#"
+     xmlns:StateMachineOntology="http://w3id.org/ibp/StateMachineOntology#"
+     xmlns:TransferFunctionElementOntology="http://w3id.org/ibp/TransferFunctionElementOntology#">
+    <owl:Ontology rdf:about="https://w3id.org/ibp/InstancesAcrossControl">
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-2033-859X"/>
+        <terms:creator rdf:resource="https://www.researchgate.net/profile/Georg_Schneider3"/>
+        <terms:creator>Georg Ferdinand Schneider</terms:creator>
+        <terms:description xml:lang="en">The ontology provides instances of the examples described in the PhD thesis of Georg Ferdinand Schneider [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].
+
+[1] Schneider, G.F. (2019): &quot;Semantic Model for Control Logic in Automation Systems - Knowledge-Based Support of the Engineering and Operation of Control Logic in Building and Industrial Automation Systems&quot; PhD thesis, Karlsruhe Institute of Technology, Karlsruhe, Germany.
+
+[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003.</terms:description>
+        <terms:identifier>https://w3id.org/ibp/InstancesAcrossControl#</terms:identifier>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-02-07</terms:issued>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-03-13</terms:modified>
+        <terms:rights xml:lang="en">Copyright (c) 2019, Georg Ferdinand Schneider, Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0</terms:rights>
+        <terms:title xml:lang="en">Ontology InstancesAcrossControl.</terms:title>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#"/>
+        <rdfs:comment xml:lang="en">Ontology with instances of InstancesAcrossControl.</rdfs:comment>
+        <rdfs:label xml:lang="en">InstancesAcrossControl</rdfs:label>
+        <owl:versionInfo>v0.1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement -->
+
+
+    <owl:AnnotationProperty rdf:about="file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement"/>
+    
+
+
+    <!-- file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf -->
+
+
+    <owl:AnnotationProperty rdf:about="file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf"/>
+    
+
+
+    <!-- http://numerateweb.org/vocab/math#name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://numerateweb.org/vocab/math#name"/>
+    
+
+
+    <!-- http://numerateweb.org/vocab/math#operator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://numerateweb.org/vocab/math#operator"/>
+    
+
+
+    <!-- http://numerateweb.org/vocab/math#value -->
+
+
+    <owl:AnnotationProperty rdf:about="http://numerateweb.org/vocab/math#value"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://w3id.org/ibp/CTRLont#hasApplicationLogic -->
+
+
+    <owl:AnnotationProperty rdf:about="http://w3id.org/ibp/CTRLont#hasApplicationLogic"/>
+    
+
+
+    <!-- http://w3id.org/ibp/CTRLont#hasDataType -->
+
+
+    <owl:AnnotationProperty rdf:about="http://w3id.org/ibp/CTRLont#hasDataType"/>
+    
+
+
+    <!-- http://w3id.org/ibp/CTRLont#hasInput -->
+
+
+    <owl:AnnotationProperty rdf:about="http://w3id.org/ibp/CTRLont#hasInput"/>
+    
+
+
+    <!-- http://w3id.org/ibp/CTRLont#hasOuput -->
+
+
+    <owl:AnnotationProperty rdf:about="http://w3id.org/ibp/CTRLont#hasOuput"/>
+    
+
+
+    <!-- http://w3id.org/ibp/CTRLont#hasOutput -->
+
+
+    <owl:AnnotationProperty rdf:about="http://w3id.org/ibp/CTRLont#hasOutput"/>
+    
+
+
+    <!-- http://w3id.org/ibp/CTRLont#hasParameter -->
+
+
+    <owl:AnnotationProperty rdf:about="http://w3id.org/ibp/CTRLont#hasParameter"/>
+    
+
+
+    <!-- http://w3id.org/ibp/CTRLont#isConnectedWith -->
+
+
+    <owl:AnnotationProperty rdf:about="http://w3id.org/ibp/CTRLont#isConnectedWith"/>
+    
+
+
+    <!-- http://w3id.org/ibp/CTRLont#logicInput -->
+
+
+    <owl:AnnotationProperty rdf:about="http://w3id.org/ibp/CTRLont#logicInput"/>
+    
+
+
+    <!-- http://w3id.org/ibp/CTRLont#logicOutput -->
+
+
+    <owl:AnnotationProperty rdf:about="http://w3id.org/ibp/CTRLont#logicOutput"/>
+    
+
+
+    <!-- http://w3id.org/ibp/CTRLont#logicParameter -->
+
+
+    <owl:AnnotationProperty rdf:about="http://w3id.org/ibp/CTRLont#logicParameter"/>
+    
+
+
+    <!-- http://w3id.org/ibp/StateMachineOntology#actionBehaviour -->
+
+
+    <owl:AnnotationProperty rdf:about="http://w3id.org/ibp/StateMachineOntology#actionBehaviour"/>
+    
+
+
+    <!-- http://w3id.org/ibp/StateMachineOntology#assignValue -->
+
+
+    <owl:AnnotationProperty rdf:about="http://w3id.org/ibp/StateMachineOntology#assignValue"/>
+    
+
+
+    <!-- http://w3id.org/ibp/StateMachineOntology#contains -->
+
+
+    <owl:AnnotationProperty rdf:about="http://w3id.org/ibp/StateMachineOntology#contains"/>
+    
+
+
+    <!-- http://w3id.org/ibp/StateMachineOntology#do -->
+
+
+    <owl:AnnotationProperty rdf:about="http://w3id.org/ibp/StateMachineOntology#do"/>
+    
+
+
+    <!-- http://w3id.org/ibp/StateMachineOntology#hasLiteralValue -->
+
+
+    <owl:AnnotationProperty rdf:about="http://w3id.org/ibp/StateMachineOntology#hasLiteralValue"/>
+    
+
+
+    <!-- http://w3id.org/ibp/TransferFunctionElementOntology#hasExpression -->
+
+
+    <owl:AnnotationProperty rdf:about="http://w3id.org/ibp/TransferFunctionElementOntology#hasExpression"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement -->
+
+
+    <owl:Class rdf:about="file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement"/>
+    
+
+
+    <!-- http://numerateweb.org/vocab/math#Literal -->
+
+
+    <owl:Class rdf:about="http://numerateweb.org/vocab/math#Literal"/>
+    
+
+
+    <!-- http://numerateweb.org/vocab/math#Variable -->
+
+
+    <owl:Class rdf:about="http://numerateweb.org/vocab/math#Variable"/>
+    
+
+
+    <!-- http://w3id.org/ibp/CTRLont#ApplicationLogic -->
+
+
+    <owl:Class rdf:about="http://w3id.org/ibp/CTRLont#ApplicationLogic"/>
+    
+
+
+    <!-- http://w3id.org/ibp/CTRLont#ControlActor -->
+
+
+    <owl:Class rdf:about="http://w3id.org/ibp/CTRLont#ControlActor"/>
+    
+
+
+    <!-- http://w3id.org/ibp/CTRLont#Input -->
+
+
+    <owl:Class rdf:about="http://w3id.org/ibp/CTRLont#Input"/>
+    
+
+
+    <!-- http://w3id.org/ibp/CTRLont#Output -->
+
+
+    <owl:Class rdf:about="http://w3id.org/ibp/CTRLont#Output"/>
+    
+
+
+    <!-- http://w3id.org/ibp/CTRLont#Parameter -->
+
+
+    <owl:Class rdf:about="http://w3id.org/ibp/CTRLont#Parameter"/>
+    
+
+
+    <!-- http://w3id.org/ibp/StateMachineOntology#Action -->
+
+
+    <owl:Class rdf:about="http://w3id.org/ibp/StateMachineOntology#Action"/>
+    
+
+
+    <!-- http://w3id.org/ibp/StateMachineOntology#Behaviour -->
+
+
+    <owl:Class rdf:about="http://w3id.org/ibp/StateMachineOntology#Behaviour"/>
+    
+
+
+    <!-- http://w3id.org/ibp/StateMachineOntology#SimpleState -->
+
+
+    <owl:Class rdf:about="http://w3id.org/ibp/StateMachineOntology#SimpleState"/>
+    
+
+
+    <!-- http://w3id.org/ibp/StateMachineOntology#StateMachine -->
+
+
+    <owl:Class rdf:about="http://w3id.org/ibp/StateMachineOntology#StateMachine"/>
+    
+
+
+    <!-- http://w3id.org/ibp/StateMachineOntology#Value -->
+
+
+    <owl:Class rdf:about="http://w3id.org/ibp/StateMachineOntology#Value"/>
+    
+
+
+    <!-- http://w3id.org/ibp/TransferFunctionElementOntology#MISO -->
+
+
+    <owl:Class rdf:about="http://w3id.org/ibp/TransferFunctionElementOntology#MISO"/>
+    
+
+
+    <!-- https://w3id.org/ibp/ExpressionOntology#Expression -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/ExpressionOntology#Expression"/>
+    
+
+
+    <!-- https://w3id.org/ibp/ExpressionOntology#ExpressionElement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+    
+
+
+    <!-- https://w3id.org/ibp/ExpressionOntology#Operand -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/ExpressionOntology#Operand"/>
+    
+
+
+    <!-- https://w3id.org/ibp/ExpressionOntology#Operator -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/ExpressionOntology#Operator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/ibp/BasicDatatypeOntology#boolean -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/ibp/BasicDatatypeOntology#boolean">
+        <rdfs:seeAlso rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/ibp/BasicDatatypeOntology#float -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/ibp/BasicDatatypeOntology#float">
+        <rdfs:seeAlso rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-0 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-0">
+        <rdf:type rdf:resource="file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement"/>
+        <rdf:type rdf:resource="http://numerateweb.org/vocab/math#Variable"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Operand"/>
+        <linked_list:nextElement rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-1"/>
+        <math:name>bPUM901</math:name>
+        <CTRLont:logicInput rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-bPUM901"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-1">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Operator"/>
+        <linked_list:nextElement rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-2"/>
+        <math:operator rdf:resource="http://www.openmath.org/cd/relation1#eq"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-2">
+        <rdf:type rdf:resource="http://numerateweb.org/vocab/math#Literal"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Operand"/>
+        <linked_list:nextElement rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-3"/>
+        <math:value rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</math:value>
+        <CTRLont:logicParameter rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-2-Par"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-2-Par -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-2-Par">
+        <rdf:type rdf:resource="http://w3id.org/ibp/CTRLont#Parameter"/>
+        <CTRLont:hasDataType rdf:resource="http://w3id.org/ibp/BasicDatatypeOntology#boolean"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-3 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-3">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Operator"/>
+        <linked_list:nextElement rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-4"/>
+        <math:operator rdf:resource="http://www.openmath.org/cd/logic1#and"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-4 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-4">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Operator"/>
+        <linked_list:nextElement rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-5"/>
+        <math:operator rdf:resource="http://www.openmath.org/cd/logic1#not"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-5 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-5">
+        <rdf:type rdf:resource="http://numerateweb.org/vocab/math#Variable"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Operand"/>
+        <linked_list:nextElement rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-6"/>
+        <math:name>PIS901</math:name>
+        <CTRLont:logicInput rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-PIS901"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-6 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-6">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Operator"/>
+        <linked_list:nextElement rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-7"/>
+        <math:operator rdf:resource="http://www.openmath.org/cd/relation1#gt"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-7 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-7">
+        <rdf:type rdf:resource="http://numerateweb.org/vocab/math#Literal"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Operand"/>
+        <math:value>200000</math:value>
+        <CTRLont:logicParameter rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-7-Par"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-7-Par -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-7-Par">
+        <rdf:type rdf:resource="http://w3id.org/ibp/CTRLont#Parameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-Expr -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-Expr">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Expression"/>
+        <mereology:isComposedOf rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-0"/>
+        <mereology:isComposedOf rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-1"/>
+        <mereology:isComposedOf rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-2"/>
+        <mereology:isComposedOf rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-3"/>
+        <mereology:isComposedOf rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-4"/>
+        <mereology:isComposedOf rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-5"/>
+        <mereology:isComposedOf rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-6"/>
+        <mereology:isComposedOf rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-PIS901 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-PIS901">
+        <rdf:type rdf:resource="http://w3id.org/ibp/CTRLont#Input"/>
+        <CTRLont:hasDataType rdf:resource="http://w3id.org/ibp/BasicDatatypeOntology#float"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-bPUM901 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-bPUM901">
+        <rdf:type rdf:resource="http://w3id.org/ibp/CTRLont#Input"/>
+        <CTRLont:hasDataType rdf:resource="http://w3id.org/ibp/BasicDatatypeOntology#boolean"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-bPUM901_SAFE -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-bPUM901_SAFE">
+        <rdf:type rdf:resource="http://w3id.org/ibp/CTRLont#Output"/>
+        <CTRLont:hasDataType rdf:resource="http://w3id.org/ibp/BasicDatatypeOntology#boolean"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAcrossControl#fb_PUM901_Safety -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAcrossControl#fb_PUM901_Safety">
+        <rdf:type rdf:resource="http://w3id.org/ibp/CTRLont#ApplicationLogic"/>
+        <rdf:type rdf:resource="http://w3id.org/ibp/TransferFunctionElementOntology#MISO"/>
+        <TransferFunctionElementOntology:hasExpression rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-Expr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAcrossControl#fb_PUM901_Safety-CA -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAcrossControl#fb_PUM901_Safety-CA">
+        <rdf:type rdf:resource="http://w3id.org/ibp/CTRLont#ControlActor"/>
+        <CTRLont:hasApplicationLogic rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#fb_PUM901_Safety"/>
+        <CTRLont:hasInput rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-PIS901"/>
+        <CTRLont:hasInput rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#fb_PUM901_Safety-bPUM901"/>
+        <CTRLont:hasOutput rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-bPUM901_SAFE"/>
+        <CTRLont:hasParameter rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-2-Par"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAcrossControl#fb_StateMachine -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAcrossControl#fb_StateMachine">
+        <rdf:type rdf:resource="http://w3id.org/ibp/CTRLont#ApplicationLogic"/>
+        <rdf:type rdf:resource="http://w3id.org/ibp/StateMachineOntology#StateMachine"/>
+        <StateMachineOntology:contains rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#s10"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAcrossControl#fb_StateMachine-CA -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAcrossControl#fb_StateMachine-CA">
+        <rdf:type rdf:resource="http://w3id.org/ibp/CTRLont#ControlActor"/>
+        <CTRLont:hasApplicationLogic rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#fb_StateMachine"/>
+        <CTRLont:hasOuput rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#fB_StateMachine.bPUM901"/>
+        <CTRLont:hasParameter rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#fB_StateMachine.s10-DoVal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAcrossControl#s10 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAcrossControl#s10">
+        <rdf:type rdf:resource="http://w3id.org/ibp/StateMachineOntology#SimpleState"/>
+        <StateMachineOntology:do rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#s10-DoAct"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAcrossControl#s10-DoAct -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAcrossControl#s10-DoAct">
+        <rdf:type rdf:resource="http://w3id.org/ibp/StateMachineOntology#Action"/>
+        <StateMachineOntology:actionBehaviour rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#s10-DoBehav"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAcrossControl#s10-DoBehav -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAcrossControl#s10-DoBehav">
+        <rdf:type rdf:resource="http://w3id.org/ibp/StateMachineOntology#Behaviour"/>
+        <CTRLont:logicOutput rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#fB_StateMachine.bPUM901"/>
+        <StateMachineOntology:assignValue rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#s10-DoVal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAcrossControl#s10-DoVal -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAcrossControl#s10-DoVal">
+        <rdf:type rdf:resource="http://w3id.org/ibp/StateMachineOntology#Value"/>
+        <CTRLont:logicParameter rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#fB_StateMachine.s10-DoVal"/>
+        <StateMachineOntology:hasLiteralValue>true</StateMachineOntology:hasLiteralValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-CA">
+        <CTRLont:hasParameter rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-7-Par"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/ibp/InstancesAcrossControl#fB_StateMachine.bPUM901">
+        <CTRLont:isConnectedWith rdf:resource="https://w3id.org/ibp/InstancesAcrossControl#fb_PUM901_Safety-bPUM901"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,393 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/ibp/MealyMachineOntology#"
+     xml:base="https://w3id.org/ibp/MealyMachineOntology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/ibp/MealyMachineOntology">
+        <owl:versionIRI rdf:resource="https://w3id.org/ibp/MealyMachineOntology-0.0.1"/>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-2033-859X"/>
+        <terms:creator rdf:resource="https://www.researchgate.net/profile/Georg_Schneider3"/>
+        <terms:creator>Georg Ferdinand Schneider</terms:creator>
+        <terms:description xml:lang="en">The ontology and its use will be documented. The ontology is implemented using the free protege tool (protege.stanford.edu) (Musen, 2015). Mealy machines are first defined in (Mealy, 1955).
+
+G. H. Mealy, &apos;&apos;A method for synthesizing sequential circuits,&apos;&apos; Bell Labs
+Technical Journal, vol. 34, no. 5, pp. 1045–1079, 1955.
+
+M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003.
+</terms:description>
+        <terms:identifier>https://w3id.org/ibp/MealyMachineOntology#</terms:identifier>
+        <terms:issued>2018-02-01</terms:issued>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0"/>
+        <terms:modified>2018-03-25</terms:modified>
+        <terms:rights xml:lang="en">Copyright (c) 2017/ 2018, Fraunhofer Institute for Building Physics,
+			Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution 
+			Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0</terms:rights>
+        <terms:title xml:lang="en">Mealy Machine Ontology - An ontology to formally specify the discrete control logic expressed as a Mealy machine</terms:title>
+        <vann:preferredNamespacePrefix>mea</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/ibp/MealyMachineOntology#"/>
+        <rdfs:comment xml:lang="en">Ontology to explicitly model control logic based on the Mealy machine formalism.</rdfs:comment>
+        <rdfs:label xml:lang="en">Mealy Machine Ontology</rdfs:label>
+        <owl:versionInfo>v0.0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/ibp/CTRLont#logicOutput -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/CTRLont#logicOutput"/>
+    
+
+
+    <!-- https://w3id.org/ibp/MealyMachineOntology#conditionExpr -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/MealyMachineOntology#conditionExpr">
+        <rdfs:domain rdf:resource="https://w3id.org/ibp/MealyMachineOntology#Condition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ibp/MealyMachineOntology#contains -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/MealyMachineOntology#contains">
+        <rdfs:domain rdf:resource="https://w3id.org/ibp/MealyMachineOntology#MealyMachine"/>
+        <rdfs:range rdf:resource="https://w3id.org/ibp/MealyMachineOntology#MealyElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ibp/MealyMachineOntology#source -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/MealyMachineOntology#source">
+        <rdfs:domain rdf:resource="https://w3id.org/ibp/MealyMachineOntology#Transition"/>
+        <rdfs:range rdf:resource="https://w3id.org/ibp/MealyMachineOntology#State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ibp/MealyMachineOntology#target -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/MealyMachineOntology#target">
+        <rdfs:domain rdf:resource="https://w3id.org/ibp/MealyMachineOntology#Transition"/>
+        <rdfs:range rdf:resource="https://w3id.org/ibp/MealyMachineOntology#State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ibp/MealyMachineOntology#transitionAction -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/MealyMachineOntology#transitionAction">
+        <rdfs:domain rdf:resource="https://w3id.org/ibp/MealyMachineOntology#Transition"/>
+        <rdfs:range rdf:resource="https://w3id.org/ibp/MealyMachineOntology#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ibp/MealyMachineOntology#transitionCondition -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/MealyMachineOntology#transitionCondition">
+        <rdfs:domain rdf:resource="https://w3id.org/ibp/MealyMachineOntology#Transition"/>
+        <rdfs:range rdf:resource="https://w3id.org/ibp/MealyMachineOntology#Condition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/ibp/MealyMachineOntology#assignSimpleValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ibp/MealyMachineOntology#assignSimpleValue">
+        <rdfs:domain rdf:resource="https://w3id.org/ibp/MealyMachineOntology#Action"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/ibp/CTRLont#Output -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/CTRLont#Output"/>
+    
+
+
+    <!-- https://w3id.org/ibp/ExpressionOntology#Expression -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/ExpressionOntology#Expression"/>
+    
+
+
+    <!-- https://w3id.org/ibp/MealyMachineOntology#Action -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/MealyMachineOntology#Action">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ibp/MealyMachineOntology#MealyElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ibp/CTRLont#logicOutput"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ibp/CTRLont#Output"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ibp/MealyMachineOntology#Condition -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/MealyMachineOntology#Condition">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ibp/MealyMachineOntology#MealyElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ibp/MealyMachineOntology#conditionExpr"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ibp/ExpressionOntology#Expression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ibp/MealyMachineOntology#InitialState -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/MealyMachineOntology#InitialState">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ibp/MealyMachineOntology#State"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ibp/MealyMachineOntology#MealyElement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/MealyMachineOntology#MealyElement"/>
+    
+
+
+    <!-- https://w3id.org/ibp/MealyMachineOntology#MealyMachine -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/MealyMachineOntology#MealyMachine">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ibp/MealyMachineOntology#contains"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/ibp/MealyMachineOntology#MealyElement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ibp/MealyMachineOntology#contains"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ibp/MealyMachineOntology#MealyElement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ibp/MealyMachineOntology#State -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/MealyMachineOntology#State">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ibp/MealyMachineOntology#MealyElement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ibp/MealyMachineOntology#Transition -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/MealyMachineOntology#Transition">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ibp/MealyMachineOntology#MealyElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ibp/MealyMachineOntology#source"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ibp/MealyMachineOntology#State"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ibp/MealyMachineOntology#target"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ibp/MealyMachineOntology#State"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ibp/MealyMachineOntology#transitionAction"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ibp/MealyMachineOntology#Action"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ibp/MealyMachineOntology#transitionCondition"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ibp/MealyMachineOntology#Condition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+

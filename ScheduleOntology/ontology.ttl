@@ -1,0 +1,359 @@
+@prefix : <https://w3id.org/ibp/ScheduleOntology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/ibp/ScheduleOntology> .
+
+<https://w3id.org/ibp/ScheduleOntology> rdf:type owl:Ontology ;
+                                         owl:versionIRI <https://w3id.org/ibp/ScheduleOntology-0.1.0> ;
+                                         <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-2033-859X> ,
+                                                                            <https://www.researchgate.net/profile/Georg_Schneider3> ,
+                                                                            "Georg Ferdinand Schneider" ;
+                                         <http://purl.org/dc/terms/description> """The ontology and its use are described in [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].
+
+[1] Schneider, G.F., Pauwels, P. and Steiger, S. (2017): \\\"Ontology-based Modelling of Control Logic in Building Automation Systems\\\" in IEEE Transactions on Industrial Informatics, vol. 13, no. 6, pp. 3350-3360, DOI: 10.1109/TII.2017.2743221.
+
+[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003."""@en ;
+                                         <http://purl.org/dc/terms/identifier> "https://w3id.org/ibp/ScheduleOntology#" ;
+                                         <http://purl.org/dc/terms/issued> "2016-11-01"^^xsd:date ;
+                                         <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/4.0> ;
+                                         <http://purl.org/dc/terms/modified> "2017-08-21"^^xsd:date ;
+                                         <http://purl.org/dc/terms/rights> """Copyright (c) 2017, Fraunhofer Institute for Building Physics,
+			Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution 
+			Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"""@en ;
+                                         <http://purl.org/dc/terms/title> "ScheduleOntology - An ontology to formaly specify the schedules in automation systems."@en ;
+                                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "sch" ;
+                                         <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
+                                         rdfs:comment "ScheduleOntology describes a typical type of control logic explicitly commonly referred to as schedules."@en ;
+                                         rdfs:label "ScheduleOntology"@en ;
+                                         owl:priorVersion <https://w3id.org/ibp/ScheduleOntology-0.0.1> ;
+                                         owl:versionInfo "v0.1.0"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#seeAlso
+rdfs:seeAlso rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/ibp/CTRLont#logicInput
+<https://w3id.org/ibp/CTRLont#logicInput> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/ibp/CTRLont#logicOutput
+<https://w3id.org/ibp/CTRLont#logicOutput> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/ibp/CTRLont#logicParameter
+<https://w3id.org/ibp/CTRLont#logicParameter> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/ibp/ScheduleOntology#hasEndPoint
+:hasEndPoint rdf:type owl:ObjectProperty ;
+             rdfs:domain :Interval ;
+             rdfs:range :EndPoint .
+
+
+###  https://w3id.org/ibp/ScheduleOntology#hasInterval
+:hasInterval rdf:type owl:ObjectProperty ;
+             rdfs:domain :Schedule ;
+             rdfs:range :Interval .
+
+
+###  https://w3id.org/ibp/ScheduleOntology#hasMathematicalFunction
+:hasMathematicalFunction rdf:type owl:ObjectProperty ;
+                         rdfs:domain :Interval ;
+                         rdfs:range :MathematicalFunction .
+
+
+###  https://w3id.org/ibp/ScheduleOntology#hasPeriodicity
+:hasPeriodicity rdf:type owl:ObjectProperty ;
+                rdfs:domain :Schedule ;
+                rdfs:range :Periodicity .
+
+
+###  https://w3id.org/ibp/ScheduleOntology#hasPolynomicalConstant
+:hasPolynomicalConstant rdf:type owl:ObjectProperty ;
+                        rdfs:domain :MathematicalFunction ;
+                        rdfs:range :PolynomialConstant .
+
+
+###  https://w3id.org/ibp/ScheduleOntology#hasStartPoint
+:hasStartPoint rdf:type owl:ObjectProperty ;
+               rdfs:domain :Interval ;
+               rdfs:range :StartPoint .
+
+
+###  https://w3id.org/ibp/ScheduleOntology#hasXCoordinate
+:hasXCoordinate rdf:type owl:ObjectProperty ;
+                rdfs:domain :Point ;
+                rdfs:range :Coordinate .
+
+
+###  https://w3id.org/ibp/ScheduleOntology#hasYCoordinate
+:hasYCoordinate rdf:type owl:ObjectProperty ;
+                rdfs:domain :Point ;
+                rdfs:range :Coordinate .
+
+
+###  https://w3id.org/ibp/ScheduleOntology#isConsecutiveInterval
+:isConsecutiveInterval rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Interval ;
+                       rdfs:range :Interval .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/ibp/ScheduleOntology#hasLiteralValue
+:hasLiteralValue rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Coordinate ;
+                 rdfs:range xsd:double .
+
+
+###  https://w3id.org/ibp/ScheduleOntology#polyConstantDegree
+:polyConstantDegree rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :PolynomialConstant ;
+                    rdfs:range xsd:nonNegativeInteger .
+
+
+###  https://w3id.org/ibp/ScheduleOntology#polyConstantLiteralValue
+:polyConstantLiteralValue rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :PolynomialConstant ;
+                          rdfs:range xsd:double .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> rdf:type owl:Class .
+
+
+###  https://w3id.org/ibp/CTRLont#ApplicationLogic
+<https://w3id.org/ibp/CTRLont#ApplicationLogic> rdf:type owl:Class .
+
+
+###  https://w3id.org/ibp/CTRLont#Input
+<https://w3id.org/ibp/CTRLont#Input> rdf:type owl:Class .
+
+
+###  https://w3id.org/ibp/CTRLont#Output
+<https://w3id.org/ibp/CTRLont#Output> rdf:type owl:Class .
+
+
+###  https://w3id.org/ibp/CTRLont#Parameter
+<https://w3id.org/ibp/CTRLont#Parameter> rdf:type owl:Class .
+
+
+###  https://w3id.org/ibp/ScheduleOntology#Coordinate
+:Coordinate rdf:type owl:Class ;
+            rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/ibp/ScheduleOntology#EndPoint
+:EndPoint rdf:type owl:Class ;
+          rdfs:subClassOf :Point .
+
+
+###  https://w3id.org/ibp/ScheduleOntology#Interval
+:Interval rdf:type owl:Class ;
+          rdfs:subClassOf owl:Thing ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasEndPoint ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :EndPoint
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasMathematicalFunction ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :MathematicalFunction
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasStartPoint ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :StartPoint
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :isConsecutiveInterval ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Interval
+                          ] .
+
+
+###  https://w3id.org/ibp/ScheduleOntology#MathematicalFunction
+:MathematicalFunction rdf:type owl:Class ;
+                      rdfs:subClassOf owl:Thing ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :hasPolynomicalConstant ;
+                                        owl:someValuesFrom :PolynomialConstant
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :hasPolynomicalConstant ;
+                                        owl:allValuesFrom :PolynomialConstant
+                                      ] .
+
+
+###  https://w3id.org/ibp/ScheduleOntology#Periodicity
+:Periodicity rdf:type owl:Class ;
+             rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/ibp/ScheduleOntology#Point
+:Point rdf:type owl:Class ;
+       rdfs:subClassOf owl:Thing ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasXCoordinate ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass :Coordinate
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasYCoordinate ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass :Coordinate
+                       ] .
+
+
+###  https://w3id.org/ibp/ScheduleOntology#PolynomialConstant
+:PolynomialConstant rdf:type owl:Class ;
+                    rdfs:subClassOf owl:Thing .
+
+
+###  https://w3id.org/ibp/ScheduleOntology#Schedule
+:Schedule rdf:type owl:Class ;
+          rdfs:subClassOf owl:Thing ,
+                          <https://w3id.org/ibp/CTRLont#ApplicationLogic> ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasInterval ;
+                            owl:someValuesFrom :Interval
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasInterval ;
+                            owl:allValuesFrom :Interval
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <https://w3id.org/ibp/CTRLont#logicInput> ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass <https://w3id.org/ibp/CTRLont#Input>
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <https://w3id.org/ibp/CTRLont#logicOutput> ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass <https://w3id.org/ibp/CTRLont#Output>
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasPeriodicity ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Periodicity
+                          ] .
+
+
+###  https://w3id.org/ibp/ScheduleOntology#StartPoint
+:StartPoint rdf:type owl:Class ;
+            rdfs:subClassOf :Point .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/ibp/ScheduleOntology
+<https://w3id.org/ibp/ScheduleOntology> rdf:type owl:NamedIndividual ,
+                                                 <http://purl.org/vocommons/voaf#Vocabulary> .
+
+
+###  https://w3id.org/ibp/ScheduleOntology#Daily
+:Daily rdf:type owl:NamedIndividual ,
+                :Periodicity .
+
+
+###  https://w3id.org/ibp/ScheduleOntology#Monthly
+:Monthly rdf:type owl:NamedIndividual ,
+                  :Periodicity .
+
+
+###  https://w3id.org/ibp/ScheduleOntology#Weekly
+:Weekly rdf:type owl:NamedIndividual ,
+                 :Periodicity .
+
+
+###  https://w3id.org/ibp/ScheduleOntology#Yearly
+:Yearly rdf:type owl:NamedIndividual ,
+                 :Periodicity .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Daily
+                        :Monthly
+                        :Weekly
+                        :Yearly
+                      )
+] .
+
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

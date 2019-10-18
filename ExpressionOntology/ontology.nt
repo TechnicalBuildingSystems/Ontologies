@@ -1,0 +1,261 @@
+<https://w3id.org/ibp/ExpressionOntology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/ibp/ExpressionOntology> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/ibp/ExpressionOntology-0.0.1> .
+<https://w3id.org/ibp/ExpressionOntology> <http://purl.org/dc/terms/contributor> "Walter Terkaj" .
+<https://w3id.org/ibp/ExpressionOntology> <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-2033-859X> .
+<https://w3id.org/ibp/ExpressionOntology> <http://purl.org/dc/terms/creator> <https://www.researchgate.net/profile/Georg_Schneider3> .
+<https://w3id.org/ibp/ExpressionOntology> <http://purl.org/dc/terms/creator> "Georg Ferdinand Schneider" .
+<https://w3id.org/ibp/ExpressionOntology> <http://purl.org/dc/terms/description> "The expression ontology is an ontology to represent mathematical expressions from the  engineering domain.  The ontology and is used are documented in [1]. Precursors of the model developed simultaneously are published in [2,3]. The ontology reuses concepts from the OntoCAPE [4] and OpenMath [5] ontologies. The ontology is implemented using the free protege tool (protege.stanford.edu) [5].\n\n[1] G. F. Schneider, H. Wicaksono, and J. Ovtcharova. Virtual Engineering of Cyber-Physical Automation Systems: The Case of Control Logic. Advanced Engineering Informatics, February 2018. Submitted.\n\n[2] W. Terkaj, G. F. Schneider, and P. Pauwels. Reusing Domain Ontologies in Linked Building Data: the Case of Building Automation and Control. In Proceedings of the 8th International Workshop on Formal Ontologies Meet Industry (FOMI), pages 1{12, Bolzano, Italy, September 2017.\n\n[3] G. F. Schneider, P. Pauwels, and S. Steiger. Ontology-based Modeling of Control Logic in Building Automation Systems. IEEE Transactions on Industrial Informatics, 13(6):3350-3360, December 2017.\n\n[4] W. Marquardt, J. Morbach, A. Wiesner, and A. Yang. OntoCAPE: A re-usable ontology for chemical process engineering. Springer, Berlin, Germany, 2009.\n\n[5] K. Wenzel and H. Reinhardt. Mathematical computations for linked data applications with OpenMath. In Joint Proceedings of the 24th Workshop on OpenMath and the 7th Workshop on Mathematical User Interfaces (MathUI), pages 38{48, Bremen, Germany, 2012\n\n[6] M. A. Musen. The protege project: a look back and a look forward. AI matters, 1(4):4-12, 2015, doi: 10.1145/2757001.2757003."@en .
+<https://w3id.org/ibp/ExpressionOntology> <http://purl.org/dc/terms/identifier> "https://w3id.org/ibp/ExpressionOntology#" .
+<https://w3id.org/ibp/ExpressionOntology> <http://purl.org/dc/terms/issued> "2018-03-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/ibp/ExpressionOntology> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/4.0> .
+<https://w3id.org/ibp/ExpressionOntology> <http://purl.org/dc/terms/modified> "2018-03-10"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/ibp/ExpressionOntology> <http://purl.org/dc/terms/rights> "Copyright (c) 2018, Fraunhofer Institute for Building Physics,\n\t\t\tNuremberg, Germany. This ontology is distributed under a Creative Commons Attribution \n\t\t\tShare Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"@en .
+<https://w3id.org/ibp/ExpressionOntology> <http://purl.org/dc/terms/title> "The Expression Ontology."@en .
+<https://w3id.org/ibp/ExpressionOntology> <http://purl.org/vocab/vann/preferredNamespacePrefix> "exp" .
+<https://w3id.org/ibp/ExpressionOntology> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/ibp/ExpressionOntology#> .
+<https://w3id.org/ibp/ExpressionOntology> <http://www.w3.org/2000/01/rdf-schema#comment> "ExpressionOntology specifies concepts and relationships to describe mathematical expressions."@en .
+<https://w3id.org/ibp/ExpressionOntology> <http://www.w3.org/2000/01/rdf-schema#label> "ExpressionOntology"@en .
+<https://w3id.org/ibp/ExpressionOntology> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://dx.doi.org/10.1007/978-3-642-04655-1> .
+<https://w3id.org/ibp/ExpressionOntology> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/numerateweb/numerateweb> .
+<https://w3id.org/ibp/ExpressionOntology> <http://www.w3.org/2002/07/owl#versionInfo> "v0.0.1" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement
+<file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> <http://www.w3.org/2002/07/owl#inverseOf> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#previousElement> .
+<file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> <http://www.w3.org/2000/01/rdf-schema#domain> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#ListElement> .
+<file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> <http://www.w3.org/2000/01/rdf-schema#range> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#ListElement> .
+# 
+# file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#previousElement
+<file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#previousElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#previousElement> <http://www.w3.org/2000/01/rdf-schema#domain> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#ListElement> .
+<file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#previousElement> <http://www.w3.org/2000/01/rdf-schema#range> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#ListElement> .
+# 
+# file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf
+<file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> <http://www.w3.org/2000/01/rdf-schema#domain> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#LinkedList> .
+<file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> <http://www.w3.org/2000/01/rdf-schema#range> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#ListElement> .
+# 
+# http://numerateweb.org/vocab/math#operator
+<http://numerateweb.org/vocab/math#operator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://numerateweb.org/vocab/math#operator> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/ExpressionOntology#Operator> .
+<http://numerateweb.org/vocab/math#operator> <http://www.w3.org/2000/01/rdf-schema#range> <http://numerateweb.org/vocab/math#Symbol> .
+# 
+# https://w3id.org/ibp/CTRLont#logicInput
+<https://w3id.org/ibp/CTRLont#logicInput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/ibp/CTRLont#logicParameter
+<https://w3id.org/ibp/CTRLont#logicParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/CTRLont#logicParameter> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/CTRLont#Parameter> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://numerateweb.org/vocab/math#name
+<http://numerateweb.org/vocab/math#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://numerateweb.org/vocab/math#value
+<http://numerateweb.org/vocab/math#value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#LinkedList
+<file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#LinkedList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#ListElement
+<file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#ListElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://numerateweb.org/vocab/math#Literal
+<http://numerateweb.org/vocab/math#Literal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://numerateweb.org/vocab/math#Literal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/ExpressionOntology#Operand> .
+<http://numerateweb.org/vocab/math#Literal> <http://www.w3.org/2002/07/owl#disjointWith> <http://numerateweb.org/vocab/math#Variable> .
+# 
+# http://numerateweb.org/vocab/math#Symbol
+<http://numerateweb.org/vocab/math#Symbol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://numerateweb.org/vocab/math#Variable
+<http://numerateweb.org/vocab/math#Variable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://numerateweb.org/vocab/math#Variable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/ExpressionOntology#Operand> .
+# 
+# http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/CTRLont#Parameter
+<https://w3id.org/ibp/CTRLont#Parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/ExpressionOntology#BinaryOperator
+<https://w3id.org/ibp/ExpressionOntology#BinaryOperator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/ExpressionOntology#BinaryOperator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/ExpressionOntology#Operator> .
+<https://w3id.org/ibp/ExpressionOntology#BinaryOperator> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/ibp/ExpressionOntology#UnaryOperator> .
+# 
+# https://w3id.org/ibp/ExpressionOntology#Expression
+<https://w3id.org/ibp/ExpressionOntology#Expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/ExpressionOntology#Expression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#LinkedList> .
+# 
+# https://w3id.org/ibp/ExpressionOntology#ExpressionElement
+<https://w3id.org/ibp/ExpressionOntology#ExpressionElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/ExpressionOntology#ExpressionElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#ListElement> .
+# 
+# https://w3id.org/ibp/ExpressionOntology#Operand
+<https://w3id.org/ibp/ExpressionOntology#Operand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/ExpressionOntology#Operand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/ExpressionOntology#ExpressionElement> .
+# 
+# https://w3id.org/ibp/ExpressionOntology#Operator
+<https://w3id.org/ibp/ExpressionOntology#Operator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/ExpressionOntology#Operator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/ExpressionOntology#ExpressionElement> .
+# 
+# https://w3id.org/ibp/ExpressionOntology#UnaryOperator
+<https://w3id.org/ibp/ExpressionOntology#UnaryOperator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/ExpressionOntology#UnaryOperator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/ExpressionOntology#Operator> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.openmath.org/cd/arith1#divide
+<http://www.openmath.org/cd/arith1#divide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.openmath.org/cd/arith1#divide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://numerateweb.org/vocab/math#Symbol> .
+<http://www.openmath.org/cd/arith1#divide> <http://www.w3.org/2000/01/rdf-schema#comment> "Division /"@en .
+# 
+# http://www.openmath.org/cd/arith1#minus
+<http://www.openmath.org/cd/arith1#minus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.openmath.org/cd/arith1#minus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://numerateweb.org/vocab/math#Symbol> .
+<http://www.openmath.org/cd/arith1#minus> <http://www.w3.org/2000/01/rdf-schema#comment> "Subtraction -"@en .
+# 
+# http://www.openmath.org/cd/arith1#plus
+<http://www.openmath.org/cd/arith1#plus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.openmath.org/cd/arith1#plus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://numerateweb.org/vocab/math#Symbol> .
+<http://www.openmath.org/cd/arith1#plus> <http://www.w3.org/2000/01/rdf-schema#comment> "Addition +"@en .
+# 
+# http://www.openmath.org/cd/arith1#power
+<http://www.openmath.org/cd/arith1#power> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.openmath.org/cd/arith1#power> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://numerateweb.org/vocab/math#Symbol> .
+<http://www.openmath.org/cd/arith1#power> <http://www.w3.org/2000/01/rdf-schema#comment> "To the power of ^"@en .
+# 
+# http://www.openmath.org/cd/arith1#times
+<http://www.openmath.org/cd/arith1#times> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.openmath.org/cd/arith1#times> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://numerateweb.org/vocab/math#Symbol> .
+<http://www.openmath.org/cd/arith1#times> <http://www.w3.org/2000/01/rdf-schema#comment> "Multiplication"@en .
+# 
+# http://www.openmath.org/cd/logic1#and
+<http://www.openmath.org/cd/logic1#and> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.openmath.org/cd/logic1#and> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://numerateweb.org/vocab/math#Symbol> .
+<http://www.openmath.org/cd/logic1#and> <http://www.w3.org/2000/01/rdf-schema#comment> "Logical AND"@en .
+# 
+# http://www.openmath.org/cd/logic1#not
+<http://www.openmath.org/cd/logic1#not> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.openmath.org/cd/logic1#not> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://numerateweb.org/vocab/math#Symbol> .
+<http://www.openmath.org/cd/logic1#not> <http://www.w3.org/2000/01/rdf-schema#comment> "Logical NOT"@en .
+# 
+# http://www.openmath.org/cd/logic1#or
+<http://www.openmath.org/cd/logic1#or> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.openmath.org/cd/logic1#or> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://numerateweb.org/vocab/math#Symbol> .
+<http://www.openmath.org/cd/logic1#or> <http://www.w3.org/2000/01/rdf-schema#comment> "Logical OR"@en .
+# 
+# http://www.openmath.org/cd/logic1#xor
+<http://www.openmath.org/cd/logic1#xor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.openmath.org/cd/logic1#xor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://numerateweb.org/vocab/math#Symbol> .
+<http://www.openmath.org/cd/logic1#xor> <http://www.w3.org/2000/01/rdf-schema#comment> "Logical XOR <"@en .
+# 
+# http://www.openmath.org/cd/relation1#eq
+<http://www.openmath.org/cd/relation1#eq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.openmath.org/cd/relation1#eq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://numerateweb.org/vocab/math#Symbol> .
+<http://www.openmath.org/cd/relation1#eq> <http://www.w3.org/2000/01/rdf-schema#comment> "equal = <"@en .
+# 
+# http://www.openmath.org/cd/relation1#geq
+<http://www.openmath.org/cd/relation1#geq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.openmath.org/cd/relation1#geq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://numerateweb.org/vocab/math#Symbol> .
+<http://www.openmath.org/cd/relation1#geq> <http://www.w3.org/2000/01/rdf-schema#comment> "greater than or equal >="@en .
+# 
+# http://www.openmath.org/cd/relation1#gt
+<http://www.openmath.org/cd/relation1#gt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.openmath.org/cd/relation1#gt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://numerateweb.org/vocab/math#Symbol> .
+<http://www.openmath.org/cd/relation1#gt> <http://www.w3.org/2000/01/rdf-schema#comment> "Greater than >"@en .
+# 
+# http://www.openmath.org/cd/relation1#leq
+<http://www.openmath.org/cd/relation1#leq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.openmath.org/cd/relation1#leq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://numerateweb.org/vocab/math#Symbol> .
+<http://www.openmath.org/cd/relation1#leq> <http://www.w3.org/2000/01/rdf-schema#comment> "Less than or equal <="@en .
+# 
+# http://www.openmath.org/cd/relation1#lt
+<http://www.openmath.org/cd/relation1#lt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.openmath.org/cd/relation1#lt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://numerateweb.org/vocab/math#Symbol> .
+<http://www.openmath.org/cd/relation1#lt> <http://www.w3.org/2000/01/rdf-schema#comment> "Less than <"@en .
+# 
+# http://www.openmath.org/cd/relation1#neq
+<http://www.openmath.org/cd/relation1#neq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.openmath.org/cd/relation1#neq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://numerateweb.org/vocab/math#Symbol> .
+<http://www.openmath.org/cd/relation1#neq> <http://www.w3.org/2000/01/rdf-schema#comment> "Not equal != <"@en .
+# 
+# https://w3id.org/ibp/ExpressionOntology
+<https://w3id.org/ibp/ExpressionOntology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/ExpressionOntology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocommons/voaf#Vocabulary> .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

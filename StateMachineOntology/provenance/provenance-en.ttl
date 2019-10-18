@@ -1,0 +1,13 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<https://w3id.org/ibp/StateMachineOntology-1.0.0> a prov:Entity;
+	 dc:title "StateMachineOntology - An ontology to formally specify UML state machines.";
+	 prov:wasAttributedTo <https://www.researchgate.net/profile/Georg_Schneider3>;
+	 dc:creator <https://www.researchgate.net/profile/Georg_Schneider3>;
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasRevisionOf <https://w3id.org/ibp/StateMachineOntology-0.0.1>;
+	 prov:wasGeneratedAt "2017-08-21";
+.
+:agent0 a prov:Agent; foaf:name "Georg Ferdinand Schneider".

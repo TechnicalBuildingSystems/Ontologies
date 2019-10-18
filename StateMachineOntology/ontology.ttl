@@ -1,0 +1,402 @@
+@prefix : <https://w3id.org/ibp/StateMachineOntology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/ibp/StateMachineOntology> .
+
+<https://w3id.org/ibp/StateMachineOntology> rdf:type owl:Ontology ;
+                                             owl:versionIRI <https://w3id.org/ibp/StateMachineOntology-1.0.0> ;
+                                             <http://purl.org/dc/terms/creator> <https://www.researchgate.net/profile/Georg_Schneider3> ,
+                                                                                "Georg Ferdinand Schneider" ;
+                                             <http://purl.org/dc/terms/description> """The original version of the ontology and its use are described in [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2]. An improved version is described in [3].
+
+[1] Schneider, G.F., Pauwels, P. and Steiger, S. (2017): \"Ontology-based Modelling of Control Logic in Building Automation Systems\" in IEEE Transactions on Industrial Informatics, vol. 13, no. 6, pp. 3350-3360, DOI: 10.1109/TII.2017.2743221.
+
+[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003.
+
+[3] G. F. Schneider, H. Wicaksono, and J. Ovtcharova. Virtual Engineering of Cyber-Physical Automation Systems: The Case of Control Logic. Advanced Engineering Informatics, February 2018. Submitted."""@en ;
+                                             <http://purl.org/dc/terms/identifier> "https://w3id.org/ibp/StateMachineOntology#" ;
+                                             <http://purl.org/dc/terms/issued> "2016-11-01"^^xsd:date ;
+                                             <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/4.0> ;
+                                             <http://purl.org/dc/terms/modified> "2017-08-21"^^xsd:date ;
+                                             <http://purl.org/dc/terms/rights> """Copyright (c) 2017, Fraunhofer Institute for Building Physics,
+			Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution 
+			Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"""@en ;
+                                             <http://purl.org/dc/terms/title> "StateMachineOntology - An ontology to formally specify UML state machines."@en ;
+                                             <http://purl.org/vocab/vann/preferredNamespacePrefix> "sm" ;
+                                             <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
+                                             rdfs:comment "StateMachineOntology specifies concepts and relationships to describe state machines as defined in the Unified Modelling Language (UML)."@en ;
+                                             rdfs:label "State Machine Ontology"@en ;
+                                             rdfs:seeAlso "http://www.learninglab.de/~dolog/fsm/fsm.owl#" ;
+                                             owl:priorVersion "https://w3id.org/ibp/StateMachineOntology-0.0.1"@en ;
+                                             owl:versionInfo "v1.0.0"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#seeAlso
+rdfs:seeAlso rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/ibp/StateMachineOntology#actionBehaviour
+:actionBehaviour rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Action ;
+                 rdfs:range :Behaviour .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#conditionExpr
+:conditionExpr rdf:type owl:ObjectProperty ;
+               rdfs:domain :Condition ;
+               rdfs:range <https://w3id.org/ibp/ExpressionOntology#Expression> .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#contains
+:contains rdf:type owl:ObjectProperty ;
+          rdfs:domain :StateMachineElement ;
+          rdfs:range :StateMachineElement .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#do
+:do rdf:type owl:ObjectProperty ;
+    rdfs:domain :State ;
+    rdfs:range :Action .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#entry
+:entry rdf:type owl:ObjectProperty ;
+       rdfs:domain :State ;
+       rdfs:range :Action .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#exit
+:exit rdf:type owl:ObjectProperty ;
+      rdfs:domain :State ;
+      rdfs:range :Action .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#guardCondition
+:guardCondition rdf:type owl:ObjectProperty ;
+                rdfs:domain :Guard ;
+                rdfs:range :Condition .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#internal
+:internal rdf:type owl:ObjectProperty ;
+          rdfs:domain :State ;
+          rdfs:range :Transition .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#source
+:source rdf:type owl:ObjectProperty ;
+        rdfs:domain :Transition ;
+        rdfs:range :State .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#target
+:target rdf:type owl:ObjectProperty ;
+        rdfs:domain :Transition ;
+        rdfs:range :State .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#transitionAction
+:transitionAction rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Transition ;
+                  rdfs:range :Action .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#transitionEvent
+:transitionEvent rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Transition ;
+                 rdfs:range :Event .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#transitionGuard
+:transitionGuard rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Transition ;
+                 rdfs:range :Guard .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/ibp/StateMachineOntology#assignSimpleValue
+:assignSimpleValue rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Action ;
+                   rdfs:range xsd:double .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#count
+:count rdf:type owl:DatatypeProperty ,
+                owl:FunctionalProperty ;
+       rdfs:domain :SynchState ;
+       rdfs:range xsd:int .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> rdf:type owl:Class .
+
+
+###  https://w3id.org/ibp/ExpressionOntology#Expression
+<https://w3id.org/ibp/ExpressionOntology#Expression> rdf:type owl:Class .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#Action
+:Action rdf:type owl:Class ;
+        rdfs:subClassOf :StateMachineElement .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#After
+:After rdf:type owl:Class ;
+       rdfs:subClassOf :Event .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#Behaviour
+:Behaviour rdf:type owl:Class ;
+           rdfs:subClassOf :StateMachineElement .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#Branch
+:Branch rdf:type owl:Class ;
+        rdfs:subClassOf :PseudoState .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#Completion
+:Completion rdf:type owl:Class ;
+            rdfs:subClassOf :Event .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#Composite
+:Composite rdf:type owl:Class ;
+           rdfs:subClassOf :State .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#Condition
+:Condition rdf:type owl:Class ;
+           rdfs:subClassOf :StateMachineElement ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :conditionExpr ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass <https://w3id.org/ibp/ExpressionOntology#Expression>
+                           ] .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#Deep
+:Deep rdf:type owl:Class ;
+      rdfs:subClassOf :History .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#Event
+:Event rdf:type owl:Class ;
+       rdfs:subClassOf :StateMachineElement .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#FinalState
+:FinalState rdf:type owl:Class ;
+            rdfs:subClassOf :State .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#Fork
+:Fork rdf:type owl:Class ;
+      rdfs:subClassOf :PseudoState .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#Guard
+:Guard rdf:type owl:Class ;
+       rdfs:subClassOf :StateMachineElement ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :guardCondition ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass :Condition
+                       ] .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#History
+:History rdf:type owl:Class ;
+         rdfs:subClassOf :PseudoState .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#InitialState
+:InitialState rdf:type owl:Class ;
+              rdfs:subClassOf :PseudoState .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#Join
+:Join rdf:type owl:Class ;
+      rdfs:subClassOf :PseudoState .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#Junction
+:Junction rdf:type owl:Class ;
+          rdfs:subClassOf :PseudoState .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#PseudoState
+:PseudoState rdf:type owl:Class ;
+             rdfs:subClassOf :State .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#Region
+:Region rdf:type owl:Class ;
+        rdfs:subClassOf :Composite .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#Shallow
+:Shallow rdf:type owl:Class ;
+         rdfs:subClassOf :History .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#SimpleState
+:SimpleState rdf:type owl:Class ;
+             rdfs:subClassOf :State .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#State
+:State rdf:type owl:Class ;
+       rdfs:subClassOf :StateMachineElement ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :do ;
+                         owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                         owl:onClass :Action
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :entry ;
+                         owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                         owl:onClass :Action
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :exit ;
+                         owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                         owl:onClass :Action
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :internal ;
+                         owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                         owl:onClass :Transition
+                       ] .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#StateMachine
+:StateMachine rdf:type owl:Class ;
+              rdfs:subClassOf :StateMachineElement ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :contains ;
+                                owl:allValuesFrom :StateMachineElement
+                              ] .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#StateMachineElement
+:StateMachineElement rdf:type owl:Class .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#SynchState
+:SynchState rdf:type owl:Class ;
+            rdfs:subClassOf :State .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#Transition
+:Transition rdf:type owl:Class ;
+            rdfs:subClassOf :StateMachineElement ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :transitionEvent ;
+                              owl:someValuesFrom :Event
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :transitionEvent ;
+                              owl:allValuesFrom :Event
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :source ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass :State
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :target ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass :State
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :transitionGuard ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass :Guard
+                            ] .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#When
+:When rdf:type owl:Class ;
+      rdfs:subClassOf :Event .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/ibp/StateMachineOntology
+<https://w3id.org/ibp/StateMachineOntology> rdf:type owl:NamedIndividual ,
+                                                     <http://purl.org/vocommons/voaf#Vocabulary> .
+
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

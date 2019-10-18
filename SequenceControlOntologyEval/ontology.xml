@@ -1,0 +1,249 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/ibp/SequenceControlOntologyEval#"
+     xml:base="https://w3id.org/ibp/SequenceControlOntologyEval"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:CTRLont="https://w3id.org/ibp/CTRLont#"
+     xmlns:SequenceControlOntology="https://w3id.org/ibp/SequenceControlOntology#">
+    <owl:Ontology rdf:about="https://w3id.org/ibp/SequenceControlOntologyEval">
+        <owl:imports rdf:resource="https://w3id.org/ibp/CTRLont"/>
+        <owl:imports rdf:resource="https://w3id.org/ibp/SequenceControlOntology"/>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-2033-859X"/>
+        <terms:creator rdf:resource="https://www.researchgate.net/profile/Georg_Schneider3"/>
+        <terms:creator>Georg Ferdinand Schneider</terms:creator>
+        <terms:description xml:lang="en">The ontology provides instances of the examples described in the PhD thesis of Georg Ferdinand Schneider [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].
+
+[1] Schneider, G.F. (2019): &quot;Semantic Model for Control Logic in Automation Systems - Knowledge-Based Support of the Engineering and Operation of Control Logic in Building and Industrial Automation Systems&quot; PhD thesis, Karlsruhe Institute of Technology, Karlsruhe, Germany.
+
+[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003.</terms:description>
+        <terms:identifier>https://w3id.org/ibp/SequenceControlOntologyEval#</terms:identifier>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-06-30</terms:issued>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-03-07</terms:modified>
+        <terms:rights xml:lang="en">Copyright (c) 2019, Georg Ferdinand Schneider, Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0</terms:rights>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/ibp/SequenceControlOntologyEval#"/>
+        <rdfs:comment xml:lang="en">Ontology with instances of SequenceControlOntologyEval.</rdfs:comment>
+        <rdfs:label xml:lang="en">SequenceControlOntologyEval</rdfs:label>
+        <owl:versionInfo>v0.1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntology#hasInterval -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ibp/SequenceControlOntology#hasInterval"/>
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntology#hasLiteralValue -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ibp/SequenceControlOntology#hasLiteralValue"/>
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntology#hasMathematicalFunction -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ibp/SequenceControlOntology#hasMathematicalFunction"/>
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntology#hasPolynomialConstant -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ibp/SequenceControlOntology#hasPolynomialConstant"/>
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntology#hasStartPoint -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ibp/SequenceControlOntology#hasStartPoint"/>
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntology#hasXCoordinate -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ibp/SequenceControlOntology#hasXCoordinate"/>
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntology#isConsecutiveInterval -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ibp/SequenceControlOntology#isConsecutiveInterval"/>
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntology#polyConstantDegree -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ibp/SequenceControlOntology#polyConstantDegree"/>
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntology#polyConstantLiteralValue -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ibp/SequenceControlOntology#polyConstantLiteralValue"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#NonNegativeInteger -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#NonNegativeInteger"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntology#Interval -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/SequenceControlOntology#Interval"/>
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntology#Sequence -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/SequenceControlOntology#Sequence"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntologyEval#Toa -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/SequenceControlOntologyEval#Toa">
+        <rdf:type rdf:resource="https://w3id.org/ibp/CTRLont#Input"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntologyEval#YCoo -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/SequenceControlOntologyEval#YCoo">
+        <rdf:type rdf:resource="https://w3id.org/ibp/CTRLont#Output"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntologyEval#int2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/SequenceControlOntologyEval#int2">
+        <rdf:type rdf:resource="https://w3id.org/ibp/SequenceControlOntology#Interval"/>
+        <SequenceControlOntology:hasMathematicalFunction>
+            <rdf:Description>
+                <SequenceControlOntology:hasPolynomialConstant>
+                    <rdf:Description rdf:nodeID="genid2">
+                        <CTRLont:logicParameter rdf:resource="https://w3id.org/ibp/SequenceControlOntologyEval#par1"/>
+                        <SequenceControlOntology:polyConstantDegree rdf:datatype="http://www.w3.org/2001/XMLSchema#NonNegativeInteger">0</SequenceControlOntology:polyConstantDegree>
+                        <SequenceControlOntology:polyConstantLiteralValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-3.0</SequenceControlOntology:polyConstantLiteralValue>
+                    </rdf:Description>
+                </SequenceControlOntology:hasPolynomialConstant>
+            </rdf:Description>
+        </SequenceControlOntology:hasMathematicalFunction>
+        <SequenceControlOntology:hasStartPoint>
+            <rdf:Description>
+                <SequenceControlOntology:hasXCoordinate>
+                    <rdf:Description>
+                        <SequenceControlOntology:hasLiteralValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">18.0</SequenceControlOntology:hasLiteralValue>
+                    </rdf:Description>
+                </SequenceControlOntology:hasXCoordinate>
+            </rdf:Description>
+        </SequenceControlOntology:hasStartPoint>
+        <SequenceControlOntology:isConsecutiveInterval rdf:resource="https://w3id.org/ibp/SequenceControlOntologyEval#int3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntologyEval#int3 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/SequenceControlOntologyEval#int3">
+        <rdf:type rdf:resource="https://w3id.org/ibp/SequenceControlOntology#Interval"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntologyEval#par1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/SequenceControlOntologyEval#par1">
+        <rdf:type rdf:resource="https://w3id.org/ibp/CTRLont#Parameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntologyEval#seq1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/SequenceControlOntologyEval#seq1">
+        <rdf:type rdf:resource="https://w3id.org/ibp/SequenceControlOntology#Sequence"/>
+        <SequenceControlOntology:hasInterval rdf:resource="https://w3id.org/ibp/SequenceControlOntologyEval#int2"/>
+        <SequenceControlOntology:hasInterval rdf:resource="https://w3id.org/ibp/SequenceControlOntologyEval#int3"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+

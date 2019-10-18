@@ -1,0 +1,93 @@
+@prefix : <https://w3id.org/ibp/ScheduleOntologyEval#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/ibp/ScheduleOntologyEval> .
+
+<https://w3id.org/ibp/ScheduleOntologyEval> rdf:type owl:Ontology ;
+                                             owl:imports <https://w3id.org/ibp/CTRLont> ,
+                                                         <https://w3id.org/ibp/ScheduleOntology> ;
+                                             <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-2033-859X> ,
+                                                                                <https://www.researchgate.net/profile/Georg_Schneider3> ,
+                                                                                "Georg Ferdinand Schneider" ;
+                                             <http://purl.org/dc/terms/description> """The ontology provides instances of the examples described in the PhD thesis of Georg Ferdinand Schneider [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].
+
+[1] Schneider, G.F. (2019): \"Semantic Model for Control Logic in Automation Systems - Knowledge-Based Support of the Engineering and Operation of Control Logic in Building and Industrial Automation Systems\" PhD thesis, Karlsruhe Institute of Technology, Karlsruhe, Germany.
+
+[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003."""@en ;
+                                             <http://purl.org/dc/terms/identifier> "https://w3id.org/ibp/ScheduleOntologyEval#" ;
+                                             <http://purl.org/dc/terms/issued> "2018-06-30"^^xsd:date ;
+                                             <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/4.0> ;
+                                             <http://purl.org/dc/terms/modified> "2019-03-07"^^xsd:date ;
+                                             <http://purl.org/dc/terms/rights> "Copyright (c) 2019, Georg Ferdinand Schneider, Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"@en ;
+                                             <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
+                                             rdfs:comment "Ontology with instances of ScheduleOntologyEval."@en ;
+                                             rdfs:label "ScheduleOntologyEval"@en ;
+                                             owl:versionInfo "v0.1.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://w3id.org/ibp/CTRLont#logicInpur
+<https://w3id.org/ibp/CTRLont#logicInpur> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/ibp/ScheduleOntology#Daily
+<https://w3id.org/ibp/ScheduleOntology#Daily> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/ibp/ScheduleOntologyEval#R2_logic
+:R2_logic rdf:type owl:NamedIndividual ,
+                   <https://w3id.org/ibp/ScheduleOntology#Schedule> ;
+          <https://w3id.org/ibp/CTRLont#logicOutput> :YSce ;
+          <https://w3id.org/ibp/ScheduleOntology#hasInterval> :sched_Interval1 ,
+                                                              :sched_Interval2 ,
+                                                              :sched_Interval3 ;
+          <https://w3id.org/ibp/ScheduleOntology#hasPeriodicity> <https://w3id.org/ibp/ScheduleOntology#Daily> ;
+          <https://w3id.org/ibp/CTRLont#logicInpur> :time .
+
+
+###  https://w3id.org/ibp/ScheduleOntologyEval#YSce
+:YSce rdf:type owl:NamedIndividual ,
+               <https://w3id.org/ibp/CTRLont#Output> .
+
+
+###  https://w3id.org/ibp/ScheduleOntologyEval#sched_Interval1
+:sched_Interval1 rdf:type owl:NamedIndividual ,
+                          <https://w3id.org/ibp/ScheduleOntology#Interval> ;
+                 <https://w3id.org/ibp/ScheduleOntology#isConsecutiveInterval> :sched_Interval2 .
+
+
+###  https://w3id.org/ibp/ScheduleOntologyEval#sched_Interval2
+:sched_Interval2 rdf:type owl:NamedIndividual ,
+                          <https://w3id.org/ibp/ScheduleOntology#Interval> ;
+                 <https://w3id.org/ibp/ScheduleOntology#isConsecutiveInterval> :sched_Interval3 .
+
+
+###  https://w3id.org/ibp/ScheduleOntologyEval#sched_Interval3
+:sched_Interval3 rdf:type owl:NamedIndividual ,
+                          <https://w3id.org/ibp/ScheduleOntology#Interval> ;
+                 <https://w3id.org/ibp/ScheduleOntology#hasStartPoint> _:genid1 .
+
+_:genid1 rdf:type <https://w3id.org/ibp/ScheduleOntology#StartPoint> ;
+          <https://w3id.org/ibp/ScheduleOntology#hasXCoordinate> _:genid2 ;
+          <https://w3id.org/ibp/ScheduleOntology#hasYCoordinate> _:genid3 .
+
+_:genid2 <https://w3id.org/ibp/ScheduleOntology#hasLiteralValue> "18.0"^^xsd:double .
+
+_:genid3 <https://w3id.org/ibp/ScheduleOntology#hasLiteralValue> "0.0"^^xsd:double .
+
+
+###  https://w3id.org/ibp/ScheduleOntologyEval#time
+:time rdf:type owl:NamedIndividual ,
+               <https://w3id.org/ibp/CTRLont#Input> .
+
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

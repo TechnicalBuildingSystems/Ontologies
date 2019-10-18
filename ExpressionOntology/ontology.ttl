@@ -1,0 +1,307 @@
+@prefix : <https://w3id.org/ibp/ExpressionOntology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/ibp/ExpressionOntology> .
+
+<https://w3id.org/ibp/ExpressionOntology> rdf:type owl:Ontology ;
+                                           owl:versionIRI <https://w3id.org/ibp/ExpressionOntology-0.0.1> ;
+                                           <http://purl.org/dc/terms/contributor> "Walter Terkaj" ;
+                                           <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-2033-859X> ,
+                                                                              <https://www.researchgate.net/profile/Georg_Schneider3> ,
+                                                                              "Georg Ferdinand Schneider" ;
+                                           <http://purl.org/dc/terms/description> """The expression ontology is an ontology to represent mathematical expressions from the  engineering domain.  The ontology and is used are documented in [1]. Precursors of the model developed simultaneously are published in [2,3]. The ontology reuses concepts from the OntoCAPE [4] and OpenMath [5] ontologies. The ontology is implemented using the free protege tool (protege.stanford.edu) [5].
+
+[1] G. F. Schneider, H. Wicaksono, and J. Ovtcharova. Virtual Engineering of Cyber-Physical Automation Systems: The Case of Control Logic. Advanced Engineering Informatics, February 2018. Submitted.
+
+[2] W. Terkaj, G. F. Schneider, and P. Pauwels. Reusing Domain Ontologies in Linked Building Data: the Case of Building Automation and Control. In Proceedings of the 8th International Workshop on Formal Ontologies Meet Industry (FOMI), pages 1{12, Bolzano, Italy, September 2017.
+
+[3] G. F. Schneider, P. Pauwels, and S. Steiger. Ontology-based Modeling of Control Logic in Building Automation Systems. IEEE Transactions on Industrial Informatics, 13(6):3350-3360, December 2017.
+
+[4] W. Marquardt, J. Morbach, A. Wiesner, and A. Yang. OntoCAPE: A re-usable ontology for chemical process engineering. Springer, Berlin, Germany, 2009.
+
+[5] K. Wenzel and H. Reinhardt. Mathematical computations for linked data applications with OpenMath. In Joint Proceedings of the 24th Workshop on OpenMath and the 7th Workshop on Mathematical User Interfaces (MathUI), pages 38{48, Bremen, Germany, 2012
+
+[6] M. A. Musen. The protege project: a look back and a look forward. AI matters, 1(4):4-12, 2015, doi: 10.1145/2757001.2757003."""@en ;
+                                           <http://purl.org/dc/terms/identifier> "https://w3id.org/ibp/ExpressionOntology#" ;
+                                           <http://purl.org/dc/terms/issued> "2018-03-01"^^xsd:date ;
+                                           <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/4.0> ;
+                                           <http://purl.org/dc/terms/modified> "2018-03-10"^^xsd:date ;
+                                           <http://purl.org/dc/terms/rights> """Copyright (c) 2018, Fraunhofer Institute for Building Physics,
+			Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution 
+			Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"""@en ;
+                                           <http://purl.org/dc/terms/title> "The Expression Ontology."@en ;
+                                           <http://purl.org/vocab/vann/preferredNamespacePrefix> "exp" ;
+                                           <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
+                                           rdfs:comment "ExpressionOntology specifies concepts and relationships to describe mathematical expressions."@en ;
+                                           rdfs:label "ExpressionOntology"@en ;
+                                           rdfs:seeAlso <https://dx.doi.org/10.1007/978-3-642-04655-1> ,
+                                                        <https://github.com/numerateweb/numerateweb> ;
+                                           owl:versionInfo "v0.0.1" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement
+<file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> rdf:type owl:ObjectProperty ;
+                                                                           owl:inverseOf <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#previousElement> ;
+                                                                           rdfs:domain <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#ListElement> ;
+                                                                           rdfs:range <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#ListElement> .
+
+
+###  file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#previousElement
+<file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#previousElement> rdf:type owl:ObjectProperty ;
+                                                                               rdfs:domain <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#ListElement> ;
+                                                                               rdfs:range <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#ListElement> .
+
+
+###  file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf
+<file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> rdf:type owl:ObjectProperty ;
+                                                                    rdfs:domain <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#LinkedList> ;
+                                                                    rdfs:range <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#ListElement> .
+
+
+###  http://numerateweb.org/vocab/math#operator
+<http://numerateweb.org/vocab/math#operator> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain :Operator ;
+                                             rdfs:range <http://numerateweb.org/vocab/math#Symbol> .
+
+
+###  https://w3id.org/ibp/CTRLont#logicInput
+<https://w3id.org/ibp/CTRLont#logicInput> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/ibp/CTRLont#logicParameter
+<https://w3id.org/ibp/CTRLont#logicParameter> rdf:type owl:ObjectProperty ;
+                                              rdfs:range <https://w3id.org/ibp/CTRLont#Parameter> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://numerateweb.org/vocab/math#name
+<http://numerateweb.org/vocab/math#name> rdf:type owl:DatatypeProperty .
+
+
+###  http://numerateweb.org/vocab/math#value
+<http://numerateweb.org/vocab/math#value> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#LinkedList
+<file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#LinkedList> rdf:type owl:Class .
+
+
+###  file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#ListElement
+<file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#ListElement> rdf:type owl:Class .
+
+
+###  http://numerateweb.org/vocab/math#Literal
+<http://numerateweb.org/vocab/math#Literal> rdf:type owl:Class ;
+                                            rdfs:subClassOf :Operand ;
+                                            owl:disjointWith <http://numerateweb.org/vocab/math#Variable> .
+
+
+###  http://numerateweb.org/vocab/math#Symbol
+<http://numerateweb.org/vocab/math#Symbol> rdf:type owl:Class .
+
+
+###  http://numerateweb.org/vocab/math#Variable
+<http://numerateweb.org/vocab/math#Variable> rdf:type owl:Class ;
+                                             rdfs:subClassOf :Operand .
+
+
+###  http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> rdf:type owl:Class .
+
+
+###  https://w3id.org/ibp/CTRLont#Parameter
+<https://w3id.org/ibp/CTRLont#Parameter> rdf:type owl:Class .
+
+
+###  https://w3id.org/ibp/ExpressionOntology#BinaryOperator
+:BinaryOperator rdf:type owl:Class ;
+                rdfs:subClassOf :Operator ;
+                owl:disjointWith :UnaryOperator .
+
+
+###  https://w3id.org/ibp/ExpressionOntology#Expression
+:Expression rdf:type owl:Class ;
+            rdfs:subClassOf <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#LinkedList> .
+
+
+###  https://w3id.org/ibp/ExpressionOntology#ExpressionElement
+:ExpressionElement rdf:type owl:Class ;
+                   rdfs:subClassOf <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#ListElement> .
+
+
+###  https://w3id.org/ibp/ExpressionOntology#Operand
+:Operand rdf:type owl:Class ;
+         rdfs:subClassOf :ExpressionElement .
+
+
+###  https://w3id.org/ibp/ExpressionOntology#Operator
+:Operator rdf:type owl:Class ;
+          rdfs:subClassOf :ExpressionElement .
+
+
+###  https://w3id.org/ibp/ExpressionOntology#UnaryOperator
+:UnaryOperator rdf:type owl:Class ;
+               rdfs:subClassOf :Operator .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.openmath.org/cd/arith1#divide
+<http://www.openmath.org/cd/arith1#divide> rdf:type owl:NamedIndividual ,
+                                                    <http://numerateweb.org/vocab/math#Symbol> ;
+                                           rdfs:comment "Division /"@en .
+
+
+###  http://www.openmath.org/cd/arith1#minus
+<http://www.openmath.org/cd/arith1#minus> rdf:type owl:NamedIndividual ,
+                                                   <http://numerateweb.org/vocab/math#Symbol> ;
+                                          rdfs:comment "Subtraction -"@en .
+
+
+###  http://www.openmath.org/cd/arith1#plus
+<http://www.openmath.org/cd/arith1#plus> rdf:type owl:NamedIndividual ,
+                                                  <http://numerateweb.org/vocab/math#Symbol> ;
+                                         rdfs:comment "Addition +"@en .
+
+
+###  http://www.openmath.org/cd/arith1#power
+<http://www.openmath.org/cd/arith1#power> rdf:type owl:NamedIndividual ,
+                                                   <http://numerateweb.org/vocab/math#Symbol> ;
+                                          rdfs:comment "To the power of ^"@en .
+
+
+###  http://www.openmath.org/cd/arith1#times
+<http://www.openmath.org/cd/arith1#times> rdf:type owl:NamedIndividual ,
+                                                   <http://numerateweb.org/vocab/math#Symbol> ;
+                                          rdfs:comment "Multiplication"@en .
+
+
+###  http://www.openmath.org/cd/logic1#and
+<http://www.openmath.org/cd/logic1#and> rdf:type owl:NamedIndividual ,
+                                                 <http://numerateweb.org/vocab/math#Symbol> ;
+                                        rdfs:comment "Logical AND"@en .
+
+
+###  http://www.openmath.org/cd/logic1#not
+<http://www.openmath.org/cd/logic1#not> rdf:type owl:NamedIndividual ,
+                                                 <http://numerateweb.org/vocab/math#Symbol> ;
+                                        rdfs:comment "Logical NOT"@en .
+
+
+###  http://www.openmath.org/cd/logic1#or
+<http://www.openmath.org/cd/logic1#or> rdf:type owl:NamedIndividual ,
+                                                <http://numerateweb.org/vocab/math#Symbol> ;
+                                       rdfs:comment "Logical OR"@en .
+
+
+###  http://www.openmath.org/cd/logic1#xor
+<http://www.openmath.org/cd/logic1#xor> rdf:type owl:NamedIndividual ,
+                                                 <http://numerateweb.org/vocab/math#Symbol> ;
+                                        rdfs:comment "Logical XOR <"@en .
+
+
+###  http://www.openmath.org/cd/relation1#eq
+<http://www.openmath.org/cd/relation1#eq> rdf:type owl:NamedIndividual ,
+                                                   <http://numerateweb.org/vocab/math#Symbol> ;
+                                          rdfs:comment "equal = <"@en .
+
+
+###  http://www.openmath.org/cd/relation1#geq
+<http://www.openmath.org/cd/relation1#geq> rdf:type owl:NamedIndividual ,
+                                                    <http://numerateweb.org/vocab/math#Symbol> ;
+                                           rdfs:comment "greater than or equal >="@en .
+
+
+###  http://www.openmath.org/cd/relation1#gt
+<http://www.openmath.org/cd/relation1#gt> rdf:type owl:NamedIndividual ,
+                                                   <http://numerateweb.org/vocab/math#Symbol> ;
+                                          rdfs:comment "Greater than >"@en .
+
+
+###  http://www.openmath.org/cd/relation1#leq
+<http://www.openmath.org/cd/relation1#leq> rdf:type owl:NamedIndividual ,
+                                                    <http://numerateweb.org/vocab/math#Symbol> ;
+                                           rdfs:comment "Less than or equal <="@en .
+
+
+###  http://www.openmath.org/cd/relation1#lt
+<http://www.openmath.org/cd/relation1#lt> rdf:type owl:NamedIndividual ,
+                                                   <http://numerateweb.org/vocab/math#Symbol> ;
+                                          rdfs:comment "Less than <"@en .
+
+
+###  http://www.openmath.org/cd/relation1#neq
+<http://www.openmath.org/cd/relation1#neq> rdf:type owl:NamedIndividual ,
+                                                    <http://numerateweb.org/vocab/math#Symbol> ;
+                                           rdfs:comment "Not equal != <"@en .
+
+
+###  https://w3id.org/ibp/ExpressionOntology
+<https://w3id.org/ibp/ExpressionOntology> rdf:type owl:NamedIndividual ,
+                                                   <http://purl.org/vocommons/voaf#Vocabulary> .
+
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

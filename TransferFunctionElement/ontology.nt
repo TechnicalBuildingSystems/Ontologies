@@ -1,0 +1,161 @@
+<https://w3id.org/ibp/TransferFunctionElementOntology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/ibp/TransferFunctionElementOntology> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/ibp/TransferFunctionElementOntology-0.0.1> .
+<https://w3id.org/ibp/TransferFunctionElementOntology> <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-2033-859X> .
+<https://w3id.org/ibp/TransferFunctionElementOntology> <http://purl.org/dc/terms/creator> <https://www.researchgate.net/profile/Georg_Schneider3> .
+<https://w3id.org/ibp/TransferFunctionElementOntology> <http://purl.org/dc/terms/creator> "Georg Ferdinand Schneider" .
+<https://w3id.org/ibp/TransferFunctionElementOntology> <http://purl.org/dc/terms/description> "The ontology and its use are described in [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].\n\n[1] Schneider, G.F. (2018): \"Semantic Model for Control Logic in Automation Systems Knowledge-Based Support of the Engineering and Operation of Control Logic in Building and Industrial Automation Systems\" PhD thesis, Karlsruhe Institute of Technology, Faculty of Mechanical Engineering, Karlsruhe, Germany.\n\n[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003."@en .
+<https://w3id.org/ibp/TransferFunctionElementOntology> <http://purl.org/dc/terms/identifier> "https://w3id.org/ibp/TransferFunctionElementOntology#" .
+<https://w3id.org/ibp/TransferFunctionElementOntology> <http://purl.org/dc/terms/issued> "2018-04-06"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/ibp/TransferFunctionElementOntology> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/4.0> .
+<https://w3id.org/ibp/TransferFunctionElementOntology> <http://purl.org/dc/terms/rights> "Copyright (c) 2018, Fraunhofer Institute for Building Physics,\n\t\t\tNuremberg, Germany. This ontology is distributed under a Creative Commons Attribution \n\t\t\tShare Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"@en .
+<https://w3id.org/ibp/TransferFunctionElementOntology> <http://purl.org/dc/terms/title> "TransferFunctionElement - An ontology to formally specify any control element in an automation systems which has a transfer function."@en .
+<https://w3id.org/ibp/TransferFunctionElementOntology> <http://purl.org/vocab/vann/preferredNamespacePrefix> "tfe" .
+<https://w3id.org/ibp/TransferFunctionElementOntology> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/ibp/TransferFunctionElementOntology#> .
+<https://w3id.org/ibp/TransferFunctionElementOntology> <http://www.w3.org/2000/01/rdf-schema#comment> "TransferFunctionElement describes a control logic which has an explicit transfer function."@en .
+<https://w3id.org/ibp/TransferFunctionElementOntology> <http://www.w3.org/2000/01/rdf-schema#label> "TransferFunctionElement"@en .
+<https://w3id.org/ibp/TransferFunctionElementOntology> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Transfer_function> .
+<https://w3id.org/ibp/TransferFunctionElementOntology> <http://www.w3.org/2002/07/owl#versionInfo> "v0.0.1"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#comment
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#label
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#seeAlso
+<http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement
+<file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf
+<file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://numerateweb.org/vocab/math#operator
+<http://numerateweb.org/vocab/math#operator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/ibp/CTRLont#logicInput
+<https://w3id.org/ibp/CTRLont#logicInput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/ibp/CTRLont#logicOutput
+<https://w3id.org/ibp/CTRLont#logicOutput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/ibp/CTRLont#logicParameter
+<https://w3id.org/ibp/CTRLont#logicParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/ibp/TransferFunctionElementOntology#hasExpression
+<https://w3id.org/ibp/TransferFunctionElementOntology#hasExpression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/TransferFunctionElementOntology#hasExpression> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/TransferFunctionElementOntology#TransferFunctionElement> .
+<https://w3id.org/ibp/TransferFunctionElementOntology#hasExpression> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/ExpressionOntology#Expression> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://numerateweb.org/vocab/math#value
+<http://numerateweb.org/vocab/math#value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/ibp/TransferFunctionElementOntology#hasValue
+<https://w3id.org/ibp/TransferFunctionElementOntology#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/ibp/TransferFunctionElementOntology#hasValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://numerateweb.org/vocab/math#Literal
+<http://numerateweb.org/vocab/math#Literal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://numerateweb.org/vocab/math#Variable
+<http://numerateweb.org/vocab/math#Variable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/CTRLont#ApplicationLogic
+<https://w3id.org/ibp/CTRLont#ApplicationLogic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/CTRLont#Input
+<https://w3id.org/ibp/CTRLont#Input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/CTRLont#Output
+<https://w3id.org/ibp/CTRLont#Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/CTRLont#Parameter
+<https://w3id.org/ibp/CTRLont#Parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/ExpressionOntology#Expression
+<https://w3id.org/ibp/ExpressionOntology#Expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/TransferFunctionElementOntology#MISO
+<https://w3id.org/ibp/TransferFunctionElementOntology#MISO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/TransferFunctionElementOntology#MISO> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/TransferFunctionElementOntology#TransferFunctionElement> .
+# 
+# https://w3id.org/ibp/TransferFunctionElementOntology#SISO
+<https://w3id.org/ibp/TransferFunctionElementOntology#SISO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/TransferFunctionElementOntology#SISO> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/TransferFunctionElementOntology#TransferFunctionElement> .
+# 
+# https://w3id.org/ibp/TransferFunctionElementOntology#TransferFunctionElement
+<https://w3id.org/ibp/TransferFunctionElementOntology#TransferFunctionElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

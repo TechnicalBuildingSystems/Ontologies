@@ -1,0 +1,439 @@
+@prefix : <https://w3id.org/ibp/ExpressionOntologyEval#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/ibp/ExpressionOntologyEval> .
+
+<https://w3id.org/ibp/ExpressionOntologyEval> rdf:type owl:Ontology ;
+                                               owl:imports <https://w3id.org/ibp/CTRLont> ,
+                                                           <https://w3id.org/ibp/ExpressionOntology> ;
+                                               <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-2033-859X> ,
+                                                                                  <https://www.researchgate.net/profile/Georg_Schneider3> ,
+                                                                                  "Georg Ferdinand Schneider" ;
+                                               <http://purl.org/dc/terms/description> """The ontology provides instances of the examples described in the PhD thesis of Georg Ferdinand Schneider [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].
+
+[1] Schneider, G.F. (2019): \"Semantic Model for Control Logic in Automation Systems - Knowledge-Based Support of the Engineering and Operation of Control Logic in Building and Industrial Automation Systems\" PhD thesis, Karlsruhe Institute of Technology, Karlsruhe, Germany.
+
+[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003."""@en ;
+                                               <http://purl.org/dc/terms/identifier> "https://w3id.org/ibp/ExpressionOntologyEval#" ;
+                                               <http://purl.org/dc/terms/issued> "2018-06-30"^^xsd:date ;
+                                               <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/4.0> ;
+                                               <http://purl.org/dc/terms/modified> "2019-03-07"^^xsd:date ;
+                                               <http://purl.org/dc/terms/rights> "Copyright (c) 2019, Georg Ferdinand Schneider, Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"@en ;
+                                               <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
+                                               rdfs:comment "Ontology with instances of ExpressionOntologyEval."@en ;
+                                               rdfs:label "ExpressionOntologyEval"@en ;
+                                               owl:versionInfo "v0.1.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement
+<file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> rdf:type owl:AnnotationProperty .
+
+
+###  file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf
+<file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> rdf:type owl:AnnotationProperty .
+
+
+###  http://numerateweb.org/vocab/math#operator
+<http://numerateweb.org/vocab/math#operator> rdf:type owl:AnnotationProperty .
+
+
+###  http://numerateweb.org/vocab/math#value
+<http://numerateweb.org/vocab/math#value> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#seeAlso
+rdfs:seeAlso rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/ibp/CTRLont#hasApplicationLogic
+<https://w3id.org/ibp/CTRLont#hasApplicationLogic> rdf:type owl:ObjectProperty ;
+                                                   rdfs:range <https://w3id.org/ibp/CTRLont#ApplicationLogic> ;
+                                                   rdfs:comment "Object property to relate a control actor to its specific application logic"@en ;
+                                                   rdfs:label "hasApplicationLogic"@en .
+
+
+###  https://w3id.org/ibp/CTRLont#hasDataType
+<https://w3id.org/ibp/CTRLont#hasDataType> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <https://w3id.org/ibp/CTRLont#AnnotatedElement> ;
+                                           rdfs:range <https://w3id.org/ibp/CTRLont#DataType> ;
+                                           rdfs:comment "Object property to annotate a input, output or parameter with its data type."@en ;
+                                           rdfs:label "hasDataType"@en .
+
+
+###  https://w3id.org/ibp/CTRLont#hasInput
+<https://w3id.org/ibp/CTRLont#hasInput> rdf:type owl:ObjectProperty ;
+                                        rdfs:domain <https://w3id.org/ibp/CTRLont#ControlActor> ;
+                                        rdfs:range <https://w3id.org/ibp/CTRLont#Input> ;
+                                        rdfs:comment "Object property to relate a control actor to its inputs."@en ;
+                                        rdfs:label "hasInput"@en .
+
+
+###  https://w3id.org/ibp/CTRLont#hasMedium
+<https://w3id.org/ibp/CTRLont#hasMedium> rdf:type owl:ObjectProperty ;
+                                         rdfs:domain <https://w3id.org/ibp/CTRLont#AnnotatedElement> ;
+                                         rdfs:range <https://w3id.org/ibp/CTRLont#Medium> ;
+                                         rdfs:comment "Object property to annotate an input, output or parameter with its medium."@en ;
+                                         rdfs:label "hasMedium"@en .
+
+
+###  https://w3id.org/ibp/CTRLont#hasOutput
+<https://w3id.org/ibp/CTRLont#hasOutput> rdf:type owl:ObjectProperty ;
+                                         rdfs:domain <https://w3id.org/ibp/CTRLont#ControlActor> ;
+                                         rdfs:range <https://w3id.org/ibp/CTRLont#Output> ;
+                                         rdfs:comment "Object property to relate a control actor to its outputs."@en ;
+                                         rdfs:label "hasOutput"@en .
+
+
+###  https://w3id.org/ibp/CTRLont#hasParameter
+<https://w3id.org/ibp/CTRLont#hasParameter> rdf:type owl:ObjectProperty ;
+                                            rdfs:domain <https://w3id.org/ibp/CTRLont#ControlActor> ;
+                                            rdfs:range <https://w3id.org/ibp/CTRLont#Parameter> ;
+                                            rdfs:comment "Object property to relate a control actor to its parameter."@en ;
+                                            rdfs:label "hasParameter"@en .
+
+
+###  https://w3id.org/ibp/CTRLont#hasQuantity
+<https://w3id.org/ibp/CTRLont#hasQuantity> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <https://w3id.org/ibp/CTRLont#AnnotatedElement> ;
+                                           rdfs:range <https://w3id.org/ibp/CTRLont#Quantity> ;
+                                           rdfs:comment "Object property to annotate an input, output or parameter with its quantity."@en ;
+                                           rdfs:label "hasQuantity"@en .
+
+
+###  https://w3id.org/ibp/CTRLont#hasSemanticType
+<https://w3id.org/ibp/CTRLont#hasSemanticType> rdf:type owl:ObjectProperty ;
+                                               rdfs:domain <https://w3id.org/ibp/CTRLont#AnnotatedElement> ;
+                                               rdfs:range <https://w3id.org/ibp/CTRLont#SemanticType> ;
+                                               rdfs:comment "Object property to relate an input, output or parameter with its semantic type."@en ;
+                                               rdfs:label "hasSemanticType"@en .
+
+
+###  https://w3id.org/ibp/CTRLont#hasUnit
+<https://w3id.org/ibp/CTRLont#hasUnit> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://w3id.org/ibp/CTRLont#AnnotatedElement> ;
+                                       rdfs:range <https://w3id.org/ibp/CTRLont#Unit> ;
+                                       rdfs:comment "Object property to relate an input, output or parameter with its unit."@en ;
+                                       rdfs:label "hasUnit"@en .
+
+
+###  https://w3id.org/ibp/CTRLont#isConnectedTo
+<https://w3id.org/ibp/CTRLont#isConnectedTo> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain <https://w3id.org/ibp/CTRLont#Output> ;
+                                             rdfs:range <https://w3id.org/ibp/CTRLont#Input> ;
+                                             rdfs:comment "Object property to describe the topological relationship between an input of one control actor and the output of another."@en ;
+                                             rdfs:label "isConnectedTo"@en .
+
+
+###  https://w3id.org/ibp/CTRLont#isSupervisedBy
+<https://w3id.org/ibp/CTRLont#isSupervisedBy> rdf:type owl:ObjectProperty ;
+                                              owl:inverseOf <https://w3id.org/ibp/CTRLont#supervises> ;
+                                              rdfs:domain <https://w3id.org/ibp/CTRLont#ControlActor> ;
+                                              rdfs:range <https://w3id.org/ibp/CTRLont#ControlActor> ;
+                                              rdfs:comment "Object property to describe hierarchical composition of control actors."@en ;
+                                              rdfs:label "isSupervisedBy"@en .
+
+
+###  https://w3id.org/ibp/CTRLont#logicInput
+<https://w3id.org/ibp/CTRLont#logicInput> rdf:type owl:ObjectProperty ;
+                                          rdfs:range <https://w3id.org/ibp/CTRLont#Input> ;
+                                          rdfs:comment "Object property to express the relationship of some application logic concept to an input."@en ;
+                                          rdfs:label "logicInput"@en .
+
+
+###  https://w3id.org/ibp/CTRLont#logicOutput
+<https://w3id.org/ibp/CTRLont#logicOutput> rdf:type owl:ObjectProperty ;
+                                           rdfs:range <https://w3id.org/ibp/CTRLont#Output> ;
+                                           rdfs:comment "Object property to express the relationship of some application logic concept to an output."@en ;
+                                           rdfs:label "logicOutput"@en .
+
+
+###  https://w3id.org/ibp/CTRLont#logicParameter
+<https://w3id.org/ibp/CTRLont#logicParameter> rdf:type owl:ObjectProperty ;
+                                              rdfs:range <https://w3id.org/ibp/CTRLont#Parameter> ;
+                                              rdfs:comment "Object property to express the relationship of some application logic concept to an parameter."@en ;
+                                              rdfs:label "logicParameter"@en .
+
+
+###  https://w3id.org/ibp/CTRLont#supervises
+<https://w3id.org/ibp/CTRLont#supervises> rdf:type owl:ObjectProperty ;
+                                          rdfs:domain <https://w3id.org/ibp/CTRLont#ControlActor> ;
+                                          rdfs:range <https://w3id.org/ibp/CTRLont#ControlActor> ;
+                                          rdfs:comment "Object property to describe if one control actor supervises another."@en ;
+                                          rdfs:label "supervises"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement
+<file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement> rdf:type owl:Class .
+
+
+###  http://numerateweb.org/vocab/math#Literal
+<http://numerateweb.org/vocab/math#Literal> rdf:type owl:Class .
+
+
+###  http://numerateweb.org/vocab/math#Variable
+<http://numerateweb.org/vocab/math#Variable> rdf:type owl:Class .
+
+
+###  http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+owl:Thing rdf:type owl:Class .
+
+
+###  https://w3id.org/ibp/CTRLont#AnnotatedElement
+<https://w3id.org/ibp/CTRLont#AnnotatedElement> rdf:type owl:Class ;
+                                                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <https://w3id.org/ibp/CTRLont#hasDataType> ;
+                                                                  owl:allValuesFrom <https://w3id.org/ibp/CTRLont#DataType>
+                                                                ] ,
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <https://w3id.org/ibp/CTRLont#hasMedium> ;
+                                                                  owl:allValuesFrom <https://w3id.org/ibp/CTRLont#Medium>
+                                                                ] ,
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <https://w3id.org/ibp/CTRLont#hasQuantity> ;
+                                                                  owl:allValuesFrom <https://w3id.org/ibp/CTRLont#Quantity>
+                                                                ] ,
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <https://w3id.org/ibp/CTRLont#hasSemanticType> ;
+                                                                  owl:allValuesFrom <https://w3id.org/ibp/CTRLont#SemanticType>
+                                                                ] ,
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <https://w3id.org/ibp/CTRLont#hasUnit> ;
+                                                                  owl:allValuesFrom <https://w3id.org/ibp/CTRLont#Unit>
+                                                                ] ;
+                                                rdfs:comment "An annotated element is a generic superclass for ctrl:Input, ctrl:Output and ctrl:Parameter"@en ;
+                                                rdfs:label "Annotated Element"@en .
+
+
+###  https://w3id.org/ibp/CTRLont#ApplicationLogic
+<https://w3id.org/ibp/CTRLont#ApplicationLogic> rdf:type owl:Class ;
+                                                rdfs:comment "Concept to specify the application logic of a control actor. Seperate ontologies may be used to further specify this concept."@en ;
+                                                rdfs:label "Application Logic"@en .
+
+
+###  https://w3id.org/ibp/CTRLont#ControlActor
+<https://w3id.org/ibp/CTRLont#ControlActor> rdf:type owl:Class ;
+                                            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <https://w3id.org/ibp/CTRLont#hasApplicationLogic> ;
+                                                              owl:someValuesFrom <https://w3id.org/ibp/CTRLont#ApplicationLogic>
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <https://w3id.org/ibp/CTRLont#hasOutput> ;
+                                                              owl:someValuesFrom <https://w3id.org/ibp/CTRLont#Output>
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <https://w3id.org/ibp/CTRLont#hasApplicationLogic> ;
+                                                              owl:allValuesFrom <https://w3id.org/ibp/CTRLont#ApplicationLogic>
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <https://w3id.org/ibp/CTRLont#hasInput> ;
+                                                              owl:allValuesFrom <https://w3id.org/ibp/CTRLont#Input>
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <https://w3id.org/ibp/CTRLont#hasOutput> ;
+                                                              owl:allValuesFrom <https://w3id.org/ibp/CTRLont#Output>
+                                                            ] ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <https://w3id.org/ibp/CTRLont#hasParameter> ;
+                                                              owl:allValuesFrom <https://w3id.org/ibp/CTRLont#Parameter>
+                                                            ] ;
+                                            rdfs:comment """Concept to describe the in general accepted Sense-Process-Actuate
+pattern in automation systems, e.g. function blocks from IEC 61499."""@en ;
+                                            rdfs:label "Control Actor"@en .
+
+
+###  https://w3id.org/ibp/CTRLont#DataType
+<https://w3id.org/ibp/CTRLont#DataType> rdf:type owl:Class ;
+                                        rdfs:comment "Placeholder class for the specification of basic data types such as, e.g. integer, boolean or double."@en ;
+                                        rdfs:label "Data type"@en ;
+                                        rdfs:seeAlso "https://www.w3.org/TR/xmlschema-2/#built-in-datatypes"^^xsd:anyURI .
+
+
+###  https://w3id.org/ibp/CTRLont#Input
+<https://w3id.org/ibp/CTRLont#Input> rdf:type owl:Class ;
+                                     rdfs:subClassOf <https://w3id.org/ibp/CTRLont#AnnotatedElement> ;
+                                     owl:disjointWith <https://w3id.org/ibp/CTRLont#Parameter> ;
+                                     rdfs:comment "An input allow flows of information to enter a control actor. Inputs are processed by the respective application logic of the control actor to compute the outputs."@en ;
+                                     rdfs:label "Input"@en .
+
+
+###  https://w3id.org/ibp/CTRLont#Medium
+<https://w3id.org/ibp/CTRLont#Medium> rdf:type owl:Class ;
+                                      rdfs:comment "Placeholder concept to stipulate reuse of existing ontologies such as dbpedia or  	http://www.productontology.org/id/"@en ;
+                                      rdfs:label "Medium"@en ;
+                                      rdfs:seeAlso <http://wiki.dbpedia.org/> ,
+                                                   <http://www.productontology.org/id/> .
+
+
+###  https://w3id.org/ibp/CTRLont#Output
+<https://w3id.org/ibp/CTRLont#Output> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/ibp/CTRLont#AnnotatedElement> ;
+                                      owl:disjointWith <https://w3id.org/ibp/CTRLont#Parameter> ;
+                                      rdfs:comment "An output allows compute results by the application logic of an control actor to be fowarded to outside entities such as actuators or other control actors."@en ;
+                                      rdfs:label "Output"@en .
+
+
+###  https://w3id.org/ibp/CTRLont#Parameter
+<https://w3id.org/ibp/CTRLont#Parameter> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://w3id.org/ibp/CTRLont#AnnotatedElement> ;
+                                         rdfs:comment "Parameter describe time-invariant values and settings of the respective control actor. Thus thay can be added dependent on the respective application logic."@en ;
+                                         rdfs:label "Parameter"@en .
+
+
+###  https://w3id.org/ibp/CTRLont#Quantity
+<https://w3id.org/ibp/CTRLont#Quantity> rdf:type owl:Class ;
+                                        rdfs:comment "Placeholder concept to stipulate reuse of existing ontologies such as Ontology for Units and Measures (OM) or QUDT."@en ;
+                                        rdfs:label "Quantity"@en ;
+                                        rdfs:seeAlso <http://qudt.org/schema/qudt> ,
+                                                     <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+
+
+###  https://w3id.org/ibp/CTRLont#SemanticType
+<https://w3id.org/ibp/CTRLont#SemanticType> rdf:type owl:Class ;
+                                            rdfs:comment "It may be required to further annotate an Input, Output or Parameter with a specific Semantic Type. For example in building automation to differ between room air temperature or outdoor air temperature."@en ;
+                                            rdfs:label "Semantic Type"@en .
+
+
+###  https://w3id.org/ibp/CTRLont#Unit
+<https://w3id.org/ibp/CTRLont#Unit> rdf:type owl:Class ;
+                                    rdfs:comment "Placeholder concept to stipulate reuse of existing ontologies such as Ontology for Units and Measures (OM) or QUDT."@en ;
+                                    rdfs:label "Unit"@en .
+
+
+###  https://w3id.org/ibp/ExpressionOntology#Expression
+<https://w3id.org/ibp/ExpressionOntology#Expression> rdf:type owl:Class .
+
+
+###  https://w3id.org/ibp/ExpressionOntology#Operand
+<https://w3id.org/ibp/ExpressionOntology#Operand> rdf:type owl:Class .
+
+
+###  https://w3id.org/ibp/ExpressionOntology#Operator
+<https://w3id.org/ibp/ExpressionOntology#Operator> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/ibp/CTRLont
+<https://w3id.org/ibp/CTRLont> rdf:type owl:NamedIndividual ,
+                                        <http://purl.org/vocommons/voaf#Vocabulary> .
+
+
+###  https://w3id.org/ibp/ExpressionOntologyEval#R1_Inp
+:R1_Inp rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/ibp/CTRLont#Input> .
+
+
+###  https://w3id.org/ibp/ExpressionOntologyEval#R1_par1
+:R1_par1 rdf:type owl:NamedIndividual ,
+                  <https://w3id.org/ibp/CTRLont#Parameter> .
+
+
+###  https://w3id.org/ibp/ExpressionOntologyEval#ele0
+:ele0 rdf:type owl:NamedIndividual ,
+               <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement> ,
+               <http://numerateweb.org/vocab/math#Variable> ,
+               <https://w3id.org/ibp/ExpressionOntology#Operand> ;
+      <https://w3id.org/ibp/CTRLont#logicInput> :R1_Inp ;
+      <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> :ele1 .
+
+
+###  https://w3id.org/ibp/ExpressionOntologyEval#ele1
+:ele1 rdf:type owl:NamedIndividual ,
+               <https://w3id.org/ibp/ExpressionOntology#Operator> ;
+      <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> :ele2 ;
+      <http://numerateweb.org/vocab/math#operator> <http://www.openmath.org/cd/relation1#leq> .
+
+
+###  https://w3id.org/ibp/ExpressionOntologyEval#ele2
+:ele2 rdf:type owl:NamedIndividual ,
+               <http://numerateweb.org/vocab/math#Literal> ,
+               <https://w3id.org/ibp/ExpressionOntology#Operand> ;
+      <https://w3id.org/ibp/CTRLont#logicParameter> :R1_par1 ;
+      <http://numerateweb.org/vocab/math#value> "0.0"^^xsd:double .
+
+
+###  https://w3id.org/ibp/ExpressionOntologyEval#exp
+:exp rdf:type owl:NamedIndividual ,
+              <https://w3id.org/ibp/ExpressionOntology#Expression> ;
+     <file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> :ele0 ,
+                                                                         :ele1 ,
+                                                                         :ele2 .
+
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

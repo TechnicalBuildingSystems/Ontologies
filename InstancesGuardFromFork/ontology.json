@@ -1,0 +1,429 @@
+[ {
+  "@id" : "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://numerateweb.org/vocab/math#Literal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://numerateweb.org/vocab/math#Variable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://numerateweb.org/vocab/math#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://numerateweb.org/vocab/math#operator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://numerateweb.org/vocab/math#value",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/CTRLont#ApplicationLogic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/ibp/CTRLont#ControlActor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/ibp/CTRLont#Parameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/ibp/CTRLont#hasApplicationLogic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/CTRLont#hasParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/CTRLont#logicInput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/CTRLont#logicParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#Completion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#Condition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#Event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#Fork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#Guard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#InitialState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#Region",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#SimpleState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#StateMachine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#Transition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#conditionExpr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#contains",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#guardCondition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#hosts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#target",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#transitionEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#transitionGuard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/ibp/ExpressionOntology#Expression",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/ibp/ExpressionOntology#ExpressionElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/ibp/ExpressionOntology#Operand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/ibp/ExpressionOntology#Operator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesGuardFromFork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-2033-859X"
+  }, {
+    "@id" : "https://www.researchgate.net/profile/Georg_Schneider3"
+  }, {
+    "@value" : "Georg Ferdinand Schneider"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "The ontology provides instances of the examples described in the PhD thesis of Georg Ferdinand Schneider [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].\r\n\r\n[1] Schneider, G.F. (2019): \"Semantic Model for Control Logic in Automation Systems - Knowledge-Based Support of the Engineering and Operation of Control Logic in Building and Industrial Automation Systems\" PhD thesis, Karlsruhe Institute of Technology, Karlsruhe, Germany.\r\n\r\n[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003."
+  } ],
+  "http://purl.org/dc/terms/identifier" : [ {
+    "@value" : "https://w3id.org/ibp/InstancesGuardFromFork#"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2018-02-03"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://creativecommons.org/licenses/by-sa/4.0"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2019-03-07"
+  } ],
+  "http://purl.org/dc/terms/rights" : [ {
+    "@language" : "en",
+    "@value" : "Copyright (c) 2019, Georg Ferdinand Schneider, Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Ontology InstancesGuardFromFork."
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Ontology with instances of InstancesGuardFromFork."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "InstancesGuardFromFork"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "v0.2.0"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZA00z7nPY7Y%3D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/StateMachineOntology#SimpleState" ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZA1NFbn09lM%3D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/StateMachineOntology#Transition" ],
+  "http://w3id.org/ibp/StateMachineOntology#source" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZAxCxbmXJwg%3D"
+  } ],
+  "http://w3id.org/ibp/StateMachineOntology#target" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZAxO9bmo81I%3D"
+  } ],
+  "http://w3id.org/ibp/StateMachineOntology#transitionEvent" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZA1NFbn09lM%3D-Event"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZA1NFbn09lM%3D-Event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/StateMachineOntology#Completion", "http://w3id.org/ibp/StateMachineOntology#Event" ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZAwrN7mQkAM%3D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/CTRLont#ApplicationLogic", "http://w3id.org/ibp/StateMachineOntology#StateMachine" ],
+  "http://w3id.org/ibp/StateMachineOntology#contains" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZA00z7nPY7Y%3D"
+  }, {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZAwrN7mRos0%3D"
+  }, {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZAxCxbmXJwg%3D"
+  }, {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZAxO9bmo81I%3D"
+  }, {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZELLoj3wOR4%3D"
+  }, {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZELh%2Fz4V6Tk%3D"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZAwrN7mQkAM%3D-CA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/CTRLont#ControlActor" ],
+  "http://w3id.org/ibp/CTRLont#hasApplicationLogic" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZAwrN7mQkAM%3D"
+  } ],
+  "http://w3id.org/ibp/CTRLont#hasParameter" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENa9z47lGE%3D-ExpEle-2-Par"
+  }, {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENskD5MKxw%3D-ExpEle-2-Par"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZAwrN7mRos0%3D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/StateMachineOntology#Region" ],
+  "http://w3id.org/ibp/StateMachineOntology#hosts" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZA00z7nPY7Y%3D"
+  }, {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZAxCxbmXJwg%3D"
+  }, {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZAxO9bmo81I%3D"
+  }, {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZELLoj3wOR4%3D"
+  }, {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZELh%2Fz4V6Tk%3D"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZAxCxbmXJwg%3D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/StateMachineOntology#InitialState" ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZAxO9bmo81I%3D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/StateMachineOntology#SimpleState" ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZELLoj3wOR4%3D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/StateMachineOntology#SimpleState" ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZELh%2Fz4V6Tk%3D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/StateMachineOntology#Fork" ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENAbj4qXPM%3D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/StateMachineOntology#Transition" ],
+  "http://w3id.org/ibp/StateMachineOntology#source" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZAxO9bmo81I%3D"
+  } ],
+  "http://w3id.org/ibp/StateMachineOntology#target" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZELh%2Fz4V6Tk%3D"
+  } ],
+  "http://w3id.org/ibp/StateMachineOntology#transitionEvent" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENAbj4qXPM%3D-Event"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENAbj4qXPM%3D-Event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/StateMachineOntology#Completion", "http://w3id.org/ibp/StateMachineOntology#Event" ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENa9z47lGE%3D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/StateMachineOntology#Transition" ],
+  "http://w3id.org/ibp/StateMachineOntology#source" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZELh%2Fz4V6Tk%3D"
+  } ],
+  "http://w3id.org/ibp/StateMachineOntology#target" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZELLoj3wOR4%3D"
+  } ],
+  "http://w3id.org/ibp/StateMachineOntology#transitionGuard" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENa9z47lGE%3D-Gua"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENa9z47lGE%3D-Cond",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/StateMachineOntology#Condition" ],
+  "http://w3id.org/ibp/StateMachineOntology#conditionExpr" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENa9z47lGE%3D-Expr"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENa9z47lGE%3D-ExpEle-0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement", "http://numerateweb.org/vocab/math#Variable", "https://w3id.org/ibp/ExpressionOntology#ExpressionElement", "https://w3id.org/ibp/ExpressionOntology#Operand" ],
+  "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENa9z47lGE%3D-ExpEle-1"
+  } ],
+  "http://numerateweb.org/vocab/math#name" : [ {
+    "@value" : "var1"
+  } ],
+  "http://w3id.org/ibp/CTRLont#logicInput" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#statemachine.var1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENa9z47lGE%3D-ExpEle-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/ExpressionOntology#ExpressionElement", "https://w3id.org/ibp/ExpressionOntology#Operator" ],
+  "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENa9z47lGE%3D-ExpEle-2"
+  } ],
+  "http://numerateweb.org/vocab/math#operator" : [ {
+    "@id" : "http://www.openmath.org/cd/relation1#gt"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENa9z47lGE%3D-ExpEle-2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://numerateweb.org/vocab/math#Literal", "https://w3id.org/ibp/ExpressionOntology#ExpressionElement", "https://w3id.org/ibp/ExpressionOntology#Operand" ],
+  "http://numerateweb.org/vocab/math#value" : [ {
+    "@value" : "0.5"
+  } ],
+  "http://w3id.org/ibp/CTRLont#logicParameter" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENa9z47lGE%3D-ExpEle-2-Par"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENa9z47lGE%3D-ExpEle-2-Par",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/CTRLont#Parameter" ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENa9z47lGE%3D-Expr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/ExpressionOntology#Expression" ],
+  "file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENa9z47lGE%3D-ExpEle-0"
+  }, {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENa9z47lGE%3D-ExpEle-1"
+  }, {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENa9z47lGE%3D-ExpEle-2"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENa9z47lGE%3D-Gua",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/StateMachineOntology#Guard" ],
+  "http://w3id.org/ibp/StateMachineOntology#guardCondition" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENa9z47lGE%3D-Cond"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENskD5MKxw%3D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/StateMachineOntology#Transition" ],
+  "http://w3id.org/ibp/StateMachineOntology#source" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZELh%2Fz4V6Tk%3D"
+  } ],
+  "http://w3id.org/ibp/StateMachineOntology#target" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZA00z7nPY7Y%3D"
+  } ],
+  "http://w3id.org/ibp/StateMachineOntology#transitionGuard" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENskD5MKxw%3D-Gua"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENskD5MKxw%3D-Cond",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/StateMachineOntology#Condition" ],
+  "http://w3id.org/ibp/StateMachineOntology#conditionExpr" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENskD5MKxw%3D-Expr"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENskD5MKxw%3D-ExpEle-0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement", "http://numerateweb.org/vocab/math#Variable", "https://w3id.org/ibp/ExpressionOntology#ExpressionElement", "https://w3id.org/ibp/ExpressionOntology#Operand" ],
+  "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENskD5MKxw%3D-ExpEle-1"
+  } ],
+  "http://numerateweb.org/vocab/math#name" : [ {
+    "@value" : "var2"
+  } ],
+  "http://w3id.org/ibp/CTRLont#logicInput" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#statemachine.var2"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENskD5MKxw%3D-ExpEle-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/ExpressionOntology#ExpressionElement", "https://w3id.org/ibp/ExpressionOntology#Operator" ],
+  "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENskD5MKxw%3D-ExpEle-2"
+  } ],
+  "http://numerateweb.org/vocab/math#operator" : [ {
+    "@id" : "http://www.openmath.org/cd/relation1#gt"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENskD5MKxw%3D-ExpEle-2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://numerateweb.org/vocab/math#Literal", "https://w3id.org/ibp/ExpressionOntology#ExpressionElement", "https://w3id.org/ibp/ExpressionOntology#Operand" ],
+  "http://numerateweb.org/vocab/math#value" : [ {
+    "@value" : "11"
+  } ],
+  "http://w3id.org/ibp/CTRLont#logicParameter" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENskD5MKxw%3D-ExpEle-2-Par"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENskD5MKxw%3D-ExpEle-2-Par",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/CTRLont#Parameter" ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENskD5MKxw%3D-Expr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/ExpressionOntology#Expression" ],
+  "file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENskD5MKxw%3D-ExpEle-0"
+  }, {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENskD5MKxw%3D-ExpEle-1"
+  }, {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENskD5MKxw%3D-ExpEle-2"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENskD5MKxw%3D-Gua",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/StateMachineOntology#Guard" ],
+  "http://w3id.org/ibp/StateMachineOntology#guardCondition" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENskD5MKxw%3D-Cond"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#f1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZELh%2Fz4V6Tk%3D"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#t1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENAbj4qXPM%3D"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#t2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENa9z47lGE%3D"
+  }, {
+    "@id" : "https://w3id.org/ibp/InstancesGuardFromFork#AAAAAAFgZENskD5MKxw%3D"
+  } ]
+} ]

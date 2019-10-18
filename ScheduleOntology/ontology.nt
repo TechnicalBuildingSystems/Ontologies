@@ -1,0 +1,332 @@
+<https://w3id.org/ibp/ScheduleOntology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/ibp/ScheduleOntology> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/ibp/ScheduleOntology-0.1.0> .
+<https://w3id.org/ibp/ScheduleOntology> <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-2033-859X> .
+<https://w3id.org/ibp/ScheduleOntology> <http://purl.org/dc/terms/creator> <https://www.researchgate.net/profile/Georg_Schneider3> .
+<https://w3id.org/ibp/ScheduleOntology> <http://purl.org/dc/terms/creator> "Georg Ferdinand Schneider" .
+<https://w3id.org/ibp/ScheduleOntology> <http://purl.org/dc/terms/description> "The ontology and its use are described in [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].\n\n[1] Schneider, G.F., Pauwels, P. and Steiger, S. (2017): \\\"Ontology-based Modelling of Control Logic in Building Automation Systems\\\" in IEEE Transactions on Industrial Informatics, vol. 13, no. 6, pp. 3350-3360, DOI: 10.1109/TII.2017.2743221.\n\n[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003."@en .
+<https://w3id.org/ibp/ScheduleOntology> <http://purl.org/dc/terms/identifier> "https://w3id.org/ibp/ScheduleOntology#" .
+<https://w3id.org/ibp/ScheduleOntology> <http://purl.org/dc/terms/issued> "2016-11-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/ibp/ScheduleOntology> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/4.0> .
+<https://w3id.org/ibp/ScheduleOntology> <http://purl.org/dc/terms/modified> "2017-08-21"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/ibp/ScheduleOntology> <http://purl.org/dc/terms/rights> "Copyright (c) 2017, Fraunhofer Institute for Building Physics,\n\t\t\tNuremberg, Germany. This ontology is distributed under a Creative Commons Attribution \n\t\t\tShare Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"@en .
+<https://w3id.org/ibp/ScheduleOntology> <http://purl.org/dc/terms/title> "ScheduleOntology - An ontology to formaly specify the schedules in automation systems."@en .
+<https://w3id.org/ibp/ScheduleOntology> <http://purl.org/vocab/vann/preferredNamespacePrefix> "sch" .
+<https://w3id.org/ibp/ScheduleOntology> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/ibp/ScheduleOntology#> .
+<https://w3id.org/ibp/ScheduleOntology> <http://www.w3.org/2000/01/rdf-schema#comment> "ScheduleOntology describes a typical type of control logic explicitly commonly referred to as schedules."@en .
+<https://w3id.org/ibp/ScheduleOntology> <http://www.w3.org/2000/01/rdf-schema#label> "ScheduleOntology"@en .
+<https://w3id.org/ibp/ScheduleOntology> <http://www.w3.org/2002/07/owl#priorVersion> <https://w3id.org/ibp/ScheduleOntology-0.0.1> .
+<https://w3id.org/ibp/ScheduleOntology> <http://www.w3.org/2002/07/owl#versionInfo> "v0.1.0"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#comment
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#label
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#seeAlso
+<http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/ibp/CTRLont#logicInput
+<https://w3id.org/ibp/CTRLont#logicInput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/ibp/CTRLont#logicOutput
+<https://w3id.org/ibp/CTRLont#logicOutput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/ibp/CTRLont#logicParameter
+<https://w3id.org/ibp/CTRLont#logicParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#hasEndPoint
+<https://w3id.org/ibp/ScheduleOntology#hasEndPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/ScheduleOntology#hasEndPoint> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/ScheduleOntology#Interval> .
+<https://w3id.org/ibp/ScheduleOntology#hasEndPoint> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/ScheduleOntology#EndPoint> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#hasInterval
+<https://w3id.org/ibp/ScheduleOntology#hasInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/ScheduleOntology#hasInterval> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/ScheduleOntology#Schedule> .
+<https://w3id.org/ibp/ScheduleOntology#hasInterval> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/ScheduleOntology#Interval> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#hasMathematicalFunction
+<https://w3id.org/ibp/ScheduleOntology#hasMathematicalFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/ScheduleOntology#hasMathematicalFunction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/ScheduleOntology#Interval> .
+<https://w3id.org/ibp/ScheduleOntology#hasMathematicalFunction> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/ScheduleOntology#MathematicalFunction> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#hasPeriodicity
+<https://w3id.org/ibp/ScheduleOntology#hasPeriodicity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/ScheduleOntology#hasPeriodicity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/ScheduleOntology#Schedule> .
+<https://w3id.org/ibp/ScheduleOntology#hasPeriodicity> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/ScheduleOntology#Periodicity> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#hasPolynomicalConstant
+<https://w3id.org/ibp/ScheduleOntology#hasPolynomicalConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/ScheduleOntology#hasPolynomicalConstant> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/ScheduleOntology#MathematicalFunction> .
+<https://w3id.org/ibp/ScheduleOntology#hasPolynomicalConstant> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/ScheduleOntology#PolynomialConstant> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#hasStartPoint
+<https://w3id.org/ibp/ScheduleOntology#hasStartPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/ScheduleOntology#hasStartPoint> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/ScheduleOntology#Interval> .
+<https://w3id.org/ibp/ScheduleOntology#hasStartPoint> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/ScheduleOntology#StartPoint> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#hasXCoordinate
+<https://w3id.org/ibp/ScheduleOntology#hasXCoordinate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/ScheduleOntology#hasXCoordinate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/ScheduleOntology#Point> .
+<https://w3id.org/ibp/ScheduleOntology#hasXCoordinate> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/ScheduleOntology#Coordinate> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#hasYCoordinate
+<https://w3id.org/ibp/ScheduleOntology#hasYCoordinate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/ScheduleOntology#hasYCoordinate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/ScheduleOntology#Point> .
+<https://w3id.org/ibp/ScheduleOntology#hasYCoordinate> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/ScheduleOntology#Coordinate> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#isConsecutiveInterval
+<https://w3id.org/ibp/ScheduleOntology#isConsecutiveInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/ScheduleOntology#isConsecutiveInterval> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/ScheduleOntology#Interval> .
+<https://w3id.org/ibp/ScheduleOntology#isConsecutiveInterval> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/ScheduleOntology#Interval> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/ibp/ScheduleOntology#hasLiteralValue
+<https://w3id.org/ibp/ScheduleOntology#hasLiteralValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/ibp/ScheduleOntology#hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/ScheduleOntology#Coordinate> .
+<https://w3id.org/ibp/ScheduleOntology#hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#polyConstantDegree
+<https://w3id.org/ibp/ScheduleOntology#polyConstantDegree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/ibp/ScheduleOntology#polyConstantDegree> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/ScheduleOntology#PolynomialConstant> .
+<https://w3id.org/ibp/ScheduleOntology#polyConstantDegree> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#polyConstantLiteralValue
+<https://w3id.org/ibp/ScheduleOntology#polyConstantLiteralValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/ibp/ScheduleOntology#polyConstantLiteralValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/ScheduleOntology#PolynomialConstant> .
+<https://w3id.org/ibp/ScheduleOntology#polyConstantLiteralValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/CTRLont#ApplicationLogic
+<https://w3id.org/ibp/CTRLont#ApplicationLogic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/CTRLont#Input
+<https://w3id.org/ibp/CTRLont#Input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/CTRLont#Output
+<https://w3id.org/ibp/CTRLont#Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/CTRLont#Parameter
+<https://w3id.org/ibp/CTRLont#Parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#Coordinate
+<https://w3id.org/ibp/ScheduleOntology#Coordinate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/ScheduleOntology#Coordinate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#EndPoint
+<https://w3id.org/ibp/ScheduleOntology#EndPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/ScheduleOntology#EndPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/ScheduleOntology#Point> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#Interval
+<https://w3id.org/ibp/ScheduleOntology#Interval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/ScheduleOntology#Interval> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/ibp/ScheduleOntology#Interval> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/ScheduleOntology#hasEndPoint> .
+_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/ibp/ScheduleOntology#EndPoint> .
+<https://w3id.org/ibp/ScheduleOntology#Interval> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/ScheduleOntology#hasMathematicalFunction> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/ibp/ScheduleOntology#MathematicalFunction> .
+<https://w3id.org/ibp/ScheduleOntology#Interval> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/ScheduleOntology#hasStartPoint> .
+_:genid3 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/ibp/ScheduleOntology#StartPoint> .
+<https://w3id.org/ibp/ScheduleOntology#Interval> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/ScheduleOntology#isConsecutiveInterval> .
+_:genid4 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/ibp/ScheduleOntology#Interval> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#MathematicalFunction
+<https://w3id.org/ibp/ScheduleOntology#MathematicalFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/ScheduleOntology#MathematicalFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/ibp/ScheduleOntology#MathematicalFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/ScheduleOntology#hasPolynomicalConstant> .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/ibp/ScheduleOntology#PolynomialConstant> .
+<https://w3id.org/ibp/ScheduleOntology#MathematicalFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/ScheduleOntology#hasPolynomicalConstant> .
+_:genid6 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/ibp/ScheduleOntology#PolynomialConstant> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#Periodicity
+<https://w3id.org/ibp/ScheduleOntology#Periodicity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/ScheduleOntology#Periodicity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#Point
+<https://w3id.org/ibp/ScheduleOntology#Point> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/ScheduleOntology#Point> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/ibp/ScheduleOntology#Point> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/ScheduleOntology#hasXCoordinate> .
+_:genid7 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/ibp/ScheduleOntology#Coordinate> .
+<https://w3id.org/ibp/ScheduleOntology#Point> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/ScheduleOntology#hasYCoordinate> .
+_:genid8 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid8 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/ibp/ScheduleOntology#Coordinate> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#PolynomialConstant
+<https://w3id.org/ibp/ScheduleOntology#PolynomialConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/ScheduleOntology#PolynomialConstant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#Schedule
+<https://w3id.org/ibp/ScheduleOntology#Schedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/ScheduleOntology#Schedule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/ibp/ScheduleOntology#Schedule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/CTRLont#ApplicationLogic> .
+<https://w3id.org/ibp/ScheduleOntology#Schedule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/ScheduleOntology#hasInterval> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/ibp/ScheduleOntology#Interval> .
+<https://w3id.org/ibp/ScheduleOntology#Schedule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/ScheduleOntology#hasInterval> .
+_:genid10 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/ibp/ScheduleOntology#Interval> .
+<https://w3id.org/ibp/ScheduleOntology#Schedule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/CTRLont#logicInput> .
+_:genid11 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid11 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/ibp/CTRLont#Input> .
+<https://w3id.org/ibp/ScheduleOntology#Schedule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/CTRLont#logicOutput> .
+_:genid12 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid12 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/ibp/CTRLont#Output> .
+<https://w3id.org/ibp/ScheduleOntology#Schedule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/ScheduleOntology#hasPeriodicity> .
+_:genid13 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid13 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/ibp/ScheduleOntology#Periodicity> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#StartPoint
+<https://w3id.org/ibp/ScheduleOntology#StartPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/ScheduleOntology#StartPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/ScheduleOntology#Point> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/ibp/ScheduleOntology
+<https://w3id.org/ibp/ScheduleOntology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/ScheduleOntology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocommons/voaf#Vocabulary> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#Daily
+<https://w3id.org/ibp/ScheduleOntology#Daily> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/ScheduleOntology#Daily> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ScheduleOntology#Periodicity> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#Monthly
+<https://w3id.org/ibp/ScheduleOntology#Monthly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/ScheduleOntology#Monthly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ScheduleOntology#Periodicity> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#Weekly
+<https://w3id.org/ibp/ScheduleOntology#Weekly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/ScheduleOntology#Weekly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ScheduleOntology#Periodicity> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#Yearly
+<https://w3id.org/ibp/ScheduleOntology#Yearly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/ScheduleOntology#Yearly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ScheduleOntology#Periodicity> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid14 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ibp/ScheduleOntology#Daily> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ibp/ScheduleOntology#Monthly> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ibp/ScheduleOntology#Weekly> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ibp/ScheduleOntology#Yearly> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

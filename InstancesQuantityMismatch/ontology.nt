@@ -1,0 +1,94 @@
+<https://w3id.org/ibp/InstancesQuantityMismatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/ibp/InstancesQuantityMismatch> <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-2033-859X> .
+<https://w3id.org/ibp/InstancesQuantityMismatch> <http://purl.org/dc/terms/creator> <https://www.researchgate.net/profile/Georg_Schneider3> .
+<https://w3id.org/ibp/InstancesQuantityMismatch> <http://purl.org/dc/terms/creator> "Georg Ferdinand Schneider" .
+<https://w3id.org/ibp/InstancesQuantityMismatch> <http://purl.org/dc/terms/description> "The ontology provides instances of the examples described in the PhD thesis of Georg Ferdinand Schneider [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].\r\n\r\n[1] Schneider, G.F. (2019): \"Semantic Model for Control Logic in Automation Systems - Knowledge-Based Support of the Engineering and Operation of Control Logic in Building and Industrial Automation Systems\" PhD thesis, Karlsruhe Institute of Technology, Karlsruhe, Germany.\r\n\r\n[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003."@en .
+<https://w3id.org/ibp/InstancesQuantityMismatch> <http://purl.org/dc/terms/identifier> "https://w3id.org/ibp/InstancesQuantityMismatch#" .
+<https://w3id.org/ibp/InstancesQuantityMismatch> <http://purl.org/dc/terms/issued> "2018-06-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/ibp/InstancesQuantityMismatch> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/4.0> .
+<https://w3id.org/ibp/InstancesQuantityMismatch> <http://purl.org/dc/terms/modified> "2019-03-07"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/ibp/InstancesQuantityMismatch> <http://purl.org/dc/terms/rights> "Copyright (c) 2019, Georg Ferdinand Schneider, Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"@en .
+<https://w3id.org/ibp/InstancesQuantityMismatch> <http://purl.org/dc/terms/title> "Ontology InstancesQuantityMismatch."@en .
+<https://w3id.org/ibp/InstancesQuantityMismatch> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/ibp/InstancesQuantityMismatch#> .
+<https://w3id.org/ibp/InstancesQuantityMismatch> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology with instances of InstancesQuantityMismatch."@en .
+<https://w3id.org/ibp/InstancesQuantityMismatch> <http://www.w3.org/2000/01/rdf-schema#label> "InstancesQuantityMismatch"@en .
+<https://w3id.org/ibp/InstancesQuantityMismatch> <http://www.w3.org/2002/07/owl#versionInfo> "v0.1.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement
+<file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://w3id.org/ibp/CTRLont#hasQuantity
+<http://w3id.org/ibp/CTRLont#hasQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://w3id.org/ibp/CTRLont#logicInput
+<http://w3id.org/ibp/CTRLont#logicInput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://w3id.org/ibp/CTRLont#logicParameter
+<http://w3id.org/ibp/CTRLont#logicParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/ibp/InstancesQuantityMismatch#Par1
+<https://w3id.org/ibp/InstancesQuantityMismatch#Par1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesQuantityMismatch#Par1> <http://w3id.org/ibp/CTRLont#hasQuantity> <http://www.ontology-of-units-of-measure.org/resource/om-2/VolumeFraction> .
+# 
+# https://w3id.org/ibp/InstancesQuantityMismatch#QI302
+<https://w3id.org/ibp/InstancesQuantityMismatch#QI302> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesQuantityMismatch#QI302> <http://w3id.org/ibp/CTRLont#hasQuantity> <http://www.ontology-of-units-of-measure.org/resource/om-2/MassFraction> .
+# 
+# https://w3id.org/ibp/InstancesQuantityMismatch#ele0
+<https://w3id.org/ibp/InstancesQuantityMismatch#ele0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesQuantityMismatch#ele0> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> <https://w3id.org/ibp/InstancesQuantityMismatch#ele1> .
+<https://w3id.org/ibp/InstancesQuantityMismatch#ele0> <http://w3id.org/ibp/CTRLont#logicInput> <https://w3id.org/ibp/InstancesQuantityMismatch#QI302> .
+# 
+# https://w3id.org/ibp/InstancesQuantityMismatch#ele1
+<https://w3id.org/ibp/InstancesQuantityMismatch#ele1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesQuantityMismatch#ele1> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> <https://w3id.org/ibp/InstancesQuantityMismatch#ele2> .
+# 
+# https://w3id.org/ibp/InstancesQuantityMismatch#ele2
+<https://w3id.org/ibp/InstancesQuantityMismatch#ele2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesQuantityMismatch#ele2> <http://w3id.org/ibp/CTRLont#logicParameter> <https://w3id.org/ibp/InstancesQuantityMismatch#Par1> .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

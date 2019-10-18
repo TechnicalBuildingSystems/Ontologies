@@ -1,0 +1,220 @@
+[ {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/CTRLont#ApplicationLogic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/ibp/CTRLont#ControlActor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/ibp/CTRLont#hasApplicationLogic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#Completion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#Event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#InitialState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#Region",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#SimpleState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#StateMachine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#Transition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#contains",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#hosts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#target",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#transitionEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-2033-859X"
+  }, {
+    "@id" : "https://www.researchgate.net/profile/Georg_Schneider3"
+  }, {
+    "@value" : "Georg Ferdinand Schneider"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "The ontology provides instances of the examples described in the PhD thesis of Georg Ferdinand Schneider [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].\r\n\r\n[1] Schneider, G.F. (2019): \"Semantic Model for Control Logic in Automation Systems - Knowledge-Based Support of the Engineering and Operation of Control Logic in Building and Industrial Automation Systems\" PhD thesis, Karlsruhe Institute of Technology, Karlsruhe, Germany.\r\n\r\n[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003."
+  } ],
+  "http://purl.org/dc/terms/identifier" : [ {
+    "@value" : "https://w3id.org/ibp/InstancesTwoTranFromIni#"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2018-02-04"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://creativecommons.org/licenses/by-sa/4.0"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2019-03-13"
+  } ],
+  "http://purl.org/dc/terms/rights" : [ {
+    "@language" : "en",
+    "@value" : "Copyright (c) 2019, Georg Ferdinand Schneider, Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Ontology InstancesTwoTranFromIni."
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Ontology with instances of InstancesTwoTranFromIni."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "InstancesTwoTranFromIni"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "v0.2.0"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA00z7nPY7Y%3D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/StateMachineOntology#SimpleState" ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA1NFbn09lM%3D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/StateMachineOntology#Transition" ],
+  "http://w3id.org/ibp/StateMachineOntology#source" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAxCxbmXJwg%3D"
+  } ],
+  "http://w3id.org/ibp/StateMachineOntology#target" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAxO9bmo81I%3D"
+  } ],
+  "http://w3id.org/ibp/StateMachineOntology#transitionEvent" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA1NFbn09lM%3D-Event"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA1NFbn09lM%3D-Event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/StateMachineOntology#Completion", "http://w3id.org/ibp/StateMachineOntology#Event" ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA2PFboHhmg%3D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/StateMachineOntology#Transition" ],
+  "http://w3id.org/ibp/StateMachineOntology#source" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAxCxbmXJwg%3D"
+  } ],
+  "http://w3id.org/ibp/StateMachineOntology#target" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA00z7nPY7Y%3D"
+  } ],
+  "http://w3id.org/ibp/StateMachineOntology#transitionEvent" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA2PFboHhmg%3D-Event"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA2PFboHhmg%3D-Event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/StateMachineOntology#Completion", "http://w3id.org/ibp/StateMachineOntology#Event" ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAwrN7mQkAM%3D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/CTRLont#ApplicationLogic", "http://w3id.org/ibp/StateMachineOntology#StateMachine" ],
+  "http://w3id.org/ibp/StateMachineOntology#contains" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA00z7nPY7Y%3D"
+  }, {
+    "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAwrN7mRos0%3D"
+  }, {
+    "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAxCxbmXJwg%3D"
+  }, {
+    "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAxO9bmo81I%3D"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAwrN7mQkAM%3D-CA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/CTRLont#ControlActor" ],
+  "http://w3id.org/ibp/CTRLont#hasApplicationLogic" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAwrN7mQkAM%3D"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAwrN7mRos0%3D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/StateMachineOntology#Region" ],
+  "http://w3id.org/ibp/StateMachineOntology#hosts" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA00z7nPY7Y%3D"
+  }, {
+    "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAxCxbmXJwg%3D"
+  }, {
+    "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAxO9bmo81I%3D"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAxCxbmXJwg%3D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/StateMachineOntology#InitialState" ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAxO9bmo81I%3D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/StateMachineOntology#SimpleState" ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#State1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA00z7nPY7Y%3D"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#State2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAxO9bmo81I%3D"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#initial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAxCxbmXJwg%3D"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#t1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA2PFboHhmg%3D"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#t2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA1NFbn09lM%3D"
+  } ]
+} ]

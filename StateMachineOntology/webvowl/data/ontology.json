@@ -1,0 +1,914 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.4), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.org/vocommons/voaf", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/ibp/ExpressionOntology", "https://w3id.org/ibp/StateMachineOntology" ],
+    "title" : {
+      "en" : "StateMachineOntology - An ontology to formally specify UML state machines."
+    },
+    "iri" : "https://w3id.org/ibp/StateMachineOntology",
+    "version" : "v1.0.0",
+    "author" : [ "Georg Ferdinand Schneider", "https://www.researchgate.net/profile/Georg_Schneider3" ],
+    "description" : {
+      "en" : "The original version of the ontology and its use are described in [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2]. An improved version is described in [3].\n\n[1] Schneider, G.F., Pauwels, P. and Steiger, S. (2017): \"Ontology-based Modelling of Control Logic in Building Automation Systems\" in IEEE Transactions on Industrial Informatics, vol. 13, no. 6, pp. 3350-3360, DOI: 10.1109/TII.2017.2743221.\n\n[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003.\n\n[3] G. F. Schneider, H. Wicaksono, and J. Ovtcharova. Virtual Engineering of Cyber-Physical Automation Systems: The Case of Control Logic. Advanced Engineering Informatics, February 2018. Submitted."
+    },
+    "labels" : {
+      "en" : "State Machine Ontology"
+    },
+    "comments" : {
+      "en" : "StateMachineOntology specifies concepts and relationships to describe state machines as defined in the Unified Modelling Language (UML)."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by-sa/4.0",
+        "type" : "iri"
+      } ],
+      "identifier" : [ {
+        "identifier" : "identifier",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ibp/StateMachineOntology#",
+        "type" : "label"
+      } ],
+      "priorVersion" : [ {
+        "identifier" : "priorVersion",
+        "language" : "en",
+        "value" : "https://w3id.org/ibp/StateMachineOntology-0.0.1",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Georg Ferdinand Schneider",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://www.researchgate.net/profile/Georg_Schneider3",
+        "type" : "iri"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "sm",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "en",
+        "value" : "Copyright (c) 2017, Fraunhofer Institute for Building Physics,\n\t\t\tNuremberg, Germany. This ontology is distributed under a Creative Commons Attribution \n\t\t\tShare Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2017-08-21",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "en",
+        "value" : "v1.0.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ibp/StateMachineOntology#",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2016-11-01",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "StateMachineOntology - An ontology to formally specify UML state machines.",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://www.learninglab.de/~dolog/fsm/fsm.owl#",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 28,
+    "objectPropertyCount" : 13,
+    "datatypePropertyCount" : 2,
+    "individualCount" : 1
+  },
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#Fork",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Fork"
+    },
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#Action",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Action"
+    },
+    "id" : "5",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#Junction",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Junction"
+    },
+    "id" : "7",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/ExpressionOntology#Expression",
+    "baseIri" : "https://w3id.org/ibp/ExpressionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Expression"
+    },
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#StateMachine",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StateMachine"
+    },
+    "id" : "11",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#When",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "When"
+    },
+    "id" : "12",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#State",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "State"
+    },
+    "subClasses" : [ "21", "22", "4", "23", "24" ],
+    "id" : "9",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#SynchState",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SynchState"
+    },
+    "id" : "24",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#Composite",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Composite"
+    },
+    "subClasses" : [ "39" ],
+    "id" : "21",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#Join",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Join"
+    },
+    "id" : "40",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#Region",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Region"
+    },
+    "id" : "39",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#PseudoState",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PseudoState"
+    },
+    "subClasses" : [ "3", "7", "40", "20", "42", "43" ],
+    "id" : "4",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://purl.org/vocommons/voaf#Vocabulary",
+    "baseIri" : "http://purl.org/vocommons/voaf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Vocabulary"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/StateMachineOntology",
+      "baseIri" : "https://w3id.org/ibp",
+      "labels" : {
+        "IRI-based" : "StateMachineOntology"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "53"
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#StateMachineElement",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StateMachineElement"
+    },
+    "subClasses" : [ "5", "13", "9", "1", "2", "38", "36", "11" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#Branch",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Branch"
+    },
+    "id" : "42",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#Behaviour",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Behaviour"
+    },
+    "id" : "38",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#History",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "History"
+    },
+    "subClasses" : [ "19", "28" ],
+    "id" : "20",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "59",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#Event",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event"
+    },
+    "subClasses" : [ "12", "17", "15" ],
+    "id" : "13",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#After",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "After"
+    },
+    "id" : "17",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#FinalState",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FinalState"
+    },
+    "id" : "22",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#Deep",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Deep"
+    },
+    "id" : "19",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#Completion",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Completion"
+    },
+    "id" : "15",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#Transition",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Transition"
+    },
+    "id" : "1",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#Guard",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Guard"
+    },
+    "id" : "2",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#InitialState",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InitialState"
+    },
+    "id" : "43",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#SimpleState",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SimpleState"
+    },
+    "id" : "23",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#Shallow",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Shallow"
+    },
+    "id" : "28",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#Condition",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Condition"
+    },
+    "id" : "36",
+    "superClasses" : [ "6" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "67",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "68",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#transitionGuard",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "transitionGuard"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#internal",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "internal"
+    },
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "8"
+  }, {
+    "range" : "13",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "14"
+  }, {
+    "range" : "13",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "16"
+  }, {
+    "range" : "20",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "18"
+  }, {
+    "range" : "6",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "25"
+  }, {
+    "range" : "13",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "26"
+  }, {
+    "range" : "20",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#assignSimpleValue",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "assignSimpleValue"
+    },
+    "domain" : "5",
+    "attributes" : [ "datatype" ],
+    "id" : "29"
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#entry",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "entry"
+    },
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "31"
+  }, {
+    "range" : "6",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "32"
+  }, {
+    "range" : "6",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#transitionEvent",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "transitionEvent"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "34"
+  }, {
+    "range" : "6",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "35"
+  }, {
+    "range" : "6",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "37"
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#contains",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "contains"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#exit",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "exit"
+    },
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "44"
+  }, {
+    "range" : "6",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "45"
+  }, {
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "46"
+  }, {
+    "range" : "6",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "47"
+  }, {
+    "range" : "4",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "48"
+  }, {
+    "range" : "4",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "49"
+  }, {
+    "range" : "4",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "50"
+  }, {
+    "range" : "4",
+    "domain" : "42",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "51"
+  }, {
+    "range" : "21",
+    "domain" : "39",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "52"
+  }, {
+    "range" : "4",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "54"
+  }, {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "55"
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#do",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "do"
+    },
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "56"
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#source",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "source"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "57"
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#transitionEvent",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "transitionEvent"
+    },
+    "domain" : "1",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "58"
+  }, {
+    "range" : "9",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "60"
+  }, {
+    "range" : "9",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "61"
+  }, {
+    "range" : "9",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "62"
+  }, {
+    "range" : "9",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "63"
+  }, {
+    "range" : "9",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "64"
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#actionBehaviour",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "actionBehaviour"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "65"
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#contains",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "contains"
+    },
+    "domain" : "11",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#transitionEvent",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "transitionEvent"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "67"
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#conditionExpr",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "conditionExpr"
+    },
+    "domain" : "36",
+    "attributes" : [ "object" ],
+    "id" : "68"
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#count",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "count"
+    },
+    "domain" : "24",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "69"
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#guardCondition",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "guardCondition"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "70"
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#transitionAction",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "transitionAction"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "71"
+  }, {
+    "iri" : "https://w3id.org/ibp/StateMachineOntology#target",
+    "baseIri" : "https://w3id.org/ibp/StateMachineOntology",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "target"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "72"
+  } ]
+}

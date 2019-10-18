@@ -1,0 +1,267 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/ibp/StateGraphOntologyEval#"
+     xml:base="https://w3id.org/ibp/StateGraphOntologyEval"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:CTRLont="https://w3id.org/ibp/CTRLont#"
+     xmlns:StateGraphOntology="https://w3id.org/ibp/StateGraphOntology#">
+    <owl:Ontology rdf:about="https://w3id.org/ibp/StateGraphOntologyEval">
+        <owl:imports rdf:resource="https://w3id.org/ibp/CTRLont"/>
+        <owl:imports rdf:resource="https://w3id.org/ibp/StateGraphOntology"/>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-2033-859X"/>
+        <terms:creator rdf:resource="https://www.researchgate.net/profile/Georg_Schneider3"/>
+        <terms:creator>Georg Ferdinand Schneider</terms:creator>
+        <terms:description xml:lang="en">The ontology provides instances of the examples described in the PhD thesis of Georg Ferdinand Schneider [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].
+
+[1] Schneider, G.F. (2019): &quot;Semantic Model for Control Logic in Automation Systems - Knowledge-Based Support of the Engineering and Operation of Control Logic in Building and Industrial Automation Systems&quot; PhD thesis, Karlsruhe Institute of Technology, Karlsruhe, Germany.
+
+[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003.</terms:description>
+        <terms:identifier>https://w3id.org/ibp/StateGraphOntologyEval#</terms:identifier>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-06-30</terms:issued>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-03-07</terms:modified>
+        <terms:rights xml:lang="en">Copyright (c) 2019, Georg Ferdinand Schneider, Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0</terms:rights>
+        <terms:title xml:lang="en">Ontology StateGraphOntologyEval.</terms:title>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/ibp/StateGraphOntologyEval#"/>
+        <rdfs:comment xml:lang="en">Ontology with instances of StateGraphOntologyEval.</rdfs:comment>
+        <rdfs:label xml:lang="en">StateGraphOntologyEval</rdfs:label>
+        <owl:versionInfo>v0.1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntology#assignValue -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ibp/StateGraphOntology#assignValue"/>
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntology#conditionExpr -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ibp/StateGraphOntology#conditionExpr"/>
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntology#source -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ibp/StateGraphOntology#source"/>
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntology#stateAction -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ibp/StateGraphOntology#stateAction"/>
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntology#stateCondition -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ibp/StateGraphOntology#stateCondition"/>
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntology#target -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ibp/StateGraphOntology#target"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/ibp/ExpressionOntology#Expression -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/ExpressionOntology#Expression"/>
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntology#Action -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/StateGraphOntology#Action"/>
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntology#Condition -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/StateGraphOntology#Condition"/>
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntology#InitialState -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/StateGraphOntology#InitialState"/>
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntology#Return -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/StateGraphOntology#Return"/>
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntology#SimpleState -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/StateGraphOntology#SimpleState"/>
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntology#Transition -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/StateGraphOntology#Transition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntologyEval#Init -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/StateGraphOntologyEval#Init">
+        <rdf:type rdf:resource="https://w3id.org/ibp/StateGraphOntology#InitialState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntologyEval#exp -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/StateGraphOntologyEval#exp">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Expression"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntologyEval#ret0 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/StateGraphOntologyEval#ret0">
+        <rdf:type rdf:resource="https://w3id.org/ibp/StateGraphOntology#Return"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntologyEval#s1-Act -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/StateGraphOntologyEval#s1-Act">
+        <rdf:type rdf:resource="https://w3id.org/ibp/StateGraphOntology#Action"/>
+        <CTRLont:logicOutput rdf:resource="https://w3id.org/ibp/StateGraphOntologyEval#y"/>
+        <StateGraphOntology:assignValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</StateGraphOntology:assignValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntologyEval#state1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/StateGraphOntologyEval#state1">
+        <rdf:type rdf:resource="https://w3id.org/ibp/StateGraphOntology#SimpleState"/>
+        <StateGraphOntology:stateAction rdf:resource="https://w3id.org/ibp/StateGraphOntologyEval#s1-Act"/>
+        <StateGraphOntology:stateCondition rdf:resource="https://w3id.org/ibp/StateGraphOntologyEval#state1-A"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntologyEval#state1-A -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/StateGraphOntologyEval#state1-A">
+        <rdf:type rdf:resource="https://w3id.org/ibp/StateGraphOntology#Condition"/>
+        <StateGraphOntology:conditionExpr rdf:resource="https://w3id.org/ibp/StateGraphOntologyEval#exp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntologyEval#t1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/StateGraphOntologyEval#t1">
+        <StateGraphOntology:source rdf:resource="https://w3id.org/ibp/StateGraphOntologyEval#Init"/>
+        <StateGraphOntology:target rdf:resource="https://w3id.org/ibp/StateGraphOntologyEval#state1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntologyEval#t2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/StateGraphOntologyEval#t2">
+        <rdf:type rdf:resource="https://w3id.org/ibp/StateGraphOntology#Transition"/>
+        <StateGraphOntology:source rdf:resource="https://w3id.org/ibp/StateGraphOntologyEval#state1"/>
+        <StateGraphOntology:target rdf:resource="https://w3id.org/ibp/StateGraphOntologyEval#ret0"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntologyEval#t3 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/StateGraphOntologyEval#t3">
+        <StateGraphOntology:source rdf:resource="https://w3id.org/ibp/StateGraphOntologyEval#ret0"/>
+        <StateGraphOntology:target rdf:resource="https://w3id.org/ibp/StateGraphOntologyEval#Init"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntologyEval#y -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/StateGraphOntologyEval#y">
+        <rdf:type rdf:resource="https://w3id.org/ibp/CTRLont#Output"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+

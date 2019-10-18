@@ -1,0 +1,285 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/ibp/TwoPointDiscreteOntology#"
+     xml:base="https://w3id.org/ibp/TwoPointDiscreteOntology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/ibp/TwoPointDiscreteOntology">
+        <owl:versionIRI rdf:resource="https://w3id.org/ibp/TwoPointDiscreteOntology-0.0.1"/>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-2033-859X"/>
+        <terms:creator rdf:resource="https://www.researchgate.net/profile/Georg_Schneider3"/>
+        <terms:creator>Georg Ferdinand Schneider</terms:creator>
+        <terms:description xml:lang="en">The ontology and its use are described in [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].
+
+[1] Schneider, G.F. (2018): &quot;Semantic Model for Control Logic in Automation Systems Knowledge-Based Support of the Engineering and Operation of Control Logic in Building and Industrial Automation Systems&quot; PhD thesis, Karlsruhe Institute of Technology, Faculty of Mechanical Engineering, Karlsruhe, Germany.
+
+[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003.</terms:description>
+        <terms:identifier>https://w3id.org/ibp/TwoPointDiscreteOntology#</terms:identifier>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-06</terms:issued>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0"/>
+        <terms:rights xml:lang="en">Copyright (c) 2018, Fraunhofer Institute for Building Physics,
+			Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution 
+			Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0</terms:rights>
+        <terms:title xml:lang="en">TwoPointDiscreteOntology - An ontology to formally specify the non-linear discrete two-point control in automation systems.</terms:title>
+        <vann:preferredNamespacePrefix>dtp</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/ibp/TwoPointDiscreteOntology#"/>
+        <rdfs:comment xml:lang="en">TwoPointDiscreteOntology describes a typical type of control logic explicitly, which is a non-linear alternation between two values. The input is restricted to a Boolean value.</rdfs:comment>
+        <rdfs:label xml:lang="en">TwoPointDiscreteOntology</rdfs:label>
+        <owl:versionInfo xml:lang="en">v0.0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/ibp/CTRLont#logicInput -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/CTRLont#logicInput"/>
+    
+
+
+    <!-- https://w3id.org/ibp/CTRLont#logicOutput -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/CTRLont#logicOutput"/>
+    
+
+
+    <!-- https://w3id.org/ibp/CTRLont#logicParameter -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/CTRLont#logicParameter"/>
+    
+
+
+    <!-- https://w3id.org/ibp/TwoPointDiscreteOntology#contains -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/TwoPointDiscreteOntology#contains">
+        <rdfs:domain rdf:resource="https://w3id.org/ibp/TwoPointDiscreteOntology#TwoPointDiscrete"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/ibp/TwoPointDiscreteOntology#hasValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ibp/TwoPointDiscreteOntology#hasValue">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/vocommons/voaf#Vocabulary -->
+
+
+    <owl:Class rdf:about="http://purl.org/vocommons/voaf#Vocabulary"/>
+    
+
+
+    <!-- https://w3id.org/ibp/CTRLont#ApplicationLogic -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/CTRLont#ApplicationLogic"/>
+    
+
+
+    <!-- https://w3id.org/ibp/CTRLont#Input -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/CTRLont#Input"/>
+    
+
+
+    <!-- https://w3id.org/ibp/CTRLont#Output -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/CTRLont#Output"/>
+    
+
+
+    <!-- https://w3id.org/ibp/CTRLont#Parameter -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/CTRLont#Parameter"/>
+    
+
+
+    <!-- https://w3id.org/ibp/TwoPointDiscreteOntology#LowerOutput -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/TwoPointDiscreteOntology#LowerOutput">
+        <owl:disjointWith rdf:resource="https://w3id.org/ibp/TwoPointDiscreteOntology#UpperOutput"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ibp/TwoPointDiscreteOntology#TwoPointDiscrete -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/TwoPointDiscreteOntology#TwoPointDiscrete">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ibp/CTRLont#ApplicationLogic"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ibp/TwoPointDiscreteOntology#UpperOutput -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/TwoPointDiscreteOntology#UpperOutput"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+

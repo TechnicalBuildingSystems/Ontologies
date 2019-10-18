@@ -1,0 +1,15 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<https://w3id.org/ibp/ScheduleOntology-0.1.0> a prov:Entity;
+	 dc:title "ScheduleOntology - An ontology to formaly specify the schedules in automation systems.";
+	 prov:wasAttributedTo <https://orcid.org/0000-0002-2033-859X>;
+	 dc:creator <https://orcid.org/0000-0002-2033-859X>;
+	 prov:wasAttributedTo <https://www.researchgate.net/profile/Georg_Schneider3>;
+	 dc:creator <https://www.researchgate.net/profile/Georg_Schneider3>;
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasRevisionOf <https://w3id.org/ibp/ScheduleOntology-0.0.1>;
+	 prov:wasGeneratedAt "2017-08-21";
+.
+:agent0 a prov:Agent; foaf:name "Georg Ferdinand Schneider".

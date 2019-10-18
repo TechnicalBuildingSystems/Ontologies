@@ -1,0 +1,128 @@
+@prefix : <https://w3id.org/ibp/StateMachineOntologyEval#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/ibp/StateMachineOntologyEval> .
+
+<https://w3id.org/ibp/StateMachineOntologyEval> rdf:type owl:Ontology ;
+                                                 owl:imports <https://w3id.org/ibp/CTRLont> ,
+                                                             <https://w3id.org/ibp/StateMachineOntology> ;
+                                                 <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-2033-859X> ,
+                                                                                    <https://www.researchgate.net/profile/Georg_Schneider3> ,
+                                                                                    "Georg Ferdinand Schneider" ;
+                                                 <http://purl.org/dc/terms/description> """The ontology provides instances of the examples described in the PhD thesis of Georg Ferdinand Schneider [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].
+
+[1] Schneider, G.F. (2019): \"Semantic Model for Control Logic in Automation Systems - Knowledge-Based Support of the Engineering and Operation of Control Logic in Building and Industrial Automation Systems\" PhD thesis, Karlsruhe Institute of Technology, Karlsruhe, Germany.
+
+[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003."""@en ;
+                                                 <http://purl.org/dc/terms/identifier> "https://w3id.org/ibp/StateMachineOntologyEval#" ;
+                                                 <http://purl.org/dc/terms/issued> "2018-06-30"^^xsd:date ;
+                                                 <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/4.0> ;
+                                                 <http://purl.org/dc/terms/modified> "2019-03-07"^^xsd:date ;
+                                                 <http://purl.org/dc/terms/rights> "Copyright (c) 2019, Georg Ferdinand Schneider, Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"@en ;
+                                                 <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
+                                                 rdfs:comment "Ontology with instances of StateMachineOntologyEval."@en ;
+                                                 rdfs:label "StateMachineOntologyEval"@en ;
+                                                 owl:versionInfo "v0.1.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://w3id.org/ibp/StateMachineOntology#assignValue
+<https://w3id.org/ibp/StateMachineOntology#assignValue> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ibp/StateMachineOntology#hasLiteralValue
+<https://w3id.org/ibp/StateMachineOntology#hasLiteralValue> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/ibp/ExpressionOntology#Expression
+<https://w3id.org/ibp/ExpressionOntology#Expression> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/ibp/StateMachineOntologyEval#Init
+:Init rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/ibp/StateMachineOntologyEval#exp
+:exp rdf:type owl:NamedIndividual ,
+              <https://w3id.org/ibp/ExpressionOntology#Expression> .
+
+
+###  https://w3id.org/ibp/StateMachineOntologyEval#fin1
+:fin1 rdf:type owl:NamedIndividual ,
+               <https://w3id.org/ibp/StateMachineOntology#FinalState> .
+
+
+###  https://w3id.org/ibp/StateMachineOntologyEval#ini1
+:ini1 rdf:type owl:NamedIndividual ,
+               <https://w3id.org/ibp/StateMachineOntology#InitialState> .
+
+
+###  https://w3id.org/ibp/StateMachineOntologyEval#s1-AVal
+:s1-AVal rdf:type owl:NamedIndividual ;
+         <https://w3id.org/ibp/StateMachineOntology#hasLiteralValue> "2.0"^^xsd:double .
+
+
+###  https://w3id.org/ibp/StateMachineOntologyEval#s1-Act
+:s1-Act rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/ibp/StateMachineOntology#Action> ;
+        <https://w3id.org/ibp/CTRLont#logicOutput> :y ;
+        <https://w3id.org/ibp/StateMachineOntology#assignValue> :s1-AVal .
+
+
+###  https://w3id.org/ibp/StateMachineOntologyEval#state1
+:state1 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/ibp/StateMachineOntology#SimpleState> ;
+        <https://w3id.org/ibp/StateMachineOntology#do> :s1-Act .
+
+
+###  https://w3id.org/ibp/StateMachineOntologyEval#t1
+:t1 rdf:type owl:NamedIndividual ;
+    <https://w3id.org/ibp/StateMachineOntology#source> :ini1 ;
+    <https://w3id.org/ibp/StateMachineOntology#target> :Init .
+
+
+###  https://w3id.org/ibp/StateMachineOntologyEval#t2
+:t2 rdf:type owl:NamedIndividual ,
+             <https://w3id.org/ibp/StateMachineOntology#Transition> ;
+    <https://w3id.org/ibp/StateMachineOntology#source> :Init ;
+    <https://w3id.org/ibp/StateMachineOntology#target> :state1 ;
+    <https://w3id.org/ibp/StateMachineOntology#transitionGuard> :t2-Gua .
+
+
+###  https://w3id.org/ibp/StateMachineOntologyEval#t2-Gua
+:t2-Gua rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/ibp/StateMachineOntology#Guard> ;
+        <https://w3id.org/ibp/StateMachineOntology#guardCondition> :t2-GuaE .
+
+
+###  https://w3id.org/ibp/StateMachineOntologyEval#t2-GuaE
+:t2-GuaE rdf:type owl:NamedIndividual ,
+                  <https://w3id.org/ibp/StateMachineOntology#Condition> ;
+         <https://w3id.org/ibp/StateMachineOntology#conditionExpr> :exp .
+
+
+###  https://w3id.org/ibp/StateMachineOntologyEval#t3
+:t3 rdf:type owl:NamedIndividual ;
+    <https://w3id.org/ibp/StateMachineOntology#source> :state1 ;
+    <https://w3id.org/ibp/StateMachineOntology#target> :fin1 .
+
+
+###  https://w3id.org/ibp/StateMachineOntologyEval#y
+:y rdf:type owl:NamedIndividual ,
+            <https://w3id.org/ibp/CTRLont#Output> .
+
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

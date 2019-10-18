@@ -1,0 +1,352 @@
+<https://w3id.org/ibp/StateMachineOntology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/ibp/StateMachineOntology> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/ibp/StateMachineOntology-1.0.0> .
+<https://w3id.org/ibp/StateMachineOntology> <http://purl.org/dc/terms/creator> <https://www.researchgate.net/profile/Georg_Schneider3> .
+<https://w3id.org/ibp/StateMachineOntology> <http://purl.org/dc/terms/creator> "Georg Ferdinand Schneider" .
+<https://w3id.org/ibp/StateMachineOntology> <http://purl.org/dc/terms/description> "The original version of the ontology and its use are described in [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2]. An improved version is described in [3].\n\n[1] Schneider, G.F., Pauwels, P. and Steiger, S. (2017): \"Ontology-based Modelling of Control Logic in Building Automation Systems\" in IEEE Transactions on Industrial Informatics, vol. 13, no. 6, pp. 3350-3360, DOI: 10.1109/TII.2017.2743221.\n\n[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003.\n\n[3] G. F. Schneider, H. Wicaksono, and J. Ovtcharova. Virtual Engineering of Cyber-Physical Automation Systems: The Case of Control Logic. Advanced Engineering Informatics, February 2018. Submitted."@en .
+<https://w3id.org/ibp/StateMachineOntology> <http://purl.org/dc/terms/identifier> "https://w3id.org/ibp/StateMachineOntology#" .
+<https://w3id.org/ibp/StateMachineOntology> <http://purl.org/dc/terms/issued> "2016-11-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/ibp/StateMachineOntology> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/4.0> .
+<https://w3id.org/ibp/StateMachineOntology> <http://purl.org/dc/terms/modified> "2017-08-21"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/ibp/StateMachineOntology> <http://purl.org/dc/terms/rights> "Copyright (c) 2017, Fraunhofer Institute for Building Physics,\n\t\t\tNuremberg, Germany. This ontology is distributed under a Creative Commons Attribution \n\t\t\tShare Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"@en .
+<https://w3id.org/ibp/StateMachineOntology> <http://purl.org/dc/terms/title> "StateMachineOntology - An ontology to formally specify UML state machines."@en .
+<https://w3id.org/ibp/StateMachineOntology> <http://purl.org/vocab/vann/preferredNamespacePrefix> "sm" .
+<https://w3id.org/ibp/StateMachineOntology> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/ibp/StateMachineOntology#> .
+<https://w3id.org/ibp/StateMachineOntology> <http://www.w3.org/2000/01/rdf-schema#comment> "StateMachineOntology specifies concepts and relationships to describe state machines as defined in the Unified Modelling Language (UML)."@en .
+<https://w3id.org/ibp/StateMachineOntology> <http://www.w3.org/2000/01/rdf-schema#label> "State Machine Ontology"@en .
+<https://w3id.org/ibp/StateMachineOntology> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://www.learninglab.de/~dolog/fsm/fsm.owl#" .
+<https://w3id.org/ibp/StateMachineOntology> <http://www.w3.org/2002/07/owl#priorVersion> "https://w3id.org/ibp/StateMachineOntology-0.0.1"@en .
+<https://w3id.org/ibp/StateMachineOntology> <http://www.w3.org/2002/07/owl#versionInfo> "v1.0.0"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#comment
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#label
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#seeAlso
+<http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/ibp/StateMachineOntology#actionBehaviour
+<https://w3id.org/ibp/StateMachineOntology#actionBehaviour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/StateMachineOntology#actionBehaviour> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/StateMachineOntology#Action> .
+<https://w3id.org/ibp/StateMachineOntology#actionBehaviour> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/StateMachineOntology#Behaviour> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#conditionExpr
+<https://w3id.org/ibp/StateMachineOntology#conditionExpr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/StateMachineOntology#conditionExpr> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/StateMachineOntology#Condition> .
+<https://w3id.org/ibp/StateMachineOntology#conditionExpr> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/ExpressionOntology#Expression> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#contains
+<https://w3id.org/ibp/StateMachineOntology#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/StateMachineOntology#contains> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/StateMachineOntology#StateMachineElement> .
+<https://w3id.org/ibp/StateMachineOntology#contains> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/StateMachineOntology#StateMachineElement> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#do
+<https://w3id.org/ibp/StateMachineOntology#do> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/StateMachineOntology#do> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/StateMachineOntology#State> .
+<https://w3id.org/ibp/StateMachineOntology#do> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/StateMachineOntology#Action> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#entry
+<https://w3id.org/ibp/StateMachineOntology#entry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/StateMachineOntology#entry> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/StateMachineOntology#State> .
+<https://w3id.org/ibp/StateMachineOntology#entry> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/StateMachineOntology#Action> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#exit
+<https://w3id.org/ibp/StateMachineOntology#exit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/StateMachineOntology#exit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/StateMachineOntology#State> .
+<https://w3id.org/ibp/StateMachineOntology#exit> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/StateMachineOntology#Action> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#guardCondition
+<https://w3id.org/ibp/StateMachineOntology#guardCondition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/StateMachineOntology#guardCondition> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/StateMachineOntology#Guard> .
+<https://w3id.org/ibp/StateMachineOntology#guardCondition> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/StateMachineOntology#Condition> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#internal
+<https://w3id.org/ibp/StateMachineOntology#internal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/StateMachineOntology#internal> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/StateMachineOntology#State> .
+<https://w3id.org/ibp/StateMachineOntology#internal> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/StateMachineOntology#Transition> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#source
+<https://w3id.org/ibp/StateMachineOntology#source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/StateMachineOntology#source> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/StateMachineOntology#Transition> .
+<https://w3id.org/ibp/StateMachineOntology#source> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/StateMachineOntology#State> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#target
+<https://w3id.org/ibp/StateMachineOntology#target> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/StateMachineOntology#target> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/StateMachineOntology#Transition> .
+<https://w3id.org/ibp/StateMachineOntology#target> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/StateMachineOntology#State> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#transitionAction
+<https://w3id.org/ibp/StateMachineOntology#transitionAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/StateMachineOntology#transitionAction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/StateMachineOntology#Transition> .
+<https://w3id.org/ibp/StateMachineOntology#transitionAction> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/StateMachineOntology#Action> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#transitionEvent
+<https://w3id.org/ibp/StateMachineOntology#transitionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/StateMachineOntology#transitionEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/StateMachineOntology#Transition> .
+<https://w3id.org/ibp/StateMachineOntology#transitionEvent> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/StateMachineOntology#Event> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#transitionGuard
+<https://w3id.org/ibp/StateMachineOntology#transitionGuard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ibp/StateMachineOntology#transitionGuard> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/StateMachineOntology#Transition> .
+<https://w3id.org/ibp/StateMachineOntology#transitionGuard> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ibp/StateMachineOntology#Guard> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/ibp/StateMachineOntology#assignSimpleValue
+<https://w3id.org/ibp/StateMachineOntology#assignSimpleValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/ibp/StateMachineOntology#assignSimpleValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/StateMachineOntology#Action> .
+<https://w3id.org/ibp/StateMachineOntology#assignSimpleValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#count
+<https://w3id.org/ibp/StateMachineOntology#count> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/ibp/StateMachineOntology#count> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/ibp/StateMachineOntology#count> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ibp/StateMachineOntology#SynchState> .
+<https://w3id.org/ibp/StateMachineOntology#count> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/ExpressionOntology#Expression
+<https://w3id.org/ibp/ExpressionOntology#Expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#Action
+<https://w3id.org/ibp/StateMachineOntology#Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/StateMachineOntology#Action> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/StateMachineOntology#StateMachineElement> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#After
+<https://w3id.org/ibp/StateMachineOntology#After> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/StateMachineOntology#After> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/StateMachineOntology#Event> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#Behaviour
+<https://w3id.org/ibp/StateMachineOntology#Behaviour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/StateMachineOntology#Behaviour> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/StateMachineOntology#StateMachineElement> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#Branch
+<https://w3id.org/ibp/StateMachineOntology#Branch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/StateMachineOntology#Branch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/StateMachineOntology#PseudoState> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#Completion
+<https://w3id.org/ibp/StateMachineOntology#Completion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/StateMachineOntology#Completion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/StateMachineOntology#Event> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#Composite
+<https://w3id.org/ibp/StateMachineOntology#Composite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/StateMachineOntology#Composite> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/StateMachineOntology#State> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#Condition
+<https://w3id.org/ibp/StateMachineOntology#Condition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/StateMachineOntology#Condition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/StateMachineOntology#StateMachineElement> .
+<https://w3id.org/ibp/StateMachineOntology#Condition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/StateMachineOntology#conditionExpr> .
+_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/ibp/ExpressionOntology#Expression> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#Deep
+<https://w3id.org/ibp/StateMachineOntology#Deep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/StateMachineOntology#Deep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/StateMachineOntology#History> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#Event
+<https://w3id.org/ibp/StateMachineOntology#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/StateMachineOntology#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/StateMachineOntology#StateMachineElement> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#FinalState
+<https://w3id.org/ibp/StateMachineOntology#FinalState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/StateMachineOntology#FinalState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/StateMachineOntology#State> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#Fork
+<https://w3id.org/ibp/StateMachineOntology#Fork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/StateMachineOntology#Fork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/StateMachineOntology#PseudoState> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#Guard
+<https://w3id.org/ibp/StateMachineOntology#Guard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/StateMachineOntology#Guard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/StateMachineOntology#StateMachineElement> .
+<https://w3id.org/ibp/StateMachineOntology#Guard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/StateMachineOntology#guardCondition> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/ibp/StateMachineOntology#Condition> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#History
+<https://w3id.org/ibp/StateMachineOntology#History> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/StateMachineOntology#History> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/StateMachineOntology#PseudoState> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#InitialState
+<https://w3id.org/ibp/StateMachineOntology#InitialState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/StateMachineOntology#InitialState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/StateMachineOntology#PseudoState> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#Join
+<https://w3id.org/ibp/StateMachineOntology#Join> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/StateMachineOntology#Join> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/StateMachineOntology#PseudoState> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#Junction
+<https://w3id.org/ibp/StateMachineOntology#Junction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/StateMachineOntology#Junction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/StateMachineOntology#PseudoState> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#PseudoState
+<https://w3id.org/ibp/StateMachineOntology#PseudoState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/StateMachineOntology#PseudoState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/StateMachineOntology#State> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#Region
+<https://w3id.org/ibp/StateMachineOntology#Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/StateMachineOntology#Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/StateMachineOntology#Composite> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#Shallow
+<https://w3id.org/ibp/StateMachineOntology#Shallow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/StateMachineOntology#Shallow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/StateMachineOntology#History> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#SimpleState
+<https://w3id.org/ibp/StateMachineOntology#SimpleState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/StateMachineOntology#SimpleState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/StateMachineOntology#State> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#State
+<https://w3id.org/ibp/StateMachineOntology#State> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/StateMachineOntology#State> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/StateMachineOntology#StateMachineElement> .
+<https://w3id.org/ibp/StateMachineOntology#State> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/StateMachineOntology#do> .
+_:genid3 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/ibp/StateMachineOntology#Action> .
+<https://w3id.org/ibp/StateMachineOntology#State> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/StateMachineOntology#entry> .
+_:genid4 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/ibp/StateMachineOntology#Action> .
+<https://w3id.org/ibp/StateMachineOntology#State> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/StateMachineOntology#exit> .
+_:genid5 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/ibp/StateMachineOntology#Action> .
+<https://w3id.org/ibp/StateMachineOntology#State> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/StateMachineOntology#internal> .
+_:genid6 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/ibp/StateMachineOntology#Transition> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#StateMachine
+<https://w3id.org/ibp/StateMachineOntology#StateMachine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/StateMachineOntology#StateMachine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/StateMachineOntology#StateMachineElement> .
+<https://w3id.org/ibp/StateMachineOntology#StateMachine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/StateMachineOntology#contains> .
+_:genid7 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/ibp/StateMachineOntology#StateMachineElement> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#StateMachineElement
+<https://w3id.org/ibp/StateMachineOntology#StateMachineElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#SynchState
+<https://w3id.org/ibp/StateMachineOntology#SynchState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/StateMachineOntology#SynchState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/StateMachineOntology#State> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#Transition
+<https://w3id.org/ibp/StateMachineOntology#Transition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/StateMachineOntology#Transition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/StateMachineOntology#StateMachineElement> .
+<https://w3id.org/ibp/StateMachineOntology#Transition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/StateMachineOntology#transitionEvent> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/ibp/StateMachineOntology#Event> .
+<https://w3id.org/ibp/StateMachineOntology#Transition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/StateMachineOntology#transitionEvent> .
+_:genid9 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/ibp/StateMachineOntology#Event> .
+<https://w3id.org/ibp/StateMachineOntology#Transition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/StateMachineOntology#source> .
+_:genid10 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid10 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/ibp/StateMachineOntology#State> .
+<https://w3id.org/ibp/StateMachineOntology#Transition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/StateMachineOntology#target> .
+_:genid11 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid11 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/ibp/StateMachineOntology#State> .
+<https://w3id.org/ibp/StateMachineOntology#Transition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ibp/StateMachineOntology#transitionGuard> .
+_:genid12 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid12 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/ibp/StateMachineOntology#Guard> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#When
+<https://w3id.org/ibp/StateMachineOntology#When> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ibp/StateMachineOntology#When> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ibp/StateMachineOntology#Event> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/ibp/StateMachineOntology
+<https://w3id.org/ibp/StateMachineOntology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/StateMachineOntology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocommons/voaf#Vocabulary> .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

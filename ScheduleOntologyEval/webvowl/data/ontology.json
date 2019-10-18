@@ -1,0 +1,1234 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.4), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.org/vocommons/voaf", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/ibp/ScheduleOntology", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/ibp/CTRLont" ],
+    "iri" : "https://w3id.org/ibp/ScheduleOntologyEval",
+    "version" : "v0.1.0",
+    "author" : [ "Georg Ferdinand Schneider", "https://www.researchgate.net/profile/Georg_Schneider3", "https://orcid.org/0000-0002-2033-859X" ],
+    "description" : {
+      "en" : "The ontology provides instances of the examples described in the PhD thesis of Georg Ferdinand Schneider [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].\r\n\r\n[1] Schneider, G.F. (2019): \"Semantic Model for Control Logic in Automation Systems - Knowledge-Based Support of the Engineering and Operation of Control Logic in Building and Industrial Automation Systems\" PhD thesis, Karlsruhe Institute of Technology, Karlsruhe, Germany.\r\n\r\n[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003."
+    },
+    "labels" : {
+      "en" : "ScheduleOntologyEval"
+    },
+    "comments" : {
+      "en" : "Ontology with instances of ScheduleOntologyEval."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by-sa/4.0",
+        "type" : "iri"
+      } ],
+      "identifier" : [ {
+        "identifier" : "identifier",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ibp/ScheduleOntologyEval#",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://orcid.org/0000-0002-2033-859X",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://www.researchgate.net/profile/Georg_Schneider3",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Georg Ferdinand Schneider",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "en",
+        "value" : "Copyright (c) 2019, Georg Ferdinand Schneider, Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-03-07",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "v0.1.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ibp/ScheduleOntologyEval#",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2018-06-30",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 5,
+    "objectPropertyCount" : 7,
+    "datatypePropertyCount" : 1,
+    "individualCount" : 7
+  },
+  "class" : [ {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "37",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "38",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "4",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/ibp/CTRLont#Parameter",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Parameter",
+      "en" : "Parameter"
+    },
+    "comment" : {
+      "en" : "Parameter describe time-invariant values and settings of the respective control actor. Thus thay can be added dependent on the respective application logic."
+    },
+    "attributes" : [ "external" ],
+    "id" : "11",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#Unit",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Unit",
+      "en" : "Unit"
+    },
+    "comment" : {
+      "en" : "Placeholder concept to stipulate reuse of existing ontologies such as Ontology for Units and Measures (OM) or QUDT."
+    },
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#AnnotatedElement",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AnnotatedElement",
+      "en" : "Annotated Element"
+    },
+    "subClasses" : [ "10", "9", "11" ],
+    "comment" : {
+      "en" : "An annotated element is a generic superclass for ctrl:Input, ctrl:Output and ctrl:Parameter"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#PolynomialConstant",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PolynomialConstant"
+    },
+    "attributes" : [ "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#Interval",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Interval"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/ScheduleOntologyEval#sched_Interval3",
+      "baseIri" : "https://w3id.org/ibp/ScheduleOntologyEval",
+      "labels" : {
+        "IRI-based" : "sched_Interval3"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/ScheduleOntologyEval#sched_Interval2",
+      "baseIri" : "https://w3id.org/ibp/ScheduleOntologyEval",
+      "labels" : {
+        "IRI-based" : "sched_Interval2"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/ScheduleOntologyEval#sched_Interval1",
+      "baseIri" : "https://w3id.org/ibp/ScheduleOntologyEval",
+      "labels" : {
+        "IRI-based" : "sched_Interval1"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#Schedule",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Schedule"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/ScheduleOntologyEval#R2_logic",
+      "baseIri" : "https://w3id.org/ibp/ScheduleOntologyEval",
+      "annotations" : {
+        "logicInpur" : [ {
+          "identifier" : "logicInpur",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/ScheduleOntologyEval#time",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "R2_logic"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "22",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "24",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#DataType",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://www.w3.org/TR/xmlschema-2/#built-in-datatypes",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DataType",
+      "en" : "Data type"
+    },
+    "comment" : {
+      "en" : "Placeholder class for the specification of basic data types such as, e.g. integer, boolean or double."
+    },
+    "attributes" : [ "external" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#MathematicalFunction",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MathematicalFunction"
+    },
+    "attributes" : [ "external" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#Medium",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://www.productontology.org/id/",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://wiki.dbpedia.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Medium",
+      "en" : "Medium"
+    },
+    "comment" : {
+      "en" : "Placeholder concept to stipulate reuse of existing ontologies such as dbpedia or  \thttp://www.productontology.org/id/"
+    },
+    "attributes" : [ "external" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#Output",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Output",
+      "en" : "Output"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/ScheduleOntologyEval#YSce",
+      "baseIri" : "https://w3id.org/ibp/ScheduleOntologyEval",
+      "labels" : {
+        "IRI-based" : "YSce"
+      }
+    } ],
+    "comment" : {
+      "en" : "An output allows compute results by the application logic of an control actor to be fowarded to outside entities such as actuators or other control actors."
+    },
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#Point",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Point"
+    },
+    "subClasses" : [ "20", "16" ],
+    "attributes" : [ "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#SemanticType",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SemanticType",
+      "en" : "Semantic Type"
+    },
+    "comment" : {
+      "en" : "It may be required to further annotate an Input, Output or Parameter with a specific Semantic Type. For example in building automation to differ between room air temperature or outdoor air temperature."
+    },
+    "attributes" : [ "external" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "6",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "37",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "38",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "4",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://purl.org/vocommons/voaf#Vocabulary",
+    "baseIri" : "http://purl.org/vocommons/voaf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Vocabulary"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/CTRLont",
+      "baseIri" : "https://w3id.org/ibp",
+      "labels" : {
+        "IRI-based" : "CTRLont"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/ScheduleOntology",
+      "baseIri" : "https://w3id.org/ibp",
+      "labels" : {
+        "IRI-based" : "ScheduleOntology"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#ApplicationLogic",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ApplicationLogic",
+      "en" : "Application Logic"
+    },
+    "subClasses" : [ "22" ],
+    "comment" : {
+      "en" : "Concept to specify the application logic of a control actor. Seperate ontologies may be used to further specify this concept."
+    },
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#StartPoint",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StartPoint"
+    },
+    "attributes" : [ "external" ],
+    "id" : "16",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#ControlActor",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ControlActor",
+      "en" : "Control Actor"
+    },
+    "comment" : {
+      "en" : "Concept to describe the in general accepted Sense-Process-Actuate\npattern in automation systems, e.g. function blocks from IEC 61499."
+    },
+    "attributes" : [ "external" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#EndPoint",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EndPoint"
+    },
+    "attributes" : [ "external" ],
+    "id" : "20",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#Input",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Input",
+      "en" : "Input"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/ScheduleOntologyEval#time",
+      "baseIri" : "https://w3id.org/ibp/ScheduleOntologyEval",
+      "labels" : {
+        "IRI-based" : "time"
+      }
+    } ],
+    "comment" : {
+      "en" : "An input allow flows of information to enter a control actor. Inputs are processed by the respective application logic of the control actor to compute the outputs."
+    },
+    "attributes" : [ "external" ],
+    "id" : "10",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#Coordinate",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Coordinate"
+    },
+    "attributes" : [ "external" ],
+    "id" : "67"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#Periodicity",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Periodicity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "70"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#Quantity",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://qudt.org/schema/qudt",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Quantity",
+      "en" : "Quantity"
+    },
+    "comment" : {
+      "en" : "Placeholder concept to stipulate reuse of existing ontologies such as Ontology for Units and Measures (OM) or QUDT."
+    },
+    "attributes" : [ "external" ],
+    "id" : "2"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "44",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "45",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "46",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "51",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "52",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "55",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "56",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "57",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "58",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "62",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasQuantity",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasQuantity",
+      "en" : "hasQuantity"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Object property to annotate an input, output or parameter with its quantity."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#hasStartPoint",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasStartPoint"
+    },
+    "domain" : "4",
+    "attributes" : [ "object", "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasApplicationLogic",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasApplicationLogic",
+      "en" : "hasApplicationLogic"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its specific application logic"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#isConnectedTo",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "isConnectedTo",
+      "en" : "isConnectedTo"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Object property to describe the topological relationship between an input of one control actor and the output of another."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#isConsecutiveInterval",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "isConsecutiveInterval"
+    },
+    "domain" : "4",
+    "attributes" : [ "object", "external" ],
+    "id" : "12"
+  }, {
+    "range" : "17",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "15"
+  }, {
+    "range" : "17",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "19"
+  }, {
+    "range" : "7",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
+  }, {
+    "range" : "1",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#hasPeriodicity",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasPeriodicity"
+    },
+    "domain" : "4",
+    "attributes" : [ "object", "external" ],
+    "id" : "25"
+  }, {
+    "range" : "1",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  }, {
+    "range" : "1",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasSemanticType",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "hasSemanticType",
+      "en" : "hasSemanticType"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Object property to relate an input, output or parameter with its semantic type."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "28"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#hasYCoordinate",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasYCoordinate"
+    },
+    "domain" : "4",
+    "attributes" : [ "object", "external" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasOutput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasOutput",
+      "en" : "hasOutput"
+    },
+    "domain" : "34",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its outputs."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#hasEndPoint",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasEndPoint"
+    },
+    "domain" : "4",
+    "attributes" : [ "object", "external" ],
+    "id" : "36"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasApplicationLogic",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasApplicationLogic",
+      "en" : "hasApplicationLogic"
+    },
+    "domain" : "34",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its specific application logic"
+    },
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "42"
+  }, {
+    "range" : "11",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "44"
+  }, {
+    "range" : "11",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "45"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#polyConstantDegree",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "polyConstantDegree"
+    },
+    "domain" : "14",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#hasXCoordinate",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasXCoordinate"
+    },
+    "domain" : "4",
+    "attributes" : [ "object", "external" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasDataType",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "hasDataType",
+      "en" : "hasDataType"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Object property to annotate a input, output or parameter with its data type."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "48"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#hasPolynomicalConstant",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasPolynomicalConstant"
+    },
+    "domain" : "4",
+    "attributes" : [ "object", "external" ],
+    "id" : "49"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasQuantity",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasQuantity",
+      "en" : "hasQuantity"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Object property to annotate an input, output or parameter with its quantity."
+    },
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasSemanticType",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "hasSemanticType",
+      "en" : "hasSemanticType"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Object property to relate an input, output or parameter with its semantic type."
+    },
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "51"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasUnit",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "hasUnit",
+      "en" : "hasUnit"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Object property to relate an input, output or parameter with its unit."
+    },
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "52"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#logicOutput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "logicOutput",
+      "en" : "logicOutput"
+    },
+    "domain" : "37",
+    "comment" : {
+      "en" : "Object property to express the relationship of some application logic concept to an output."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "53"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasOutput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasOutput",
+      "en" : "hasOutput"
+    },
+    "domain" : "34",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its outputs."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "54"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasApplicationLogic",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasApplicationLogic",
+      "en" : "hasApplicationLogic"
+    },
+    "domain" : "34",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its specific application logic"
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "55"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasOutput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasOutput",
+      "en" : "hasOutput"
+    },
+    "domain" : "34",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its outputs."
+    },
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "56"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasInput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasInput",
+      "en" : "hasInput"
+    },
+    "domain" : "34",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its inputs."
+    },
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "57"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasParameter",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasParameter",
+      "en" : "hasParameter"
+    },
+    "domain" : "34",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its parameter."
+    },
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#isSupervisedBy",
+    "inverse" : "60",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "isSupervisedBy",
+      "en" : "isSupervisedBy"
+    },
+    "domain" : "34",
+    "comment" : {
+      "en" : "Object property to describe hierarchical composition of control actors."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "59"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasDataType",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "hasDataType",
+      "en" : "hasDataType"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Object property to annotate a input, output or parameter with its data type."
+    },
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "61"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasMedium",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "hasMedium",
+      "en" : "hasMedium"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Object property to annotate an input, output or parameter with its medium."
+    },
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "62"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasUnit",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "hasUnit",
+      "en" : "hasUnit"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Object property to relate an input, output or parameter with its unit."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "63"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#supervises",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "supervises",
+      "en" : "supervises"
+    },
+    "domain" : "34",
+    "comment" : {
+      "en" : "Object property to describe if one control actor supervises another."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "60"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasParameter",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasParameter",
+      "en" : "hasParameter"
+    },
+    "domain" : "34",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its parameter."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "64"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#polyConstantLiteralValue",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "polyConstantLiteralValue"
+    },
+    "domain" : "14",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "65"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasInput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasInput",
+      "en" : "hasInput"
+    },
+    "domain" : "34",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its inputs."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#hasLiteralValue",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hasLiteralValue"
+    },
+    "domain" : "67",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "68"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#hasMathematicalFunction",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasMathematicalFunction"
+    },
+    "domain" : "4",
+    "attributes" : [ "object", "external" ],
+    "id" : "69"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasMedium",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "hasMedium",
+      "en" : "hasMedium"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Object property to annotate an input, output or parameter with its medium."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "71"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#logicInput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "logicInput",
+      "en" : "logicInput"
+    },
+    "domain" : "38",
+    "comment" : {
+      "en" : "Object property to express the relationship of some application logic concept to an input."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "72"
+  }, {
+    "iri" : "https://w3id.org/ibp/ScheduleOntology#hasInterval",
+    "baseIri" : "https://w3id.org/ibp/ScheduleOntology",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasInterval"
+    },
+    "domain" : "4",
+    "attributes" : [ "object", "external" ],
+    "id" : "73"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#logicParameter",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "logicParameter",
+      "en" : "logicParameter"
+    },
+    "domain" : "24",
+    "comment" : {
+      "en" : "Object property to express the relationship of some application logic concept to an parameter."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "74"
+  } ]
+}

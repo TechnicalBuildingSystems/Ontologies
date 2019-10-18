@@ -1,0 +1,335 @@
+@prefix : <https://w3id.org/ibp/InstancesPlantData#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/ibp/InstancesPlantData> .
+
+<https://w3id.org/ibp/InstancesPlantData> rdf:type owl:Ontology ;
+                                           <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-2033-859X> ,
+                                                                              <https://www.researchgate.net/profile/Georg_Schneider3> ,
+                                                                              "Georg Ferdinand Schneider" ;
+                                           <http://purl.org/dc/terms/description> """The ontology provides instances of the examples described in the PhD thesis of Georg Ferdinand Schneider [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].
+
+[1] Schneider, G.F. (2019): \"Semantic Model for Control Logic in Automation Systems - Knowledge-Based Support of the Engineering and Operation of Control Logic in Building and Industrial Automation Systems\" PhD thesis, Karlsruhe Institute of Technology, Karlsruhe, Germany.
+
+[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003."""@en ;
+                                           <http://purl.org/dc/terms/identifier> "https://w3id.org/ibp/InstancesPlantData#" ;
+                                           <http://purl.org/dc/terms/issued> "2018-06-30"^^xsd:date ;
+                                           <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/4.0> ;
+                                           <http://purl.org/dc/terms/modified> "2019-03-07"^^xsd:date ;
+                                           <http://purl.org/dc/terms/rights> "Copyright (c) 2019, Georg Ferdinand Schneider, Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"@en ;
+                                           <http://purl.org/dc/terms/title> "Ontology InstancesPlantData."@en ;
+                                           <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
+                                           rdfs:comment "Ontology with instances of InstancesPlantData."@en ;
+                                           rdfs:label "InstancesPlantData"@en ;
+                                           owl:versionInfo "v0.1.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement
+<file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> rdf:type owl:AnnotationProperty .
+
+
+###  file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf
+<file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> rdf:type owl:AnnotationProperty .
+
+
+###  http://numerateweb.org/vocab/math#name
+<http://numerateweb.org/vocab/math#name> rdf:type owl:AnnotationProperty .
+
+
+###  http://numerateweb.org/vocab/math#operator
+<http://numerateweb.org/vocab/math#operator> rdf:type owl:AnnotationProperty .
+
+
+###  http://numerateweb.org/vocab/math#value
+<http://numerateweb.org/vocab/math#value> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/maxValue
+<http://schema.org/maxValue> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/minValue
+<http://schema.org/minValue> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/unitCode
+<http://schema.org/unitCode> rdf:type owl:AnnotationProperty .
+
+
+###  http://w3id.org/ibp/CTRLont#hasDataType
+<http://w3id.org/ibp/CTRLont#hasDataType> rdf:type owl:AnnotationProperty .
+
+
+###  http://w3id.org/ibp/CTRLont#logicInput
+<http://w3id.org/ibp/CTRLont#logicInput> rdf:type owl:AnnotationProperty .
+
+
+###  http://w3id.org/ibp/CTRLont#logicParameter
+<http://w3id.org/ibp/CTRLont#logicParameter> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/sosa/observes
+<http://www.w3.org/ns/sosa/observes> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/ssn/systems/hasOperatingRange
+<http://www.w3.org/ns/ssn/systems/hasOperatingRange> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/ssn/systems/hasSystemCapability
+<http://www.w3.org/ns/ssn/systems/hasSystemCapability> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/ssn/systems/hasSystemProperty
+<http://www.w3.org/ns/ssn/systems/hasSystemProperty> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/ssn/systems/inCondition
+<http://www.w3.org/ns/ssn/systems/inCondition> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/seas/connectionPointOf
+<https://w3id.org/seas/connectionPointOf> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/seas/connectsAt
+<https://w3id.org/seas/connectsAt> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/seas/connectsSystemsThrough
+<https://w3id.org/seas/connectsSystemsThrough> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  file:/C:/OntoCAPE/OntoCAPE/chemical_process_system/CPS_realization/process_control_equipment/measuring_instrument.owl#T-Sensor
+<file:/C:/OntoCAPE/OntoCAPE/chemical_process_system/CPS_realization/process_control_equipment/measuring_instrument.owl#T-Sensor> rdf:type owl:Class .
+
+
+###  file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement
+<file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement> rdf:type owl:Class .
+
+
+###  http://numerateweb.org/vocab/math#Literal
+<http://numerateweb.org/vocab/math#Literal> rdf:type owl:Class .
+
+
+###  http://numerateweb.org/vocab/math#Variable
+<http://numerateweb.org/vocab/math#Variable> rdf:type owl:Class .
+
+
+###  http://schema.org/PropertyValue
+<http://schema.org/PropertyValue> rdf:type owl:Class .
+
+
+###  http://w3id.org/ibp/CTRLont#Input
+<http://w3id.org/ibp/CTRLont#Input> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/sosa/ObservableProperty
+<http://www.w3.org/ns/sosa/ObservableProperty> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/sosa/Sensor
+<http://www.w3.org/ns/sosa/Sensor> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/ssn/System
+<http://www.w3.org/ns/ssn/System> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/ssn/systems/Condition
+<http://www.w3.org/ns/ssn/systems/Condition> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/ssn/systems/MeasurementRange
+<http://www.w3.org/ns/ssn/systems/MeasurementRange> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/ssn/systems/OperatingRange
+<http://www.w3.org/ns/ssn/systems/OperatingRange> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/ssn/systems/SystemCapability
+<http://www.w3.org/ns/ssn/systems/SystemCapability> rdf:type owl:Class .
+
+
+###  https://w3id.org/ibp/ExpressionOntology#Expression
+<https://w3id.org/ibp/ExpressionOntology#Expression> rdf:type owl:Class .
+
+
+###  https://w3id.org/ibp/ExpressionOntology#ExpressionElement
+<https://w3id.org/ibp/ExpressionOntology#ExpressionElement> rdf:type owl:Class .
+
+
+###  https://w3id.org/ibp/ExpressionOntology#Operand
+<https://w3id.org/ibp/ExpressionOntology#Operand> rdf:type owl:Class .
+
+
+###  https://w3id.org/ibp/ExpressionOntology#Operator
+<https://w3id.org/ibp/ExpressionOntology#Operator> rdf:type owl:Class .
+
+
+###  https://w3id.org/seas/CommunicationConnectionPoint
+<https://w3id.org/seas/CommunicationConnectionPoint> rdf:type owl:Class .
+
+
+###  https://w3id.org/seas/WireCommunicationConnection
+<https://w3id.org/seas/WireCommunicationConnection> rdf:type owl:Class .
+
+
+###  https://w3id.org/seas/WireCommunicationConnectionPoint
+<https://w3id.org/seas/WireCommunicationConnectionPoint> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/ibp/InstancesPlantData#B6-T
+:B6-T rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://w3id.org/ibp/InstancesPlantData#B6-T-Capa
+:B6-T-Capa rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/ns/ssn/systems/SystemCapability> ;
+           rdfs:comment "The measurement range of ABB SensyTemp TSP121. Tab 12.2 in technical data sheet option A6"@en ;
+           <http://www.w3.org/ns/ssn/systems/hasSystemProperty> _:genid1 .
+
+_:genid1 rdf:type <http://schema.org/PropertyValue> ,
+                   <http://www.w3.org/ns/ssn/systems/MeasurementRange> ;
+          <http://schema.org/maxValue> 120.0 ;
+          <http://schema.org/minValue> 0.0 ;
+          <http://schema.org/unitCode> <http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius> .
+
+
+###  https://w3id.org/ibp/InstancesPlantData#B6-T-OpRa
+:B6-T-OpRa rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/ns/ssn/systems/OperatingRange> ;
+           rdfs:comment "The conditions in which the B6 temperature sensor is allowed to operate. Table 3.1 in technical data sheet, option plastic."@en ;
+           <http://www.w3.org/ns/ssn/systems/inCondition> _:genid2 .
+
+_:genid2 rdf:type <http://schema.org/PropertyValue> ,
+                   <http://www.w3.org/ns/ssn/systems/Condition> ;
+          <http://schema.org/maxValue> 120.0 ;
+          <http://schema.org/minValue> -40.0 ;
+          <http://schema.org/unitCode> <http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius> .
+
+
+###  https://w3id.org/ibp/InstancesPlantData#B6-T-Sensor
+:B6-T-Sensor rdf:type owl:NamedIndividual ,
+                      <file:/C:/OntoCAPE/OntoCAPE/chemical_process_system/CPS_realization/process_control_equipment/measuring_instrument.owl#T-Sensor> ,
+                      <http://www.w3.org/ns/sosa/Sensor> ,
+                      <http://www.w3.org/ns/ssn/System> ;
+             rdfs:comment "Sensor in tank B6."@en ;
+             rdfs:seeAlso <http://bit.ly/2Eln615> ;
+             <http://www.w3.org/ns/sosa/observes> :B6-T ;
+             <http://www.w3.org/ns/ssn/systems/hasOperatingRange> :B6-T-OpRa ;
+             <http://www.w3.org/ns/ssn/systems/hasSystemCapability> :B6-T-Capa ;
+             <https://w3id.org/seas/connectsAt> :TIS602-CP .
+
+
+###  https://w3id.org/ibp/InstancesPlantData#TIS602-CP
+:TIS602-CP rdf:type owl:NamedIndividual ,
+                    <https://w3id.org/seas/WireCommunicationConnectionPoint> ;
+           <http://purl.org/dc/terms/identifier> "TIS602" ;
+           <https://w3id.org/seas/connectsSystemsThrough> :TIS602-Conn .
+
+
+###  https://w3id.org/ibp/InstancesPlantData#TIS602-Conn
+:TIS602-Conn rdf:type owl:NamedIndividual ,
+                      <https://w3id.org/seas/WireCommunicationConnection> .
+
+
+###  https://w3id.org/ibp/InstancesPlantData#ele0
+:ele0 rdf:type owl:NamedIndividual ,
+               <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement> ,
+               <http://numerateweb.org/vocab/math#Variable> ,
+               <https://w3id.org/ibp/ExpressionOntology#ExpressionElement> ,
+               <https://w3id.org/ibp/ExpressionOntology#Operand> ;
+      <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> :ele1 ;
+      <http://numerateweb.org/vocab/math#name> "TIS602" ;
+      <http://w3id.org/ibp/CTRLont#logicInput> :fB_StateMachine.TIS602 .
+
+
+###  https://w3id.org/ibp/InstancesPlantData#ele1
+:ele1 rdf:type owl:NamedIndividual ,
+               <https://w3id.org/ibp/ExpressionOntology#ExpressionElement> ,
+               <https://w3id.org/ibp/ExpressionOntology#Operator> ;
+      <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> :ele2 ;
+      <http://numerateweb.org/vocab/math#operator> <http://www.openmath.org/cd/relation1#leq> .
+
+
+###  https://w3id.org/ibp/InstancesPlantData#ele2
+:ele2 rdf:type owl:NamedIndividual ,
+               <http://numerateweb.org/vocab/math#Literal> ,
+               <https://w3id.org/ibp/ExpressionOntology#ExpressionElement> ,
+               <https://w3id.org/ibp/ExpressionOntology#Operand> ;
+      <http://numerateweb.org/vocab/math#value> 298.0 ;
+      <http://w3id.org/ibp/CTRLont#logicParameter> :ele2-Par .
+
+
+###  https://w3id.org/ibp/InstancesPlantData#fB_StateMachine.TIS602
+:fB_StateMachine.TIS602 rdf:type owl:NamedIndividual ,
+                                 <http://w3id.org/ibp/CTRLont#Input> ,
+                                 <https://w3id.org/seas/CommunicationConnectionPoint> ;
+                        <http://purl.org/dc/terms/identifier> "fB_StateMachine.TIS602" ;
+                        <http://w3id.org/ibp/CTRLont#hasDataType> <http://w3id.org/ibp/BasicDatatypeOntology#float> ;
+                        <https://w3id.org/seas/connectionPointOf> :fB_StateMachine ;
+                        <https://w3id.org/seas/connectsSystemsThrough> :TIS602-Conn .
+
+
+###  https://w3id.org/ibp/InstancesPlantData#test-Expr
+:test-Expr rdf:type owl:NamedIndividual ,
+                    <https://w3id.org/ibp/ExpressionOntology#Expression> ;
+           <file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> :ele0 ,
+                                                                               :ele1 ,
+                                                                               :ele2 .
+
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

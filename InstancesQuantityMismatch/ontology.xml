@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/ibp/InstancesQuantityMismatch#"
+     xml:base="https://w3id.org/ibp/InstancesQuantityMismatch"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:CTRLont="http://w3id.org/ibp/CTRLont#"
+     xmlns:linked_list="file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#">
+    <owl:Ontology rdf:about="https://w3id.org/ibp/InstancesQuantityMismatch">
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-2033-859X"/>
+        <terms:creator rdf:resource="https://www.researchgate.net/profile/Georg_Schneider3"/>
+        <terms:creator>Georg Ferdinand Schneider</terms:creator>
+        <terms:description xml:lang="en">The ontology provides instances of the examples described in the PhD thesis of Georg Ferdinand Schneider [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].
+
+[1] Schneider, G.F. (2019): &quot;Semantic Model for Control Logic in Automation Systems - Knowledge-Based Support of the Engineering and Operation of Control Logic in Building and Industrial Automation Systems&quot; PhD thesis, Karlsruhe Institute of Technology, Karlsruhe, Germany.
+
+[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003.</terms:description>
+        <terms:identifier>https://w3id.org/ibp/InstancesQuantityMismatch#</terms:identifier>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-06-30</terms:issued>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-03-07</terms:modified>
+        <terms:rights xml:lang="en">Copyright (c) 2019, Georg Ferdinand Schneider, Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0</terms:rights>
+        <terms:title xml:lang="en">Ontology InstancesQuantityMismatch.</terms:title>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/ibp/InstancesQuantityMismatch#"/>
+        <rdfs:comment xml:lang="en">Ontology with instances of InstancesQuantityMismatch.</rdfs:comment>
+        <rdfs:label xml:lang="en">InstancesQuantityMismatch</rdfs:label>
+        <owl:versionInfo>v0.1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement -->
+
+
+    <owl:AnnotationProperty rdf:about="file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://w3id.org/ibp/CTRLont#hasQuantity -->
+
+
+    <owl:AnnotationProperty rdf:about="http://w3id.org/ibp/CTRLont#hasQuantity"/>
+    
+
+
+    <!-- http://w3id.org/ibp/CTRLont#logicInput -->
+
+
+    <owl:AnnotationProperty rdf:about="http://w3id.org/ibp/CTRLont#logicInput"/>
+    
+
+
+    <!-- http://w3id.org/ibp/CTRLont#logicParameter -->
+
+
+    <owl:AnnotationProperty rdf:about="http://w3id.org/ibp/CTRLont#logicParameter"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesQuantityMismatch#Par1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesQuantityMismatch#Par1">
+        <CTRLont:hasQuantity rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/VolumeFraction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesQuantityMismatch#QI302 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesQuantityMismatch#QI302">
+        <CTRLont:hasQuantity rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/MassFraction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesQuantityMismatch#ele0 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesQuantityMismatch#ele0">
+        <linked_list:nextElement rdf:resource="https://w3id.org/ibp/InstancesQuantityMismatch#ele1"/>
+        <CTRLont:logicInput rdf:resource="https://w3id.org/ibp/InstancesQuantityMismatch#QI302"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesQuantityMismatch#ele1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesQuantityMismatch#ele1">
+        <linked_list:nextElement rdf:resource="https://w3id.org/ibp/InstancesQuantityMismatch#ele2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesQuantityMismatch#ele2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesQuantityMismatch#ele2">
+        <CTRLont:logicParameter rdf:resource="https://w3id.org/ibp/InstancesQuantityMismatch#Par1"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+

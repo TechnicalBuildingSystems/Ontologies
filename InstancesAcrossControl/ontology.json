@@ -1,0 +1,417 @@
+[ {
+  "@id" : "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://numerateweb.org/vocab/math#Literal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://numerateweb.org/vocab/math#Variable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://numerateweb.org/vocab/math#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://numerateweb.org/vocab/math#operator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://numerateweb.org/vocab/math#value",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/BasicDatatypeOntology#boolean",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://w3id.org/ibp/BasicDatatypeOntology#float",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://w3id.org/ibp/CTRLont#ApplicationLogic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/ibp/CTRLont#ControlActor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/ibp/CTRLont#Input",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/ibp/CTRLont#Output",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/ibp/CTRLont#Parameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/ibp/CTRLont#hasApplicationLogic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/CTRLont#hasDataType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/CTRLont#hasInput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/CTRLont#hasOuput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/CTRLont#hasOutput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/CTRLont#hasParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/CTRLont#isConnectedWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/CTRLont#logicInput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/CTRLont#logicOutput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/CTRLont#logicParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#Action",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#Behaviour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#SimpleState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#StateMachine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#Value",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#actionBehaviour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#assignValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#contains",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#do",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/StateMachineOntology#hasLiteralValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/ibp/TransferFunctionElementOntology#MISO",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/ibp/TransferFunctionElementOntology#hasExpression",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/ibp/ExpressionOntology#Expression",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/ibp/ExpressionOntology#ExpressionElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/ibp/ExpressionOntology#Operand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/ibp/ExpressionOntology#Operator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesAcrossControl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-2033-859X"
+  }, {
+    "@id" : "https://www.researchgate.net/profile/Georg_Schneider3"
+  }, {
+    "@value" : "Georg Ferdinand Schneider"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "The ontology provides instances of the examples described in the PhD thesis of Georg Ferdinand Schneider [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].\r\n\r\n[1] Schneider, G.F. (2019): \"Semantic Model for Control Logic in Automation Systems - Knowledge-Based Support of the Engineering and Operation of Control Logic in Building and Industrial Automation Systems\" PhD thesis, Karlsruhe Institute of Technology, Karlsruhe, Germany.\r\n\r\n[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003."
+  } ],
+  "http://purl.org/dc/terms/identifier" : [ {
+    "@value" : "https://w3id.org/ibp/InstancesAcrossControl#"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2018-02-07"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://creativecommons.org/licenses/by-sa/4.0"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2019-03-13"
+  } ],
+  "http://purl.org/dc/terms/rights" : [ {
+    "@language" : "en",
+    "@value" : "Copyright (c) 2019, Georg Ferdinand Schneider, Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Ontology InstancesAcrossControl."
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Ontology with instances of InstancesAcrossControl."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "InstancesAcrossControl"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "v0.1.0"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-CA",
+  "http://w3id.org/ibp/CTRLont#hasParameter" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-7-Par"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement", "http://numerateweb.org/vocab/math#Variable", "https://w3id.org/ibp/ExpressionOntology#ExpressionElement", "https://w3id.org/ibp/ExpressionOntology#Operand" ],
+  "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-1"
+  } ],
+  "http://numerateweb.org/vocab/math#name" : [ {
+    "@value" : "bPUM901"
+  } ],
+  "http://w3id.org/ibp/CTRLont#logicInput" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-bPUM901"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/ExpressionOntology#ExpressionElement", "https://w3id.org/ibp/ExpressionOntology#Operator" ],
+  "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-2"
+  } ],
+  "http://numerateweb.org/vocab/math#operator" : [ {
+    "@id" : "http://www.openmath.org/cd/relation1#eq"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://numerateweb.org/vocab/math#Literal", "https://w3id.org/ibp/ExpressionOntology#ExpressionElement", "https://w3id.org/ibp/ExpressionOntology#Operand" ],
+  "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-3"
+  } ],
+  "http://numerateweb.org/vocab/math#value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://w3id.org/ibp/CTRLont#logicParameter" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-2-Par"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-2-Par",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/CTRLont#Parameter" ],
+  "http://w3id.org/ibp/CTRLont#hasDataType" : [ {
+    "@id" : "http://w3id.org/ibp/BasicDatatypeOntology#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/ExpressionOntology#ExpressionElement", "https://w3id.org/ibp/ExpressionOntology#Operator" ],
+  "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-4"
+  } ],
+  "http://numerateweb.org/vocab/math#operator" : [ {
+    "@id" : "http://www.openmath.org/cd/logic1#and"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/ExpressionOntology#ExpressionElement", "https://w3id.org/ibp/ExpressionOntology#Operator" ],
+  "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-5"
+  } ],
+  "http://numerateweb.org/vocab/math#operator" : [ {
+    "@id" : "http://www.openmath.org/cd/logic1#not"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://numerateweb.org/vocab/math#Variable", "https://w3id.org/ibp/ExpressionOntology#ExpressionElement", "https://w3id.org/ibp/ExpressionOntology#Operand" ],
+  "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-6"
+  } ],
+  "http://numerateweb.org/vocab/math#name" : [ {
+    "@value" : "PIS901"
+  } ],
+  "http://w3id.org/ibp/CTRLont#logicInput" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-PIS901"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/ExpressionOntology#ExpressionElement", "https://w3id.org/ibp/ExpressionOntology#Operator" ],
+  "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-7"
+  } ],
+  "http://numerateweb.org/vocab/math#operator" : [ {
+    "@id" : "http://www.openmath.org/cd/relation1#gt"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://numerateweb.org/vocab/math#Literal", "https://w3id.org/ibp/ExpressionOntology#ExpressionElement", "https://w3id.org/ibp/ExpressionOntology#Operand" ],
+  "http://numerateweb.org/vocab/math#value" : [ {
+    "@value" : "200000"
+  } ],
+  "http://w3id.org/ibp/CTRLont#logicParameter" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-7-Par"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-7-Par",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/CTRLont#Parameter" ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-Expr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/ExpressionOntology#Expression" ],
+  "file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-0"
+  }, {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-1"
+  }, {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-2"
+  }, {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-3"
+  }, {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-4"
+  }, {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-5"
+  }, {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-6"
+  }, {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-7"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-PIS901",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/CTRLont#Input" ],
+  "http://w3id.org/ibp/CTRLont#hasDataType" : [ {
+    "@id" : "http://w3id.org/ibp/BasicDatatypeOntology#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-bPUM901",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/CTRLont#Input" ],
+  "http://w3id.org/ibp/CTRLont#hasDataType" : [ {
+    "@id" : "http://w3id.org/ibp/BasicDatatypeOntology#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-bPUM901_SAFE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/CTRLont#Output" ],
+  "http://w3id.org/ibp/CTRLont#hasDataType" : [ {
+    "@id" : "http://w3id.org/ibp/BasicDatatypeOntology#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_StateMachine.bPUM901",
+  "http://w3id.org/ibp/CTRLont#isConnectedWith" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fb_PUM901_Safety-bPUM901"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fb_PUM901_Safety",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/CTRLont#ApplicationLogic", "http://w3id.org/ibp/TransferFunctionElementOntology#MISO" ],
+  "http://w3id.org/ibp/TransferFunctionElementOntology#hasExpression" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-Expr"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fb_PUM901_Safety-CA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/CTRLont#ControlActor" ],
+  "http://w3id.org/ibp/CTRLont#hasApplicationLogic" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fb_PUM901_Safety"
+  } ],
+  "http://w3id.org/ibp/CTRLont#hasInput" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-PIS901"
+  }, {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fb_PUM901_Safety-bPUM901"
+  } ],
+  "http://w3id.org/ibp/CTRLont#hasOutput" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-bPUM901_SAFE"
+  } ],
+  "http://w3id.org/ibp/CTRLont#hasParameter" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_PUM901_Safety-ExpEle-2-Par"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fb_StateMachine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/CTRLont#ApplicationLogic", "http://w3id.org/ibp/StateMachineOntology#StateMachine" ],
+  "http://w3id.org/ibp/StateMachineOntology#contains" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#s10"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fb_StateMachine-CA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/CTRLont#ControlActor" ],
+  "http://w3id.org/ibp/CTRLont#hasApplicationLogic" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fb_StateMachine"
+  } ],
+  "http://w3id.org/ibp/CTRLont#hasOuput" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_StateMachine.bPUM901"
+  } ],
+  "http://w3id.org/ibp/CTRLont#hasParameter" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_StateMachine.s10-DoVal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesAcrossControl#s10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/StateMachineOntology#SimpleState" ],
+  "http://w3id.org/ibp/StateMachineOntology#do" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#s10-DoAct"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesAcrossControl#s10-DoAct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/StateMachineOntology#Action" ],
+  "http://w3id.org/ibp/StateMachineOntology#actionBehaviour" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#s10-DoBehav"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesAcrossControl#s10-DoBehav",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/StateMachineOntology#Behaviour" ],
+  "http://w3id.org/ibp/CTRLont#logicOutput" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_StateMachine.bPUM901"
+  } ],
+  "http://w3id.org/ibp/StateMachineOntology#assignValue" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#s10-DoVal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/InstancesAcrossControl#s10-DoVal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/ibp/StateMachineOntology#Value" ],
+  "http://w3id.org/ibp/CTRLont#logicParameter" : [ {
+    "@id" : "https://w3id.org/ibp/InstancesAcrossControl#fB_StateMachine.s10-DoVal"
+  } ],
+  "http://w3id.org/ibp/StateMachineOntology#hasLiteralValue" : [ {
+    "@value" : "true"
+  } ]
+} ]

@@ -1,0 +1,293 @@
+@prefix : <https://w3id.org/ibp/StateGraphOntology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/ibp/StateGraphOntology> .
+
+<https://w3id.org/ibp/StateGraphOntology> rdf:type owl:Ontology ;
+                                           <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-2033-859X> ,
+                                                                              <https://www.researchgate.net/profile/Georg_Schneider3> ,
+                                                                              "Georg Ferdinand Schneider, georg.schneider@ibp.fraunhofer.de - Fraunhofer Institute for Building Physics, Nuremberg, Germany"@en ;
+                                           <http://purl.org/dc/terms/description> """StateGraph ontology specifies concepts and relationships of State Graphs according to VDI 3814-3. The ontology and its use are described in [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].
+
+[1] Schneider, G.F., Pauwels, P. and Steiger, S. (2017): \"Ontology-based Modelling of Control Logic in Building Automation Systems\" in IEEE Transactions on Industrial Informatics, vol. 13, no. 6, pp. 3350-3360, DOI: 10.1109/TII.2017.2743221.
+
+[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003."""@en ;
+                                           <http://purl.org/dc/terms/identifier> "https://w3id.org/ibp/StateGraphOntology#" ;
+                                           <http://purl.org/dc/terms/issued> "2016-11-01"^^xsd:date ;
+                                           <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/4.0> ;
+                                           <http://purl.org/dc/terms/modified> "2017-08-21"^^xsd:date ;
+                                           <http://purl.org/dc/terms/rights> "Copyright (c) 2017, Fraunhofer Institute for Building Physics, Nuremberg, Germany." ;
+                                           <http://purl.org/dc/terms/title> "StateGraph - An ontology to formaly specify State Graphs as standardised in VDI 3814-6."@en ;
+                                           <http://purl.org/vocab/vann/preferredNamespacePrefix> "ctrl" ;
+                                           <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
+                                           rdfs:comment "This ontology is developed by Georg Ferdinand Schneider during his PhD." .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/ibp/CTRLont#logicInput
+<https://w3id.org/ibp/CTRLont#logicInput> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/ibp/CTRLont#logicOutput
+<https://w3id.org/ibp/CTRLont#logicOutput> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/ibp/StateGraphOntology#conditionExpr
+:conditionExpr rdf:type owl:ObjectProperty ;
+               rdfs:domain :Condition ;
+               rdfs:range <https://w3id.org/ibp/ExpressionOntology#Expression> .
+
+
+###  https://w3id.org/ibp/StateGraphOntology#contains
+:contains rdf:type owl:ObjectProperty ;
+          rdfs:domain :StateGraph ;
+          rdfs:range :StateGraphElement .
+
+
+###  https://w3id.org/ibp/StateGraphOntology#source
+:source rdf:type owl:ObjectProperty ;
+        rdfs:domain :Transition ;
+        rdfs:range :State .
+
+
+###  https://w3id.org/ibp/StateGraphOntology#stateAction
+:stateAction rdf:type owl:ObjectProperty ;
+             rdfs:domain :State ;
+             rdfs:range :Action .
+
+
+###  https://w3id.org/ibp/StateGraphOntology#stateCondition
+:stateCondition rdf:type owl:ObjectProperty ;
+                rdfs:domain :State ;
+                rdfs:range :Condition .
+
+
+###  https://w3id.org/ibp/StateGraphOntology#target
+:target rdf:type owl:ObjectProperty ;
+        rdfs:domain :Transition ;
+        rdfs:range :State .
+
+
+###  https://w3id.org/ibp/StateGraphOntology#transitionCondition
+:transitionCondition rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Transition ;
+                     rdfs:range :Condition .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/ibp/StateGraphOntology#assignValue
+:assignValue rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :Action ;
+             rdfs:range xsd:double .
+
+
+###  https://w3id.org/ibp/StateGraphOntology#hasDescription
+:hasDescription rdf:type owl:DatatypeProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain :State ;
+                rdfs:range xsd:string .
+
+
+###  https://w3id.org/ibp/StateGraphOntology#hasNumbering
+:hasNumbering rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :State ;
+              rdfs:range xsd:nonNegativeInteger .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+owl:Thing rdf:type owl:Class .
+
+
+###  https://w3id.org/ibp/CTRLont#ApplicationLogic
+<https://w3id.org/ibp/CTRLont#ApplicationLogic> rdf:type owl:Class .
+
+
+###  https://w3id.org/ibp/ExpressionOntology#Expression
+<https://w3id.org/ibp/ExpressionOntology#Expression> rdf:type owl:Class .
+
+
+###  https://w3id.org/ibp/StateGraphOntology#Action
+:Action rdf:type owl:Class ;
+        rdfs:subClassOf :StateGraphElement .
+
+
+###  https://w3id.org/ibp/StateGraphOntology#Condition
+:Condition rdf:type owl:Class ;
+           rdfs:subClassOf :StateGraphElement ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :conditionExpr ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass <https://w3id.org/ibp/ExpressionOntology#Expression>
+                           ] .
+
+
+###  https://w3id.org/ibp/StateGraphOntology#InitialState
+:InitialState rdf:type owl:Class ;
+              owl:equivalentClass [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasNumbering ;
+                                    owl:hasValue 0
+                                  ] ;
+              rdfs:subClassOf :State ;
+              owl:disjointWith :Return ,
+                               :SimpleState .
+
+
+###  https://w3id.org/ibp/StateGraphOntology#Return
+:Return rdf:type owl:Class ;
+        rdfs:subClassOf :State ;
+        owl:disjointWith :SimpleState .
+
+
+###  https://w3id.org/ibp/StateGraphOntology#SimpleState
+:SimpleState rdf:type owl:Class ;
+             rdfs:subClassOf :State .
+
+
+###  https://w3id.org/ibp/StateGraphOntology#State
+:State rdf:type owl:Class ;
+       rdfs:subClassOf :StateGraphElement ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :stateCondition ;
+                         owl:someValuesFrom :Condition
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :stateCondition ;
+                         owl:allValuesFrom :Condition
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :stateAction ;
+                         owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                         owl:onClass :Action
+                       ] .
+
+
+###  https://w3id.org/ibp/StateGraphOntology#StateGraph
+:StateGraph rdf:type owl:Class ;
+            rdfs:subClassOf <https://w3id.org/ibp/CTRLont#ApplicationLogic> ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :contains ;
+                              owl:someValuesFrom :StateGraphElement
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :contains ;
+                              owl:allValuesFrom :StateGraphElement
+                            ] .
+
+
+###  https://w3id.org/ibp/StateGraphOntology#StateGraphElement
+:StateGraphElement rdf:type owl:Class ;
+                   rdfs:subClassOf <https://w3id.org/ibp/CTRLont#ApplicationLogic> .
+
+
+###  https://w3id.org/ibp/StateGraphOntology#Transition
+:Transition rdf:type owl:Class ;
+            rdfs:subClassOf :StateGraphElement ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :transitionCondition ;
+                              owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                              owl:onClass :Condition
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :source ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass :State
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :target ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass :State
+                            ] .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/ibp/StateGraphOntology
+<https://w3id.org/ibp/StateGraphOntology> rdf:type owl:NamedIndividual ,
+                                                   <http://purl.org/vocommons/voaf#Vocabulary> .
+
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

@@ -1,0 +1,1781 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/ibp/InstancesAutoVerification#"
+     xml:base="https://w3id.org/ibp/InstancesAutoVerification"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:math="http://numerateweb.org/vocab/math#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:seas="https://w3id.org/seas/"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:CTRLont="https://w3id.org/ibp/CTRLont#"
+     xmlns:mereology="file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#"
+     xmlns:linked_list="file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#"
+     xmlns:ScheduleOntology="https://w3id.org/ibp/ScheduleOntology#"
+     xmlns:StateGraphOntology="https://w3id.org/ibp/StateGraphOntology#">
+    <owl:Ontology rdf:about="https://w3id.org/ibp/InstancesAutoVerification">
+        <owl:imports rdf:resource="https://w3id.org/ibp/CTRLont"/>
+        <owl:imports rdf:resource="https://w3id.org/ibp/ScheduleOntology"/>
+        <owl:imports rdf:resource="https://w3id.org/ibp/StateGraphOntology"/>
+        <owl:imports rdf:resource="https://w3id.org/seas/SystemOntology"/>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-2033-859X"/>
+        <terms:creator rdf:resource="https://www.researchgate.net/profile/Georg_Schneider3"/>
+        <terms:creator>Georg Ferdinand Schneider</terms:creator>
+        <terms:description xml:lang="en">The ontology provides instances of the examples described in the PhD thesis of Georg Ferdinand Schneider [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].
+
+[1] Schneider, G. F. (2019): &quot;Semantic Model for Control Logic in Automation Systems - Knowledge-Based Support of the Engineering and Operation of Control Logic in Building and Industrial Automation Systems&quot; PhD thesis, Karlsruhe Institute of Technology, Karlsruhe, Germany.
+
+[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003.</terms:description>
+        <terms:identifier>https://w3id.org/ibp/InstancesAutoVerification#</terms:identifier>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-11-01</terms:issued>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-03-07</terms:modified>
+        <terms:rights xml:lang="en">Copyright (c) 2019, Georg Ferdinand Schneider, Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0</terms:rights>
+        <terms:title xml:lang="en">Ontology InstancesAutoVerification.</terms:title>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#"/>
+        <rdfs:comment xml:lang="en">Ontology with instances of InstancesAutoVerification.</rdfs:comment>
+        <rdfs:label xml:lang="en">InstancesAutoVerification</rdfs:label>
+        <owl:versionInfo>v0.3.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement -->
+
+
+    <owl:AnnotationProperty rdf:about="file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement"/>
+    
+
+
+    <!-- file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf -->
+
+
+    <owl:AnnotationProperty rdf:about="file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf"/>
+    
+
+
+    <!-- http://numerateweb.org/vocab/math#name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://numerateweb.org/vocab/math#name"/>
+    
+
+
+    <!-- http://numerateweb.org/vocab/math#operator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://numerateweb.org/vocab/math#operator"/>
+    
+
+
+    <!-- http://numerateweb.org/vocab/math#value -->
+
+
+    <owl:AnnotationProperty rdf:about="http://numerateweb.org/vocab/math#value"/>
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntology#assignValue -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ibp/StateGraphOntology#assignValue"/>
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntology#conditionExpr -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ibp/StateGraphOntology#conditionExpr"/>
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntology#contains -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ibp/StateGraphOntology#contains"/>
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntology#source -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ibp/StateGraphOntology#source"/>
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntology#stateAction -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ibp/StateGraphOntology#stateAction"/>
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntology#stateCondition -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ibp/StateGraphOntology#stateCondition"/>
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntology#target -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/ibp/StateGraphOntology#target"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/ibp/CTRLont#hasDataType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/CTRLont#hasDataType"/>
+    
+
+
+    <!-- https://w3id.org/ibp/CTRLont#hasInput -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/CTRLont#hasInput"/>
+    
+
+
+    <!-- https://w3id.org/ibp/CTRLont#hasOutput -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/CTRLont#hasOutput"/>
+    
+
+
+    <!-- https://w3id.org/ibp/CTRLont#hasParameter -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/CTRLont#hasParameter"/>
+    
+
+
+    <!-- https://w3id.org/ibp/CTRLont#logicInput -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/CTRLont#logicInput"/>
+    
+
+
+    <!-- https://w3id.org/ibp/CTRLont#logicOutput -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/CTRLont#logicOutput"/>
+    
+
+
+    <!-- https://w3id.org/ibp/ScheduleOntology#hasEndPoint -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/ScheduleOntology#hasEndPoint"/>
+    
+
+
+    <!-- https://w3id.org/ibp/ScheduleOntology#hasInterval -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/ScheduleOntology#hasInterval"/>
+    
+
+
+    <!-- https://w3id.org/ibp/ScheduleOntology#hasMathematicalFunction -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/ScheduleOntology#hasMathematicalFunction"/>
+    
+
+
+    <!-- https://w3id.org/ibp/ScheduleOntology#hasPeriodicity -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/ScheduleOntology#hasPeriodicity"/>
+    
+
+
+    <!-- https://w3id.org/ibp/ScheduleOntology#hasPolynomialConstant -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/ScheduleOntology#hasPolynomialConstant"/>
+    
+
+
+    <!-- https://w3id.org/ibp/ScheduleOntology#hasStartPoint -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/ScheduleOntology#hasStartPoint"/>
+    
+
+
+    <!-- https://w3id.org/ibp/ScheduleOntology#hasXCoordinate -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/ScheduleOntology#hasXCoordinate"/>
+    
+
+
+    <!-- https://w3id.org/ibp/ScheduleOntology#hasYCoordinate -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/ScheduleOntology#hasYCoordinate"/>
+    
+
+
+    <!-- https://w3id.org/ibp/ScheduleOntology#isConsecutiveInterval -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/ScheduleOntology#isConsecutiveInterval"/>
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntology#transitionCondition -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/StateGraphOntology#transitionCondition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement -->
+
+
+    <owl:Class rdf:about="file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement"/>
+    
+
+
+    <!-- http://numerateweb.org/vocab/math#Literal -->
+
+
+    <owl:Class rdf:about="http://numerateweb.org/vocab/math#Literal"/>
+    
+
+
+    <!-- http://numerateweb.org/vocab/math#Variable -->
+
+
+    <owl:Class rdf:about="http://numerateweb.org/vocab/math#Variable"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#DataProperty -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#DataProperty"/>
+    
+
+
+    <!-- https://w3id.org/ibp/ExpressionOntology#Expression -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/ExpressionOntology#Expression"/>
+    
+
+
+    <!-- https://w3id.org/ibp/ExpressionOntology#ExpressionElement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+    
+
+
+    <!-- https://w3id.org/ibp/ExpressionOntology#Operand -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/ExpressionOntology#Operand"/>
+    
+
+
+    <!-- https://w3id.org/ibp/ExpressionOntology#Operator -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/ExpressionOntology#Operator"/>
+    
+
+
+    <!-- https://w3id.org/ibp/ScheduleOntology#Coordinate -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/ScheduleOntology#Coordinate"/>
+    
+
+
+    <!-- https://w3id.org/ibp/ScheduleOntology#Interval -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/ScheduleOntology#Interval"/>
+    
+
+
+    <!-- https://w3id.org/ibp/ScheduleOntology#MathematicalFunction -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/ScheduleOntology#MathematicalFunction"/>
+    
+
+
+    <!-- https://w3id.org/ibp/ScheduleOntology#Point -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/ScheduleOntology#Point"/>
+    
+
+
+    <!-- https://w3id.org/ibp/ScheduleOntology#PolynomialConstant -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/ScheduleOntology#PolynomialConstant"/>
+    
+
+
+    <!-- https://w3id.org/ibp/ScheduleOntology#Schedule -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/ScheduleOntology#Schedule"/>
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntology#Action -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/StateGraphOntology#Action"/>
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntology#Condition -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/StateGraphOntology#Condition"/>
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntology#State -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/StateGraphOntology#State"/>
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntology#StateGraph -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/StateGraphOntology#StateGraph"/>
+    
+
+
+    <!-- https://w3id.org/ibp/StateGraphOntology#Transition -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/StateGraphOntology#Transition"/>
+    
+
+
+    <!-- https://w3id.org/seas/CommunicationConnectionPoint -->
+
+
+    <owl:Class rdf:about="https://w3id.org/seas/CommunicationConnectionPoint"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/Temperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/Temperature"/>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius"/>
+    
+
+
+    <!-- https://w3id.org/ibp/BasicDatatypeOntology#double -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/BasicDatatypeOntology#double"/>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOffOn -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOffOn">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Expression"/>
+        <mereology:isComposedOf rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-0"/>
+        <mereology:isComposedOf rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-1"/>
+        <mereology:isComposedOf rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-2"/>
+        <mereology:isComposedOf rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-3"/>
+        <mereology:isComposedOf rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-4"/>
+        <mereology:isComposedOf rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-5"/>
+        <mereology:isComposedOf rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOffStartUp -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOffStartUp">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Expression"/>
+        <mereology:isComposedOf rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-0"/>
+        <mereology:isComposedOf rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-1"/>
+        <mereology:isComposedOf rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-2"/>
+        <mereology:isComposedOf rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-3"/>
+        <mereology:isComposedOf rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-4"/>
+        <mereology:isComposedOf rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-5"/>
+        <mereology:isComposedOf rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOnOff -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOnOff">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Expression"/>
+        <mereology:isComposedOf rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-0"/>
+        <mereology:isComposedOf rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-1"/>
+        <mereology:isComposedOf rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#ExprConditionStartUpOn -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#ExprConditionStartUpOn">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Expression"/>
+        <mereology:isComposedOf rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-0"/>
+        <mereology:isComposedOf rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-1"/>
+        <mereology:isComposedOf rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#R1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#R1">
+        <rdf:type rdf:resource="https://w3id.org/ibp/CTRLont#ControlActor"/>
+        <CTRLont:hasApplicationLogic rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R1_logic"/>
+        <CTRLont:hasInput rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R1_Inp"/>
+        <CTRLont:hasInput rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R1_InpTHcr"/>
+        <CTRLont:hasInput rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R1_InpToa"/>
+        <CTRLont:hasOutput rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R1_Outp"/>
+        <CTRLont:hasOutput rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R1_OutpMix"/>
+        <CTRLont:hasOutput rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R1_OutpPump"/>
+        <CTRLont:hasOutput rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R1_OutpSOff"/>
+        <CTRLont:hasOutput rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R1_OutpSOn"/>
+        <CTRLont:hasOutput rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R1_OutpSStartup"/>
+        <CTRLont:hasParameter rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-2-Par"/>
+        <CTRLont:hasParameter rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-6-Par"/>
+        <CTRLont:hasParameter rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-2-Par"/>
+        <CTRLont:hasParameter rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-6-Par"/>
+        <CTRLont:hasParameter rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-2-Par"/>
+        <CTRLont:hasParameter rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-2-Par"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#R1_Inp -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#R1_Inp">
+        <rdf:type rdf:resource="https://w3id.org/ibp/CTRLont#Input"/>
+        <CTRLont:hasDataType rdf:resource="https://w3id.org/ibp/BasicDatatypeOntology#double"/>
+        <seas:connectsSystemThrough rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#connR1InpSce"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#R1_InpTHcr -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#R1_InpTHcr">
+        <rdf:type rdf:resource="https://w3id.org/ibp/CTRLont#Input"/>
+        <CTRLont:hasDataType rdf:resource="https://w3id.org/ibp/BasicDatatypeOntology#double"/>
+        <CTRLont:hasQuantity rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Temperature"/>
+        <CTRLont:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius"/>
+        <seas:connectsSystemThrough rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#connR1InpTHcr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#R1_InpToa -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#R1_InpToa">
+        <rdf:type rdf:resource="https://w3id.org/ibp/CTRLont#Input"/>
+        <CTRLont:hasDataType rdf:resource="https://w3id.org/ibp/BasicDatatypeOntology#double"/>
+        <CTRLont:hasQuantity rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Temperature"/>
+        <CTRLont:hasUnit rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius"/>
+        <seas:connectsSystemThrough rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#connR1InpToa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#R1_Outp -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#R1_Outp">
+        <rdf:type rdf:resource="https://w3id.org/ibp/CTRLont#Output"/>
+        <CTRLont:hasDataType rdf:resource="https://w3id.org/ibp/BasicDatatypeOntology#double"/>
+        <seas:connectsSystemThrough rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#connR1OutyFan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#R1_OutpMix -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#R1_OutpMix">
+        <rdf:type rdf:resource="https://w3id.org/ibp/CTRLont#Output"/>
+        <CTRLont:hasDataType rdf:resource="https://w3id.org/ibp/BasicDatatypeOntology#double"/>
+        <seas:connectsSystemThrough rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#connR1OutyMix"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#R1_OutpPump -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#R1_OutpPump">
+        <rdf:type rdf:resource="https://w3id.org/ibp/CTRLont#Output"/>
+        <CTRLont:hasDataType rdf:resource="https://w3id.org/ibp/BasicDatatypeOntology#double"/>
+        <seas:connectsSystemThrough rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#connR1OutyPump"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#R1_OutpSOff -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#R1_OutpSOff">
+        <rdf:type rdf:resource="https://w3id.org/ibp/CTRLont#Output"/>
+        <seas:connectsSystemThrough rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#connR1OutpSOff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#R1_OutpSOn -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#R1_OutpSOn">
+        <rdf:type rdf:resource="https://w3id.org/ibp/CTRLont#Output"/>
+        <seas:connectsSystemThrough rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#connR1OutpSOn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#R1_OutpSStartup -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#R1_OutpSStartup">
+        <rdf:type rdf:resource="https://w3id.org/ibp/CTRLont#Output"/>
+        <seas:connectsSystemThrough rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#connR1OutpSStartUp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#R1_logic -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#R1_logic">
+        <rdf:type rdf:resource="https://w3id.org/ibp/StateGraphOntology#StateGraph"/>
+        <StateGraphOntology:contains rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOffOn"/>
+        <StateGraphOntology:contains rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOffStartUp"/>
+        <StateGraphOntology:contains rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOnOff"/>
+        <StateGraphOntology:contains rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionStartUpOn"/>
+        <StateGraphOntology:contains rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_OffActFan"/>
+        <StateGraphOntology:contains rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_OffActMix"/>
+        <StateGraphOntology:contains rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_OffActPump"/>
+        <StateGraphOntology:contains rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_OnActFan"/>
+        <StateGraphOntology:contains rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_OnActMix"/>
+        <StateGraphOntology:contains rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_OnActPump"/>
+        <StateGraphOntology:contains rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActFan"/>
+        <StateGraphOntology:contains rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActMix"/>
+        <StateGraphOntology:contains rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActPump"/>
+        <StateGraphOntology:contains rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_StateOff"/>
+        <StateGraphOntology:contains rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_StateOn"/>
+        <StateGraphOntology:contains rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_StateStartUp"/>
+        <StateGraphOntology:contains rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn"/>
+        <StateGraphOntology:contains rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp"/>
+        <StateGraphOntology:contains rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff"/>
+        <StateGraphOntology:contains rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#R2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#R2">
+        <rdf:type rdf:resource="https://w3id.org/ibp/CTRLont#ControlActor"/>
+        <CTRLont:hasApplicationLogic rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R2_logic"/>
+        <CTRLont:hasInput rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R2_Inp"/>
+        <CTRLont:hasOutput rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R2_Outp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#R2_Inp -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#R2_Inp">
+        <rdf:type rdf:resource="https://w3id.org/ibp/CTRLont#Input"/>
+        <seas:connectsSystemThrough rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#connR2InpTime"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#R2_Outp -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#R2_Outp">
+        <rdf:type rdf:resource="https://w3id.org/ibp/CTRLont#Output"/>
+        <CTRLont:isConnectedTo rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R1_Inp"/>
+        <seas:connectsSystemThrough rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#connR2OutpYsce"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#R2_logic -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#R2_logic">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ScheduleOntology#Schedule"/>
+        <CTRLont:logicInput rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R2_Inp"/>
+        <CTRLont:logicOutput rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R2_Outp"/>
+        <ScheduleOntology:hasInterval rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1"/>
+        <ScheduleOntology:hasInterval rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2"/>
+        <ScheduleOntology:hasInterval rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3"/>
+        <ScheduleOntology:hasPeriodicity rdf:resource="https://w3id.org/ibp/ScheduleOntology#daily"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOffOn -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOffOn">
+        <rdf:type rdf:resource="https://w3id.org/ibp/StateGraphOntology#Condition"/>
+        <StateGraphOntology:conditionExpr rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOffOn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOffStartUp -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOffStartUp">
+        <rdf:type rdf:resource="https://w3id.org/ibp/StateGraphOntology#Condition"/>
+        <StateGraphOntology:conditionExpr rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOffStartUp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOnOff -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOnOff">
+        <rdf:type rdf:resource="https://w3id.org/ibp/StateGraphOntology#Condition"/>
+        <StateGraphOntology:conditionExpr rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOnOff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionStartUpOn -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionStartUpOn">
+        <rdf:type rdf:resource="https://w3id.org/ibp/StateGraphOntology#Condition"/>
+        <StateGraphOntology:conditionExpr rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#ExprConditionStartUpOn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_OffActFan -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_OffActFan">
+        <rdf:type rdf:resource="https://w3id.org/ibp/StateGraphOntology#Action"/>
+        <CTRLont:logicOutput rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R1_Outp"/>
+        <StateGraphOntology:assignValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</StateGraphOntology:assignValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_OffActMix -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_OffActMix">
+        <rdf:type rdf:resource="https://w3id.org/ibp/StateGraphOntology#Action"/>
+        <CTRLont:logicOutput rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R1_OutpMix"/>
+        <StateGraphOntology:assignValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</StateGraphOntology:assignValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_OffActPump -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_OffActPump">
+        <rdf:type rdf:resource="https://w3id.org/ibp/StateGraphOntology#Action"/>
+        <CTRLont:logicOutput rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R1_OutpPump"/>
+        <StateGraphOntology:assignValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</StateGraphOntology:assignValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_OnActFan -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_OnActFan">
+        <rdf:type rdf:resource="https://w3id.org/ibp/StateGraphOntology#Action"/>
+        <CTRLont:logicOutput rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R1_Outp"/>
+        <StateGraphOntology:assignValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</StateGraphOntology:assignValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_OnActMix -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_OnActMix">
+        <rdf:type rdf:resource="https://w3id.org/ibp/StateGraphOntology#Action"/>
+        <CTRLont:logicOutput rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R1_OutpMix"/>
+        <StateGraphOntology:assignValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</StateGraphOntology:assignValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_OnActPump -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_OnActPump">
+        <rdf:type rdf:resource="https://w3id.org/ibp/StateGraphOntology#Action"/>
+        <CTRLont:logicOutput rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R1_OutpPump"/>
+        <StateGraphOntology:assignValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</StateGraphOntology:assignValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActFan -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActFan">
+        <rdf:type rdf:resource="https://w3id.org/ibp/StateGraphOntology#Action"/>
+        <CTRLont:logicOutput rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R1_Outp"/>
+        <StateGraphOntology:assignValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</StateGraphOntology:assignValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActMix -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActMix">
+        <rdf:type rdf:resource="https://w3id.org/ibp/StateGraphOntology#Action"/>
+        <CTRLont:logicOutput rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R1_OutpMix"/>
+        <StateGraphOntology:assignValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</StateGraphOntology:assignValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActPump -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActPump">
+        <rdf:type rdf:resource="https://w3id.org/ibp/StateGraphOntology#Action"/>
+        <CTRLont:logicOutput rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R1_OutpPump"/>
+        <StateGraphOntology:assignValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</StateGraphOntology:assignValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_StateOff -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_StateOff">
+        <rdf:type rdf:resource="https://w3id.org/ibp/StateGraphOntology#State"/>
+        <CTRLont:logicOutput rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R1_OutpSOff"/>
+        <StateGraphOntology:stateAction rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_OffActFan"/>
+        <StateGraphOntology:stateAction rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_OffActMix"/>
+        <StateGraphOntology:stateAction rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_OffActPump"/>
+        <StateGraphOntology:stateCondition rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOnOff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_StateOn -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_StateOn">
+        <rdf:type rdf:resource="https://w3id.org/ibp/StateGraphOntology#State"/>
+        <CTRLont:logicOutput rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R1_OutpSOn"/>
+        <StateGraphOntology:stateAction rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_OnActFan"/>
+        <StateGraphOntology:stateAction rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_OnActMix"/>
+        <StateGraphOntology:stateAction rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_OnActPump"/>
+        <StateGraphOntology:stateCondition rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOffOn"/>
+        <StateGraphOntology:stateCondition rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionStartUpOn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_StateStartUp -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_StateStartUp">
+        <rdf:type rdf:resource="https://w3id.org/ibp/StateGraphOntology#State"/>
+        <CTRLont:logicOutput rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R1_OutpSStartup"/>
+        <StateGraphOntology:stateAction rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActFan"/>
+        <StateGraphOntology:stateAction rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActMix"/>
+        <StateGraphOntology:stateAction rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActPump"/>
+        <StateGraphOntology:stateCondition rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOffStartUp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn">
+        <rdf:type rdf:resource="https://w3id.org/ibp/StateGraphOntology#Transition"/>
+        <StateGraphOntology:transitionCondition rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOffOn"/>
+        <StateGraphOntology:source rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_StateOff"/>
+        <StateGraphOntology:target rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_StateOn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-0 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-0">
+        <rdf:type rdf:resource="file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement"/>
+        <rdf:type rdf:resource="http://numerateweb.org/vocab/math#Variable"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Operand"/>
+        <CTRLont:logicInput rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R1_Inp"/>
+        <linked_list:nextElement rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-1"/>
+        <math:name>R1_Inp</math:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-1">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Operator"/>
+        <linked_list:nextElement rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-2"/>
+        <math:operator rdf:resource="http://www.openmath.org/cd/relation1#geq"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-2">
+        <rdf:type rdf:resource="http://numerateweb.org/vocab/math#Literal"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Operand"/>
+        <CTRLont:logicParameter rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-2-Par"/>
+        <linked_list:nextElement rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-3"/>
+        <math:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</math:value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-2-Par -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-2-Par">
+        <rdf:type rdf:resource="https://w3id.org/ibp/CTRLont#Parameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-3 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-3">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Operator"/>
+        <linked_list:nextElement rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-4"/>
+        <math:operator rdf:resource="http://www.openmath.org/cd/logic1#and"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-4 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-4">
+        <rdf:type rdf:resource="http://numerateweb.org/vocab/math#Variable"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Operand"/>
+        <CTRLont:logicInput rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R1_InpToa"/>
+        <linked_list:nextElement rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-5"/>
+        <math:name>R1_InpToa</math:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-5 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-5">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Operator"/>
+        <linked_list:nextElement rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-6"/>
+        <math:operator rdf:resource="http://www.openmath.org/cd/relation1#geq"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-6 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-6">
+        <rdf:type rdf:resource="http://numerateweb.org/vocab/math#Literal"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Operand"/>
+        <CTRLont:logicParameter rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-6-Par"/>
+        <math:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</math:value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-6-Par -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-6-Par">
+        <rdf:type rdf:resource="https://w3id.org/ibp/CTRLont#Parameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp">
+        <rdf:type rdf:resource="https://w3id.org/ibp/StateGraphOntology#Transition"/>
+        <StateGraphOntology:transitionCondition rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOffStartUp"/>
+        <StateGraphOntology:source rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_StateOff"/>
+        <StateGraphOntology:target rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_StateStartUp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-0 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-0">
+        <rdf:type rdf:resource="file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement"/>
+        <rdf:type rdf:resource="http://numerateweb.org/vocab/math#Variable"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Operand"/>
+        <CTRLont:logicInput rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R1_Inp"/>
+        <linked_list:nextElement rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-1"/>
+        <math:name>R1_Inp</math:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-1">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Operator"/>
+        <linked_list:nextElement rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-2"/>
+        <math:operator rdf:resource="http://www.openmath.org/cd/relation1#geq"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-2">
+        <rdf:type rdf:resource="http://numerateweb.org/vocab/math#Literal"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Operand"/>
+        <CTRLont:logicParameter rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-2-Par"/>
+        <linked_list:nextElement rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-3"/>
+        <math:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</math:value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-2-Par -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-2-Par">
+        <rdf:type rdf:resource="https://w3id.org/ibp/CTRLont#Parameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-3 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-3">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Operator"/>
+        <linked_list:nextElement rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-4"/>
+        <math:operator rdf:resource="http://www.openmath.org/cd/logic1#and"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-4 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-4">
+        <rdf:type rdf:resource="http://numerateweb.org/vocab/math#Variable"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Operand"/>
+        <CTRLont:logicInput rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R1_InpToa"/>
+        <linked_list:nextElement rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-5"/>
+        <math:name>R1_InpToa</math:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-5 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-5">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Operator"/>
+        <linked_list:nextElement rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-6"/>
+        <math:operator rdf:resource="http://www.openmath.org/cd/relation1#lt"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-6 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-6">
+        <rdf:type rdf:resource="http://numerateweb.org/vocab/math#Literal"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Operand"/>
+        <CTRLont:logicParameter rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-6-Par"/>
+        <math:value>1</math:value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-6-Par -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-6-Par">
+        <rdf:type rdf:resource="https://w3id.org/ibp/CTRLont#Parameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff">
+        <rdf:type rdf:resource="https://w3id.org/ibp/StateGraphOntology#Transition"/>
+        <StateGraphOntology:transitionCondition rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOnOff"/>
+        <StateGraphOntology:source rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_StateOn"/>
+        <StateGraphOntology:target rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_StateOff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-0 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-0">
+        <rdf:type rdf:resource="file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement"/>
+        <rdf:type rdf:resource="http://numerateweb.org/vocab/math#Variable"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Operand"/>
+        <CTRLont:logicInput rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R1_Inp"/>
+        <linked_list:nextElement rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-1"/>
+        <math:name>R1_Inp</math:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-1">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Operator"/>
+        <linked_list:nextElement rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-2"/>
+        <math:operator rdf:resource="http://www.openmath.org/cd/relation1#leq"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-2">
+        <rdf:type rdf:resource="http://numerateweb.org/vocab/math#Literal"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Operand"/>
+        <CTRLont:logicParameter rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-2-Par"/>
+        <math:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</math:value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-2-Par -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-2-Par">
+        <rdf:type rdf:resource="https://w3id.org/ibp/CTRLont#Parameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn">
+        <rdf:type rdf:resource="https://w3id.org/ibp/StateGraphOntology#Transition"/>
+        <StateGraphOntology:transitionCondition rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionStartUpOn"/>
+        <StateGraphOntology:source rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_StateStartUp"/>
+        <StateGraphOntology:target rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_StateOn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-0 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-0">
+        <rdf:type rdf:resource="file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement"/>
+        <rdf:type rdf:resource="http://numerateweb.org/vocab/math#Variable"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Operand"/>
+        <CTRLont:logicInput rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#R1_InpTHcr"/>
+        <linked_list:nextElement rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-1"/>
+        <math:name>R1_InpTHcr</math:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-1">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Operator"/>
+        <linked_list:nextElement rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-2"/>
+        <math:operator rdf:resource="http://www.openmath.org/cd/relation1#gt"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-2">
+        <rdf:type rdf:resource="http://numerateweb.org/vocab/math#Literal"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#ExpressionElement"/>
+        <rdf:type rdf:resource="https://w3id.org/ibp/ExpressionOntology#Operand"/>
+        <CTRLont:logicParameter rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-2-Par"/>
+        <math:value>30</math:value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-2-Par -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-2-Par">
+        <rdf:type rdf:resource="https://w3id.org/ibp/CTRLont#Parameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#connR1InpSce -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#connR1InpSce">
+        <rdf:type rdf:resource="https://w3id.org/seas/Connection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#connR1InpTHcr -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#connR1InpTHcr">
+        <rdf:type rdf:resource="https://w3id.org/seas/Connection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#connR1InpToa -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#connR1InpToa">
+        <rdf:type rdf:resource="https://w3id.org/seas/Connection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#connR1OutpSOff -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#connR1OutpSOff">
+        <rdf:type rdf:resource="https://w3id.org/seas/Connection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#connR1OutpSOn -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#connR1OutpSOn">
+        <rdf:type rdf:resource="https://w3id.org/seas/Connection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#connR1OutpSStartUp -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#connR1OutpSStartUp">
+        <rdf:type rdf:resource="https://w3id.org/seas/Connection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#connR1OutyFan -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#connR1OutyFan">
+        <rdf:type rdf:resource="https://w3id.org/seas/Connection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#connR1OutyMix -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#connR1OutyMix">
+        <rdf:type rdf:resource="https://w3id.org/seas/Connection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#connR1OutyPump -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#connR1OutyPump">
+        <rdf:type rdf:resource="https://w3id.org/seas/Connection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#connR2InpTime -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#connR2InpTime">
+        <rdf:type rdf:resource="https://w3id.org/seas/Connection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#connR2OutpYsce -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#connR2OutpYsce">
+        <rdf:type rdf:resource="https://w3id.org/seas/Connection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#r1.SG_StateOff.active -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#r1.SG_StateOff.active">
+        <rdf:type rdf:resource="https://w3id.org/seas/CommunicationConnectionPoint"/>
+        <seas:connectsSystemThrough rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#connR1OutpSOff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#r1.SG_StateOn.active -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#r1.SG_StateOn.active">
+        <rdf:type rdf:resource="https://w3id.org/seas/CommunicationConnectionPoint"/>
+        <seas:connectsSystemThrough rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#connR1OutpSOn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#r1.SG_StateStartUp.active -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#r1.SG_StateStartUp.active">
+        <rdf:type rdf:resource="https://w3id.org/seas/CommunicationConnectionPoint"/>
+        <seas:connectsSystemThrough rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#connR1OutpSStartUp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#r1.THcrCoiRet -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#r1.THcrCoiRet">
+        <rdf:type rdf:resource="https://w3id.org/seas/CommunicationConnectionPoint"/>
+        <seas:connectsSystemThrough rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#connR1InpTHcr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#r1.Toa -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#r1.Toa">
+        <rdf:type rdf:resource="https://w3id.org/seas/CommunicationConnectionPoint"/>
+        <seas:connectsSystemThrough rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#connR1InpToa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#r1.uSchedule -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#r1.uSchedule">
+        <rdf:type rdf:resource="https://w3id.org/seas/CommunicationConnectionPoint"/>
+        <seas:connectsSystemThrough rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#connR1InpSce"/>
+        <seas:connectsSystemThrough rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#connR2OutpYsce"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#r1.yFan -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#r1.yFan">
+        <rdf:type rdf:resource="https://w3id.org/seas/CommunicationConnectionPoint"/>
+        <seas:connectsSystemThrough rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#connR1OutyFan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#r1.yMix -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#r1.yMix">
+        <rdf:type rdf:resource="https://w3id.org/seas/CommunicationConnectionPoint"/>
+        <seas:connectsSystemThrough rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#connR1OutyMix"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#r1.yPump -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#r1.yPump">
+        <rdf:type rdf:resource="https://w3id.org/seas/CommunicationConnectionPoint"/>
+        <seas:connectsSystemThrough rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#connR1OutyPump"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ScheduleOntology#Interval"/>
+        <ScheduleOntology:hasEndPoint rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#sched_Point1End"/>
+        <ScheduleOntology:hasMathematicalFunction rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#sched_MathFun1"/>
+        <ScheduleOntology:hasStartPoint rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#sched_Point1Start"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1EndX -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1EndX">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ScheduleOntology#Coordinate"/>
+        <ScheduleOntology:hasLiteralValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">28800.0</ScheduleOntology:hasLiteralValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1EndY -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1EndY">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ScheduleOntology#Coordinate"/>
+        <ScheduleOntology:hasLiteralValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</ScheduleOntology:hasLiteralValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1StartX -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1StartX">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ScheduleOntology#Coordinate"/>
+        <ScheduleOntology:hasLiteralValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</ScheduleOntology:hasLiteralValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1StartY -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1StartY">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ScheduleOntology#Coordinate"/>
+        <ScheduleOntology:hasLiteralValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</ScheduleOntology:hasLiteralValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ScheduleOntology#Interval"/>
+        <ScheduleOntology:hasEndPoint rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#sched_Point2End"/>
+        <ScheduleOntology:hasMathematicalFunction rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#sched_MathFun2"/>
+        <ScheduleOntology:hasStartPoint rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#sched_Point2Start"/>
+        <ScheduleOntology:isConsecutiveInterval rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2EndX -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2EndX">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ScheduleOntology#Coordinate"/>
+        <ScheduleOntology:hasLiteralValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">64800.0</ScheduleOntology:hasLiteralValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2EndY -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2EndY">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ScheduleOntology#Coordinate"/>
+        <ScheduleOntology:hasLiteralValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</ScheduleOntology:hasLiteralValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2StartX -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2StartX">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ScheduleOntology#Coordinate"/>
+        <ScheduleOntology:hasLiteralValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">28800.0</ScheduleOntology:hasLiteralValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2StartY -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2StartY">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ScheduleOntology#Coordinate"/>
+        <ScheduleOntology:hasLiteralValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</ScheduleOntology:hasLiteralValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ScheduleOntology#Interval"/>
+        <ScheduleOntology:hasEndPoint rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#sched_Point3End"/>
+        <ScheduleOntology:hasMathematicalFunction rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#sched_MathFun3"/>
+        <ScheduleOntology:hasStartPoint rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#sched_Point3Start"/>
+        <ScheduleOntology:isConsecutiveInterval rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3EndX -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3EndX">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ScheduleOntology#Coordinate"/>
+        <ScheduleOntology:hasLiteralValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">86400.0</ScheduleOntology:hasLiteralValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3EndY -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3EndY">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ScheduleOntology#Coordinate"/>
+        <ScheduleOntology:hasLiteralValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</ScheduleOntology:hasLiteralValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3StartX -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3StartX">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ScheduleOntology#Coordinate"/>
+        <ScheduleOntology:hasLiteralValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">64800.0</ScheduleOntology:hasLiteralValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3StartY -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3StartY">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ScheduleOntology#Coordinate"/>
+        <ScheduleOntology:hasLiteralValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</ScheduleOntology:hasLiteralValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#sched_MathFun1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#sched_MathFun1">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ScheduleOntology#MathematicalFunction"/>
+        <ScheduleOntology:hasPolynomialConstant rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#sched_PolyCon1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#sched_MathFun2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#sched_MathFun2">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ScheduleOntology#MathematicalFunction"/>
+        <ScheduleOntology:hasPolynomialConstant rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#sched_PolyCon2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#sched_MathFun3 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#sched_MathFun3">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ScheduleOntology#MathematicalFunction"/>
+        <ScheduleOntology:hasPolynomialConstant rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#sched_PolyCon3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#sched_Point1End -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#sched_Point1End">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ScheduleOntology#Point"/>
+        <ScheduleOntology:hasXCoordinate rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1EndX"/>
+        <ScheduleOntology:hasYCoordinate rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1EndY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#sched_Point1Start -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#sched_Point1Start">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ScheduleOntology#Point"/>
+        <ScheduleOntology:hasXCoordinate rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1StartX"/>
+        <ScheduleOntology:hasYCoordinate rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1StartY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#sched_Point2End -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#sched_Point2End">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ScheduleOntology#Point"/>
+        <ScheduleOntology:hasXCoordinate rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2EndX"/>
+        <ScheduleOntology:hasYCoordinate rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2EndY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#sched_Point2Start -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#sched_Point2Start">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ScheduleOntology#Point"/>
+        <ScheduleOntology:hasXCoordinate rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2StartX"/>
+        <ScheduleOntology:hasYCoordinate rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2StartY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#sched_Point3End -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#sched_Point3End">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ScheduleOntology#Point"/>
+        <ScheduleOntology:hasXCoordinate rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3EndX"/>
+        <ScheduleOntology:hasYCoordinate rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3EndY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#sched_Point3Start -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#sched_Point3Start">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ScheduleOntology#Point"/>
+        <ScheduleOntology:hasXCoordinate rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3StartX"/>
+        <ScheduleOntology:hasYCoordinate rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3StartY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#sched_PolyCon1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#sched_PolyCon1">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ScheduleOntology#PolynomialConstant"/>
+        <ScheduleOntology:polyConstantDegree rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ScheduleOntology:polyConstantDegree>
+        <ScheduleOntology:polyConstantLiteralValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</ScheduleOntology:polyConstantLiteralValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#sched_PolyCon2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#sched_PolyCon2">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ScheduleOntology#PolynomialConstant"/>
+        <ScheduleOntology:polyConstantDegree rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ScheduleOntology:polyConstantDegree>
+        <ScheduleOntology:polyConstantLiteralValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</ScheduleOntology:polyConstantLiteralValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#sched_PolyCon3 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#sched_PolyCon3">
+        <rdf:type rdf:resource="https://w3id.org/ibp/ScheduleOntology#PolynomialConstant"/>
+        <ScheduleOntology:polyConstantDegree rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</ScheduleOntology:polyConstantDegree>
+        <ScheduleOntology:polyConstantLiteralValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</ScheduleOntology:polyConstantLiteralValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/InstancesAutoVerification#time -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/InstancesAutoVerification#time">
+        <rdf:type rdf:resource="https://w3id.org/seas/CommunicationConnectionPoint"/>
+        <seas:connectsSystemThrough rdf:resource="https://w3id.org/ibp/InstancesAutoVerification#connR2InpTime"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/ScheduleOntology#daily -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/ScheduleOntology#daily"/>
+    
+
+
+    <!-- https://w3id.org/ibp/ScheduleOntology#hasLiteralValue -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/ScheduleOntology#hasLiteralValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/ScheduleOntology#polyConstantDegree -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/ScheduleOntology#polyConstantDegree">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ibp/ScheduleOntology#polyConstantLiteralValue -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/ScheduleOntology#polyConstantLiteralValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+

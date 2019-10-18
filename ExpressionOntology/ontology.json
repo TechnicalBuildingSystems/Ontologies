@@ -1,0 +1,326 @@
+[ {
+  "@id" : "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#LinkedList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#ListElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#ListElement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#ListElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#previousElement"
+  } ]
+}, {
+  "@id" : "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#previousElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#ListElement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#ListElement"
+  } ]
+}, {
+  "@id" : "file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#LinkedList"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#ListElement"
+  } ]
+}, {
+  "@id" : "http://numerateweb.org/vocab/math#Literal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/ExpressionOntology#Operand"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://numerateweb.org/vocab/math#Variable"
+  } ]
+}, {
+  "@id" : "http://numerateweb.org/vocab/math#Symbol",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://numerateweb.org/vocab/math#Variable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/ExpressionOntology#Operand"
+  } ]
+}, {
+  "@id" : "http://numerateweb.org/vocab/math#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://numerateweb.org/vocab/math#operator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ibp/ExpressionOntology#Operator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://numerateweb.org/vocab/math#Symbol"
+  } ]
+}, {
+  "@id" : "http://numerateweb.org/vocab/math#value",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocommons/voaf#Vocabulary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.openmath.org/cd/arith1#divide",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://numerateweb.org/vocab/math#Symbol" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Division /"
+  } ]
+}, {
+  "@id" : "http://www.openmath.org/cd/arith1#minus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://numerateweb.org/vocab/math#Symbol" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Subtraction -"
+  } ]
+}, {
+  "@id" : "http://www.openmath.org/cd/arith1#plus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://numerateweb.org/vocab/math#Symbol" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Addition +"
+  } ]
+}, {
+  "@id" : "http://www.openmath.org/cd/arith1#power",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://numerateweb.org/vocab/math#Symbol" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "To the power of ^"
+  } ]
+}, {
+  "@id" : "http://www.openmath.org/cd/arith1#times",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://numerateweb.org/vocab/math#Symbol" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Multiplication"
+  } ]
+}, {
+  "@id" : "http://www.openmath.org/cd/logic1#and",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://numerateweb.org/vocab/math#Symbol" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Logical AND"
+  } ]
+}, {
+  "@id" : "http://www.openmath.org/cd/logic1#not",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://numerateweb.org/vocab/math#Symbol" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Logical NOT"
+  } ]
+}, {
+  "@id" : "http://www.openmath.org/cd/logic1#or",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://numerateweb.org/vocab/math#Symbol" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Logical OR"
+  } ]
+}, {
+  "@id" : "http://www.openmath.org/cd/logic1#xor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://numerateweb.org/vocab/math#Symbol" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Logical XOR <"
+  } ]
+}, {
+  "@id" : "http://www.openmath.org/cd/relation1#eq",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://numerateweb.org/vocab/math#Symbol" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "equal = <"
+  } ]
+}, {
+  "@id" : "http://www.openmath.org/cd/relation1#geq",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://numerateweb.org/vocab/math#Symbol" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "greater than or equal >="
+  } ]
+}, {
+  "@id" : "http://www.openmath.org/cd/relation1#gt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://numerateweb.org/vocab/math#Symbol" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Greater than >"
+  } ]
+}, {
+  "@id" : "http://www.openmath.org/cd/relation1#leq",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://numerateweb.org/vocab/math#Symbol" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Less than or equal <="
+  } ]
+}, {
+  "@id" : "http://www.openmath.org/cd/relation1#lt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://numerateweb.org/vocab/math#Symbol" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Less than <"
+  } ]
+}, {
+  "@id" : "http://www.openmath.org/cd/relation1#neq",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://numerateweb.org/vocab/math#Symbol" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Not equal != <"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/CTRLont#Parameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/ibp/CTRLont#logicInput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/ibp/CTRLont#logicParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ibp/CTRLont#Parameter"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/ExpressionOntology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/vocommons/voaf#Vocabulary" ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Walter Terkaj"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-2033-859X"
+  }, {
+    "@id" : "https://www.researchgate.net/profile/Georg_Schneider3"
+  }, {
+    "@value" : "Georg Ferdinand Schneider"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "The expression ontology is an ontology to represent mathematical expressions from the  engineering domain.  The ontology and is used are documented in [1]. Precursors of the model developed simultaneously are published in [2,3]. The ontology reuses concepts from the OntoCAPE [4] and OpenMath [5] ontologies. The ontology is implemented using the free protege tool (protege.stanford.edu) [5].\n\n[1] G. F. Schneider, H. Wicaksono, and J. Ovtcharova. Virtual Engineering of Cyber-Physical Automation Systems: The Case of Control Logic. Advanced Engineering Informatics, February 2018. Submitted.\n\n[2] W. Terkaj, G. F. Schneider, and P. Pauwels. Reusing Domain Ontologies in Linked Building Data: the Case of Building Automation and Control. In Proceedings of the 8th International Workshop on Formal Ontologies Meet Industry (FOMI), pages 1{12, Bolzano, Italy, September 2017.\n\n[3] G. F. Schneider, P. Pauwels, and S. Steiger. Ontology-based Modeling of Control Logic in Building Automation Systems. IEEE Transactions on Industrial Informatics, 13(6):3350-3360, December 2017.\n\n[4] W. Marquardt, J. Morbach, A. Wiesner, and A. Yang. OntoCAPE: A re-usable ontology for chemical process engineering. Springer, Berlin, Germany, 2009.\n\n[5] K. Wenzel and H. Reinhardt. Mathematical computations for linked data applications with OpenMath. In Joint Proceedings of the 24th Workshop on OpenMath and the 7th Workshop on Mathematical User Interfaces (MathUI), pages 38{48, Bremen, Germany, 2012\n\n[6] M. A. Musen. The protege project: a look back and a look forward. AI matters, 1(4):4-12, 2015, doi: 10.1145/2757001.2757003."
+  } ],
+  "http://purl.org/dc/terms/identifier" : [ {
+    "@value" : "https://w3id.org/ibp/ExpressionOntology#"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2018-03-01"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://creativecommons.org/licenses/by-sa/4.0"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2018-03-10"
+  } ],
+  "http://purl.org/dc/terms/rights" : [ {
+    "@language" : "en",
+    "@value" : "Copyright (c) 2018, Fraunhofer Institute for Building Physics,\n\t\t\tNuremberg, Germany. This ontology is distributed under a Creative Commons Attribution \n\t\t\tShare Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "The Expression Ontology."
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "exp"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@id" : "https://w3id.org/ibp/ExpressionOntology#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "ExpressionOntology specifies concepts and relationships to describe mathematical expressions."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ExpressionOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://dx.doi.org/10.1007/978-3-642-04655-1"
+  }, {
+    "@id" : "https://github.com/numerateweb/numerateweb"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/ibp/ExpressionOntology-0.0.1"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "v0.0.1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/ExpressionOntology#BinaryOperator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/ExpressionOntology#Operator"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/ibp/ExpressionOntology#UnaryOperator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/ExpressionOntology#Expression",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#LinkedList"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/ExpressionOntology#ExpressionElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#ListElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/ExpressionOntology#Operand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/ExpressionOntology#ExpressionElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/ExpressionOntology#Operator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/ExpressionOntology#ExpressionElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/ExpressionOntology#UnaryOperator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ibp/ExpressionOntology#Operator"
+  } ]
+} ]

@@ -1,0 +1,192 @@
+<https://w3id.org/ibp/InstancesTwoTranFromIni> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni> <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-2033-859X> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni> <http://purl.org/dc/terms/creator> <https://www.researchgate.net/profile/Georg_Schneider3> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni> <http://purl.org/dc/terms/creator> "Georg Ferdinand Schneider" .
+<https://w3id.org/ibp/InstancesTwoTranFromIni> <http://purl.org/dc/terms/description> "The ontology provides instances of the examples described in the PhD thesis of Georg Ferdinand Schneider [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].\r\n\r\n[1] Schneider, G.F. (2019): \"Semantic Model for Control Logic in Automation Systems - Knowledge-Based Support of the Engineering and Operation of Control Logic in Building and Industrial Automation Systems\" PhD thesis, Karlsruhe Institute of Technology, Karlsruhe, Germany.\r\n\r\n[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003."@en .
+<https://w3id.org/ibp/InstancesTwoTranFromIni> <http://purl.org/dc/terms/identifier> "https://w3id.org/ibp/InstancesTwoTranFromIni#" .
+<https://w3id.org/ibp/InstancesTwoTranFromIni> <http://purl.org/dc/terms/issued> "2018-02-04"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/4.0> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni> <http://purl.org/dc/terms/modified> "2019-03-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni> <http://purl.org/dc/terms/rights> "Copyright (c) 2019, Georg Ferdinand Schneider, Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"@en .
+<https://w3id.org/ibp/InstancesTwoTranFromIni> <http://purl.org/dc/terms/title> "Ontology InstancesTwoTranFromIni."@en .
+<https://w3id.org/ibp/InstancesTwoTranFromIni> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/ibp/InstancesTwoTranFromIni#> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology with instances of InstancesTwoTranFromIni."@en .
+<https://w3id.org/ibp/InstancesTwoTranFromIni> <http://www.w3.org/2000/01/rdf-schema#label> "InstancesTwoTranFromIni"@en .
+<https://w3id.org/ibp/InstancesTwoTranFromIni> <http://www.w3.org/2002/07/owl#versionInfo> "v0.2.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://w3id.org/ibp/CTRLont#hasApplicationLogic
+<http://w3id.org/ibp/CTRLont#hasApplicationLogic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://w3id.org/ibp/StateMachineOntology#contains
+<http://w3id.org/ibp/StateMachineOntology#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://w3id.org/ibp/StateMachineOntology#hosts
+<http://w3id.org/ibp/StateMachineOntology#hosts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://w3id.org/ibp/StateMachineOntology#source
+<http://w3id.org/ibp/StateMachineOntology#source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://w3id.org/ibp/StateMachineOntology#target
+<http://w3id.org/ibp/StateMachineOntology#target> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://w3id.org/ibp/StateMachineOntology#transitionEvent
+<http://w3id.org/ibp/StateMachineOntology#transitionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/ibp/CTRLont#ApplicationLogic
+<http://w3id.org/ibp/CTRLont#ApplicationLogic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://w3id.org/ibp/CTRLont#ControlActor
+<http://w3id.org/ibp/CTRLont#ControlActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://w3id.org/ibp/StateMachineOntology#Completion
+<http://w3id.org/ibp/StateMachineOntology#Completion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://w3id.org/ibp/StateMachineOntology#Event
+<http://w3id.org/ibp/StateMachineOntology#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://w3id.org/ibp/StateMachineOntology#InitialState
+<http://w3id.org/ibp/StateMachineOntology#InitialState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://w3id.org/ibp/StateMachineOntology#Region
+<http://w3id.org/ibp/StateMachineOntology#Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://w3id.org/ibp/StateMachineOntology#SimpleState
+<http://w3id.org/ibp/StateMachineOntology#SimpleState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://w3id.org/ibp/StateMachineOntology#StateMachine
+<http://w3id.org/ibp/StateMachineOntology#StateMachine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://w3id.org/ibp/StateMachineOntology#Transition
+<http://w3id.org/ibp/StateMachineOntology#Transition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/ibp/InstancesTwoTranFromIni#State1
+<https://w3id.org/ibp/InstancesTwoTranFromIni#State1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni#State1> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA00z7nPY7Y%3D> .
+# 
+# https://w3id.org/ibp/InstancesTwoTranFromIni#State2
+<https://w3id.org/ibp/InstancesTwoTranFromIni#State2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni#State2> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAxO9bmo81I%3D> .
+# 
+# https://w3id.org/ibp/InstancesTwoTranFromIni#initial
+<https://w3id.org/ibp/InstancesTwoTranFromIni#initial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni#initial> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAxCxbmXJwg%3D> .
+# 
+# https://w3id.org/ibp/InstancesTwoTranFromIni#t1
+<https://w3id.org/ibp/InstancesTwoTranFromIni#t1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni#t1> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA2PFboHhmg%3D> .
+# 
+# https://w3id.org/ibp/InstancesTwoTranFromIni#t2
+<https://w3id.org/ibp/InstancesTwoTranFromIni#t2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni#t2> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA1NFbn09lM%3D> .
+# 
+# https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA00z7nPY7Y%3D
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA00z7nPY7Y%3D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA00z7nPY7Y%3D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/ibp/StateMachineOntology#SimpleState> .
+# 
+# https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA1NFbn09lM%3D
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA1NFbn09lM%3D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA1NFbn09lM%3D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/ibp/StateMachineOntology#Transition> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA1NFbn09lM%3D> <http://w3id.org/ibp/StateMachineOntology#source> <https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAxCxbmXJwg%3D> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA1NFbn09lM%3D> <http://w3id.org/ibp/StateMachineOntology#target> <https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAxO9bmo81I%3D> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA1NFbn09lM%3D> <http://w3id.org/ibp/StateMachineOntology#transitionEvent> <https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA1NFbn09lM%3D-Event> .
+# 
+# https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA1NFbn09lM%3D-Event
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA1NFbn09lM%3D-Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA1NFbn09lM%3D-Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/ibp/StateMachineOntology#Completion> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA1NFbn09lM%3D-Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/ibp/StateMachineOntology#Event> .
+# 
+# https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA2PFboHhmg%3D
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA2PFboHhmg%3D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA2PFboHhmg%3D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/ibp/StateMachineOntology#Transition> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA2PFboHhmg%3D> <http://w3id.org/ibp/StateMachineOntology#source> <https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAxCxbmXJwg%3D> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA2PFboHhmg%3D> <http://w3id.org/ibp/StateMachineOntology#target> <https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA00z7nPY7Y%3D> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA2PFboHhmg%3D> <http://w3id.org/ibp/StateMachineOntology#transitionEvent> <https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA2PFboHhmg%3D-Event> .
+# 
+# https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA2PFboHhmg%3D-Event
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA2PFboHhmg%3D-Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA2PFboHhmg%3D-Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/ibp/StateMachineOntology#Completion> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA2PFboHhmg%3D-Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/ibp/StateMachineOntology#Event> .
+# 
+# https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAwrN7mQkAM%3D
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAwrN7mQkAM%3D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAwrN7mQkAM%3D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/ibp/CTRLont#ApplicationLogic> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAwrN7mQkAM%3D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/ibp/StateMachineOntology#StateMachine> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAwrN7mQkAM%3D> <http://w3id.org/ibp/StateMachineOntology#contains> <https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA00z7nPY7Y%3D> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAwrN7mQkAM%3D> <http://w3id.org/ibp/StateMachineOntology#contains> <https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAwrN7mRos0%3D> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAwrN7mQkAM%3D> <http://w3id.org/ibp/StateMachineOntology#contains> <https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAxCxbmXJwg%3D> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAwrN7mQkAM%3D> <http://w3id.org/ibp/StateMachineOntology#contains> <https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAxO9bmo81I%3D> .
+# 
+# https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAwrN7mQkAM%3D-CA
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAwrN7mQkAM%3D-CA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAwrN7mQkAM%3D-CA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/ibp/CTRLont#ControlActor> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAwrN7mQkAM%3D-CA> <http://w3id.org/ibp/CTRLont#hasApplicationLogic> <https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAwrN7mQkAM%3D> .
+# 
+# https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAwrN7mRos0%3D
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAwrN7mRos0%3D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAwrN7mRos0%3D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/ibp/StateMachineOntology#Region> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAwrN7mRos0%3D> <http://w3id.org/ibp/StateMachineOntology#hosts> <https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZA00z7nPY7Y%3D> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAwrN7mRos0%3D> <http://w3id.org/ibp/StateMachineOntology#hosts> <https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAxCxbmXJwg%3D> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAwrN7mRos0%3D> <http://w3id.org/ibp/StateMachineOntology#hosts> <https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAxO9bmo81I%3D> .
+# 
+# https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAxCxbmXJwg%3D
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAxCxbmXJwg%3D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAxCxbmXJwg%3D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/ibp/StateMachineOntology#InitialState> .
+# 
+# https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAxO9bmo81I%3D
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAxO9bmo81I%3D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesTwoTranFromIni#AAAAAAFgZAxO9bmo81I%3D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/ibp/StateMachineOntology#SimpleState> .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

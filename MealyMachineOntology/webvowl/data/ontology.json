@@ -1,0 +1,413 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.4), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "https://w3id.org/ibp/MealyMachineOntology", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/ibp/CTRLont", "https://w3id.org/ibp/ExpressionOntology" ],
+    "title" : {
+      "en" : "Mealy Machine Ontology - An ontology to formally specify the discrete control logic expressed as a Mealy machine"
+    },
+    "iri" : "https://w3id.org/ibp/MealyMachineOntology",
+    "version" : "v0.0.1",
+    "author" : [ "Georg Ferdinand Schneider", "https://www.researchgate.net/profile/Georg_Schneider3", "https://orcid.org/0000-0002-2033-859X" ],
+    "description" : {
+      "en" : "The ontology and its use will be documented. The ontology is implemented using the free protege tool (protege.stanford.edu) (Musen, 2015). Mealy machines are first defined in (Mealy, 1955).\n\nG. H. Mealy, ''A method for synthesizing sequential circuits,'' Bell Labs\nTechnical Journal, vol. 34, no. 5, pp. 1045–1079, 1955.\n\nM. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003.\n"
+    },
+    "labels" : {
+      "en" : "Mealy Machine Ontology"
+    },
+    "comments" : {
+      "en" : "Ontology to explicitly model control logic based on the Mealy machine formalism."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by-sa/4.0",
+        "type" : "iri"
+      } ],
+      "identifier" : [ {
+        "identifier" : "identifier",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ibp/MealyMachineOntology#",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://orcid.org/0000-0002-2033-859X",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://www.researchgate.net/profile/Georg_Schneider3",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Georg Ferdinand Schneider",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "mea",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "en",
+        "value" : "Copyright (c) 2017/ 2018, Fraunhofer Institute for Building Physics,\n\t\t\tNuremberg, Germany. This ontology is distributed under a Creative Commons Attribution \n\t\t\tShare Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2018-03-25",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ibp/MealyMachineOntology#",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "v0.0.1",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2018-02-01",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Mealy Machine Ontology - An ontology to formally specify the discrete control logic expressed as a Mealy machine",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 9,
+    "objectPropertyCount" : 7,
+    "datatypePropertyCount" : 1,
+    "individualCount" : 0
+  },
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "5",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/ibp/MealyMachineOntology#Transition",
+    "baseIri" : "https://w3id.org/ibp/MealyMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Transition"
+    },
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/MealyMachineOntology#Condition",
+    "baseIri" : "https://w3id.org/ibp/MealyMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Condition"
+    },
+    "id" : "2",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "3",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "4",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "5",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/ibp/MealyMachineOntology#State",
+    "baseIri" : "https://w3id.org/ibp/MealyMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "State"
+    },
+    "subClasses" : [ "7" ],
+    "id" : "6",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/ExpressionOntology#Expression",
+    "baseIri" : "https://w3id.org/ibp/ExpressionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Expression"
+    },
+    "attributes" : [ "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "https://w3id.org/ibp/MealyMachineOntology#InitialState",
+    "baseIri" : "https://w3id.org/ibp/MealyMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InitialState"
+    },
+    "id" : "7",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/MealyMachineOntology#MealyElement",
+    "baseIri" : "https://w3id.org/ibp/MealyMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MealyElement"
+    },
+    "subClasses" : [ "12", "2", "0", "6" ],
+    "id" : "1"
+  }, {
+    "iri" : "https://w3id.org/ibp/MealyMachineOntology#Action",
+    "baseIri" : "https://w3id.org/ibp/MealyMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Action"
+    },
+    "id" : "12",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/MealyMachineOntology#MealyMachine",
+    "baseIri" : "https://w3id.org/ibp/MealyMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MealyMachine"
+    },
+    "id" : "21"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#Output",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Output"
+    },
+    "attributes" : [ "external" ],
+    "id" : "24"
+  } ],
+  "property" : [ {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "22",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/ibp/CTRLont#logicOutput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "logicOutput"
+    },
+    "domain" : "4",
+    "attributes" : [ "external", "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://w3id.org/ibp/MealyMachineOntology#conditionExpr",
+    "baseIri" : "https://w3id.org/ibp/MealyMachineOntology",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "conditionExpr"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "9"
+  }, {
+    "range" : "6",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/ibp/MealyMachineOntology#assignSimpleValue",
+    "baseIri" : "https://w3id.org/ibp/MealyMachineOntology",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "assignSimpleValue"
+    },
+    "domain" : "12",
+    "attributes" : [ "datatype" ],
+    "id" : "11"
+  }, {
+    "range" : "1",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "13"
+  }, {
+    "range" : "1",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "15"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "16"
+  }, {
+    "range" : "1",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://w3id.org/ibp/MealyMachineOntology#target",
+    "baseIri" : "https://w3id.org/ibp/MealyMachineOntology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "target"
+    },
+    "domain" : "0",
+    "attributes" : [ "object" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://w3id.org/ibp/MealyMachineOntology#transitionCondition",
+    "baseIri" : "https://w3id.org/ibp/MealyMachineOntology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "transitionCondition"
+    },
+    "domain" : "0",
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://w3id.org/ibp/MealyMachineOntology#contains",
+    "baseIri" : "https://w3id.org/ibp/MealyMachineOntology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "contains"
+    },
+    "domain" : "21",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "20"
+  }, {
+    "iri" : "https://w3id.org/ibp/MealyMachineOntology#contains",
+    "baseIri" : "https://w3id.org/ibp/MealyMachineOntology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "contains"
+    },
+    "domain" : "21",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "22"
+  }, {
+    "iri" : "https://w3id.org/ibp/MealyMachineOntology#contains",
+    "baseIri" : "https://w3id.org/ibp/MealyMachineOntology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "contains"
+    },
+    "domain" : "21",
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://w3id.org/ibp/MealyMachineOntology#transitionAction",
+    "baseIri" : "https://w3id.org/ibp/MealyMachineOntology",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "transitionAction"
+    },
+    "domain" : "0",
+    "attributes" : [ "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "https://w3id.org/ibp/MealyMachineOntology#source",
+    "baseIri" : "https://w3id.org/ibp/MealyMachineOntology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "source"
+    },
+    "domain" : "0",
+    "attributes" : [ "object" ],
+    "id" : "26"
+  } ]
+}

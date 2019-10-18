@@ -1,0 +1,938 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.org/vocommons/voaf", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/ibp/SequenceControlOntology", "https://w3id.org/ibp/CTRLont" ],
+    "iri" : "https://w3id.org/ibp/SequenceControlOntologyEval",
+    "version" : "v0.1.0",
+    "author" : [ "Georg Ferdinand Schneider", "https://www.researchgate.net/profile/Georg_Schneider3", "https://orcid.org/0000-0002-2033-859X" ],
+    "description" : {
+      "en" : "The ontology provides instances of the examples described in the PhD thesis of Georg Ferdinand Schneider [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].\r\n\r\n[1] Schneider, G.F. (2019): \"Semantic Model for Control Logic in Automation Systems - Knowledge-Based Support of the Engineering and Operation of Control Logic in Building and Industrial Automation Systems\" PhD thesis, Karlsruhe Institute of Technology, Karlsruhe, Germany.\r\n\r\n[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003."
+    },
+    "labels" : {
+      "en" : "SequenceControlOntologyEval"
+    },
+    "comments" : {
+      "en" : "Ontology with instances of SequenceControlOntologyEval."
+    },
+    "other" : {
+      "identifier" : [ {
+        "identifier" : "identifier",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ibp/SequenceControlOntologyEval#",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by-sa/4.0",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://orcid.org/0000-0002-2033-859X",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Georg Ferdinand Schneider",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://www.researchgate.net/profile/Georg_Schneider3",
+        "type" : "iri"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "en",
+        "value" : "Copyright (c) 2019, Georg Ferdinand Schneider, Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-03-07",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ibp/SequenceControlOntologyEval#",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "v0.1.0",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2018-06-30",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "20",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "21",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "22",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/ibp/CTRLont#Parameter",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Parameter",
+      "en" : "Parameter"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/SequenceControlOntologyEval#par1",
+      "baseIri" : "https://w3id.org/ibp/SequenceControlOntologyEval",
+      "labels" : {
+        "IRI-based" : "par1"
+      }
+    } ],
+    "comment" : {
+      "en" : "Parameter describe time-invariant values and settings of the respective control actor. Thus thay can be added dependent on the respective application logic."
+    },
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#Unit",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Unit",
+      "en" : "Unit"
+    },
+    "comment" : {
+      "en" : "Placeholder concept to stipulate reuse of existing ontologies such as Ontology for Units and Measures (OM) or QUDT."
+    },
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#AnnotatedElement",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AnnotatedElement",
+      "en" : "Annotated Element"
+    },
+    "subClasses" : [ "8", "7", "9" ],
+    "comment" : {
+      "en" : "An annotated element is a generic superclass for ctrl:Input, ctrl:Output and ctrl:Parameter"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#DataType",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://www.w3.org/TR/xmlschema-2/#built-in-datatypes",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DataType",
+      "en" : "Data type"
+    },
+    "comment" : {
+      "en" : "Placeholder class for the specification of basic data types such as, e.g. integer, boolean or double."
+    },
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#Medium",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://wiki.dbpedia.org/",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://www.productontology.org/id/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Medium",
+      "en" : "Medium"
+    },
+    "comment" : {
+      "en" : "Placeholder concept to stipulate reuse of existing ontologies such as dbpedia or  \thttp://www.productontology.org/id/"
+    },
+    "attributes" : [ "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#Output",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Output",
+      "en" : "Output"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/SequenceControlOntologyEval#YCoo",
+      "baseIri" : "https://w3id.org/ibp/SequenceControlOntologyEval",
+      "labels" : {
+        "IRI-based" : "YCoo"
+      }
+    } ],
+    "comment" : {
+      "en" : "An output allows compute results by the application logic of an control actor to be fowarded to outside entities such as actuators or other control actors."
+    },
+    "attributes" : [ "external" ],
+    "id" : "7",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#SemanticType",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SemanticType",
+      "en" : "Semantic Type"
+    },
+    "comment" : {
+      "en" : "It may be required to further annotate an Input, Output or Parameter with a specific Semantic Type. For example in building automation to differ between room air temperature or outdoor air temperature."
+    },
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "4",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "20",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "21",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "22",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://purl.org/vocommons/voaf#Vocabulary",
+    "baseIri" : "http://purl.org/vocommons/voaf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Vocabulary"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/CTRLont",
+      "baseIri" : "https://w3id.org/ibp",
+      "labels" : {
+        "IRI-based" : "CTRLont"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#ApplicationLogic",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ApplicationLogic",
+      "en" : "Application Logic"
+    },
+    "comment" : {
+      "en" : "Concept to specify the application logic of a control actor. Seperate ontologies may be used to further specify this concept."
+    },
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#ControlActor",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ControlActor",
+      "en" : "Control Actor"
+    },
+    "comment" : {
+      "en" : "Concept to describe the in general accepted Sense-Process-Actuate\npattern in automation systems, e.g. function blocks from IEC 61499."
+    },
+    "attributes" : [ "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://w3id.org/ibp/SequenceControlOntology#Sequence",
+    "baseIri" : "https://w3id.org/ibp/SequenceControlOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sequence"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/SequenceControlOntologyEval#seq1",
+      "baseIri" : "https://w3id.org/ibp/SequenceControlOntologyEval",
+      "annotations" : {
+        "hasInterval" : [ {
+          "identifier" : "hasInterval",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/SequenceControlOntologyEval#int3",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasInterval",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/SequenceControlOntologyEval#int2",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "seq1"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "41"
+  }, {
+    "iri" : "https://w3id.org/ibp/SequenceControlOntology#Interval",
+    "baseIri" : "https://w3id.org/ibp/SequenceControlOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Interval"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/SequenceControlOntologyEval#int2",
+      "baseIri" : "https://w3id.org/ibp/SequenceControlOntologyEval",
+      "annotations" : {
+        "isConsecutiveInterval" : [ {
+          "identifier" : "isConsecutiveInterval",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/SequenceControlOntologyEval#int3",
+          "type" : "iri"
+        } ],
+        "hasStartPoint" : [ {
+          "identifier" : "hasStartPoint",
+          "language" : "undefined",
+          "value" : "_:genid2147483668",
+          "type" : "label"
+        } ],
+        "hasMathematicalFunction" : [ {
+          "identifier" : "hasMathematicalFunction",
+          "language" : "undefined",
+          "value" : "_:genid2147483666",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "int2"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/SequenceControlOntologyEval#int3",
+      "baseIri" : "https://w3id.org/ibp/SequenceControlOntologyEval",
+      "labels" : {
+        "IRI-based" : "int3"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "44"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#Input",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Input",
+      "en" : "Input"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/SequenceControlOntologyEval#Toa",
+      "baseIri" : "https://w3id.org/ibp/SequenceControlOntologyEval",
+      "labels" : {
+        "IRI-based" : "Toa"
+      }
+    } ],
+    "comment" : {
+      "en" : "An input allow flows of information to enter a control actor. Inputs are processed by the respective application logic of the control actor to compute the outputs."
+    },
+    "attributes" : [ "external" ],
+    "id" : "8",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#Quantity",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://qudt.org/schema/qudt",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Quantity",
+      "en" : "Quantity"
+    },
+    "comment" : {
+      "en" : "Placeholder concept to stipulate reuse of existing ontologies such as Ontology for Units and Measures (OM) or QUDT."
+    },
+    "attributes" : [ "external" ],
+    "id" : "2"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "25",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "26",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "29",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "30",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "33",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "34",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "35",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "36",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "40",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasQuantity",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasQuantity",
+      "en" : "hasQuantity"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Object property to annotate an input, output or parameter with its quantity."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasApplicationLogic",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasApplicationLogic",
+      "en" : "hasApplicationLogic"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its specific application logic"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#isConnectedTo",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "isConnectedTo",
+      "en" : "isConnectedTo"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Object property to describe the topological relationship between an input of one control actor and the output of another."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasSemanticType",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasSemanticType",
+      "en" : "hasSemanticType"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Object property to relate an input, output or parameter with its semantic type."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasOutput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasOutput",
+      "en" : "hasOutput"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its outputs."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "14"
+  }, {
+    "range" : "1",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "17"
+  }, {
+    "range" : "1",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "18"
+  }, {
+    "range" : "1",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasOutput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasOutput",
+      "en" : "hasOutput"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its outputs."
+    },
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "23"
+  }, {
+    "range" : "9",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "25"
+  }, {
+    "range" : "9",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasDataType",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "hasDataType",
+      "en" : "hasDataType"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Object property to annotate a input, output or parameter with its data type."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasSemanticType",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasSemanticType",
+      "en" : "hasSemanticType"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Object property to relate an input, output or parameter with its semantic type."
+    },
+    "attributes" : [ "allValues", "external", "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasDataType",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "hasDataType",
+      "en" : "hasDataType"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Object property to annotate a input, output or parameter with its data type."
+    },
+    "attributes" : [ "allValues", "external", "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasUnit",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasUnit",
+      "en" : "hasUnit"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Object property to relate an input, output or parameter with its unit."
+    },
+    "attributes" : [ "allValues", "external", "object" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#logicOutput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "logicOutput",
+      "en" : "logicOutput"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "Object property to express the relationship of some application logic concept to an output."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasInput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasInput",
+      "en" : "hasInput"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its inputs."
+    },
+    "attributes" : [ "allValues", "external", "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasParameter",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasParameter",
+      "en" : "hasParameter"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its parameter."
+    },
+    "attributes" : [ "allValues", "external", "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasApplicationLogic",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasApplicationLogic",
+      "en" : "hasApplicationLogic"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its specific application logic"
+    },
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasOutput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasOutput",
+      "en" : "hasOutput"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its outputs."
+    },
+    "attributes" : [ "allValues", "external", "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasApplicationLogic",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasApplicationLogic",
+      "en" : "hasApplicationLogic"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its specific application logic"
+    },
+    "attributes" : [ "allValues", "external", "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#isSupervisedBy",
+    "inverse" : "38",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "isSupervisedBy",
+      "en" : "isSupervisedBy"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Object property to describe hierarchical composition of control actors."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "37"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasMedium",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasMedium",
+      "en" : "hasMedium"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Object property to annotate an input, output or parameter with its medium."
+    },
+    "attributes" : [ "allValues", "external", "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasQuantity",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasQuantity",
+      "en" : "hasQuantity"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Object property to annotate an input, output or parameter with its quantity."
+    },
+    "attributes" : [ "allValues", "external", "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasUnit",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasUnit",
+      "en" : "hasUnit"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Object property to relate an input, output or parameter with its unit."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#supervises",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "supervises",
+      "en" : "supervises"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Object property to describe if one control actor supervises another."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasParameter",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasParameter",
+      "en" : "hasParameter"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its parameter."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasInput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasInput",
+      "en" : "hasInput"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its inputs."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "45"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasMedium",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasMedium",
+      "en" : "hasMedium"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Object property to annotate an input, output or parameter with its medium."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#logicInput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "logicInput",
+      "en" : "logicInput"
+    },
+    "domain" : "22",
+    "comment" : {
+      "en" : "Object property to express the relationship of some application logic concept to an input."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#logicParameter",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "logicParameter",
+      "en" : "logicParameter"
+    },
+    "domain" : "21",
+    "comment" : {
+      "en" : "Object property to express the relationship of some application logic concept to an parameter."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "48"
+  } ]
+}

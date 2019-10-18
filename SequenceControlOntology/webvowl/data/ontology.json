@@ -1,0 +1,563 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.4), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.org/vocommons/voaf", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/ibp/SequenceControlOntology", "https://w3id.org/ibp/CTRLont" ],
+    "title" : {
+      "en" : "SequenceControlOntology - An ontology to formally specify the sequence control in automation systems."
+    },
+    "iri" : "https://w3id.org/ibp/SequenceControlOntology",
+    "version" : "v0.0.1",
+    "author" : [ "Georg Ferdinand Schneider", "https://www.researchgate.net/profile/Georg_Schneider3", "https://orcid.org/0000-0002-2033-859X" ],
+    "description" : {
+      "en" : "The ontology and its use are described in [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].\n\n[1] Schneider, G.F. (2018): \"Semantic Model for Control Logic in Automation Systems Knowledge-Based Support of the Engineering and Operation of Control Logic in Building and Industrial Automation Systems\" PhD thesis, Karlsruhe Institute of Technology, Faculty of Mechanical Engineering, Karlsruhe, Germany.\n\n[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003."
+    },
+    "labels" : {
+      "en" : "SequenceControlOntology"
+    },
+    "comments" : {
+      "en" : "SequenceControlOntology describes a typical type of control logic explicitly commonly referred to as SequenceControl (c.f. ISO 16484-3 [1]).\n\n[1] ISO 16484-3. Building automation and control systems (BACS) - Part 3: Functions, 2005. International Standardization Organization, Geneva, Switzerland."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by-sa/4.0",
+        "type" : "iri"
+      } ],
+      "identifier" : [ {
+        "identifier" : "identifier",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ibp/SequenceControlOntology#",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://www.researchgate.net/profile/Georg_Schneider3",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://orcid.org/0000-0002-2033-859X",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Georg Ferdinand Schneider",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "seq",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "en",
+        "value" : "Copyright (c) 2018, Fraunhofer Institute for Building Physics,\n\t\t\tNuremberg, Germany. This ontology is distributed under a Creative Commons Attribution \n\t\t\tShare Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2017-08-21",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "en",
+        "value" : "v0.0.1",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ibp/SequenceControlOntology#",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2018-02-01",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "SequenceControlOntology - An ontology to formally specify the sequence control in automation systems.",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 14,
+    "objectPropertyCount" : 11,
+    "datatypePropertyCount" : 3,
+    "individualCount" : 1
+  },
+  "class" : [ {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "15",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/ibp/SequenceControlOntology#Coordinate",
+    "baseIri" : "https://w3id.org/ibp/SequenceControlOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Coordinate"
+    },
+    "id" : "1"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#ApplicationLogic",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ApplicationLogic"
+    },
+    "subClasses" : [ "4" ],
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "15",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#Parameter",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Parameter"
+    },
+    "attributes" : [ "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://w3id.org/ibp/SequenceControlOntology#MathematicalFunction",
+    "baseIri" : "https://w3id.org/ibp/SequenceControlOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MathematicalFunction"
+    },
+    "id" : "7"
+  }, {
+    "iri" : "https://w3id.org/ibp/SequenceControlOntology#EndPoint",
+    "baseIri" : "https://w3id.org/ibp/SequenceControlOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EndPoint"
+    },
+    "id" : "20",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/SequenceControlOntology#PolynomialConstant",
+    "baseIri" : "https://w3id.org/ibp/SequenceControlOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PolynomialConstant"
+    },
+    "id" : "12"
+  }, {
+    "iri" : "https://w3id.org/ibp/SequenceControlOntology#StartPoint",
+    "baseIri" : "https://w3id.org/ibp/SequenceControlOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StartPoint"
+    },
+    "id" : "24",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/SequenceControlOntology#Sequence",
+    "baseIri" : "https://w3id.org/ibp/SequenceControlOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sequence"
+    },
+    "id" : "4",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/SequenceControlOntology#Interval",
+    "baseIri" : "https://w3id.org/ibp/SequenceControlOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Interval"
+    },
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#Input",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Input"
+    },
+    "attributes" : [ "external" ],
+    "id" : "28"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#Output",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Output"
+    },
+    "attributes" : [ "external" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://w3id.org/ibp/SequenceControlOntology#Point",
+    "baseIri" : "https://w3id.org/ibp/SequenceControlOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Point"
+    },
+    "subClasses" : [ "20", "24" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://purl.org/vocommons/voaf#Vocabulary",
+    "baseIri" : "http://purl.org/vocommons/voaf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Vocabulary"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/SequenceControlOntology",
+      "baseIri" : "https://w3id.org/ibp",
+      "labels" : {
+        "IRI-based" : "SequenceControlOntology"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "36"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "10",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "11",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "25",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/ibp/SequenceControlOntology#hasLiteralValue",
+    "baseIri" : "https://w3id.org/ibp/SequenceControlOntology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasLiteralValue"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/ibp/SequenceControlOntology#hasInterval",
+    "baseIri" : "https://w3id.org/ibp/SequenceControlOntology",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasInterval"
+    },
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/ibp/SequenceControlOntology#hasMathematicalFunction",
+    "baseIri" : "https://w3id.org/ibp/SequenceControlOntology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasMathematicalFunction"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://w3id.org/ibp/SequenceControlOntology#hasInterval",
+    "baseIri" : "https://w3id.org/ibp/SequenceControlOntology",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasInterval"
+    },
+    "domain" : "4",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://w3id.org/ibp/SequenceControlOntology#hasInterval",
+    "baseIri" : "https://w3id.org/ibp/SequenceControlOntology",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasInterval"
+    },
+    "domain" : "4",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/ibp/SequenceControlOntology#polyConstantLiteralValue",
+    "baseIri" : "https://w3id.org/ibp/SequenceControlOntology",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "polyConstantLiteralValue"
+    },
+    "domain" : "12",
+    "attributes" : [ "datatype" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#logicOutput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "logicOutput"
+    },
+    "domain" : "15",
+    "attributes" : [ "object", "external" ],
+    "id" : "14"
+  }, {
+    "range" : "8",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "18"
+  }, {
+    "range" : "21",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://w3id.org/ibp/SequenceControlOntology#hasPolynomicalConstant",
+    "baseIri" : "https://w3id.org/ibp/SequenceControlOntology",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasPolynomicalConstant"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "https://w3id.org/ibp/SequenceControlOntology#hasPolynomicalConstant",
+    "baseIri" : "https://w3id.org/ibp/SequenceControlOntology",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasPolynomicalConstant"
+    },
+    "domain" : "7",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://w3id.org/ibp/SequenceControlOntology#hasPolynomicalConstant",
+    "baseIri" : "https://w3id.org/ibp/SequenceControlOntology",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasPolynomicalConstant"
+    },
+    "domain" : "7",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "25"
+  }, {
+    "iri" : "https://w3id.org/ibp/SequenceControlOntology#polyConstantDegree",
+    "baseIri" : "https://w3id.org/ibp/SequenceControlOntology",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "polyConstantDegree"
+    },
+    "domain" : "12",
+    "attributes" : [ "datatype" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://w3id.org/ibp/SequenceControlOntology#hasXCoordinate",
+    "baseIri" : "https://w3id.org/ibp/SequenceControlOntology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasXCoordinate"
+    },
+    "domain" : "21",
+    "attributes" : [ "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://w3id.org/ibp/SequenceControlOntology#hasStartPoint",
+    "baseIri" : "https://w3id.org/ibp/SequenceControlOntology",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasStartPoint"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "https://w3id.org/ibp/SequenceControlOntology#hasYCoordinate",
+    "baseIri" : "https://w3id.org/ibp/SequenceControlOntology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasYCoordinate"
+    },
+    "domain" : "21",
+    "attributes" : [ "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://w3id.org/ibp/SequenceControlOntology#hasEndPoint",
+    "baseIri" : "https://w3id.org/ibp/SequenceControlOntology",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "hasEndPoint"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#logicInput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "logicInput"
+    },
+    "domain" : "15",
+    "attributes" : [ "object", "external" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://w3id.org/ibp/SequenceControlOntology#isConsecutiveInterval",
+    "baseIri" : "https://w3id.org/ibp/SequenceControlOntology",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "isConsecutiveInterval"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "34"
+  }, {
+    "range" : "21",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#logicParameter",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "logicParameter"
+    },
+    "domain" : "15",
+    "attributes" : [ "object", "external" ],
+    "id" : "37"
+  } ]
+}

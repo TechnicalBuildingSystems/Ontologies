@@ -1,0 +1,366 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.4), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "file:/C:/OntoCAPE/chemical_process_system/CPS_realization/plant_equipment/apparatus.owl", "http://www.w3.org/2001/XMLSchema", "file:/C:/OntoCAPE/OntoCAPE/chemical_process_system/CPS_realization/process_control_equipment/measuring_instrument.owl", "https://w3id.org/ibp/CTRLont", "http://www.w3.org/ns/sosa", "https://w3id.org/seas" ],
+    "title" : {
+      "en" : "Ontology InstancesSensorExcerpt."
+    },
+    "iri" : "https://w3id.org/ibp/InstancesSensorExcerpt",
+    "version" : "v0.2.0",
+    "author" : [ "Georg Ferdinand Schneider", "https://www.researchgate.net/profile/Georg_Schneider3", "https://orcid.org/0000-0002-2033-859X" ],
+    "description" : {
+      "en" : "The ontology provides instances of the examples described in the PhD thesis of Georg Ferdinand Schneider [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].\r\n\r\n[1] Schneider, G.F. (2019): \"Semantic Model for Control Logic in Automation Systems - Knowledge-Based Support of the Engineering and Operation of Control Logic in Building and Industrial Automation Systems\" PhD thesis, Karlsruhe Institute of Technology, Karlsruhe, Germany.\r\n\r\n[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003."
+    },
+    "labels" : {
+      "en" : "InstancesSensorExcerpt"
+    },
+    "comments" : {
+      "en" : "Ontology with instances of InstancesSensorExcerpt."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by-sa/4.0",
+        "type" : "iri"
+      } ],
+      "identifier" : [ {
+        "identifier" : "identifier",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ibp/InstancesSensorExcerpt#",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://orcid.org/0000-0002-2033-859X",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://www.researchgate.net/profile/Georg_Schneider3",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Georg Ferdinand Schneider",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "en",
+        "value" : "Copyright (c) 2019, Georg Ferdinand Schneider, Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-03-07",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "v0.2.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ibp/InstancesSensorExcerpt#",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2018-02-02",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Ontology InstancesSensorExcerpt.",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 10,
+    "objectPropertyCount" : 0,
+    "datatypePropertyCount" : 0,
+    "individualCount" : 8
+  },
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/ns/sosa/ObservableProperty",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ObservableProperty"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesSensorExcerpt#B5-T",
+      "baseIri" : "https://w3id.org/ibp/InstancesSensorExcerpt",
+      "labels" : {
+        "IRI-based" : "B5-T"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#Input",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Input"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesSensorExcerpt#CA-TI503-Input",
+      "baseIri" : "https://w3id.org/ibp/InstancesSensorExcerpt",
+      "labels" : {
+        "IRI-based" : "CA-TI503-Input"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#ApplicationLogic",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ApplicationLogic"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesSensorExcerpt#ctrl1",
+      "baseIri" : "https://w3id.org/ibp/InstancesSensorExcerpt",
+      "annotations" : {
+        "logicInput" : [ {
+          "identifier" : "logicInput",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesSensorExcerpt#CA-TI503-Input",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ctrl1"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "https://w3id.org/seas/CommunicationConnection",
+    "baseIri" : "https://w3id.org/seas",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CommunicationConnection"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesSensorExcerpt#B5-TI503-Conn",
+      "baseIri" : "https://w3id.org/ibp/InstancesSensorExcerpt",
+      "annotations" : {
+        "connectsSystemAt" : [ {
+          "identifier" : "connectsSystemAt",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesSensorExcerpt#B5-TI503-CP",
+          "type" : "iri"
+        }, {
+          "identifier" : "connectsSystemAt",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesSensorExcerpt#CA-TI503-Input",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "B5-TI503-Conn"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "file:/C:/OntoCAPE/OntoCAPE/chemical_process_system/CPS_realization/process_control_equipment/measuring_instrument.owl#T-Sensor",
+    "baseIri" : "file:/C:/OntoCAPE/OntoCAPE/chemical_process_system/CPS_realization/process_control_equipment/measuring_instrument.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "T-Sensor"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesSensorExcerpt#B5-T-Sensor",
+      "baseIri" : "https://w3id.org/ibp/InstancesSensorExcerpt",
+      "annotations" : {
+        "observes" : [ {
+          "identifier" : "observes",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesSensorExcerpt#B5-T",
+          "type" : "iri"
+        } ],
+        "connectsAt" : [ {
+          "identifier" : "connectsAt",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesSensorExcerpt#B5-TI503-CP",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "B5-T-Sensor"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#ControlActor",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ControlActor"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesSensorExcerpt#ctrl1-CA",
+      "baseIri" : "https://w3id.org/ibp/InstancesSensorExcerpt",
+      "annotations" : {
+        "hasApplicationLogic" : [ {
+          "identifier" : "hasApplicationLogic",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesSensorExcerpt#ctrl1",
+          "type" : "iri"
+        } ],
+        "hasInput" : [ {
+          "identifier" : "hasInput",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesSensorExcerpt#CA-TI503-Input",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ctrl1-CA"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.w3.org/ns/sosa/Sensor",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sensor"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesSensorExcerpt#B5-T-Sensor",
+      "baseIri" : "https://w3id.org/ibp/InstancesSensorExcerpt",
+      "annotations" : {
+        "observes" : [ {
+          "identifier" : "observes",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesSensorExcerpt#B5-T",
+          "type" : "iri"
+        } ],
+        "connectsAt" : [ {
+          "identifier" : "connectsAt",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesSensorExcerpt#B5-TI503-CP",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "B5-T-Sensor"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://w3id.org/seas/CommunicationConnectionPoint",
+    "baseIri" : "https://w3id.org/seas",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CommunicationConnectionPoint"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesSensorExcerpt#B5-TI503-CP",
+      "baseIri" : "https://w3id.org/ibp/InstancesSensorExcerpt",
+      "labels" : {
+        "IRI-based" : "B5-TI503-CP"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.w3.org/ns/sosa/FeatureOfInterest",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FeatureOfInterest"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesSensorExcerpt#B5",
+      "baseIri" : "https://w3id.org/ibp/InstancesSensorExcerpt",
+      "annotations" : {
+        "hasProperty" : [ {
+          "identifier" : "hasProperty",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesSensorExcerpt#B5-T",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "B5"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "file:/C:/OntoCAPE/chemical_process_system/CPS_realization/plant_equipment/apparatus.owl#HeatedTank",
+    "baseIri" : "file:/C:/OntoCAPE/chemical_process_system/CPS_realization/plant_equipment/apparatus.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HeatedTank"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/InstancesSensorExcerpt#B5",
+      "baseIri" : "https://w3id.org/ibp/InstancesSensorExcerpt",
+      "annotations" : {
+        "hasProperty" : [ {
+          "identifier" : "hasProperty",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/InstancesSensorExcerpt#B5-T",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "B5"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "9"
+  } ]
+}

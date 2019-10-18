@@ -1,0 +1,637 @@
+<html><h2 id="crossreference" class="list">Cross reference for StateGraph - An ontology to formaly specify State Graphs as standardised in VDI 3814-6. classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by StateGraph - An ontology to formaly specify State Graphs as standardised in VDI 3814-6..
+<div id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Action" title="https://w3id.org/ibp/StateGraphOntology#Action">
+            <span>action</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Condition"
+            title="https://w3id.org/ibp/StateGraphOntology#Condition">
+            <span>condition</span>
+         </a>
+      </li>
+      <li>
+         <a href="#InitialState"
+            title="https://w3id.org/ibp/StateGraphOntology#InitialState">
+            <span>initial state</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Return" title="https://w3id.org/ibp/StateGraphOntology#Return">
+            <span>return</span>
+         </a>
+      </li>
+      <li>
+         <a href="#SimpleState"
+            title="https://w3id.org/ibp/StateGraphOntology#SimpleState">
+            <span>simple state</span>
+         </a>
+      </li>
+      <li>
+         <a href="#State" title="https://w3id.org/ibp/StateGraphOntology#State">
+            <span>state</span>
+         </a>
+      </li>
+      <li>
+         <a href="#StateGraph"
+            title="https://w3id.org/ibp/StateGraphOntology#StateGraph">
+            <span>state graph</span>
+         </a>
+      </li>
+      <li>
+         <a href="#StateGraphElement"
+            title="https://w3id.org/ibp/StateGraphOntology#StateGraphElement">
+            <span>state graph element</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Transition"
+            title="https://w3id.org/ibp/StateGraphOntology#Transition">
+            <span>transition</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="Action">
+      <h3>action<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/StateGraphOntology#Action</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#StateGraphElement"
+               title="https://w3id.org/ibp/StateGraphOntology#StateGraphElement">state graph element</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#assignValue"
+               title="https://w3id.org/ibp/StateGraphOntology#assignValue">assign value</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#stateAction"
+               title="https://w3id.org/ibp/StateGraphOntology#stateAction">state action</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Condition">
+      <h3>condition<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/StateGraphOntology#Condition</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#StateGraphElement"
+               title="https://w3id.org/ibp/StateGraphOntology#StateGraphElement">state graph element</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#conditionExpr"
+               title="https://w3id.org/ibp/StateGraphOntology#conditionExpr">condition expr</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#stateCondition"
+               title="https://w3id.org/ibp/StateGraphOntology#stateCondition">state condition</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#transitionCondition"
+               title="https://w3id.org/ibp/StateGraphOntology#transitionCondition">transition condition</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="InitialState">
+      <h3>initial state<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/StateGraphOntology#InitialState</p>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#hasNumbering"
+               title="https://w3id.org/ibp/StateGraphOntology#hasNumbering">has numbering</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="logic">value</span> 0</dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#State" title="https://w3id.org/ibp/StateGraphOntology#State">state</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Return" title="https://w3id.org/ibp/StateGraphOntology#Return">return</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SimpleState"
+               title="https://w3id.org/ibp/StateGraphOntology#SimpleState">simple state</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Return">
+      <h3>return<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/StateGraphOntology#Return</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#State" title="https://w3id.org/ibp/StateGraphOntology#State">state</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#InitialState"
+               title="https://w3id.org/ibp/StateGraphOntology#InitialState">initial state</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SimpleState"
+               title="https://w3id.org/ibp/StateGraphOntology#SimpleState">simple state</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SimpleState">
+      <h3>simple state<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/StateGraphOntology#SimpleState</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#State" title="https://w3id.org/ibp/StateGraphOntology#State">state</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#InitialState"
+               title="https://w3id.org/ibp/StateGraphOntology#InitialState">initial state</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Return" title="https://w3id.org/ibp/StateGraphOntology#Return">return</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="State">
+      <h3>state<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/StateGraphOntology#State</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#StateGraphElement"
+               title="https://w3id.org/ibp/StateGraphOntology#StateGraphElement">state graph element</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#InitialState"
+               title="https://w3id.org/ibp/StateGraphOntology#InitialState">initial state</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Return" title="https://w3id.org/ibp/StateGraphOntology#Return">return</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SimpleState"
+               title="https://w3id.org/ibp/StateGraphOntology#SimpleState">simple state</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasDescription"
+               title="https://w3id.org/ibp/StateGraphOntology#hasDescription">has description</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasNumbering"
+               title="https://w3id.org/ibp/StateGraphOntology#hasNumbering">has numbering</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#stateAction"
+               title="https://w3id.org/ibp/StateGraphOntology#stateAction">state action</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#stateCondition"
+               title="https://w3id.org/ibp/StateGraphOntology#stateCondition">state condition</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#source" title="https://w3id.org/ibp/StateGraphOntology#source">source</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#target" title="https://w3id.org/ibp/StateGraphOntology#target">target</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="StateGraph">
+      <h3>state graph<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/StateGraphOntology#StateGraph</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="https://w3id.org/ibp/CTRLont#ApplicationLogic">application logic</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#contains" title="https://w3id.org/ibp/StateGraphOntology#contains">contains</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="StateGraphElement">
+      <h3>state graph element<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/StateGraphOntology#StateGraphElement</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="https://w3id.org/ibp/CTRLont#ApplicationLogic">application logic</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Action" title="https://w3id.org/ibp/StateGraphOntology#Action">action</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Condition"
+               title="https://w3id.org/ibp/StateGraphOntology#Condition">condition</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#State" title="https://w3id.org/ibp/StateGraphOntology#State">state</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Transition"
+               title="https://w3id.org/ibp/StateGraphOntology#Transition">transition</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#contains" title="https://w3id.org/ibp/StateGraphOntology#contains">contains</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Transition">
+      <h3>transition<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/StateGraphOntology#Transition</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#StateGraphElement"
+               title="https://w3id.org/ibp/StateGraphOntology#StateGraphElement">state graph element</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#source" title="https://w3id.org/ibp/StateGraphOntology#source">source</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#target" title="https://w3id.org/ibp/StateGraphOntology#target">target</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#transitionCondition"
+               title="https://w3id.org/ibp/StateGraphOntology#transitionCondition">transition condition</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#conditionExpr"
+            title="https://w3id.org/ibp/StateGraphOntology#conditionExpr">
+            <span>condition expr</span>
+         </a>
+      </li>
+      <li>
+         <a href="#contains" title="https://w3id.org/ibp/StateGraphOntology#contains">
+            <span>contains</span>
+         </a>
+      </li>
+      <li>
+         <a href="#source" title="https://w3id.org/ibp/StateGraphOntology#source">
+            <span>source</span>
+         </a>
+      </li>
+      <li>
+         <a href="#stateAction"
+            title="https://w3id.org/ibp/StateGraphOntology#stateAction">
+            <span>state action</span>
+         </a>
+      </li>
+      <li>
+         <a href="#stateCondition"
+            title="https://w3id.org/ibp/StateGraphOntology#stateCondition">
+            <span>state condition</span>
+         </a>
+      </li>
+      <li>
+         <a href="#target" title="https://w3id.org/ibp/StateGraphOntology#target">
+            <span>target</span>
+         </a>
+      </li>
+      <li>
+         <a href="#transitionCondition"
+            title="https://w3id.org/ibp/StateGraphOntology#transitionCondition">
+            <span>transition condition</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="conditionExpr">
+      <h3>condition expr<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/StateGraphOntology#conditionExpr</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Condition"
+                  title="https://w3id.org/ibp/StateGraphOntology#Condition">condition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="https://w3id.org/ibp/ExpressionOntology#Expression">expression</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="contains">
+      <h3>contains<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/StateGraphOntology#contains</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#StateGraph"
+                  title="https://w3id.org/ibp/StateGraphOntology#StateGraph">state graph</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#StateGraphElement"
+                  title="https://w3id.org/ibp/StateGraphOntology#StateGraphElement">state graph element</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="source">
+      <h3>source<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/StateGraphOntology#source</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Transition"
+                  title="https://w3id.org/ibp/StateGraphOntology#Transition">transition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#State" title="https://w3id.org/ibp/StateGraphOntology#State">state</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="stateAction">
+      <h3>state action<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/StateGraphOntology#stateAction</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#State" title="https://w3id.org/ibp/StateGraphOntology#State">state</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Action" title="https://w3id.org/ibp/StateGraphOntology#Action">action</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="stateCondition">
+      <h3>state condition<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/StateGraphOntology#stateCondition</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#State" title="https://w3id.org/ibp/StateGraphOntology#State">state</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Condition"
+                  title="https://w3id.org/ibp/StateGraphOntology#Condition">condition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="target">
+      <h3>target<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/StateGraphOntology#target</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Transition"
+                  title="https://w3id.org/ibp/StateGraphOntology#Transition">transition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#State" title="https://w3id.org/ibp/StateGraphOntology#State">state</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="transitionCondition">
+      <h3>transition condition<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/StateGraphOntology#transitionCondition</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Transition"
+                  title="https://w3id.org/ibp/StateGraphOntology#Transition">transition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Condition"
+                  title="https://w3id.org/ibp/StateGraphOntology#Condition">condition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#assignValue"
+            title="https://w3id.org/ibp/StateGraphOntology#assignValue">
+            <span>assign value</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasDescription"
+            title="https://w3id.org/ibp/StateGraphOntology#hasDescription">
+            <span>has description</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasNumbering"
+            title="https://w3id.org/ibp/StateGraphOntology#hasNumbering">
+            <span>has numbering</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="assignValue">
+      <h3>assign value<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/StateGraphOntology#assignValue</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Action" title="https://w3id.org/ibp/StateGraphOntology#Action">action</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasDescription">
+      <h3>has description<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/StateGraphOntology#hasDescription</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#State" title="https://w3id.org/ibp/StateGraphOntology#State">state</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasNumbering">
+      <h3>has numbering<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/StateGraphOntology#hasNumbering</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#State" title="https://w3id.org/ibp/StateGraphOntology#State">state</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">non negative integer</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="namedindividuals">
+   <h3 id="namedindividuals" class="list">Named Individuals</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#" title="https://w3id.org/ibp/StateGraphOntology">
+            <span>state graph ontology</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="">
+      <h3>state graph ontology<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ibp/StateGraphOntology</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://purl.org/vocommons/voaf#Vocabulary">vocabulary</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
+</html>

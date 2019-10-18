@@ -1,0 +1,386 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/ibp/MooreMachineOntology#"
+     xml:base="https://w3id.org/ibp/MooreMachineOntology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/ibp/MooreMachineOntology">
+        <owl:versionIRI rdf:resource="https://w3id.org/ibp/MooreMachineOntology-0.0.1"/>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-2033-859X"/>
+        <terms:creator rdf:resource="https://www.researchgate.net/profile/Georg_Schneider3"/>
+        <terms:creator>Georg Ferdinand Schneider</terms:creator>
+        <terms:description xml:lang="en">The Moore Machine Ontology is an ontology to explicitly describe control logic compliant to the formalism specified by Moore (Lunze, 2009). The ontology and its use will be documented in a conference paper. The ontology is implemented using the free protege tool (protege.stanford.edu) (Musen, 2015).
+                                             
+ M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003.
+
+J. Lunze (2009): Ereignisdiskrete Systeme: Modellierung und Analyse dynamischer Systeme mit Automaten, Markovketten und Petrinetzen. Oldenbourg, Munich, Germany.</terms:description>
+        <terms:identifier>https://w3id.org/ibp/MooreMachineOntology#</terms:identifier>
+        <terms:issued>2018-02-01</terms:issued>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0"/>
+        <terms:modified>2018-03-25</terms:modified>
+        <terms:rights xml:lang="en">Copyright (c) 2017/ 2018, Fraunhofer Institute for Building Physics,
+			Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution 
+			Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0</terms:rights>
+        <terms:title xml:lang="en">Moore Machine Ontology - An ontology to formally specify the discrete control logic expressed as a Moore Machine</terms:title>
+        <vann:preferredNamespacePrefix>moo</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/ibp/MooreMachineOntology#"/>
+        <rdfs:comment xml:lang="en">Ontology to explicitly model control logic based on the Moore Machine formalism.</rdfs:comment>
+        <rdfs:label xml:lang="en">Moore Machine Ontology</rdfs:label>
+        <owl:versionInfo>v0.0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/ibp/CTRLont#logicOutput -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/CTRLont#logicOutput"/>
+    
+
+
+    <!-- https://w3id.org/ibp/MooreMachineOntology#conditionExpr -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/MooreMachineOntology#conditionExpr">
+        <rdfs:domain rdf:resource="https://w3id.org/ibp/MooreMachineOntology#Condition"/>
+        <rdfs:range rdf:resource="https://w3id.org/ibp/ExpressionOntology#Expression"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ibp/MooreMachineOntology#contains -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/MooreMachineOntology#contains">
+        <rdfs:domain rdf:resource="https://w3id.org/ibp/MooreMachineOntology#MooreMachine"/>
+        <rdfs:range rdf:resource="https://w3id.org/ibp/MooreMachineOntology#MooreElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ibp/MooreMachineOntology#source -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/MooreMachineOntology#source">
+        <rdfs:domain rdf:resource="https://w3id.org/ibp/MooreMachineOntology#Transition"/>
+        <rdfs:range rdf:resource="https://w3id.org/ibp/MooreMachineOntology#State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ibp/MooreMachineOntology#stateAction -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/MooreMachineOntology#stateAction">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ibp/MooreMachineOntology#State"/>
+        <rdfs:range rdf:resource="https://w3id.org/ibp/MooreMachineOntology#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ibp/MooreMachineOntology#target -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/MooreMachineOntology#target">
+        <rdfs:domain rdf:resource="https://w3id.org/ibp/MooreMachineOntology#Transition"/>
+        <rdfs:range rdf:resource="https://w3id.org/ibp/MooreMachineOntology#State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ibp/MooreMachineOntology#transitionCondition -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/MooreMachineOntology#transitionCondition">
+        <rdfs:domain rdf:resource="https://w3id.org/ibp/MooreMachineOntology#Transition"/>
+        <rdfs:range rdf:resource="https://w3id.org/ibp/MooreMachineOntology#Condition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/ibp/MooreMachineOntology#assignSimpleValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ibp/MooreMachineOntology#assignSimpleValue">
+        <rdfs:domain rdf:resource="https://w3id.org/ibp/MooreMachineOntology#Action"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/ibp/CTRLont#Output -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/CTRLont#Output"/>
+    
+
+
+    <!-- https://w3id.org/ibp/ExpressionOntology#Expression -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/ExpressionOntology#Expression"/>
+    
+
+
+    <!-- https://w3id.org/ibp/MooreMachineOntology#Action -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/MooreMachineOntology#Action">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ibp/MooreMachineOntology#MooreElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ibp/CTRLont#logicOutput"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ibp/CTRLont#Output"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ibp/MooreMachineOntology#Condition -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/MooreMachineOntology#Condition">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ibp/MooreMachineOntology#MooreElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ibp/MooreMachineOntology#conditionExpr"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ibp/ExpressionOntology#Expression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ibp/MooreMachineOntology#InitialState -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/MooreMachineOntology#InitialState">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ibp/MooreMachineOntology#State"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ibp/MooreMachineOntology#MooreElement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/MooreMachineOntology#MooreElement"/>
+    
+
+
+    <!-- https://w3id.org/ibp/MooreMachineOntology#MooreMachine -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/MooreMachineOntology#MooreMachine">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ibp/MooreMachineOntology#contains"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/ibp/MooreMachineOntology#MooreElement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ibp/MooreMachineOntology#contains"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ibp/MooreMachineOntology#MooreElement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ibp/MooreMachineOntology#State -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/MooreMachineOntology#State">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ibp/MooreMachineOntology#MooreElement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ibp/MooreMachineOntology#Transition -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/MooreMachineOntology#Transition">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ibp/MooreMachineOntology#MooreElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ibp/MooreMachineOntology#source"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ibp/MooreMachineOntology#State"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ibp/MooreMachineOntology#target"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ibp/MooreMachineOntology#State"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ibp/MooreMachineOntology#transitionCondition"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ibp/MooreMachineOntology#State"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+

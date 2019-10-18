@@ -1,0 +1,114 @@
+<https://w3id.org/ibp/StateMachineOntologyEval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/ibp/StateMachineOntologyEval> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/ibp/CTRLont> .
+<https://w3id.org/ibp/StateMachineOntologyEval> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/ibp/StateMachineOntology> .
+<https://w3id.org/ibp/StateMachineOntologyEval> <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-2033-859X> .
+<https://w3id.org/ibp/StateMachineOntologyEval> <http://purl.org/dc/terms/creator> <https://www.researchgate.net/profile/Georg_Schneider3> .
+<https://w3id.org/ibp/StateMachineOntologyEval> <http://purl.org/dc/terms/creator> "Georg Ferdinand Schneider" .
+<https://w3id.org/ibp/StateMachineOntologyEval> <http://purl.org/dc/terms/description> "The ontology provides instances of the examples described in the PhD thesis of Georg Ferdinand Schneider [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].\r\n\r\n[1] Schneider, G.F. (2019): \"Semantic Model for Control Logic in Automation Systems - Knowledge-Based Support of the Engineering and Operation of Control Logic in Building and Industrial Automation Systems\" PhD thesis, Karlsruhe Institute of Technology, Karlsruhe, Germany.\r\n\r\n[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003."@en .
+<https://w3id.org/ibp/StateMachineOntologyEval> <http://purl.org/dc/terms/identifier> "https://w3id.org/ibp/StateMachineOntologyEval#" .
+<https://w3id.org/ibp/StateMachineOntologyEval> <http://purl.org/dc/terms/issued> "2018-06-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/ibp/StateMachineOntologyEval> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/4.0> .
+<https://w3id.org/ibp/StateMachineOntologyEval> <http://purl.org/dc/terms/modified> "2019-03-07"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/ibp/StateMachineOntologyEval> <http://purl.org/dc/terms/rights> "Copyright (c) 2019, Georg Ferdinand Schneider, Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"@en .
+<https://w3id.org/ibp/StateMachineOntologyEval> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/ibp/StateMachineOntologyEval#> .
+<https://w3id.org/ibp/StateMachineOntologyEval> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology with instances of StateMachineOntologyEval."@en .
+<https://w3id.org/ibp/StateMachineOntologyEval> <http://www.w3.org/2000/01/rdf-schema#label> "StateMachineOntologyEval"@en .
+<https://w3id.org/ibp/StateMachineOntologyEval> <http://www.w3.org/2002/07/owl#versionInfo> "v0.1.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/ibp/StateMachineOntology#assignValue
+<https://w3id.org/ibp/StateMachineOntology#assignValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/ibp/StateMachineOntology#hasLiteralValue
+<https://w3id.org/ibp/StateMachineOntology#hasLiteralValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/ibp/ExpressionOntology#Expression
+<https://w3id.org/ibp/ExpressionOntology#Expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/ibp/StateMachineOntologyEval#Init
+<https://w3id.org/ibp/StateMachineOntologyEval#Init> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/ibp/StateMachineOntologyEval#exp
+<https://w3id.org/ibp/StateMachineOntologyEval#exp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/StateMachineOntologyEval#exp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#Expression> .
+# 
+# https://w3id.org/ibp/StateMachineOntologyEval#fin1
+<https://w3id.org/ibp/StateMachineOntologyEval#fin1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/StateMachineOntologyEval#fin1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/StateMachineOntology#FinalState> .
+# 
+# https://w3id.org/ibp/StateMachineOntologyEval#ini1
+<https://w3id.org/ibp/StateMachineOntologyEval#ini1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/StateMachineOntologyEval#ini1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/StateMachineOntology#InitialState> .
+# 
+# https://w3id.org/ibp/StateMachineOntologyEval#s1-AVal
+<https://w3id.org/ibp/StateMachineOntologyEval#s1-AVal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/StateMachineOntologyEval#s1-AVal> <https://w3id.org/ibp/StateMachineOntology#hasLiteralValue> "2.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/ibp/StateMachineOntologyEval#s1-Act
+<https://w3id.org/ibp/StateMachineOntologyEval#s1-Act> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/StateMachineOntologyEval#s1-Act> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/StateMachineOntology#Action> .
+<https://w3id.org/ibp/StateMachineOntologyEval#s1-Act> <https://w3id.org/ibp/CTRLont#logicOutput> <https://w3id.org/ibp/StateMachineOntologyEval#y> .
+<https://w3id.org/ibp/StateMachineOntologyEval#s1-Act> <https://w3id.org/ibp/StateMachineOntology#assignValue> <https://w3id.org/ibp/StateMachineOntologyEval#s1-AVal> .
+# 
+# https://w3id.org/ibp/StateMachineOntologyEval#state1
+<https://w3id.org/ibp/StateMachineOntologyEval#state1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/StateMachineOntologyEval#state1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/StateMachineOntology#SimpleState> .
+<https://w3id.org/ibp/StateMachineOntologyEval#state1> <https://w3id.org/ibp/StateMachineOntology#do> <https://w3id.org/ibp/StateMachineOntologyEval#s1-Act> .
+# 
+# https://w3id.org/ibp/StateMachineOntologyEval#t1
+<https://w3id.org/ibp/StateMachineOntologyEval#t1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/StateMachineOntologyEval#t1> <https://w3id.org/ibp/StateMachineOntology#source> <https://w3id.org/ibp/StateMachineOntologyEval#ini1> .
+<https://w3id.org/ibp/StateMachineOntologyEval#t1> <https://w3id.org/ibp/StateMachineOntology#target> <https://w3id.org/ibp/StateMachineOntologyEval#Init> .
+# 
+# https://w3id.org/ibp/StateMachineOntologyEval#t2
+<https://w3id.org/ibp/StateMachineOntologyEval#t2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/StateMachineOntologyEval#t2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/StateMachineOntology#Transition> .
+<https://w3id.org/ibp/StateMachineOntologyEval#t2> <https://w3id.org/ibp/StateMachineOntology#source> <https://w3id.org/ibp/StateMachineOntologyEval#Init> .
+<https://w3id.org/ibp/StateMachineOntologyEval#t2> <https://w3id.org/ibp/StateMachineOntology#target> <https://w3id.org/ibp/StateMachineOntologyEval#state1> .
+<https://w3id.org/ibp/StateMachineOntologyEval#t2> <https://w3id.org/ibp/StateMachineOntology#transitionGuard> <https://w3id.org/ibp/StateMachineOntologyEval#t2-Gua> .
+# 
+# https://w3id.org/ibp/StateMachineOntologyEval#t2-Gua
+<https://w3id.org/ibp/StateMachineOntologyEval#t2-Gua> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/StateMachineOntologyEval#t2-Gua> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/StateMachineOntology#Guard> .
+<https://w3id.org/ibp/StateMachineOntologyEval#t2-Gua> <https://w3id.org/ibp/StateMachineOntology#guardCondition> <https://w3id.org/ibp/StateMachineOntologyEval#t2-GuaE> .
+# 
+# https://w3id.org/ibp/StateMachineOntologyEval#t2-GuaE
+<https://w3id.org/ibp/StateMachineOntologyEval#t2-GuaE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/StateMachineOntologyEval#t2-GuaE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/StateMachineOntology#Condition> .
+<https://w3id.org/ibp/StateMachineOntologyEval#t2-GuaE> <https://w3id.org/ibp/StateMachineOntology#conditionExpr> <https://w3id.org/ibp/StateMachineOntologyEval#exp> .
+# 
+# https://w3id.org/ibp/StateMachineOntologyEval#t3
+<https://w3id.org/ibp/StateMachineOntologyEval#t3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/StateMachineOntologyEval#t3> <https://w3id.org/ibp/StateMachineOntology#source> <https://w3id.org/ibp/StateMachineOntologyEval#state1> .
+<https://w3id.org/ibp/StateMachineOntologyEval#t3> <https://w3id.org/ibp/StateMachineOntology#target> <https://w3id.org/ibp/StateMachineOntologyEval#fin1> .
+# 
+# https://w3id.org/ibp/StateMachineOntologyEval#y
+<https://w3id.org/ibp/StateMachineOntologyEval#y> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/StateMachineOntologyEval#y> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/CTRLont#Output> .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

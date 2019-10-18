@@ -1,0 +1,149 @@
+[ {
+  "@id" : "_:genid1",
+  "https://w3id.org/ibp/SequenceControlOntology#hasPolynomialConstant" : [ {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "https://w3id.org/ibp/CTRLont#logicParameter" : [ {
+    "@id" : "https://w3id.org/ibp/SequenceControlOntologyEval#par1"
+  } ],
+  "https://w3id.org/ibp/SequenceControlOntology#polyConstantDegree" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#NonNegativeInteger",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/ibp/SequenceControlOntology#polyConstantLiteralValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "-3.0"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "https://w3id.org/ibp/SequenceControlOntology#hasXCoordinate" : [ {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "https://w3id.org/ibp/SequenceControlOntology#hasLiteralValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "18.0"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#NonNegativeInteger",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "https://w3id.org/ibp/SequenceControlOntology#Interval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/ibp/SequenceControlOntology#Sequence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/ibp/SequenceControlOntology#hasInterval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/ibp/SequenceControlOntology#hasLiteralValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/ibp/SequenceControlOntology#hasMathematicalFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/ibp/SequenceControlOntology#hasPolynomialConstant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/ibp/SequenceControlOntology#hasStartPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/ibp/SequenceControlOntology#hasXCoordinate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/ibp/SequenceControlOntology#isConsecutiveInterval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/ibp/SequenceControlOntology#polyConstantDegree",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/ibp/SequenceControlOntology#polyConstantLiteralValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/ibp/SequenceControlOntologyEval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-2033-859X"
+  }, {
+    "@id" : "https://www.researchgate.net/profile/Georg_Schneider3"
+  }, {
+    "@value" : "Georg Ferdinand Schneider"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "The ontology provides instances of the examples described in the PhD thesis of Georg Ferdinand Schneider [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].\r\n\r\n[1] Schneider, G.F. (2019): \"Semantic Model for Control Logic in Automation Systems - Knowledge-Based Support of the Engineering and Operation of Control Logic in Building and Industrial Automation Systems\" PhD thesis, Karlsruhe Institute of Technology, Karlsruhe, Germany.\r\n\r\n[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003."
+  } ],
+  "http://purl.org/dc/terms/identifier" : [ {
+    "@value" : "https://w3id.org/ibp/SequenceControlOntologyEval#"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2018-06-30"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://creativecommons.org/licenses/by-sa/4.0"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2019-03-07"
+  } ],
+  "http://purl.org/dc/terms/rights" : [ {
+    "@language" : "en",
+    "@value" : "Copyright (c) 2019, Georg Ferdinand Schneider, Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@id" : "https://w3id.org/ibp/SequenceControlOntologyEval#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Ontology with instances of SequenceControlOntologyEval."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SequenceControlOntologyEval"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://w3id.org/ibp/CTRLont"
+  }, {
+    "@id" : "https://w3id.org/ibp/SequenceControlOntology"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "v0.1.0"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/SequenceControlOntologyEval#Toa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/CTRLont#Input" ]
+}, {
+  "@id" : "https://w3id.org/ibp/SequenceControlOntologyEval#YCoo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/CTRLont#Output" ]
+}, {
+  "@id" : "https://w3id.org/ibp/SequenceControlOntologyEval#int2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/SequenceControlOntology#Interval" ],
+  "https://w3id.org/ibp/SequenceControlOntology#hasMathematicalFunction" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "https://w3id.org/ibp/SequenceControlOntology#hasStartPoint" : [ {
+    "@id" : "_:genid3"
+  } ],
+  "https://w3id.org/ibp/SequenceControlOntology#isConsecutiveInterval" : [ {
+    "@id" : "https://w3id.org/ibp/SequenceControlOntologyEval#int3"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ibp/SequenceControlOntologyEval#int3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/SequenceControlOntology#Interval" ]
+}, {
+  "@id" : "https://w3id.org/ibp/SequenceControlOntologyEval#par1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/CTRLont#Parameter" ]
+}, {
+  "@id" : "https://w3id.org/ibp/SequenceControlOntologyEval#seq1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/ibp/SequenceControlOntology#Sequence" ],
+  "https://w3id.org/ibp/SequenceControlOntology#hasInterval" : [ {
+    "@id" : "https://w3id.org/ibp/SequenceControlOntologyEval#int2"
+  }, {
+    "@id" : "https://w3id.org/ibp/SequenceControlOntologyEval#int3"
+  } ]
+} ]

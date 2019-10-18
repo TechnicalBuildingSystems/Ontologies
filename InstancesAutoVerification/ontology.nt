@@ -1,0 +1,952 @@
+<https://w3id.org/ibp/InstancesAutoVerification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/ibp/InstancesAutoVerification> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/ibp/CTRLont> .
+<https://w3id.org/ibp/InstancesAutoVerification> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/ibp/ScheduleOntology> .
+<https://w3id.org/ibp/InstancesAutoVerification> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/ibp/StateGraphOntology> .
+<https://w3id.org/ibp/InstancesAutoVerification> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/seas/SystemOntology> .
+<https://w3id.org/ibp/InstancesAutoVerification> <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-2033-859X> .
+<https://w3id.org/ibp/InstancesAutoVerification> <http://purl.org/dc/terms/creator> <https://www.researchgate.net/profile/Georg_Schneider3> .
+<https://w3id.org/ibp/InstancesAutoVerification> <http://purl.org/dc/terms/creator> "Georg Ferdinand Schneider" .
+<https://w3id.org/ibp/InstancesAutoVerification> <http://purl.org/dc/terms/description> "The ontology provides instances of the examples described in the PhD thesis of Georg Ferdinand Schneider [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].\r\n\r\n[1] Schneider, G. F. (2019): \"Semantic Model for Control Logic in Automation Systems - Knowledge-Based Support of the Engineering and Operation of Control Logic in Building and Industrial Automation Systems\" PhD thesis, Karlsruhe Institute of Technology, Karlsruhe, Germany.\r\n\r\n[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003."@en .
+<https://w3id.org/ibp/InstancesAutoVerification> <http://purl.org/dc/terms/identifier> "https://w3id.org/ibp/InstancesAutoVerification#" .
+<https://w3id.org/ibp/InstancesAutoVerification> <http://purl.org/dc/terms/issued> "2017-11-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/ibp/InstancesAutoVerification> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/4.0> .
+<https://w3id.org/ibp/InstancesAutoVerification> <http://purl.org/dc/terms/modified> "2019-03-07"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/ibp/InstancesAutoVerification> <http://purl.org/dc/terms/rights> "Copyright (c) 2019, Georg Ferdinand Schneider, Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"@en .
+<https://w3id.org/ibp/InstancesAutoVerification> <http://purl.org/dc/terms/title> "Ontology InstancesAutoVerification."@en .
+<https://w3id.org/ibp/InstancesAutoVerification> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/ibp/InstancesAutoVerification#> .
+<https://w3id.org/ibp/InstancesAutoVerification> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology with instances of InstancesAutoVerification."@en .
+<https://w3id.org/ibp/InstancesAutoVerification> <http://www.w3.org/2000/01/rdf-schema#label> "InstancesAutoVerification"@en .
+<https://w3id.org/ibp/InstancesAutoVerification> <http://www.w3.org/2002/07/owl#versionInfo> "v0.3.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement
+<file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf
+<file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://numerateweb.org/vocab/math#name
+<http://numerateweb.org/vocab/math#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://numerateweb.org/vocab/math#operator
+<http://numerateweb.org/vocab/math#operator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://numerateweb.org/vocab/math#value
+<http://numerateweb.org/vocab/math#value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/ibp/StateGraphOntology#assignValue
+<https://w3id.org/ibp/StateGraphOntology#assignValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/ibp/StateGraphOntology#conditionExpr
+<https://w3id.org/ibp/StateGraphOntology#conditionExpr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/ibp/StateGraphOntology#contains
+<https://w3id.org/ibp/StateGraphOntology#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/ibp/StateGraphOntology#source
+<https://w3id.org/ibp/StateGraphOntology#source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/ibp/StateGraphOntology#stateAction
+<https://w3id.org/ibp/StateGraphOntology#stateAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/ibp/StateGraphOntology#stateCondition
+<https://w3id.org/ibp/StateGraphOntology#stateCondition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/ibp/StateGraphOntology#target
+<https://w3id.org/ibp/StateGraphOntology#target> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/ibp/CTRLont#hasDataType
+<https://w3id.org/ibp/CTRLont#hasDataType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/ibp/CTRLont#hasInput
+<https://w3id.org/ibp/CTRLont#hasInput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/ibp/CTRLont#hasOutput
+<https://w3id.org/ibp/CTRLont#hasOutput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/ibp/CTRLont#hasParameter
+<https://w3id.org/ibp/CTRLont#hasParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/ibp/CTRLont#logicInput
+<https://w3id.org/ibp/CTRLont#logicInput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/ibp/CTRLont#logicOutput
+<https://w3id.org/ibp/CTRLont#logicOutput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#hasEndPoint
+<https://w3id.org/ibp/ScheduleOntology#hasEndPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#hasInterval
+<https://w3id.org/ibp/ScheduleOntology#hasInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#hasMathematicalFunction
+<https://w3id.org/ibp/ScheduleOntology#hasMathematicalFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#hasPeriodicity
+<https://w3id.org/ibp/ScheduleOntology#hasPeriodicity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#hasPolynomialConstant
+<https://w3id.org/ibp/ScheduleOntology#hasPolynomialConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#hasStartPoint
+<https://w3id.org/ibp/ScheduleOntology#hasStartPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#hasXCoordinate
+<https://w3id.org/ibp/ScheduleOntology#hasXCoordinate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#hasYCoordinate
+<https://w3id.org/ibp/ScheduleOntology#hasYCoordinate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#isConsecutiveInterval
+<https://w3id.org/ibp/ScheduleOntology#isConsecutiveInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/ibp/StateGraphOntology#transitionCondition
+<https://w3id.org/ibp/StateGraphOntology#transitionCondition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement
+<file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://numerateweb.org/vocab/math#Literal
+<http://numerateweb.org/vocab/math#Literal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://numerateweb.org/vocab/math#Variable
+<http://numerateweb.org/vocab/math#Variable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2002/07/owl#DataProperty
+<http://www.w3.org/2002/07/owl#DataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/ExpressionOntology#Expression
+<https://w3id.org/ibp/ExpressionOntology#Expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/ExpressionOntology#ExpressionElement
+<https://w3id.org/ibp/ExpressionOntology#ExpressionElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/ExpressionOntology#Operand
+<https://w3id.org/ibp/ExpressionOntology#Operand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/ExpressionOntology#Operator
+<https://w3id.org/ibp/ExpressionOntology#Operator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#Coordinate
+<https://w3id.org/ibp/ScheduleOntology#Coordinate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#Interval
+<https://w3id.org/ibp/ScheduleOntology#Interval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#MathematicalFunction
+<https://w3id.org/ibp/ScheduleOntology#MathematicalFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#Point
+<https://w3id.org/ibp/ScheduleOntology#Point> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#PolynomialConstant
+<https://w3id.org/ibp/ScheduleOntology#PolynomialConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#Schedule
+<https://w3id.org/ibp/ScheduleOntology#Schedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/StateGraphOntology#Action
+<https://w3id.org/ibp/StateGraphOntology#Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/StateGraphOntology#Condition
+<https://w3id.org/ibp/StateGraphOntology#Condition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/StateGraphOntology#State
+<https://w3id.org/ibp/StateGraphOntology#State> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/StateGraphOntology#StateGraph
+<https://w3id.org/ibp/StateGraphOntology#StateGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/ibp/StateGraphOntology#Transition
+<https://w3id.org/ibp/StateGraphOntology#Transition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/seas/CommunicationConnectionPoint
+<https://w3id.org/seas/CommunicationConnectionPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/Temperature
+<http://www.ontology-of-units-of-measure.org/resource/om-2/Temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius
+<http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/ibp/BasicDatatypeOntology#double
+<https://w3id.org/ibp/BasicDatatypeOntology#double> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOffOn
+<https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOffOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOffOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#Expression> .
+<https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOffOn> <file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-0> .
+<https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOffOn> <file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-1> .
+<https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOffOn> <file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-2> .
+<https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOffOn> <file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-3> .
+<https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOffOn> <file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-4> .
+<https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOffOn> <file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-5> .
+<https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOffOn> <file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-6> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOffStartUp
+<https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOffStartUp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOffStartUp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#Expression> .
+<https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOffStartUp> <file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-0> .
+<https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOffStartUp> <file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-1> .
+<https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOffStartUp> <file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-2> .
+<https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOffStartUp> <file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-3> .
+<https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOffStartUp> <file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-4> .
+<https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOffStartUp> <file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-5> .
+<https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOffStartUp> <file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-6> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOnOff
+<https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOnOff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOnOff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#Expression> .
+<https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOnOff> <file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-0> .
+<https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOnOff> <file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-1> .
+<https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOnOff> <file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-2> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#ExprConditionStartUpOn
+<https://w3id.org/ibp/InstancesAutoVerification#ExprConditionStartUpOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#ExprConditionStartUpOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#Expression> .
+<https://w3id.org/ibp/InstancesAutoVerification#ExprConditionStartUpOn> <file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-0> .
+<https://w3id.org/ibp/InstancesAutoVerification#ExprConditionStartUpOn> <file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-1> .
+<https://w3id.org/ibp/InstancesAutoVerification#ExprConditionStartUpOn> <file:/C:/OntoCAPE/meta_model/mereology/mereology.owl#isComposedOf> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-2> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#R1
+<https://w3id.org/ibp/InstancesAutoVerification#R1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/CTRLont#ControlActor> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1> <https://w3id.org/ibp/CTRLont#hasApplicationLogic> <https://w3id.org/ibp/InstancesAutoVerification#R1_logic> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1> <https://w3id.org/ibp/CTRLont#hasInput> <https://w3id.org/ibp/InstancesAutoVerification#R1_Inp> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1> <https://w3id.org/ibp/CTRLont#hasInput> <https://w3id.org/ibp/InstancesAutoVerification#R1_InpTHcr> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1> <https://w3id.org/ibp/CTRLont#hasInput> <https://w3id.org/ibp/InstancesAutoVerification#R1_InpToa> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1> <https://w3id.org/ibp/CTRLont#hasOutput> <https://w3id.org/ibp/InstancesAutoVerification#R1_Outp> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1> <https://w3id.org/ibp/CTRLont#hasOutput> <https://w3id.org/ibp/InstancesAutoVerification#R1_OutpMix> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1> <https://w3id.org/ibp/CTRLont#hasOutput> <https://w3id.org/ibp/InstancesAutoVerification#R1_OutpPump> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1> <https://w3id.org/ibp/CTRLont#hasOutput> <https://w3id.org/ibp/InstancesAutoVerification#R1_OutpSOff> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1> <https://w3id.org/ibp/CTRLont#hasOutput> <https://w3id.org/ibp/InstancesAutoVerification#R1_OutpSOn> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1> <https://w3id.org/ibp/CTRLont#hasOutput> <https://w3id.org/ibp/InstancesAutoVerification#R1_OutpSStartup> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1> <https://w3id.org/ibp/CTRLont#hasParameter> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-2-Par> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1> <https://w3id.org/ibp/CTRLont#hasParameter> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-6-Par> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1> <https://w3id.org/ibp/CTRLont#hasParameter> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-2-Par> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1> <https://w3id.org/ibp/CTRLont#hasParameter> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-6-Par> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1> <https://w3id.org/ibp/CTRLont#hasParameter> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-2-Par> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1> <https://w3id.org/ibp/CTRLont#hasParameter> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-2-Par> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#R1_Inp
+<https://w3id.org/ibp/InstancesAutoVerification#R1_Inp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_Inp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/CTRLont#Input> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_Inp> <https://w3id.org/ibp/CTRLont#hasDataType> <https://w3id.org/ibp/BasicDatatypeOntology#double> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_Inp> <https://w3id.org/seas/connectsSystemThrough> <https://w3id.org/ibp/InstancesAutoVerification#connR1InpSce> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#R1_InpTHcr
+<https://w3id.org/ibp/InstancesAutoVerification#R1_InpTHcr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_InpTHcr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/CTRLont#Input> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_InpTHcr> <https://w3id.org/ibp/CTRLont#hasDataType> <https://w3id.org/ibp/BasicDatatypeOntology#double> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_InpTHcr> <https://w3id.org/ibp/CTRLont#hasQuantity> <http://www.ontology-of-units-of-measure.org/resource/om-2/Temperature> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_InpTHcr> <https://w3id.org/ibp/CTRLont#hasUnit> <http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_InpTHcr> <https://w3id.org/seas/connectsSystemThrough> <https://w3id.org/ibp/InstancesAutoVerification#connR1InpTHcr> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#R1_InpToa
+<https://w3id.org/ibp/InstancesAutoVerification#R1_InpToa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_InpToa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/CTRLont#Input> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_InpToa> <https://w3id.org/ibp/CTRLont#hasDataType> <https://w3id.org/ibp/BasicDatatypeOntology#double> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_InpToa> <https://w3id.org/ibp/CTRLont#hasQuantity> <http://www.ontology-of-units-of-measure.org/resource/om-2/Temperature> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_InpToa> <https://w3id.org/ibp/CTRLont#hasUnit> <http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_InpToa> <https://w3id.org/seas/connectsSystemThrough> <https://w3id.org/ibp/InstancesAutoVerification#connR1InpToa> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#R1_Outp
+<https://w3id.org/ibp/InstancesAutoVerification#R1_Outp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_Outp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/CTRLont#Output> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_Outp> <https://w3id.org/ibp/CTRLont#hasDataType> <https://w3id.org/ibp/BasicDatatypeOntology#double> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_Outp> <https://w3id.org/seas/connectsSystemThrough> <https://w3id.org/ibp/InstancesAutoVerification#connR1OutyFan> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#R1_OutpMix
+<https://w3id.org/ibp/InstancesAutoVerification#R1_OutpMix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_OutpMix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/CTRLont#Output> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_OutpMix> <https://w3id.org/ibp/CTRLont#hasDataType> <https://w3id.org/ibp/BasicDatatypeOntology#double> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_OutpMix> <https://w3id.org/seas/connectsSystemThrough> <https://w3id.org/ibp/InstancesAutoVerification#connR1OutyMix> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#R1_OutpPump
+<https://w3id.org/ibp/InstancesAutoVerification#R1_OutpPump> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_OutpPump> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/CTRLont#Output> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_OutpPump> <https://w3id.org/ibp/CTRLont#hasDataType> <https://w3id.org/ibp/BasicDatatypeOntology#double> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_OutpPump> <https://w3id.org/seas/connectsSystemThrough> <https://w3id.org/ibp/InstancesAutoVerification#connR1OutyPump> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#R1_OutpSOff
+<https://w3id.org/ibp/InstancesAutoVerification#R1_OutpSOff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_OutpSOff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/CTRLont#Output> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_OutpSOff> <https://w3id.org/seas/connectsSystemThrough> <https://w3id.org/ibp/InstancesAutoVerification#connR1OutpSOff> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#R1_OutpSOn
+<https://w3id.org/ibp/InstancesAutoVerification#R1_OutpSOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_OutpSOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/CTRLont#Output> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_OutpSOn> <https://w3id.org/seas/connectsSystemThrough> <https://w3id.org/ibp/InstancesAutoVerification#connR1OutpSOn> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#R1_OutpSStartup
+<https://w3id.org/ibp/InstancesAutoVerification#R1_OutpSStartup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_OutpSStartup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/CTRLont#Output> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_OutpSStartup> <https://w3id.org/seas/connectsSystemThrough> <https://w3id.org/ibp/InstancesAutoVerification#connR1OutpSStartUp> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#R1_logic
+<https://w3id.org/ibp/InstancesAutoVerification#R1_logic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_logic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/StateGraphOntology#StateGraph> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_logic> <https://w3id.org/ibp/StateGraphOntology#contains> <https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOffOn> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_logic> <https://w3id.org/ibp/StateGraphOntology#contains> <https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOffStartUp> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_logic> <https://w3id.org/ibp/StateGraphOntology#contains> <https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOnOff> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_logic> <https://w3id.org/ibp/StateGraphOntology#contains> <https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionStartUpOn> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_logic> <https://w3id.org/ibp/StateGraphOntology#contains> <https://w3id.org/ibp/InstancesAutoVerification#SG_OffActFan> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_logic> <https://w3id.org/ibp/StateGraphOntology#contains> <https://w3id.org/ibp/InstancesAutoVerification#SG_OffActMix> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_logic> <https://w3id.org/ibp/StateGraphOntology#contains> <https://w3id.org/ibp/InstancesAutoVerification#SG_OffActPump> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_logic> <https://w3id.org/ibp/StateGraphOntology#contains> <https://w3id.org/ibp/InstancesAutoVerification#SG_OnActFan> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_logic> <https://w3id.org/ibp/StateGraphOntology#contains> <https://w3id.org/ibp/InstancesAutoVerification#SG_OnActMix> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_logic> <https://w3id.org/ibp/StateGraphOntology#contains> <https://w3id.org/ibp/InstancesAutoVerification#SG_OnActPump> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_logic> <https://w3id.org/ibp/StateGraphOntology#contains> <https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActFan> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_logic> <https://w3id.org/ibp/StateGraphOntology#contains> <https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActMix> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_logic> <https://w3id.org/ibp/StateGraphOntology#contains> <https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActPump> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_logic> <https://w3id.org/ibp/StateGraphOntology#contains> <https://w3id.org/ibp/InstancesAutoVerification#SG_StateOff> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_logic> <https://w3id.org/ibp/StateGraphOntology#contains> <https://w3id.org/ibp/InstancesAutoVerification#SG_StateOn> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_logic> <https://w3id.org/ibp/StateGraphOntology#contains> <https://w3id.org/ibp/InstancesAutoVerification#SG_StateStartUp> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_logic> <https://w3id.org/ibp/StateGraphOntology#contains> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_logic> <https://w3id.org/ibp/StateGraphOntology#contains> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_logic> <https://w3id.org/ibp/StateGraphOntology#contains> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff> .
+<https://w3id.org/ibp/InstancesAutoVerification#R1_logic> <https://w3id.org/ibp/StateGraphOntology#contains> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#R2
+<https://w3id.org/ibp/InstancesAutoVerification#R2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#R2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/CTRLont#ControlActor> .
+<https://w3id.org/ibp/InstancesAutoVerification#R2> <https://w3id.org/ibp/CTRLont#hasApplicationLogic> <https://w3id.org/ibp/InstancesAutoVerification#R2_logic> .
+<https://w3id.org/ibp/InstancesAutoVerification#R2> <https://w3id.org/ibp/CTRLont#hasInput> <https://w3id.org/ibp/InstancesAutoVerification#R2_Inp> .
+<https://w3id.org/ibp/InstancesAutoVerification#R2> <https://w3id.org/ibp/CTRLont#hasOutput> <https://w3id.org/ibp/InstancesAutoVerification#R2_Outp> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#R2_Inp
+<https://w3id.org/ibp/InstancesAutoVerification#R2_Inp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#R2_Inp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/CTRLont#Input> .
+<https://w3id.org/ibp/InstancesAutoVerification#R2_Inp> <https://w3id.org/seas/connectsSystemThrough> <https://w3id.org/ibp/InstancesAutoVerification#connR2InpTime> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#R2_Outp
+<https://w3id.org/ibp/InstancesAutoVerification#R2_Outp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#R2_Outp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/CTRLont#Output> .
+<https://w3id.org/ibp/InstancesAutoVerification#R2_Outp> <https://w3id.org/ibp/CTRLont#isConnectedTo> <https://w3id.org/ibp/InstancesAutoVerification#R1_Inp> .
+<https://w3id.org/ibp/InstancesAutoVerification#R2_Outp> <https://w3id.org/seas/connectsSystemThrough> <https://w3id.org/ibp/InstancesAutoVerification#connR2OutpYsce> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#R2_logic
+<https://w3id.org/ibp/InstancesAutoVerification#R2_logic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#R2_logic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ScheduleOntology#Schedule> .
+<https://w3id.org/ibp/InstancesAutoVerification#R2_logic> <https://w3id.org/ibp/CTRLont#logicInput> <https://w3id.org/ibp/InstancesAutoVerification#R2_Inp> .
+<https://w3id.org/ibp/InstancesAutoVerification#R2_logic> <https://w3id.org/ibp/CTRLont#logicOutput> <https://w3id.org/ibp/InstancesAutoVerification#R2_Outp> .
+<https://w3id.org/ibp/InstancesAutoVerification#R2_logic> <https://w3id.org/ibp/ScheduleOntology#hasInterval> <https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1> .
+<https://w3id.org/ibp/InstancesAutoVerification#R2_logic> <https://w3id.org/ibp/ScheduleOntology#hasInterval> <https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2> .
+<https://w3id.org/ibp/InstancesAutoVerification#R2_logic> <https://w3id.org/ibp/ScheduleOntology#hasInterval> <https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3> .
+<https://w3id.org/ibp/InstancesAutoVerification#R2_logic> <https://w3id.org/ibp/ScheduleOntology#hasPeriodicity> <https://w3id.org/ibp/ScheduleOntology#daily> .
+<https://w3id.org/ibp/ScheduleOntology#daily> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOffOn
+<https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOffOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOffOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/StateGraphOntology#Condition> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOffOn> <https://w3id.org/ibp/StateGraphOntology#conditionExpr> <https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOffOn> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOffStartUp
+<https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOffStartUp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOffStartUp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/StateGraphOntology#Condition> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOffStartUp> <https://w3id.org/ibp/StateGraphOntology#conditionExpr> <https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOffStartUp> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOnOff
+<https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOnOff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOnOff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/StateGraphOntology#Condition> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOnOff> <https://w3id.org/ibp/StateGraphOntology#conditionExpr> <https://w3id.org/ibp/InstancesAutoVerification#ExprConditionOnOff> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionStartUpOn
+<https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionStartUpOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionStartUpOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/StateGraphOntology#Condition> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionStartUpOn> <https://w3id.org/ibp/StateGraphOntology#conditionExpr> <https://w3id.org/ibp/InstancesAutoVerification#ExprConditionStartUpOn> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_OffActFan
+<https://w3id.org/ibp/InstancesAutoVerification#SG_OffActFan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_OffActFan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/StateGraphOntology#Action> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_OffActFan> <https://w3id.org/ibp/CTRLont#logicOutput> <https://w3id.org/ibp/InstancesAutoVerification#R1_Outp> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_OffActFan> <https://w3id.org/ibp/StateGraphOntology#assignValue> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_OffActMix
+<https://w3id.org/ibp/InstancesAutoVerification#SG_OffActMix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_OffActMix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/StateGraphOntology#Action> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_OffActMix> <https://w3id.org/ibp/CTRLont#logicOutput> <https://w3id.org/ibp/InstancesAutoVerification#R1_OutpMix> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_OffActMix> <https://w3id.org/ibp/StateGraphOntology#assignValue> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_OffActPump
+<https://w3id.org/ibp/InstancesAutoVerification#SG_OffActPump> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_OffActPump> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/StateGraphOntology#Action> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_OffActPump> <https://w3id.org/ibp/CTRLont#logicOutput> <https://w3id.org/ibp/InstancesAutoVerification#R1_OutpPump> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_OffActPump> <https://w3id.org/ibp/StateGraphOntology#assignValue> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_OnActFan
+<https://w3id.org/ibp/InstancesAutoVerification#SG_OnActFan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_OnActFan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/StateGraphOntology#Action> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_OnActFan> <https://w3id.org/ibp/CTRLont#logicOutput> <https://w3id.org/ibp/InstancesAutoVerification#R1_Outp> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_OnActFan> <https://w3id.org/ibp/StateGraphOntology#assignValue> "1.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_OnActMix
+<https://w3id.org/ibp/InstancesAutoVerification#SG_OnActMix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_OnActMix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/StateGraphOntology#Action> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_OnActMix> <https://w3id.org/ibp/CTRLont#logicOutput> <https://w3id.org/ibp/InstancesAutoVerification#R1_OutpMix> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_OnActMix> <https://w3id.org/ibp/StateGraphOntology#assignValue> "0.5"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_OnActPump
+<https://w3id.org/ibp/InstancesAutoVerification#SG_OnActPump> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_OnActPump> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/StateGraphOntology#Action> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_OnActPump> <https://w3id.org/ibp/CTRLont#logicOutput> <https://w3id.org/ibp/InstancesAutoVerification#R1_OutpPump> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_OnActPump> <https://w3id.org/ibp/StateGraphOntology#assignValue> "1.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActFan
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActFan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActFan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/StateGraphOntology#Action> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActFan> <https://w3id.org/ibp/CTRLont#logicOutput> <https://w3id.org/ibp/InstancesAutoVerification#R1_Outp> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActFan> <https://w3id.org/ibp/StateGraphOntology#assignValue> "1.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActMix
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActMix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActMix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/StateGraphOntology#Action> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActMix> <https://w3id.org/ibp/CTRLont#logicOutput> <https://w3id.org/ibp/InstancesAutoVerification#R1_OutpMix> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActMix> <https://w3id.org/ibp/StateGraphOntology#assignValue> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActPump
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActPump> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActPump> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/StateGraphOntology#Action> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActPump> <https://w3id.org/ibp/CTRLont#logicOutput> <https://w3id.org/ibp/InstancesAutoVerification#R1_OutpPump> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActPump> <https://w3id.org/ibp/StateGraphOntology#assignValue> "1.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_StateOff
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StateOff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StateOff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/StateGraphOntology#State> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StateOff> <https://w3id.org/ibp/CTRLont#logicOutput> <https://w3id.org/ibp/InstancesAutoVerification#R1_OutpSOff> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StateOff> <https://w3id.org/ibp/StateGraphOntology#stateAction> <https://w3id.org/ibp/InstancesAutoVerification#SG_OffActFan> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StateOff> <https://w3id.org/ibp/StateGraphOntology#stateAction> <https://w3id.org/ibp/InstancesAutoVerification#SG_OffActMix> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StateOff> <https://w3id.org/ibp/StateGraphOntology#stateAction> <https://w3id.org/ibp/InstancesAutoVerification#SG_OffActPump> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StateOff> <https://w3id.org/ibp/StateGraphOntology#stateCondition> <https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOnOff> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_StateOn
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StateOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StateOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/StateGraphOntology#State> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StateOn> <https://w3id.org/ibp/CTRLont#logicOutput> <https://w3id.org/ibp/InstancesAutoVerification#R1_OutpSOn> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StateOn> <https://w3id.org/ibp/StateGraphOntology#stateAction> <https://w3id.org/ibp/InstancesAutoVerification#SG_OnActFan> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StateOn> <https://w3id.org/ibp/StateGraphOntology#stateAction> <https://w3id.org/ibp/InstancesAutoVerification#SG_OnActMix> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StateOn> <https://w3id.org/ibp/StateGraphOntology#stateAction> <https://w3id.org/ibp/InstancesAutoVerification#SG_OnActPump> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StateOn> <https://w3id.org/ibp/StateGraphOntology#stateCondition> <https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOffOn> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StateOn> <https://w3id.org/ibp/StateGraphOntology#stateCondition> <https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionStartUpOn> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_StateStartUp
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StateStartUp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StateStartUp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/StateGraphOntology#State> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StateStartUp> <https://w3id.org/ibp/CTRLont#logicOutput> <https://w3id.org/ibp/InstancesAutoVerification#R1_OutpSStartup> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StateStartUp> <https://w3id.org/ibp/StateGraphOntology#stateAction> <https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActFan> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StateStartUp> <https://w3id.org/ibp/StateGraphOntology#stateAction> <https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActMix> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StateStartUp> <https://w3id.org/ibp/StateGraphOntology#stateAction> <https://w3id.org/ibp/InstancesAutoVerification#SG_StartUpActPump> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_StateStartUp> <https://w3id.org/ibp/StateGraphOntology#stateCondition> <https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOffStartUp> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/StateGraphOntology#Transition> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn> <https://w3id.org/ibp/StateGraphOntology#transitionCondition> <https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOffOn> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn> <https://w3id.org/ibp/StateGraphOntology#source> <https://w3id.org/ibp/InstancesAutoVerification#SG_StateOff> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn> <https://w3id.org/ibp/StateGraphOntology#target> <https://w3id.org/ibp/InstancesAutoVerification#SG_StateOn> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-0
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://numerateweb.org/vocab/math#Variable> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#ExpressionElement> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#Operand> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-0> <https://w3id.org/ibp/CTRLont#logicInput> <https://w3id.org/ibp/InstancesAutoVerification#R1_Inp> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-0> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-1> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-0> <http://numerateweb.org/vocab/math#name> "R1_Inp" .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-1
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#ExpressionElement> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#Operator> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-1> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-2> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-1> <http://numerateweb.org/vocab/math#operator> <http://www.openmath.org/cd/relation1#geq> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-2
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://numerateweb.org/vocab/math#Literal> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#ExpressionElement> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#Operand> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-2> <https://w3id.org/ibp/CTRLont#logicParameter> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-2-Par> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-2> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-3> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-2> <http://numerateweb.org/vocab/math#value> "1.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-2-Par
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-2-Par> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-2-Par> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/CTRLont#Parameter> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-3
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#ExpressionElement> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#Operator> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-3> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-4> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-3> <http://numerateweb.org/vocab/math#operator> <http://www.openmath.org/cd/logic1#and> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-4
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://numerateweb.org/vocab/math#Variable> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#ExpressionElement> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#Operand> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-4> <https://w3id.org/ibp/CTRLont#logicInput> <https://w3id.org/ibp/InstancesAutoVerification#R1_InpToa> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-4> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-5> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-4> <http://numerateweb.org/vocab/math#name> "R1_InpToa" .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-5
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#ExpressionElement> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#Operator> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-5> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-6> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-5> <http://numerateweb.org/vocab/math#operator> <http://www.openmath.org/cd/relation1#geq> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-6
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://numerateweb.org/vocab/math#Literal> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#ExpressionElement> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#Operand> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-6> <https://w3id.org/ibp/CTRLont#logicParameter> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-6-Par> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-6> <http://numerateweb.org/vocab/math#value> "1.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-6-Par
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-6-Par> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffOn-ExpEle-6-Par> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/CTRLont#Parameter> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/StateGraphOntology#Transition> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp> <https://w3id.org/ibp/StateGraphOntology#transitionCondition> <https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOffStartUp> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp> <https://w3id.org/ibp/StateGraphOntology#source> <https://w3id.org/ibp/InstancesAutoVerification#SG_StateOff> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp> <https://w3id.org/ibp/StateGraphOntology#target> <https://w3id.org/ibp/InstancesAutoVerification#SG_StateStartUp> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-0
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://numerateweb.org/vocab/math#Variable> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#ExpressionElement> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#Operand> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-0> <https://w3id.org/ibp/CTRLont#logicInput> <https://w3id.org/ibp/InstancesAutoVerification#R1_Inp> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-0> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-1> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-0> <http://numerateweb.org/vocab/math#name> "R1_Inp" .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-1
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#ExpressionElement> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#Operator> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-1> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-2> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-1> <http://numerateweb.org/vocab/math#operator> <http://www.openmath.org/cd/relation1#geq> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-2
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://numerateweb.org/vocab/math#Literal> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#ExpressionElement> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#Operand> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-2> <https://w3id.org/ibp/CTRLont#logicParameter> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-2-Par> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-2> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-3> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-2> <http://numerateweb.org/vocab/math#value> "1.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-2-Par
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-2-Par> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-2-Par> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/CTRLont#Parameter> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-3
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#ExpressionElement> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#Operator> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-3> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-4> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-3> <http://numerateweb.org/vocab/math#operator> <http://www.openmath.org/cd/logic1#and> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-4
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://numerateweb.org/vocab/math#Variable> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#ExpressionElement> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#Operand> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-4> <https://w3id.org/ibp/CTRLont#logicInput> <https://w3id.org/ibp/InstancesAutoVerification#R1_InpToa> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-4> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-5> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-4> <http://numerateweb.org/vocab/math#name> "R1_InpToa" .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-5
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#ExpressionElement> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#Operator> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-5> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-6> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-5> <http://numerateweb.org/vocab/math#operator> <http://www.openmath.org/cd/relation1#lt> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-6
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://numerateweb.org/vocab/math#Literal> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#ExpressionElement> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#Operand> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-6> <https://w3id.org/ibp/CTRLont#logicParameter> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-6-Par> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-6> <http://numerateweb.org/vocab/math#value> "1" .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-6-Par
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-6-Par> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OffStartUp-ExpEle-6-Par> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/CTRLont#Parameter> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/StateGraphOntology#Transition> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff> <https://w3id.org/ibp/StateGraphOntology#transitionCondition> <https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionOnOff> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff> <https://w3id.org/ibp/StateGraphOntology#source> <https://w3id.org/ibp/InstancesAutoVerification#SG_StateOn> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff> <https://w3id.org/ibp/StateGraphOntology#target> <https://w3id.org/ibp/InstancesAutoVerification#SG_StateOff> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-0
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://numerateweb.org/vocab/math#Variable> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#ExpressionElement> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#Operand> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-0> <https://w3id.org/ibp/CTRLont#logicInput> <https://w3id.org/ibp/InstancesAutoVerification#R1_Inp> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-0> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-1> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-0> <http://numerateweb.org/vocab/math#name> "R1_Inp" .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-1
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#ExpressionElement> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#Operator> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-1> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-2> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-1> <http://numerateweb.org/vocab/math#operator> <http://www.openmath.org/cd/relation1#leq> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-2
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://numerateweb.org/vocab/math#Literal> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#ExpressionElement> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#Operand> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-2> <https://w3id.org/ibp/CTRLont#logicParameter> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-2-Par> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-2> <http://numerateweb.org/vocab/math#value> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-2-Par
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-2-Par> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_OnOff-ExpEle-2-Par> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/CTRLont#Parameter> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/StateGraphOntology#Transition> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn> <https://w3id.org/ibp/StateGraphOntology#transitionCondition> <https://w3id.org/ibp/InstancesAutoVerification#SG_ConditionStartUpOn> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn> <https://w3id.org/ibp/StateGraphOntology#source> <https://w3id.org/ibp/InstancesAutoVerification#SG_StateStartUp> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn> <https://w3id.org/ibp/StateGraphOntology#target> <https://w3id.org/ibp/InstancesAutoVerification#SG_StateOn> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-0
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#FirstElement> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://numerateweb.org/vocab/math#Variable> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#ExpressionElement> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#Operand> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-0> <https://w3id.org/ibp/CTRLont#logicInput> <https://w3id.org/ibp/InstancesAutoVerification#R1_InpTHcr> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-0> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-1> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-0> <http://numerateweb.org/vocab/math#name> "R1_InpTHcr" .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-1
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#ExpressionElement> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#Operator> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-1> <file:/C:/OntoCAPE/meta_model/data_structures/linked_list.owl#nextElement> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-2> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-1> <http://numerateweb.org/vocab/math#operator> <http://www.openmath.org/cd/relation1#gt> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-2
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://numerateweb.org/vocab/math#Literal> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#ExpressionElement> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ExpressionOntology#Operand> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-2> <https://w3id.org/ibp/CTRLont#logicParameter> <https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-2-Par> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-2> <http://numerateweb.org/vocab/math#value> "30" .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-2-Par
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-2-Par> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#SG_Tran_StartUpOn-ExpEle-2-Par> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/CTRLont#Parameter> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#connR1InpSce
+<https://w3id.org/ibp/InstancesAutoVerification#connR1InpSce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#connR1InpSce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/seas/Connection> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#connR1InpTHcr
+<https://w3id.org/ibp/InstancesAutoVerification#connR1InpTHcr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#connR1InpTHcr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/seas/Connection> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#connR1InpToa
+<https://w3id.org/ibp/InstancesAutoVerification#connR1InpToa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#connR1InpToa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/seas/Connection> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#connR1OutpSOff
+<https://w3id.org/ibp/InstancesAutoVerification#connR1OutpSOff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#connR1OutpSOff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/seas/Connection> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#connR1OutpSOn
+<https://w3id.org/ibp/InstancesAutoVerification#connR1OutpSOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#connR1OutpSOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/seas/Connection> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#connR1OutpSStartUp
+<https://w3id.org/ibp/InstancesAutoVerification#connR1OutpSStartUp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#connR1OutpSStartUp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/seas/Connection> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#connR1OutyFan
+<https://w3id.org/ibp/InstancesAutoVerification#connR1OutyFan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#connR1OutyFan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/seas/Connection> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#connR1OutyMix
+<https://w3id.org/ibp/InstancesAutoVerification#connR1OutyMix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#connR1OutyMix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/seas/Connection> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#connR1OutyPump
+<https://w3id.org/ibp/InstancesAutoVerification#connR1OutyPump> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#connR1OutyPump> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/seas/Connection> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#connR2InpTime
+<https://w3id.org/ibp/InstancesAutoVerification#connR2InpTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#connR2InpTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/seas/Connection> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#connR2OutpYsce
+<https://w3id.org/ibp/InstancesAutoVerification#connR2OutpYsce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#connR2OutpYsce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/seas/Connection> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#r1.SG_StateOff.active
+<https://w3id.org/ibp/InstancesAutoVerification#r1.SG_StateOff.active> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#r1.SG_StateOff.active> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/seas/CommunicationConnectionPoint> .
+<https://w3id.org/ibp/InstancesAutoVerification#r1.SG_StateOff.active> <https://w3id.org/seas/connectsSystemThrough> <https://w3id.org/ibp/InstancesAutoVerification#connR1OutpSOff> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#r1.SG_StateOn.active
+<https://w3id.org/ibp/InstancesAutoVerification#r1.SG_StateOn.active> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#r1.SG_StateOn.active> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/seas/CommunicationConnectionPoint> .
+<https://w3id.org/ibp/InstancesAutoVerification#r1.SG_StateOn.active> <https://w3id.org/seas/connectsSystemThrough> <https://w3id.org/ibp/InstancesAutoVerification#connR1OutpSOn> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#r1.SG_StateStartUp.active
+<https://w3id.org/ibp/InstancesAutoVerification#r1.SG_StateStartUp.active> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#r1.SG_StateStartUp.active> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/seas/CommunicationConnectionPoint> .
+<https://w3id.org/ibp/InstancesAutoVerification#r1.SG_StateStartUp.active> <https://w3id.org/seas/connectsSystemThrough> <https://w3id.org/ibp/InstancesAutoVerification#connR1OutpSStartUp> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#r1.THcrCoiRet
+<https://w3id.org/ibp/InstancesAutoVerification#r1.THcrCoiRet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#r1.THcrCoiRet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/seas/CommunicationConnectionPoint> .
+<https://w3id.org/ibp/InstancesAutoVerification#r1.THcrCoiRet> <https://w3id.org/seas/connectsSystemThrough> <https://w3id.org/ibp/InstancesAutoVerification#connR1InpTHcr> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#r1.Toa
+<https://w3id.org/ibp/InstancesAutoVerification#r1.Toa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#r1.Toa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/seas/CommunicationConnectionPoint> .
+<https://w3id.org/ibp/InstancesAutoVerification#r1.Toa> <https://w3id.org/seas/connectsSystemThrough> <https://w3id.org/ibp/InstancesAutoVerification#connR1InpToa> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#r1.uSchedule
+<https://w3id.org/ibp/InstancesAutoVerification#r1.uSchedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#r1.uSchedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/seas/CommunicationConnectionPoint> .
+<https://w3id.org/ibp/InstancesAutoVerification#r1.uSchedule> <https://w3id.org/seas/connectsSystemThrough> <https://w3id.org/ibp/InstancesAutoVerification#connR1InpSce> .
+<https://w3id.org/ibp/InstancesAutoVerification#r1.uSchedule> <https://w3id.org/seas/connectsSystemThrough> <https://w3id.org/ibp/InstancesAutoVerification#connR2OutpYsce> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#r1.yFan
+<https://w3id.org/ibp/InstancesAutoVerification#r1.yFan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#r1.yFan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/seas/CommunicationConnectionPoint> .
+<https://w3id.org/ibp/InstancesAutoVerification#r1.yFan> <https://w3id.org/seas/connectsSystemThrough> <https://w3id.org/ibp/InstancesAutoVerification#connR1OutyFan> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#r1.yMix
+<https://w3id.org/ibp/InstancesAutoVerification#r1.yMix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#r1.yMix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/seas/CommunicationConnectionPoint> .
+<https://w3id.org/ibp/InstancesAutoVerification#r1.yMix> <https://w3id.org/seas/connectsSystemThrough> <https://w3id.org/ibp/InstancesAutoVerification#connR1OutyMix> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#r1.yPump
+<https://w3id.org/ibp/InstancesAutoVerification#r1.yPump> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#r1.yPump> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/seas/CommunicationConnectionPoint> .
+<https://w3id.org/ibp/InstancesAutoVerification#r1.yPump> <https://w3id.org/seas/connectsSystemThrough> <https://w3id.org/ibp/InstancesAutoVerification#connR1OutyPump> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ScheduleOntology#Interval> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1> <https://w3id.org/ibp/ScheduleOntology#hasEndPoint> <https://w3id.org/ibp/InstancesAutoVerification#sched_Point1End> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1> <https://w3id.org/ibp/ScheduleOntology#hasMathematicalFunction> <https://w3id.org/ibp/InstancesAutoVerification#sched_MathFun1> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1> <https://w3id.org/ibp/ScheduleOntology#hasStartPoint> <https://w3id.org/ibp/InstancesAutoVerification#sched_Point1Start> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1EndX
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1EndX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1EndX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ScheduleOntology#Coordinate> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1EndX> <https://w3id.org/ibp/ScheduleOntology#hasLiteralValue> "28800.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1EndY
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1EndY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1EndY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ScheduleOntology#Coordinate> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1EndY> <https://w3id.org/ibp/ScheduleOntology#hasLiteralValue> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1StartX
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1StartX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1StartX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ScheduleOntology#Coordinate> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1StartX> <https://w3id.org/ibp/ScheduleOntology#hasLiteralValue> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1StartY
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1StartY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1StartY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ScheduleOntology#Coordinate> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1StartY> <https://w3id.org/ibp/ScheduleOntology#hasLiteralValue> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ScheduleOntology#Interval> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2> <https://w3id.org/ibp/ScheduleOntology#hasEndPoint> <https://w3id.org/ibp/InstancesAutoVerification#sched_Point2End> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2> <https://w3id.org/ibp/ScheduleOntology#hasMathematicalFunction> <https://w3id.org/ibp/InstancesAutoVerification#sched_MathFun2> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2> <https://w3id.org/ibp/ScheduleOntology#hasStartPoint> <https://w3id.org/ibp/InstancesAutoVerification#sched_Point2Start> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2> <https://w3id.org/ibp/ScheduleOntology#isConsecutiveInterval> <https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2EndX
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2EndX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2EndX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ScheduleOntology#Coordinate> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2EndX> <https://w3id.org/ibp/ScheduleOntology#hasLiteralValue> "64800.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2EndY
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2EndY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2EndY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ScheduleOntology#Coordinate> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2EndY> <https://w3id.org/ibp/ScheduleOntology#hasLiteralValue> "1.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2StartX
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2StartX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2StartX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ScheduleOntology#Coordinate> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2StartX> <https://w3id.org/ibp/ScheduleOntology#hasLiteralValue> "28800.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2StartY
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2StartY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2StartY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ScheduleOntology#Coordinate> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2StartY> <https://w3id.org/ibp/ScheduleOntology#hasLiteralValue> "1.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ScheduleOntology#Interval> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3> <https://w3id.org/ibp/ScheduleOntology#hasEndPoint> <https://w3id.org/ibp/InstancesAutoVerification#sched_Point3End> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3> <https://w3id.org/ibp/ScheduleOntology#hasMathematicalFunction> <https://w3id.org/ibp/InstancesAutoVerification#sched_MathFun3> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3> <https://w3id.org/ibp/ScheduleOntology#hasStartPoint> <https://w3id.org/ibp/InstancesAutoVerification#sched_Point3Start> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3> <https://w3id.org/ibp/ScheduleOntology#isConsecutiveInterval> <https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3EndX
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3EndX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3EndX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ScheduleOntology#Coordinate> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3EndX> <https://w3id.org/ibp/ScheduleOntology#hasLiteralValue> "86400.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3EndY
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3EndY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3EndY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ScheduleOntology#Coordinate> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3EndY> <https://w3id.org/ibp/ScheduleOntology#hasLiteralValue> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3StartX
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3StartX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3StartX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ScheduleOntology#Coordinate> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3StartX> <https://w3id.org/ibp/ScheduleOntology#hasLiteralValue> "64800.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3StartY
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3StartY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3StartY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ScheduleOntology#Coordinate> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3StartY> <https://w3id.org/ibp/ScheduleOntology#hasLiteralValue> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#sched_MathFun1
+<https://w3id.org/ibp/InstancesAutoVerification#sched_MathFun1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_MathFun1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ScheduleOntology#MathematicalFunction> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_MathFun1> <https://w3id.org/ibp/ScheduleOntology#hasPolynomialConstant> <https://w3id.org/ibp/InstancesAutoVerification#sched_PolyCon1> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#sched_MathFun2
+<https://w3id.org/ibp/InstancesAutoVerification#sched_MathFun2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_MathFun2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ScheduleOntology#MathematicalFunction> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_MathFun2> <https://w3id.org/ibp/ScheduleOntology#hasPolynomialConstant> <https://w3id.org/ibp/InstancesAutoVerification#sched_PolyCon2> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#sched_MathFun3
+<https://w3id.org/ibp/InstancesAutoVerification#sched_MathFun3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_MathFun3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ScheduleOntology#MathematicalFunction> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_MathFun3> <https://w3id.org/ibp/ScheduleOntology#hasPolynomialConstant> <https://w3id.org/ibp/InstancesAutoVerification#sched_PolyCon3> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#sched_Point1End
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Point1End> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Point1End> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ScheduleOntology#Point> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Point1End> <https://w3id.org/ibp/ScheduleOntology#hasXCoordinate> <https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1EndX> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Point1End> <https://w3id.org/ibp/ScheduleOntology#hasYCoordinate> <https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1EndY> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#sched_Point1Start
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Point1Start> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Point1Start> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ScheduleOntology#Point> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Point1Start> <https://w3id.org/ibp/ScheduleOntology#hasXCoordinate> <https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1StartX> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Point1Start> <https://w3id.org/ibp/ScheduleOntology#hasYCoordinate> <https://w3id.org/ibp/InstancesAutoVerification#sched_Interval1StartY> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#sched_Point2End
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Point2End> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Point2End> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ScheduleOntology#Point> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Point2End> <https://w3id.org/ibp/ScheduleOntology#hasXCoordinate> <https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2EndX> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Point2End> <https://w3id.org/ibp/ScheduleOntology#hasYCoordinate> <https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2EndY> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#sched_Point2Start
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Point2Start> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Point2Start> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ScheduleOntology#Point> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Point2Start> <https://w3id.org/ibp/ScheduleOntology#hasXCoordinate> <https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2StartX> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Point2Start> <https://w3id.org/ibp/ScheduleOntology#hasYCoordinate> <https://w3id.org/ibp/InstancesAutoVerification#sched_Interval2StartY> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#sched_Point3End
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Point3End> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Point3End> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ScheduleOntology#Point> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Point3End> <https://w3id.org/ibp/ScheduleOntology#hasXCoordinate> <https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3EndX> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Point3End> <https://w3id.org/ibp/ScheduleOntology#hasYCoordinate> <https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3EndY> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#sched_Point3Start
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Point3Start> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Point3Start> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ScheduleOntology#Point> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Point3Start> <https://w3id.org/ibp/ScheduleOntology#hasXCoordinate> <https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3StartX> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_Point3Start> <https://w3id.org/ibp/ScheduleOntology#hasYCoordinate> <https://w3id.org/ibp/InstancesAutoVerification#sched_Interval3StartY> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#sched_PolyCon1
+<https://w3id.org/ibp/InstancesAutoVerification#sched_PolyCon1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_PolyCon1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ScheduleOntology#PolynomialConstant> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_PolyCon1> <https://w3id.org/ibp/ScheduleOntology#polyConstantDegree> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_PolyCon1> <https://w3id.org/ibp/ScheduleOntology#polyConstantLiteralValue> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#sched_PolyCon2
+<https://w3id.org/ibp/InstancesAutoVerification#sched_PolyCon2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_PolyCon2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ScheduleOntology#PolynomialConstant> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_PolyCon2> <https://w3id.org/ibp/ScheduleOntology#polyConstantDegree> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_PolyCon2> <https://w3id.org/ibp/ScheduleOntology#polyConstantLiteralValue> "1.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#sched_PolyCon3
+<https://w3id.org/ibp/InstancesAutoVerification#sched_PolyCon3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_PolyCon3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ibp/ScheduleOntology#PolynomialConstant> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_PolyCon3> <https://w3id.org/ibp/ScheduleOntology#polyConstantDegree> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://w3id.org/ibp/InstancesAutoVerification#sched_PolyCon3> <https://w3id.org/ibp/ScheduleOntology#polyConstantLiteralValue> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/ibp/InstancesAutoVerification#time
+<https://w3id.org/ibp/InstancesAutoVerification#time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/InstancesAutoVerification#time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/seas/CommunicationConnectionPoint> .
+<https://w3id.org/ibp/InstancesAutoVerification#time> <https://w3id.org/seas/connectsSystemThrough> <https://w3id.org/ibp/InstancesAutoVerification#connR2InpTime> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#daily
+# 
+# https://w3id.org/ibp/ScheduleOntology#hasLiteralValue
+<https://w3id.org/ibp/ScheduleOntology#hasLiteralValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/ScheduleOntology#hasLiteralValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#polyConstantDegree
+<https://w3id.org/ibp/ScheduleOntology#polyConstantDegree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/ScheduleOntology#polyConstantDegree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+# 
+# https://w3id.org/ibp/ScheduleOntology#polyConstantLiteralValue
+<https://w3id.org/ibp/ScheduleOntology#polyConstantLiteralValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ibp/ScheduleOntology#polyConstantLiteralValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

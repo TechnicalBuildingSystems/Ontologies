@@ -1,0 +1,529 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/ibp/SequenceControlOntology#"
+     xml:base="https://w3id.org/ibp/SequenceControlOntology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/ibp/SequenceControlOntology">
+        <owl:versionIRI rdf:resource="https://w3id.org/ibp/SequenceControlOntology-0.0.1"/>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-2033-859X"/>
+        <terms:creator rdf:resource="https://www.researchgate.net/profile/Georg_Schneider3"/>
+        <terms:creator>Georg Ferdinand Schneider</terms:creator>
+        <terms:description xml:lang="en">The ontology and its use are described in [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].
+
+[1] Schneider, G.F. (2018): &quot;Semantic Model for Control Logic in Automation Systems Knowledge-Based Support of the Engineering and Operation of Control Logic in Building and Industrial Automation Systems&quot; PhD thesis, Karlsruhe Institute of Technology, Faculty of Mechanical Engineering, Karlsruhe, Germany.
+
+[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003.</terms:description>
+        <terms:identifier>https://w3id.org/ibp/SequenceControlOntology#</terms:identifier>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-02-01</terms:issued>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-08-21</terms:modified>
+        <terms:rights xml:lang="en">Copyright (c) 2018, Fraunhofer Institute for Building Physics,
+			Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution 
+			Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0</terms:rights>
+        <terms:title xml:lang="en">SequenceControlOntology - An ontology to formally specify the sequence control in automation systems.</terms:title>
+        <vann:preferredNamespacePrefix>seq</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/ibp/SequenceControlOntology#"/>
+        <rdfs:comment xml:lang="en">SequenceControlOntology describes a typical type of control logic explicitly commonly referred to as SequenceControl (c.f. ISO 16484-3 [1]).
+
+[1] ISO 16484-3. Building automation and control systems (BACS) - Part 3: Functions, 2005. International Standardization Organization, Geneva, Switzerland.</rdfs:comment>
+        <rdfs:label xml:lang="en">SequenceControlOntology</rdfs:label>
+        <owl:versionInfo xml:lang="en">v0.0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/ibp/CTRLont#logicInput -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/CTRLont#logicInput"/>
+    
+
+
+    <!-- https://w3id.org/ibp/CTRLont#logicOutput -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/CTRLont#logicOutput"/>
+    
+
+
+    <!-- https://w3id.org/ibp/CTRLont#logicParameter -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/CTRLont#logicParameter"/>
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntology#hasEndPoint -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/SequenceControlOntology#hasEndPoint">
+        <rdfs:domain rdf:resource="https://w3id.org/ibp/SequenceControlOntology#Interval"/>
+        <rdfs:range rdf:resource="https://w3id.org/ibp/SequenceControlOntology#EndPoint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntology#hasInterval -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/SequenceControlOntology#hasInterval">
+        <rdfs:domain rdf:resource="https://w3id.org/ibp/SequenceControlOntology#Sequence"/>
+        <rdfs:range rdf:resource="https://w3id.org/ibp/SequenceControlOntology#Interval"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntology#hasMathematicalFunction -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/SequenceControlOntology#hasMathematicalFunction">
+        <rdfs:domain rdf:resource="https://w3id.org/ibp/SequenceControlOntology#Interval"/>
+        <rdfs:range rdf:resource="https://w3id.org/ibp/SequenceControlOntology#MathematicalFunction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntology#hasPolynomicalConstant -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/SequenceControlOntology#hasPolynomicalConstant">
+        <rdfs:domain rdf:resource="https://w3id.org/ibp/SequenceControlOntology#MathematicalFunction"/>
+        <rdfs:range rdf:resource="https://w3id.org/ibp/SequenceControlOntology#PolynomialConstant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntology#hasStartPoint -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/SequenceControlOntology#hasStartPoint">
+        <rdfs:domain rdf:resource="https://w3id.org/ibp/SequenceControlOntology#Interval"/>
+        <rdfs:range rdf:resource="https://w3id.org/ibp/SequenceControlOntology#StartPoint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntology#hasXCoordinate -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/SequenceControlOntology#hasXCoordinate">
+        <rdfs:domain rdf:resource="https://w3id.org/ibp/SequenceControlOntology#Point"/>
+        <rdfs:range rdf:resource="https://w3id.org/ibp/SequenceControlOntology#Coordinate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntology#hasYCoordinate -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/SequenceControlOntology#hasYCoordinate">
+        <rdfs:domain rdf:resource="https://w3id.org/ibp/SequenceControlOntology#Point"/>
+        <rdfs:range rdf:resource="https://w3id.org/ibp/SequenceControlOntology#Coordinate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntology#isConsecutiveInterval -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ibp/SequenceControlOntology#isConsecutiveInterval">
+        <rdfs:domain rdf:resource="https://w3id.org/ibp/SequenceControlOntology#Interval"/>
+        <rdfs:range rdf:resource="https://w3id.org/ibp/SequenceControlOntology#Interval"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntology#hasLiteralValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ibp/SequenceControlOntology#hasLiteralValue">
+        <rdfs:domain rdf:resource="https://w3id.org/ibp/SequenceControlOntology#Coordinate"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntology#polyConstantDegree -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ibp/SequenceControlOntology#polyConstantDegree">
+        <rdfs:domain rdf:resource="https://w3id.org/ibp/SequenceControlOntology#PolynomialConstant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntology#polyConstantLiteralValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ibp/SequenceControlOntology#polyConstantLiteralValue">
+        <rdfs:domain rdf:resource="https://w3id.org/ibp/SequenceControlOntology#PolynomialConstant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/vocommons/voaf#Vocabulary -->
+
+
+    <owl:Class rdf:about="http://purl.org/vocommons/voaf#Vocabulary"/>
+    
+
+
+    <!-- https://w3id.org/ibp/CTRLont#ApplicationLogic -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/CTRLont#ApplicationLogic"/>
+    
+
+
+    <!-- https://w3id.org/ibp/CTRLont#Input -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/CTRLont#Input"/>
+    
+
+
+    <!-- https://w3id.org/ibp/CTRLont#Output -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/CTRLont#Output"/>
+    
+
+
+    <!-- https://w3id.org/ibp/CTRLont#Parameter -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/CTRLont#Parameter"/>
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntology#Coordinate -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/SequenceControlOntology#Coordinate">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntology#EndPoint -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/SequenceControlOntology#EndPoint">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ibp/SequenceControlOntology#Point"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntology#Interval -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/SequenceControlOntology#Interval">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ibp/CTRLont#logicInput"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ibp/CTRLont#Input"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ibp/CTRLont#logicOutput"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ibp/CTRLont#Output"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ibp/SequenceControlOntology#hasEndPoint"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ibp/SequenceControlOntology#EndPoint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ibp/SequenceControlOntology#hasMathematicalFunction"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ibp/SequenceControlOntology#MathematicalFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ibp/SequenceControlOntology#hasStartPoint"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ibp/SequenceControlOntology#StartPoint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ibp/SequenceControlOntology#isConsecutiveInterval"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ibp/SequenceControlOntology#Interval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntology#MathematicalFunction -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/SequenceControlOntology#MathematicalFunction">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ibp/SequenceControlOntology#hasPolynomicalConstant"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/ibp/SequenceControlOntology#PolynomialConstant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ibp/SequenceControlOntology#hasPolynomicalConstant"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ibp/SequenceControlOntology#PolynomialConstant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntology#Point -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/SequenceControlOntology#Point">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ibp/SequenceControlOntology#hasXCoordinate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ibp/SequenceControlOntology#Coordinate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ibp/SequenceControlOntology#hasYCoordinate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ibp/SequenceControlOntology#Coordinate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntology#PolynomialConstant -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/SequenceControlOntology#PolynomialConstant">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntology#Sequence -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/SequenceControlOntology#Sequence">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ibp/CTRLont#ApplicationLogic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ibp/SequenceControlOntology#hasInterval"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/ibp/SequenceControlOntology#Interval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ibp/SequenceControlOntology#hasInterval"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ibp/SequenceControlOntology#Interval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntology#StartPoint -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ibp/SequenceControlOntology#StartPoint">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ibp/SequenceControlOntology#Point"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/ibp/SequenceControlOntology -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ibp/SequenceControlOntology">
+        <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,1705 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.4), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.org/vocommons/voaf", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/ibp/CTRLont", "https://w3id.org/ibp/ExpressionOntology", "https://w3id.org/StateGraphOntology", "https://w3id.org/ibp/ConditionOntology", "https://w3id.org/ibp/StateGraphOntology", "https://w3id.org/ConditionOntology" ],
+    "title" : {
+      "en" : "Ontology StateGraphOntologyEval."
+    },
+    "iri" : "https://w3id.org/ibp/StateGraphOntologyEval",
+    "version" : "v0.1.0",
+    "author" : [ "Georg Ferdinand Schneider", "https://www.researchgate.net/profile/Georg_Schneider3", "https://orcid.org/0000-0002-2033-859X" ],
+    "description" : {
+      "en" : "The ontology provides instances of the examples described in the PhD thesis of Georg Ferdinand Schneider [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].\r\n\r\n[1] Schneider, G.F. (2019): \"Semantic Model for Control Logic in Automation Systems - Knowledge-Based Support of the Engineering and Operation of Control Logic in Building and Industrial Automation Systems\" PhD thesis, Karlsruhe Institute of Technology, Karlsruhe, Germany.\r\n\r\n[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003."
+    },
+    "labels" : {
+      "en" : "StateGraphOntologyEval"
+    },
+    "comments" : {
+      "en" : "Ontology with instances of StateGraphOntologyEval."
+    },
+    "other" : {
+      "identifier" : [ {
+        "identifier" : "identifier",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ibp/StateGraphOntologyEval#",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by-sa/4.0",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Georg Ferdinand Schneider",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://orcid.org/0000-0002-2033-859X",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://www.researchgate.net/profile/Georg_Schneider3",
+        "type" : "iri"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "en",
+        "value" : "Copyright (c) 2019, Georg Ferdinand Schneider, Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-03-07",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ibp/StateGraphOntologyEval#",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "v0.1.0",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2018-06-30",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Ontology StateGraphOntologyEval.",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 8,
+    "objectPropertyCount" : 1,
+    "datatypePropertyCount" : 0,
+    "individualCount" : 10
+  },
+  "class" : [ {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "20",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "21",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "22",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "102",
+    "type" : "owl:Class"
+  }, {
+    "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "107",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/ibp/CTRLont#Parameter",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Parameter",
+      "en" : "Parameter"
+    },
+    "comment" : {
+      "en" : "Parameter describe time-invariant values and settings of the respective control actor. Thus thay can be added dependent on the respective application logic."
+    },
+    "attributes" : [ "external" ],
+    "id" : "6",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/ConditionOntology#BooleanExpression",
+    "baseIri" : "https://w3id.org/ibp/ConditionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BooleanExpression"
+    },
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#Unit",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Unit",
+      "en" : "Unit"
+    },
+    "comment" : {
+      "en" : "Placeholder concept to stipulate reuse of existing ontologies such as Ontology for Units and Measures (OM) or QUDT."
+    },
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#AnnotatedElement",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AnnotatedElement",
+      "en" : "Annotated Element"
+    },
+    "subClasses" : [ "14", "15", "6" ],
+    "comment" : {
+      "en" : "An annotated element is a generic superclass for ctrl:Input, ctrl:Output and ctrl:Parameter"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "16",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "20",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "21",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "22",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "23",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#Transition",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Transition"
+    },
+    "attributes" : [ "external" ],
+    "id" : "28",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/ConditionOntology#RightHandSide",
+    "baseIri" : "https://w3id.org/ibp/ConditionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RightHandSide"
+    },
+    "attributes" : [ "external" ],
+    "id" : "29",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#DataType",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://www.w3.org/TR/xmlschema-2/#built-in-datatypes",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DataType",
+      "en" : "Data type"
+    },
+    "comment" : {
+      "en" : "Placeholder class for the specification of basic data types such as, e.g. integer, boolean or double."
+    },
+    "attributes" : [ "external" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#Medium",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://www.productontology.org/id/",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://wiki.dbpedia.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Medium",
+      "en" : "Medium"
+    },
+    "comment" : {
+      "en" : "Placeholder concept to stipulate reuse of existing ontologies such as dbpedia or  \thttp://www.productontology.org/id/"
+    },
+    "attributes" : [ "external" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#Output",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Output",
+      "en" : "Output"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/StateGraphOntologyEval#y",
+      "baseIri" : "https://w3id.org/ibp/StateGraphOntologyEval",
+      "labels" : {
+        "IRI-based" : "y"
+      }
+    } ],
+    "comment" : {
+      "en" : "An output allows compute results by the application logic of an control actor to be fowarded to outside entities such as actuators or other control actors."
+    },
+    "attributes" : [ "external" ],
+    "id" : "15",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#SemanticType",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SemanticType",
+      "en" : "Semantic Type"
+    },
+    "comment" : {
+      "en" : "It may be required to further annotate an Input, Output or Parameter with a specific Semantic Type. For example in building automation to differ between room air temperature or outdoor air temperature."
+    },
+    "attributes" : [ "external" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://purl.org/vocommons/voaf#Vocabulary",
+    "baseIri" : "http://purl.org/vocommons/voaf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Vocabulary"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/CTRLont",
+      "baseIri" : "https://w3id.org/ibp",
+      "labels" : {
+        "IRI-based" : "CTRLont"
+      }
+    }, {
+      "iri" : "https://w3id.org/StateGraphOntology",
+      "baseIri" : "https://w3id.org",
+      "labels" : {
+        "IRI-based" : "StateGraphOntology"
+      }
+    }, {
+      "iri" : "https://w3id.org/ibp/ConditionOntology",
+      "baseIri" : "https://w3id.org/ibp",
+      "labels" : {
+        "IRI-based" : "ConditionOntology"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://w3id.org/ConditionOntology#BooleanExpression",
+    "baseIri" : "https://w3id.org/ConditionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BooleanExpression"
+    },
+    "attributes" : [ "external" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#ApplicationLogic",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ApplicationLogic",
+      "en" : "Application Logic"
+    },
+    "subClasses" : [ "12", "1" ],
+    "comment" : {
+      "en" : "Concept to specify the application logic of a control actor. Seperate ontologies may be used to further specify this concept."
+    },
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#ControlActor",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ControlActor",
+      "en" : "Control Actor"
+    },
+    "comment" : {
+      "en" : "Concept to describe the in general accepted Sense-Process-Actuate\npattern in automation systems, e.g. function blocks from IEC 61499."
+    },
+    "attributes" : [ "external" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#InitialState",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InitialState"
+    },
+    "attributes" : [ "external" ],
+    "id" : "55",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#Input",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Input",
+      "en" : "Input"
+    },
+    "comment" : {
+      "en" : "An input allow flows of information to enter a control actor. Inputs are processed by the respective application logic of the control actor to compute the outputs."
+    },
+    "attributes" : [ "external" ],
+    "id" : "14",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/ConditionOntology#LeftHandSide",
+    "baseIri" : "https://w3id.org/ConditionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LeftHandSide"
+    },
+    "attributes" : [ "external" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#Quantity",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://qudt.org/schema/qudt",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Quantity",
+      "en" : "Quantity"
+    },
+    "comment" : {
+      "en" : "Placeholder concept to stipulate reuse of existing ontologies such as Ontology for Units and Measures (OM) or QUDT."
+    },
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/ibp/StateGraphOntology#Transition",
+    "baseIri" : "https://w3id.org/ibp/StateGraphOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Transition"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/StateGraphOntologyEval#t2",
+      "baseIri" : "https://w3id.org/ibp/StateGraphOntologyEval",
+      "annotations" : {
+        "source" : [ {
+          "identifier" : "source",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/StateGraphOntologyEval#state1",
+          "type" : "iri"
+        } ],
+        "target" : [ {
+          "identifier" : "target",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/StateGraphOntologyEval#ret0",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "t2"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://w3id.org/ibp/StateGraphOntology#InitialState",
+    "baseIri" : "https://w3id.org/ibp/StateGraphOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InitialState"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/StateGraphOntologyEval#Init",
+      "baseIri" : "https://w3id.org/ibp/StateGraphOntologyEval",
+      "labels" : {
+        "IRI-based" : "Init"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "72"
+  }, {
+    "iri" : "https://w3id.org/ibp/ConditionOntology#ExpressionAtom",
+    "baseIri" : "https://w3id.org/ibp/ConditionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExpressionAtom"
+    },
+    "subClasses" : [ "29", "9" ],
+    "attributes" : [ "external" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://w3id.org/ibp/ExpressionOntology#Expression",
+    "baseIri" : "https://w3id.org/ibp/ExpressionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Expression"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/StateGraphOntologyEval#exp",
+      "baseIri" : "https://w3id.org/ibp/StateGraphOntologyEval",
+      "labels" : {
+        "IRI-based" : "exp"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "78"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#Condition",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Condition"
+    },
+    "attributes" : [ "external" ],
+    "id" : "57",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/ConditionOntology#LeftHandSide",
+    "baseIri" : "https://w3id.org/ibp/ConditionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LeftHandSide"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#StateGraphElement",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StateGraphElement"
+    },
+    "subClasses" : [ "48", "57", "28", "62" ],
+    "attributes" : [ "external" ],
+    "id" : "12",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#Action",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Action"
+    },
+    "attributes" : [ "external" ],
+    "id" : "62",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/StateGraphOntology#Condition",
+    "baseIri" : "https://w3id.org/ibp/StateGraphOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Condition"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/StateGraphOntologyEval#state1-A",
+      "baseIri" : "https://w3id.org/ibp/StateGraphOntologyEval",
+      "annotations" : {
+        "conditionExpr" : [ {
+          "identifier" : "conditionExpr",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/StateGraphOntologyEval#exp",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "state1-A"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "96"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#Return",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Return"
+    },
+    "attributes" : [ "external" ],
+    "id" : "68",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#StateGraph",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StateGraph"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#State",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "State"
+    },
+    "subClasses" : [ "68", "55" ],
+    "attributes" : [ "external" ],
+    "id" : "48",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/StateGraphOntology#Action",
+    "baseIri" : "https://w3id.org/ibp/StateGraphOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Action"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/StateGraphOntologyEval#s1-Act",
+      "baseIri" : "https://w3id.org/ibp/StateGraphOntologyEval",
+      "annotations" : {
+        "assignValue" : [ {
+          "identifier" : "assignValue",
+          "language" : "undefined",
+          "value" : "2.0",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "s1-Act"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "102"
+  }, {
+    "iri" : "https://w3id.org/ibp/StateGraphOntology#SimpleState",
+    "baseIri" : "https://w3id.org/ibp/StateGraphOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SimpleState"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/StateGraphOntologyEval#state1",
+      "baseIri" : "https://w3id.org/ibp/StateGraphOntologyEval",
+      "annotations" : {
+        "stateAction" : [ {
+          "identifier" : "stateAction",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/StateGraphOntologyEval#s1-Act",
+          "type" : "iri"
+        } ],
+        "stateCondition" : [ {
+          "identifier" : "stateCondition",
+          "language" : "undefined",
+          "value" : "https://w3id.org/ibp/StateGraphOntologyEval#state1-A",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "state1"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "105"
+  }, {
+    "iri" : "https://w3id.org/ibp/StateGraphOntology#Return",
+    "baseIri" : "https://w3id.org/ibp/StateGraphOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Return"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/ibp/StateGraphOntologyEval#ret0",
+      "baseIri" : "https://w3id.org/ibp/StateGraphOntologyEval",
+      "labels" : {
+        "IRI-based" : "ret0"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "107"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "37",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "39",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "40",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "41",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "42",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "44",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "71",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "75",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "82",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "90",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "91",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "92",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "93",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "94",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "95",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "97",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "98",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "99",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "100",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "103",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "106",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasQuantity",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasQuantity",
+      "en" : "hasQuantity"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Object property to annotate an input, output or parameter with its quantity."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/ibp/ConditionOntology#expressionLHS",
+    "baseIri" : "https://w3id.org/ibp/ConditionOntology",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "expressionLHS"
+    },
+    "domain" : "8",
+    "attributes" : [ "object", "external" ],
+    "id" : "7"
+  }, {
+    "range" : "2",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "11"
+  }, {
+    "range" : "4",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "13"
+  }, {
+    "range" : "4",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "18"
+  }, {
+    "range" : "4",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://w3id.org/ibp/ConditionOntology#logicalConjunction",
+    "baseIri" : "https://w3id.org/ibp/ConditionOntology",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "logicalConjunction"
+    },
+    "domain" : "8",
+    "attributes" : [ "object", "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "https://w3id.org/ConditionOntology#expressionLHS",
+    "baseIri" : "https://w3id.org/ConditionOntology",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "expressionLHS"
+    },
+    "domain" : "26",
+    "attributes" : [ "object", "external" ],
+    "id" : "25"
+  }, {
+    "range" : "6",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasOutput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasOutput",
+      "en" : "hasOutput"
+    },
+    "domain" : "38",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its outputs."
+    },
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "37"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasApplicationLogic",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasApplicationLogic",
+      "en" : "hasApplicationLogic"
+    },
+    "domain" : "38",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its specific application logic"
+    },
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "39"
+  }, {
+    "range" : "6",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasOutput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasOutput",
+      "en" : "hasOutput"
+    },
+    "domain" : "38",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its outputs."
+    },
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "41"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasApplicationLogic",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasApplicationLogic",
+      "en" : "hasApplicationLogic"
+    },
+    "domain" : "38",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its specific application logic"
+    },
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "42"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasInput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasInput",
+      "en" : "hasInput"
+    },
+    "domain" : "38",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its inputs."
+    },
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "44"
+  }, {
+    "iri" : "https://w3id.org/ibp/ConditionOntology#lessThanOrEqual",
+    "baseIri" : "https://w3id.org/ibp/ConditionOntology",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "lessThanOrEqual"
+    },
+    "domain" : "9",
+    "attributes" : [ "object", "external" ],
+    "id" : "45"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasParameter",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasParameter",
+      "en" : "hasParameter"
+    },
+    "domain" : "38",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its parameter."
+    },
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#source",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "source"
+    },
+    "domain" : "28",
+    "attributes" : [ "object", "external" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasDataType",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "hasDataType",
+      "en" : "hasDataType"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Object property to annotate a input, output or parameter with its data type."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "49"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#logicOutput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "logicOutput",
+      "en" : "logicOutput"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "Object property to express the relationship of some application logic concept to an output."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://w3id.org/ibp/ConditionOntology#lessThan",
+    "baseIri" : "https://w3id.org/ibp/ConditionOntology",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "lessThan"
+    },
+    "domain" : "9",
+    "attributes" : [ "object", "external" ],
+    "id" : "51"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#isSupervisedBy",
+    "inverse" : "53",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "isSupervisedBy",
+      "en" : "isSupervisedBy"
+    },
+    "domain" : "38",
+    "comment" : {
+      "en" : "Object property to describe hierarchical composition of control actors."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "52"
+  }, {
+    "iri" : "https://w3id.org/ibp/ConditionOntology#hasLiteralValue",
+    "baseIri" : "https://w3id.org/ibp/ConditionOntology",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "hasLiteralValue"
+    },
+    "domain" : "29",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "54"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#stateCondition",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "stateCondition"
+    },
+    "domain" : "48",
+    "attributes" : [ "object", "external" ],
+    "id" : "56"
+  }, {
+    "iri" : "https://w3id.org/ibp/ConditionOntology#decomposes",
+    "baseIri" : "https://w3id.org/ibp/ConditionOntology",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "decomposes"
+    },
+    "domain" : "8",
+    "attributes" : [ "object", "external" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasUnit",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasUnit",
+      "en" : "hasUnit"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Object property to relate an input, output or parameter with its unit."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "59"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#supervises",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "supervises",
+      "en" : "supervises"
+    },
+    "domain" : "38",
+    "comment" : {
+      "en" : "Object property to describe if one control actor supervises another."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "53"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasParameter",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasParameter",
+      "en" : "hasParameter"
+    },
+    "domain" : "38",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its parameter."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "60"
+  }, {
+    "range" : "12",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "61"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#logicInput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "logicInput",
+      "en" : "logicInput"
+    },
+    "domain" : "22",
+    "comment" : {
+      "en" : "Object property to express the relationship of some application logic concept to an input."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "63"
+  }, {
+    "range" : "12",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "64"
+  }, {
+    "range" : "48",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "65"
+  }, {
+    "range" : "48",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "67"
+  }, {
+    "range" : "30",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "69"
+  }, {
+    "range" : "30",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "70"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#logicParameter",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "logicParameter",
+      "en" : "logicParameter"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Object property to express the relationship of some application logic concept to an parameter."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "71"
+  }, {
+    "range" : "12",
+    "domain" : "57",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "73"
+  }, {
+    "range" : "12",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "74"
+  }, {
+    "iri" : "https://w3id.org/ibp/ConditionOntology#expressionRHS",
+    "baseIri" : "https://w3id.org/ibp/ConditionOntology",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "expressionRHS"
+    },
+    "domain" : "8",
+    "attributes" : [ "object", "external" ],
+    "id" : "75"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#assignValue",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "assignValue"
+    },
+    "domain" : "62",
+    "attributes" : [ "functional", "datatype", "external" ],
+    "id" : "76"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasApplicationLogic",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasApplicationLogic",
+      "en" : "hasApplicationLogic"
+    },
+    "domain" : "21",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its specific application logic"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "77"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#isConnectedTo",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "isConnectedTo",
+      "en" : "isConnectedTo"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Object property to describe the topological relationship between an input of one control actor and the output of another."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "79"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#stateAction",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "stateAction"
+    },
+    "domain" : "48",
+    "attributes" : [ "object", "external" ],
+    "id" : "80"
+  }, {
+    "iri" : "https://w3id.org/ibp/ConditionOntology#equalTo",
+    "baseIri" : "https://w3id.org/ibp/ConditionOntology",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "equalTo"
+    },
+    "domain" : "9",
+    "attributes" : [ "object", "external" ],
+    "id" : "81"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#conditionExpr",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "conditionExpr"
+    },
+    "domain" : "57",
+    "attributes" : [ "object", "external" ],
+    "id" : "82"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasSemanticType",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "hasSemanticType",
+      "en" : "hasSemanticType"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Object property to relate an input, output or parameter with its semantic type."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "83"
+  }, {
+    "iri" : "https://w3id.org/ibp/ConditionOntology#greaterThanOrEqual",
+    "baseIri" : "https://w3id.org/ibp/ConditionOntology",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "greaterThanOrEqual"
+    },
+    "domain" : "9",
+    "attributes" : [ "object", "external" ],
+    "id" : "84"
+  }, {
+    "iri" : "https://w3id.org/ibp/ConditionOntology#logicalNegation",
+    "baseIri" : "https://w3id.org/ibp/ConditionOntology",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "logicalNegation"
+    },
+    "domain" : "8",
+    "attributes" : [ "object", "external" ],
+    "id" : "85"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasOutput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasOutput",
+      "en" : "hasOutput"
+    },
+    "domain" : "38",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its outputs."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "86"
+  }, {
+    "iri" : "https://w3id.org/ibp/ConditionOntology#logicalDisjunction",
+    "baseIri" : "https://w3id.org/ibp/ConditionOntology",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "logicalDisjunction"
+    },
+    "domain" : "8",
+    "attributes" : [ "object", "external" ],
+    "id" : "87"
+  }, {
+    "iri" : "https://w3id.org/ibp/ConditionOntology#greatherThan",
+    "baseIri" : "https://w3id.org/ibp/ConditionOntology",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "greatherThan"
+    },
+    "domain" : "9",
+    "attributes" : [ "object", "external" ],
+    "id" : "88"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#contains",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "contains"
+    },
+    "domain" : "1",
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "89"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#target",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "target"
+    },
+    "domain" : "28",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "90"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#source",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "source"
+    },
+    "domain" : "28",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "91"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasSemanticType",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "hasSemanticType",
+      "en" : "hasSemanticType"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Object property to relate an input, output or parameter with its semantic type."
+    },
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "92"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasUnit",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasUnit",
+      "en" : "hasUnit"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Object property to relate an input, output or parameter with its unit."
+    },
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "93"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasQuantity",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasQuantity",
+      "en" : "hasQuantity"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Object property to annotate an input, output or parameter with its quantity."
+    },
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "94"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasMedium",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "hasMedium",
+      "en" : "hasMedium"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Object property to annotate an input, output or parameter with its medium."
+    },
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "95"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasDataType",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "hasDataType",
+      "en" : "hasDataType"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Object property to annotate a input, output or parameter with its data type."
+    },
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "97"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#stateAction",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "stateAction"
+    },
+    "domain" : "48",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "98"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#stateCondition",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "stateCondition"
+    },
+    "domain" : "48",
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "99"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#target",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "target"
+    },
+    "domain" : "28",
+    "attributes" : [ "object", "external" ],
+    "id" : "100"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#contains",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "contains"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "101"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#hasNumbering",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "hasNumbering"
+    },
+    "domain" : "48",
+    "attributes" : [ "functional", "datatype", "external" ],
+    "id" : "103"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasInput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasInput",
+      "en" : "hasInput"
+    },
+    "domain" : "38",
+    "comment" : {
+      "en" : "Object property to relate a control actor to its inputs."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "104"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#hasMedium",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "hasMedium",
+      "en" : "hasMedium"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Object property to annotate an input, output or parameter with its medium."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "106"
+  }, {
+    "iri" : "https://w3id.org/StateGraphOntology#hasDescription",
+    "baseIri" : "https://w3id.org/StateGraphOntology",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "hasDescription"
+    },
+    "domain" : "48",
+    "attributes" : [ "functional", "datatype", "external" ],
+    "id" : "108"
+  } ]
+}

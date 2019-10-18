@@ -1,0 +1,418 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.4), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org/ibp/MooreMachineOntology", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/ibp/CTRLont", "https://w3id.org/ibp/ExpressionOntology" ],
+    "title" : {
+      "en" : "Moore Machine Ontology - An ontology to formally specify the discrete control logic expressed as a Moore Machine"
+    },
+    "iri" : "https://w3id.org/ibp/MooreMachineOntology",
+    "version" : "v0.0.1",
+    "author" : [ "Georg Ferdinand Schneider", "https://www.researchgate.net/profile/Georg_Schneider3", "https://orcid.org/0000-0002-2033-859X" ],
+    "description" : {
+      "en" : "The Moore Machine Ontology is an ontology to explicitly describe control logic compliant to the formalism specified by Moore (Lunze, 2009). The ontology and its use will be documented in a conference paper. The ontology is implemented using the free protege tool (protege.stanford.edu) (Musen, 2015).\n                                             \n M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003.\n\nJ. Lunze (2009): Ereignisdiskrete Systeme: Modellierung und Analyse dynamischer Systeme mit Automaten, Markovketten und Petrinetzen. Oldenbourg, Munich, Germany."
+    },
+    "labels" : {
+      "en" : "Moore Machine Ontology"
+    },
+    "comments" : {
+      "en" : "Ontology to explicitly model control logic based on the Moore Machine formalism."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by-sa/4.0",
+        "type" : "iri"
+      } ],
+      "identifier" : [ {
+        "identifier" : "identifier",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ibp/MooreMachineOntology#",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Georg Ferdinand Schneider",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://orcid.org/0000-0002-2033-859X",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://www.researchgate.net/profile/Georg_Schneider3",
+        "type" : "iri"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "en",
+        "value" : "Copyright (c) 2017/ 2018, Fraunhofer Institute for Building Physics,\n\t\t\tNuremberg, Germany. This ontology is distributed under a Creative Commons Attribution \n\t\t\tShare Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "moo",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2018-03-25",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "v0.0.1",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ibp/MooreMachineOntology#",
+        "type" : "iri"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Moore Machine Ontology - An ontology to formally specify the discrete control logic expressed as a Moore Machine",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2018-02-01",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 9,
+    "objectPropertyCount" : 8,
+    "datatypePropertyCount" : 1,
+    "individualCount" : 0
+  },
+  "class" : [ {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/ibp/MooreMachineOntology#Action",
+    "baseIri" : "https://w3id.org/ibp/MooreMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Action"
+    },
+    "id" : "2",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "8",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/ibp/ExpressionOntology#Expression",
+    "baseIri" : "https://w3id.org/ibp/ExpressionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Expression"
+    },
+    "attributes" : [ "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "https://w3id.org/ibp/MooreMachineOntology#Condition",
+    "baseIri" : "https://w3id.org/ibp/MooreMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Condition"
+    },
+    "id" : "13",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/MooreMachineOntology#MooreElement",
+    "baseIri" : "https://w3id.org/ibp/MooreMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MooreElement"
+    },
+    "subClasses" : [ "2", "6", "13", "1" ],
+    "id" : "4"
+  }, {
+    "iri" : "https://w3id.org/ibp/MooreMachineOntology#Transition",
+    "baseIri" : "https://w3id.org/ibp/MooreMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Transition"
+    },
+    "id" : "6",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/MooreMachineOntology#MooreMachine",
+    "baseIri" : "https://w3id.org/ibp/MooreMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MooreMachine"
+    },
+    "id" : "20"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#Output",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Output"
+    },
+    "attributes" : [ "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "https://w3id.org/ibp/MooreMachineOntology#InitialState",
+    "baseIri" : "https://w3id.org/ibp/MooreMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InitialState"
+    },
+    "id" : "17",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/ibp/MooreMachineOntology#State",
+    "baseIri" : "https://w3id.org/ibp/MooreMachineOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "State"
+    },
+    "subClasses" : [ "17" ],
+    "id" : "1",
+    "superClasses" : [ "4" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "22",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/ibp/MooreMachineOntology#stateAction",
+    "baseIri" : "https://w3id.org/ibp/MooreMachineOntology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "stateAction"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/ibp/MooreMachineOntology#source",
+    "baseIri" : "https://w3id.org/ibp/MooreMachineOntology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "source"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "5"
+  }, {
+    "range" : "4",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://w3id.org/ibp/CTRLont#logicOutput",
+    "baseIri" : "https://w3id.org/ibp/CTRLont",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "logicOutput"
+    },
+    "domain" : "8",
+    "attributes" : [ "external", "object" ],
+    "id" : "10"
+  }, {
+    "range" : "4",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "11"
+  }, {
+    "range" : "4",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "12"
+  }, {
+    "range" : "4",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "15"
+  }, {
+    "range" : "1",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://w3id.org/ibp/MooreMachineOntology#target",
+    "baseIri" : "https://w3id.org/ibp/MooreMachineOntology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "target"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://w3id.org/ibp/MooreMachineOntology#contains",
+    "baseIri" : "https://w3id.org/ibp/MooreMachineOntology",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "contains"
+    },
+    "domain" : "20",
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "8",
+    "subproperty" : [ "0" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/ibp/MooreMachineOntology#contains",
+    "baseIri" : "https://w3id.org/ibp/MooreMachineOntology",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "contains"
+    },
+    "domain" : "20",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://w3id.org/ibp/MooreMachineOntology#contains",
+    "baseIri" : "https://w3id.org/ibp/MooreMachineOntology",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "contains"
+    },
+    "domain" : "20",
+    "attributes" : [ "allValues", "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "https://w3id.org/ibp/MooreMachineOntology#transitionCondition",
+    "baseIri" : "https://w3id.org/ibp/MooreMachineOntology",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "transitionCondition"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://w3id.org/ibp/MooreMachineOntology#conditionExpr",
+    "baseIri" : "https://w3id.org/ibp/MooreMachineOntology",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "conditionExpr"
+    },
+    "domain" : "13",
+    "attributes" : [ "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "https://w3id.org/ibp/MooreMachineOntology#assignSimpleValue",
+    "baseIri" : "https://w3id.org/ibp/MooreMachineOntology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "assignSimpleValue"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "26"
+  } ]
+}

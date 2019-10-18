@@ -1,0 +1,195 @@
+@prefix : <https://w3id.org/ibp/InstancesSensorExcerpt#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/ibp/InstancesSensorExcerpt> .
+
+<https://w3id.org/ibp/InstancesSensorExcerpt> rdf:type owl:Ontology ;
+                                               <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-2033-859X> ,
+                                                                                  <https://www.researchgate.net/profile/Georg_Schneider3> ,
+                                                                                  "Georg Ferdinand Schneider" ;
+                                               <http://purl.org/dc/terms/description> """The ontology provides instances of the examples described in the PhD thesis of Georg Ferdinand Schneider [1]. The ontology is implemented using the free protege tool (protege.stanford.edu) [2].
+
+[1] Schneider, G.F. (2019): \"Semantic Model for Control Logic in Automation Systems - Knowledge-Based Support of the Engineering and Operation of Control Logic in Building and Industrial Automation Systems\" PhD thesis, Karlsruhe Institute of Technology, Karlsruhe, Germany.
+
+[2] M. A. Musen (2015): The protege project: a look back and a look forward. AI matters, 1(4):4-12, doi: 10.1145/2757001.2757003."""@en ;
+                                               <http://purl.org/dc/terms/identifier> "https://w3id.org/ibp/InstancesSensorExcerpt#" ;
+                                               <http://purl.org/dc/terms/issued> "2018-02-02"^^xsd:date ;
+                                               <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/4.0> ;
+                                               <http://purl.org/dc/terms/modified> "2019-03-07"^^xsd:date ;
+                                               <http://purl.org/dc/terms/rights> "Copyright (c) 2019, Georg Ferdinand Schneider, Nuremberg, Germany. This ontology is distributed under a Creative Commons Attribution Share Alike License (CC BY-SA 4.0) http://creativecommons.org/licenses/by-sa/4.0"@en ;
+                                               <http://purl.org/dc/terms/title> "Ontology InstancesSensorExcerpt."@en ;
+                                               <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
+                                               rdfs:comment "Ontology with instances of InstancesSensorExcerpt."@en ;
+                                               rdfs:label "InstancesSensorExcerpt"@en ;
+                                               owl:versionInfo "v0.2.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/sosa/observes
+<http://www.w3.org/ns/sosa/observes> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/ssn/hasProperty
+<http://www.w3.org/ns/ssn/hasProperty> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ibp/CTRLont#hasApplicationLogic
+<https://w3id.org/ibp/CTRLont#hasApplicationLogic> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ibp/CTRLont#hasInput
+<https://w3id.org/ibp/CTRLont#hasInput> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/ibp/CTRLont#logicInput
+<https://w3id.org/ibp/CTRLont#logicInput> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/seas/connectsAt
+<https://w3id.org/seas/connectsAt> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/seas/connectsSystemAt
+<https://w3id.org/seas/connectsSystemAt> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  file:/C:/OntoCAPE/OntoCAPE/chemical_process_system/CPS_realization/process_control_equipment/measuring_instrument.owl#T-Sensor
+<file:/C:/OntoCAPE/OntoCAPE/chemical_process_system/CPS_realization/process_control_equipment/measuring_instrument.owl#T-Sensor> rdf:type owl:Class .
+
+
+###  file:/C:/OntoCAPE/chemical_process_system/CPS_realization/plant_equipment/apparatus.owl#HeatedTank
+<file:/C:/OntoCAPE/chemical_process_system/CPS_realization/plant_equipment/apparatus.owl#HeatedTank> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/sosa/FeatureOfInterest
+<http://www.w3.org/ns/sosa/FeatureOfInterest> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/sosa/ObservableProperty
+<http://www.w3.org/ns/sosa/ObservableProperty> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/sosa/Sensor
+<http://www.w3.org/ns/sosa/Sensor> rdf:type owl:Class .
+
+
+###  https://w3id.org/ibp/CTRLont#ApplicationLogic
+<https://w3id.org/ibp/CTRLont#ApplicationLogic> rdf:type owl:Class .
+
+
+###  https://w3id.org/ibp/CTRLont#ControlActor
+<https://w3id.org/ibp/CTRLont#ControlActor> rdf:type owl:Class .
+
+
+###  https://w3id.org/ibp/CTRLont#Input
+<https://w3id.org/ibp/CTRLont#Input> rdf:type owl:Class .
+
+
+###  https://w3id.org/seas/CommunicationConnection
+<https://w3id.org/seas/CommunicationConnection> rdf:type owl:Class .
+
+
+###  https://w3id.org/seas/CommunicationConnectionPoint
+<https://w3id.org/seas/CommunicationConnectionPoint> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/ibp/InstancesSensorExcerpt#B5
+:B5 rdf:type owl:NamedIndividual ,
+             <file:/C:/OntoCAPE/chemical_process_system/CPS_realization/plant_equipment/apparatus.owl#HeatedTank> ,
+             <http://www.w3.org/ns/sosa/FeatureOfInterest> ;
+    <http://www.w3.org/ns/ssn/hasProperty> :B5-T .
+
+
+###  https://w3id.org/ibp/InstancesSensorExcerpt#B5-T
+:B5-T rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://w3id.org/ibp/InstancesSensorExcerpt#B5-T-Sensor
+:B5-T-Sensor rdf:type owl:NamedIndividual ,
+                      <file:/C:/OntoCAPE/OntoCAPE/chemical_process_system/CPS_realization/process_control_equipment/measuring_instrument.owl#T-Sensor> ,
+                      <http://www.w3.org/ns/sosa/Sensor> ;
+             <http://www.w3.org/ns/sosa/observes> :B5-T ;
+             <https://w3id.org/seas/connectsAt> :B5-TI503-CP .
+
+
+###  https://w3id.org/ibp/InstancesSensorExcerpt#B5-TI503-CP
+:B5-TI503-CP rdf:type owl:NamedIndividual ,
+                      <https://w3id.org/seas/CommunicationConnectionPoint> .
+
+
+###  https://w3id.org/ibp/InstancesSensorExcerpt#B5-TI503-Conn
+:B5-TI503-Conn rdf:type owl:NamedIndividual ,
+                        <https://w3id.org/seas/CommunicationConnection> ;
+               <https://w3id.org/seas/connectsSystemAt> :B5-TI503-CP ,
+                                                        :CA-TI503-Input .
+
+
+###  https://w3id.org/ibp/InstancesSensorExcerpt#CA-TI503-Input
+:CA-TI503-Input rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/ibp/CTRLont#Input> .
+
+
+###  https://w3id.org/ibp/InstancesSensorExcerpt#ctrl1
+:ctrl1 rdf:type owl:NamedIndividual ,
+                <https://w3id.org/ibp/CTRLont#ApplicationLogic> ;
+       <https://w3id.org/ibp/CTRLont#logicInput> :CA-TI503-Input .
+
+
+###  https://w3id.org/ibp/InstancesSensorExcerpt#ctrl1-CA
+:ctrl1-CA rdf:type owl:NamedIndividual ,
+                   <https://w3id.org/ibp/CTRLont#ControlActor> ;
+          <https://w3id.org/ibp/CTRLont#hasApplicationLogic> :ctrl1 ;
+          <https://w3id.org/ibp/CTRLont#hasInput> :CA-TI503-Input .
+
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
